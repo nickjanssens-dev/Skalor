@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="/static/images/favicon_skalor/favicon.ico">
+    <title>Skalor — Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/Shop.css">
+    <link rel="stylesheet" href="/static/css/prog.css">
+    <script src="/static/js/stats.js"></script>
+    <script src="/static/js/shop.js"></script>
+  <script src="/static/js/cosmetics.js"></script>
+</head>
+<body>
+<!-- ─── HEADER ────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="nav-wrapper">
+    <a href="/" class="brand" aria-label="Skalor home">
+      <img src="/static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+    </a>
+
+    <nav aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a></li>
+        <li><a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a></li>
+        <li><a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a></li>
+        <li><a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="coin-badge">
+        <i class="fa-solid fa-coins"></i>
+        <span id="coin-count">0</span>
+        <span class="coin-label">Coins</span>
+      </span>
+      <span class="avatar-nav" id="nav-avatar">
+        <span class="avatar-circle"><i class="fa-solid fa-user"></i></span>
+        <span class="avatar-nav-name" id="nav-avatar-name"></span>
+      </span>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a>
+    <a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a>
+    <a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a>
+    <a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a>
+  </div>
+</header>
+
+<div class="bg-ambient"></div>
+<div class="root-background">
+  <svg class="root-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <path class="root-path" d="M-50,0 Q150,100 100,300 T300,500 T500,800" />
+    <path class="root-path" d="M100,300 Q50,400 0,550" style="animation-delay:1s"/>
+    <path class="root-path" d="M1050,1000 Q800,800 900,600 T700,400 T400,200" />
+    <path class="root-path" d="M700,400 Q600,450 500,350" style="animation-delay:1.5s"/>
+    <path class="root-path" d="M-50,600 Q200,550 400,700 T700,850" />
+    <path class="root-path" d="M400,700 Q450,800 550,750" style="animation-delay:2s"/>
+  </svg>
+</div>
+
+<!-- ─── MAIN ──────────────────────────────────────────────── -->
+<main>
+    <div class="page-header">
+        <p class="page-eyebrow">🛒 Cosmetics Store</p>
+        <h1 class="page-title">Skalor Shop</h1>
+        <p class="page-sub">Geef je coins uit aan exclusieve cosmetica. Verdien meer coins door skills af te ronden.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" onclick="filterCategory('all', this)">Alles</button>
+        <button class="tab" onclick="filterCategory('avatar', this)">Avatars</button>
+        <button class="tab" onclick="filterCategory('badge', this)">Badges</button>
+        <button class="tab" onclick="filterCategory('theme', this)">Thema's</button>
+        <button class="tab" onclick="filterCategory('effect', this)">Effecten</button>
+        <button class="tab" onclick="filterCategory('frame', this)">Frames</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="shop-grid" id="shop-grid"></div>
+
+    <div class="empty-state" id="empty-state">
+        <div class="empty-icon">🎭</div>
+        <p>Geen items in deze categorie.</p>
+    </div>
+</main>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script>
+  // Active nav link
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const active = href === '/' ? location.pathname === '/' : location.pathname.startsWith(href);
+    if (active) link.classList.add('active');
+  });
+
+  // Hamburger
+  const _hBtn  = document.getElementById('hamburger-btn');
+  const _hMenu = document.getElementById('mobile-menu');
+  if (_hBtn && _hMenu) {
+    _hBtn.addEventListener('click', () => {
+      const open = _hMenu.classList.toggle('open');
+      _hBtn.classList.toggle('open', open);
+      _hBtn.setAttribute('aria-expanded', open);
+    });
+  }
+  // Avatar username
+  fetch('/api/auth/me').then(r => r.json()).then(d => {
+    const el = document.getElementById('nav-avatar-name');
+    if (el && d.authenticated && d.user) el.textContent = d.user.username;
+  }).catch(() => {});
+</script>
+</body>
+</html>

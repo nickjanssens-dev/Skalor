@@ -1,0 +1,1192 @@
+{
+  "stijl": {
+    "title": "Stijlfiguren",
+    "leaves": [
+      {
+        "title": "Vergelijking & Metafoor",
+        "theory": "<strong>Vergelijking</strong>: een overeenkomst tussen twee dingen, uitgedrukt met 'zoals', 'als' of 'gelijk'.\n<em>Voorbeeld</em>: 'Hij is sterk als een leeuw.'\n\n<strong>Metafoor</strong>: een verborgen vergelijking zonder vergelijkend woord.\n<em>Voorbeeld</em>: 'Hij is een leeuw op het veld.'\n\n<strong>Personificatie</strong>: levenloze dingen krijgen menselijke eigenschappen.\n<em>Voorbeeld</em>: 'De wind fluisterde door de bomen.'\n\n<strong>Beeldspraak</strong> (overkoepelend) maakt taal levendiger en beeldender."
+      },
+      {
+        "title": "Klankfiguren",
+        "theory": "<strong>Alliteratie</strong>: herhaling van dezelfde beginletter of klank.\n<em>Voorbeeld</em>: 'Met man en macht.'\n\n<strong>Assonantie</strong>: herhaling van dezelfde klinkerklank.\n<em>Voorbeeld</em>: 'Kom, kom, doe mee.'\n\n<strong>Rijm</strong>: herhaling van klanken aan het einde van regels (eindrijm) of binnen een vers (binnenrijm).\n\n<strong>Onomatopee</strong>: woorden die klinken zoals hun betekenis.\n<em>Voorbeeld</em>: 'suizen', 'kletteren', 'knallen'.\n\nKlankfiguren geven ritme en muzikaliteit aan teksten."
+      },
+      {
+        "title": "Andere Stijlfiguren",
+        "theory": "<strong>Hyperbool</strong>: overdrijving.\n<em>Voorbeeld</em>: 'Ik heb je al duizend keer gezegd...'\n\n<strong>Understatement</strong>: bewust te weinig zeggen.\n<em>Voorbeeld</em>: 'Dat valt een beetje mee' (over een catastrofe).\n\n<strong>Ironie</strong>: het tegenovergestelde zeggen van wat je bedoelt.\n<em>Voorbeeld</em>: 'Wat een geweldige dag!' (terwijl alles misgaat).\n\n<strong>Retorische vraag</strong>: een vraag waarop geen antwoord verwacht wordt.\n<em>Voorbeeld</em>: 'Wie wil dat nu niet?'\n\n<strong>Climax</strong>: opbouw van zwak naar sterk."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een metafoor?",
+        "options": [
+          "Een vergelijking met 'zoals'",
+          "Een verborgen vergelijking zonder vergelijkend woord",
+          "Een overdrijving",
+          "Een klankfiguur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is alliteratie?",
+        "options": [
+          "Rijm aan het einde van regels",
+          "Herhaling van dezelfde beginletter of beginklank",
+          "Herhaling van klinkers",
+          "Een verborgen vergelijking"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is personificatie?",
+        "options": [
+          "Een overdrijving",
+          "Een retorische vraag",
+          "Levenloze dingen krijgen menselijke eigenschappen",
+          "Een klankfiguur"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een hyperbool?",
+        "options": [
+          "Een understatement",
+          "Een bewuste overdrijving",
+          "Een retorische vraag",
+          "Een metafoor"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ironie?",
+        "options": [
+          "Herhaling voor nadruk",
+          "Overdrijving voor effect",
+          "Het tegenovergestelde zeggen van wat je bedoelt",
+          "Een klankfiguur"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een retorische vraag?",
+        "options": [
+          "Een vraag waarop een antwoord verwacht wordt",
+          "Een vraag waarop géén antwoord verwacht wordt",
+          "Een vergelijkende vraag",
+          "Een hypothetische redenering"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is onomatopee?",
+        "options": [
+          "Een alliteratie met klinkers",
+          "Woorden die klinken zoals hun betekenis (bijv. 'suizen')",
+          "Een type rijm",
+          "Een vergelijking"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is assonantie?",
+        "options": [
+          "Herhaling van beginmedeklinkers",
+          "Herhaling van dezelfde klinkerklank",
+          "Eindrijm",
+          "Binnenrijm"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een understatement?",
+        "options": [
+          "Overdrijving voor komisch effect",
+          "Bewust te weinig zeggen over iets belangrijks",
+          "Een retorische vergelijking",
+          "Ironie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke stijlfiguur is: 'Hij is sterk als een leeuw'?",
+        "options": [
+          "Metafoor",
+          "Personificatie",
+          "Vergelijking",
+          "Hyperbool"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "retor": {
+    "title": "Retorica & Argumentatie",
+    "leaves": [
+      {
+        "title": "Aristoteles: Ethos, Pathos, Logos",
+        "theory": "Aristoteles beschreef drie overtuigingsmiddelen:\n\n• <strong>Ethos</strong>: de geloofwaardigheid van de spreker.\n<em>Voorbeeld</em>: 'Als arts kan ik zeggen dat...' Autoriteit en vertrouwen.\n\n• <strong>Pathos</strong>: aanspreken van de emoties van het publiek.\n<em>Voorbeeld</em>: een hartverscheurend verhaal vertellen om steun te krijgen.\n\n• <strong>Logos</strong>: redenering via feiten, logica en bewijs.\n<em>Voorbeeld</em>: statistieken, onderzoek, logische redenering.\n\nEffectieve retoriek combineert alle drie."
+      },
+      {
+        "title": "Drogredenen",
+        "theory": "Een <strong>drogreden (fallacy)</strong> is een fout in de redenering die toch overtuigend klinkt.\n\nBelangrijke drogredenen:\n• <em>Ad hominem</em>: de persoon aanvallen in plaats van het argument\n• <em>Stroman</em>: een verzwakte versie van het standpunt aanvallen\n• <em>Valse dichotomie</em>: slechts twee opties presenteren terwijl er meer zijn\n• <em>Beroep op autoriteit</em>: een expert citeren die niet relevant is\n• <em>Post hoc</em>: tijdsvolgorde verwarren met oorzakelijkheid\n• <em>Cirkelredenering</em>: de conclusie als premisse gebruiken\n\nDrogredenen herkennen is essentieel bij kritisch denken."
+      },
+      {
+        "title": "Debattechnieken",
+        "theory": "Bij een <strong>debat</strong> verdedigt elke partij een standpunt met argumenten.\n\nBelangrijke technieken:\n• Luisteren en parafraseren vóór je reageert\n• Stevig, specifiek bewijs gebruiken\n• Tegenstander letterlijk citeren (geen stroman)\n• Zelf je zwakste punten erkennen (dat versterkt je geloofwaardigheid)\n• Korte, krachtige zinnen gebruiken voor impact\n\nStructuur van een goed argument:\n<strong>Stelling → Argument → Bewijs → Uitleg → Conclusie</strong>\n\n<strong>Socratische methode</strong>: door gerichte vragen de zwakheden in andermans redenering blootleggen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is 'ethos' als overtuigingsmiddel?",
+        "options": [
+          "Aanspreken van emoties",
+          "Logische redenering",
+          "Geloofwaardigheid van de spreker",
+          "Gebruik van statistieken"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is 'pathos'?",
+        "options": [
+          "Autoriteit van de spreker",
+          "Aanspreken van de emoties van het publiek",
+          "Logisch bewijs",
+          "Feitengebruik"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is 'logos'?",
+        "options": [
+          "Emotioneel appèl",
+          "Spreker-autoriteit",
+          "Redeneren via feiten, logica en bewijs",
+          "Gebruik van stijlfiguren"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een ad hominem-drogreden?",
+        "options": [
+          "Een argument aanvallen met feiten",
+          "De persoon aanvallen in plaats van het argument",
+          "Een stroman bouwen",
+          "Emotioneel reageren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een stroman-drogreden?",
+        "options": [
+          "Iemands argument citeren",
+          "Een verzwakte versie van het argument aanvallen",
+          "Een autoriteit citeren",
+          "Een valse dichotomie presenteren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een valse dichotomie?",
+        "options": [
+          "Twee keer hetzelfde argument gebruiken",
+          "Slechts twee opties presenteren terwijl er meer zijn",
+          "Cirkelredenering",
+          "Post hoc ergo propter hoc"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is post hoc redeneren?",
+        "options": [
+          "Twee zaken vergelijken zonder verband",
+          "Tijdsvolgorde verwarren met oorzakelijkheid",
+          "Een autoriteit citeren die irrelevant is",
+          "Cirkelredenering"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de Socratische methode?",
+        "options": [
+          "Een debatformaat met twee teams",
+          "Door gerichte vragen zwakheden in een redenering blootleggen",
+          "Een type retorisch argument",
+          "Een redenatechniek van Aristoteles"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een cirkelredenering?",
+        "options": [
+          "Twee argumenten die elkaar tegenspreken",
+          "De conclusie als premisse gebruiken om de conclusie te bewijzen",
+          "Een argument herhalen",
+          "Een drogreden met statistieken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke structuur heeft een goed argument?",
+        "options": [
+          "Conclusie → Bewijs → Stelling",
+          "Stelling → Argument → Bewijs → Uitleg → Conclusie",
+          "Bewijs → Stelling → Argument",
+          "Uitleg → Conclusie → Bewijs"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "seman": {
+    "title": "Semantiek & Woordenschat",
+    "leaves": [
+      {
+        "title": "Betekenisleer",
+        "theory": "<strong>Semantiek</strong> is de studie van betekenis in taal.\n\nBelangrijke begrippen:\n• <strong>Denotatie</strong>: de letterlijke, woordenboekbetekenis van een woord\n• <strong>Connotatie</strong>: de bijbetekenis of emotionele lading\n  – 'Huis' (denotatie: gebouw) vs. 'thuis' (connotatie: warmte, geborgenheid)\n\n• <strong>Synoniem</strong>: woorden met dezelfde of vergelijkbare betekenis\n• <strong>Antoniemen</strong>: woorden met tegengestelde betekenis\n• <strong>Homoniemen</strong>: woorden met dezelfde schrijfwijze maar verschillende betekenis\n  – bijv. 'bank' (meubel) en 'bank' (financiële instelling)"
+      },
+      {
+        "title": "Polysemie & Etymologie",
+        "theory": "<strong>Polysemie</strong>: één woord met meerdere verwante betekenissen.\n<em>Voorbeeld</em>: 'hoofd' (lichaamsdeel / leider / voornaamst)\n\n<strong>Etymologie</strong>: de studie van de herkomst van woorden.\n<em>Voorbeeld</em>: 'school' → Grieks <em>scholè</em> (vrije tijd → leren)\n\nVeel Nederlandse woorden komen uit het:\n• Latijn en Grieks (wetenschappelijke termen)\n• Frans (leenwoorden na de Middeleeuwen)\n• Engels (moderne leenwoorden: 'computer', 'management')\n\n<strong>Leenwoorden</strong>: woorden overgenomen uit een andere taal."
+      },
+      {
+        "title": "Woordvorming",
+        "theory": "Nederlandse woorden worden gevormd door:\n\n• <strong>Samenstelling</strong>: twee woorden samenvoegen\n  – voetbal, kastanjeboom, roodborst\n\n• <strong>Afleiding</strong>: prefix of suffix toevoegen\n  – on- (ontmoedigen), -heid (vrijheid), -lijk (vriendelijk)\n\n• <strong>Conversie</strong>: woordsoort veranderen zonder aanpassing\n  – 'lopen' (ww) → 'een lopen' (zn)\n\n• <strong>Verkorting/Acroniem</strong>:\n  – VN (Verenigde Naties), ns (nanoseconde)\n\nWoordvorming verrijkt de woordenschat en is typisch voor het Nederlands (lange samenstellingen)."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is semantiek?",
+        "options": [
+          "De studie van grammatica",
+          "De studie van betekenis in taal",
+          "De studie van klanken",
+          "De studie van zinsbouw"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een denotatie?",
+        "options": [
+          "De emotionele bijbetekenis",
+          "De letterlijke woordenboekbetekenis",
+          "Een synoniem",
+          "De herkomst van het woord"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een connotatie?",
+        "options": [
+          "De letterlijke betekenis",
+          "De bijbetekenis of emotionele lading",
+          "Een antoniem",
+          "Een homonym"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn synoniemen?",
+        "options": [
+          "Woorden met tegengestelde betekenis",
+          "Woorden met dezelfde schrijfwijze maar andere betekenis",
+          "Woorden met gelijke of vergelijkbare betekenis",
+          "Woorden van dezelfde herkomst"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zijn homoniemen?",
+        "options": [
+          "Woorden met dezelfde klank en betekenis",
+          "Woorden met dezelfde schrijfwijze maar verschillende betekenis",
+          "Woorden afgeleid van hetzelfde stamwoord",
+          "Synoniemen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is polysemie?",
+        "options": [
+          "Meerdere woorden met dezelfde betekenis",
+          "Één woord met meerdere verwante betekenissen",
+          "Woorden met tegengestelde betekenis",
+          "Leenwoorden uit het Engels"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bestudeert etymologie?",
+        "options": [
+          "De klankleer van woorden",
+          "De herkomst van woorden",
+          "De betekenis van zinnen",
+          "De grammaticale functies van woorden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een leenwoord?",
+        "options": [
+          "Een woord dat je uitleent aan iemand",
+          "Een woord overgenomen uit een andere taal",
+          "Een verouderd woord",
+          "Een nieuw samengesteld woord"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe wordt het woord 'vriendelijkheid' gevormd?",
+        "options": [
+          "Samenstelling",
+          "Afleiding via suffix (-heid)",
+          "Conversie",
+          "Acroniem"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is conversie in woordvorming?",
+        "options": [
+          "Twee woorden samenvoegen",
+          "Een woordsoort veranderen zonder de vorm te wijzigen",
+          "Een prefix toevoegen",
+          "Een woord verkorten"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "media": {
+    "title": "Mediawijsheid",
+    "leaves": [
+      {
+        "title": "Media & Nieuws",
+        "theory": "<strong>Mediawijsheid</strong>: het vermogen om media kritisch te gebruiken en te begrijpen.\n\n<strong>Soorten media</strong>:\n• Geschreven media: krant, tijdschrift, blog\n• Audio-visuele media: tv, radio, podcast\n• Sociale media: Instagram, TikTok, X (Twitter)\n• Online media: nieuwssites, YouTube\n\n<strong>Journalistieke normen</strong>:\n• Feitelijkheid en verificatie\n• Onpartijdigheid\n• Hoor en wederhoor\n• Bronvermelding\n\nNiet alle media voldoen aan deze normen — kritisch lezen is noodzakelijk."
+      },
+      {
+        "title": "Desinformatie & Deepfakes",
+        "theory": "<strong>Desinformatie</strong>: bewust verspreide onjuiste informatie.\n<strong>Misinformatie</strong>: onbewust verspreide onjuiste informatie.\n<strong>Propaganda</strong>: media ingezet om een politiek of ideologisch doel te dienen.\n\n<strong>Deepfakes</strong>: door AI gegenereerde nep-video's of -audio die echt lijken.\n\n<strong>Checklist voor nieuwsverificatie</strong>:\n• Bekijk de bron: wie publiceert dit?\n• Zoek het verhaal op via andere bronnen\n• Let op emotioneel taalgebruik\n• Controleer de datum\n• Gebruik factcheckers (Knack, NOS, Snopes)"
+      },
+      {
+        "title": "Filterbubbel & Algoritmen",
+        "theory": "Sociale media-algoritmen tonen je meer van wat je al leuk vindt → <strong>filterbubbel</strong>.\n\nGevolgen:\n• Je ziet voornamelijk bevestiging van je eigen meningen\n• Extreme standpunten worden versterkt\n• Minder blootstelling aan andere perspectieven\n\n<strong>Echokamer</strong>: omgeving waarin iedereen het met elkaar eens is.\n\nOplossingen:\n• Volg diverse bronnen\n• Lees ook media die je uitdagen\n• Wees bewust van jouw algoritme\n\n<strong>Clickbait</strong>: misleidende koppen die klikken uitlokken zonder inhoud te leveren."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is mediawijsheid?",
+        "options": [
+          "Veel media consumeren",
+          "Media kritisch kunnen gebruiken en begrijpen",
+          "Nieuws kunnen schrijven",
+          "Sociale media vermijden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is desinformatie?",
+        "options": [
+          "Onbewust verspreide onjuiste informatie",
+          "Bewust verspreide onjuiste informatie",
+          "Alle informatie online",
+          "Nieuws zonder bronvermelding"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn deepfakes?",
+        "options": [
+          "Nepaccounts op sociale media",
+          "AI-gegenereerde nep-video's of -audio die echt lijken",
+          "Fotomontages van beroemdheden",
+          "Gehackte websites"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een filterbubbel?",
+        "options": [
+          "Spam in je mailbox",
+          "Een omgeving waarbij algoritmen je alleen tonen wat je al leuk vindt",
+          "Censuur op sociale media",
+          "Een type adblocker"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een echokamer?",
+        "options": [
+          "Een studio voor podcasts",
+          "Een omgeving waarbij iedereen het met elkaar eens is en andere meningen nauwelijks binnenkomen",
+          "Een type mediakanaal",
+          "Een filterbubbel zonder algoritme"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is propaganda?",
+        "options": [
+          "Feitelijke berichtgeving",
+          "Media ingezet om een politiek of ideologisch doel te dienen",
+          "Onbewuste fouten in nieuws",
+          "Sponsored content"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is clickbait?",
+        "options": [
+          "Advertenties op websites",
+          "Misleidende koppen die klikken uitlokken zonder inhoud te leveren",
+          "Een type deepfake",
+          "Pop-upadvertenties"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is hoor en wederhoor in journalistiek?",
+        "options": [
+          "Twee artikelen over hetzelfde onderwerp publiceren",
+          "Alle betrokken partijen aan bod laten komen voor publicatie",
+          "Audio-opnames toevoegen",
+          "Lezers laten reageren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke van deze is een factchecking-organisatie?",
+        "options": [
+          "Wikipedia",
+          "TikTok",
+          "Snopes",
+          "Reddit"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe herken je mogelijk fake news?",
+        "options": [
+          "Door de opmaak van de website te bekijken",
+          "Door de bron, andere bronnen te checken en emotioneel taalgebruik te detecteren",
+          "Door alleen gerenommeerde sociale media te volgen",
+          "Door enkel video's te bekijken"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "schrijf2": {
+    "title": "Schrijfvaardigheid (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Beschouwing & Essay",
+        "theory": "Een <strong>beschouwing</strong> geeft een genuanceerde kijk op een onderwerp zonder per se een standpunt te verdedigen.\n\nEen <strong>essay</strong> is persoonlijker dan een beschouwing: de schrijver deelt zijn eigen gedachten en ervaringen.\n\nKenmerken van een goed essay:\n• Prikkelende inleiding (hook)\n• Duidelijke rode draad\n• Persoonlijke stijl\n• Reflectie en verdieping\n• Afronding die terugkoppelt naar het begin\n\nHet essay is een vrije genre — stijl, lengte en structuur variëren sterk."
+      },
+      {
+        "title": "Zakelijke Teksten",
+        "theory": "<strong>Zakelijke teksten</strong> communiceren efficiënt en doelgericht.\n\nTypes:\n• <strong>Rapport</strong>: verslag van onderzoek of analyse\n• <strong>Notulen</strong>: verslag van een vergadering\n• <strong>Offerte</strong>: prijsaanbod\n• <strong>CV en motivatiebrief</strong>\n\nKenmerken:\n• Formele toon\n• Heldere structuur\n• Geen onnodige versiering\n• Correcte taal en spelling\n\nDe <strong>piramidestructuur</strong>: begin met het belangrijkste, gevolgd door details."
+      },
+      {
+        "title": "Creatief Schrijven",
+        "theory": "<strong>Creatief schrijven</strong>: verhalen, gedichten, scripts schrijven met aandacht voor stijl en verbeelding.\n\nVertelperspectieven:\n• Ik-persoon: betrokken, subjectief\n• Alwetende verteller: objectief, breed zicht\n• Externe focalisatie: één karakter centraal\n\nSpanningstechnieken:\n• Cliffhanger\n• Flashback / flashforward\n• Contrast en ironie\n\nGoede beschrijvingen tonen in plaats van vertellen (<em>show, don't tell</em>):\n✗ 'Ze was verdrietig.' ✓ 'Haar tranen dropen op het papier.'"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is het verschil tussen een beschouwing en een betoog?",
+        "options": [
+          "Er is geen verschil",
+          "Een betoog verdedigt een standpunt; een beschouwing geeft een genuanceerd beeld",
+          "Een beschouwing heeft meer argumenten",
+          "Een betoog is altijd formeler"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een essay?",
+        "options": [
+          "Een zakelijk rapport",
+          "Een persoonlijk, vrij genre waarbij de schrijver eigen gedachten deelt",
+          "Een type nieuwsartikel",
+          "Een academisch paper"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de piramidestructuur in zakelijke teksten?",
+        "options": [
+          "Beginnen met details en eindigen met de conclusie",
+          "Beginnen met het belangrijkste, gevolgd door details",
+          "Een opbouw van zwak naar sterk argument",
+          "Een circulaire structuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn notulen?",
+        "options": [
+          "Een type brief",
+          "Een verslag van een vergadering",
+          "Een offerte",
+          "Een wetenschappelijk rapport"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is 'show, don't tell' in creatief schrijven?",
+        "options": [
+          "Veel dialoog gebruiken",
+          "Scenisch beschrijven in plaats van samenvatten/vertellen",
+          "Alleen actiescènes schrijven",
+          "Nooit de gevoelens van personages vermelden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een cliffhanger?",
+        "options": [
+          "Een personage dat sterft",
+          "Een spanningsvolle afsluiting die de lezer nieuwsgierig houdt",
+          "Een flashback-techniek",
+          "Het begin van een verhaal"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een ik-perspectief in verhalen?",
+        "options": [
+          "De alwetende verteller",
+          "Een verteller die de gedachten van alle personages kent",
+          "Een subjectieve ik-figuur als verteller",
+          "Een externe focalisatie"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een CV?",
+        "options": [
+          "Een motivatiebrief",
+          "Een overzicht van opleiding en werkervaring",
+          "Een type essay",
+          "Een notulenverslag"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een flashback in een verhaal?",
+        "options": [
+          "Een blik op de toekomst",
+          "Een terugblik naar een eerder tijdstip in het verhaal",
+          "Een cliffhanger aan het einde",
+          "Een externe focalisatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk kenmerk heeft een zakelijke tekst altijd?",
+        "options": [
+          "Persoonlijke stijl",
+          "Rijm en ritme",
+          "Formele toon en heldere structuur",
+          "Creatieve vrijheid"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "liter2": {
+    "title": "Literatuuranalyse",
+    "leaves": [
+      {
+        "title": "Narratologie",
+        "theory": "<strong>Narratologie</strong>: de studie van vertelstructuren en -technieken.\n\n<strong>Verteller vs. focalisator</strong>:\n• Wie vertelt? (verteller)\n• Vanuit wiens perspectief? (focalisator)\n\n<strong>Vertellerstypen</strong>:\n• <em>Auktoriaal</em>: alwetend, staat buiten het verhaal\n• <em>Personaal</em>: ziet via één personage\n• <em>Ik-verteller</em>: betrokken, subjectief\n\n<strong>Fabula vs. Sujet</strong>:\n• Fabula: de chronologische volgorde van gebeurtenissen\n• Sujet: de volgorde waarop ze in het verhaal gepresenteerd worden"
+      },
+      {
+        "title": "Thema & Motieven",
+        "theory": "Een <strong>thema</strong> is de centrale gedachte of boodschap van een literair werk.\n\nVormen van thema's:\n• Liefde en verlies\n• Identiteit en zelfontdekking\n• Goed en kwaad\n• Vrijheid vs. onderdrukking\n\nEen <strong>motief</strong> is een terugkerend element (symbool, situatie, woord) dat het thema versterkt.\n\n<strong>Symbolen</strong>: concrete dingen die een abstracte betekenis dragen.\n<em>Voorbeeld</em>: een gebroken spiegel als symbool voor ongeluk of gebroken zelfbeel.\n\nThema's worden zelden expliciet gezegd — de lezer moet ze zelf ontdekken."
+      },
+      {
+        "title": "Literaire Stromingen",
+        "theory": "Literaire werken worden begrepen in de context van hun <strong>historische stroming</strong>.\n\n• <strong>Middeleeuwen</strong>: religieuze literatuur, ridderromans (Beatrijs, Karel ende Elegast)\n• <strong>Renaissance</strong>: humanisme, individu centraal (Vondel)\n• <strong>Verlichting</strong>: rede en wetenschap\n• <strong>Romantiek</strong>: gevoel, natuur, nationalisme (19e eeuw)\n• <strong>Naturalisme</strong>: wetenschappelijke observatie van de mens\n• <strong>Modernisme</strong>: experimenteel, bewustzijnsstroom\n• <strong>Postmodernisme</strong>: ironie, metafictie, relativisme"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een auktoriale verteller?",
+        "options": [
+          "Een ik-verteller die in het verhaal staat",
+          "Een alwetende verteller buiten het verhaal",
+          "Een focalisator",
+          "Een personage dat soms vertelt"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen fabula en sujet?",
+        "options": [
+          "Fabula is het perspectief; sujet is het thema",
+          "Fabula is de chronologische volgorde; sujet is de volgorde in het verhaal",
+          "Ze betekenen hetzelfde",
+          "Fabula is fictie; sujet is non-fictie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een thema in een roman?",
+        "options": [
+          "De verhaallijn",
+          "De centrale gedachte of boodschap",
+          "Het vertelperspectief",
+          "De hoofdpersoon"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een motief in literatuur?",
+        "options": [
+          "Het thema van het boek",
+          "Een terugkerend element dat het thema versterkt",
+          "Het perspectief van de verteller",
+          "De chronologische volgorde"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een literair symbool?",
+        "options": [
+          "Een metafoor in dialoog",
+          "Een concreet ding dat een abstracte betekenis draagt",
+          "Een type stijlfiguur",
+          "Een verhaaltechniek"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke stroming benadrukt gevoel, natuur en nationalisme?",
+        "options": [
+          "Naturalisme",
+          "Verlichting",
+          "Romantiek",
+          "Postmodernisme"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat kenmerkt het modernisme in literatuur?",
+        "options": [
+          "Religieuze thema's",
+          "Experiment, bewustzijnsstroom en vernieuwing",
+          "Logica en rede",
+          "Ridders en avontuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is metafictie?",
+        "options": [
+          "Een autobiografie",
+          "Fictie die bewust aandacht trekt op haar eigen constructie als verhaal",
+          "Een historische roman",
+          "Een episch gedicht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bestudeert narratologie?",
+        "options": [
+          "De thema's van literatuur",
+          "De vertelstructuren en -technieken",
+          "De historische context",
+          "De taalkundige structuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke Nederlandse schrijver hoort bij de Renaissance?",
+        "options": [
+          "Multatuli",
+          "Joost van den Vondel",
+          "Harry Mulisch",
+          "Louis Paul Boon"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "taalont": {
+    "title": "Taalontwikkeling & Taalvariatie",
+    "leaves": [
+      {
+        "title": "Taalvariatie",
+        "theory": "Taal varieert op meerdere manieren:\n\n• <strong>Dialecten</strong>: regionale varianten van een taal\n  – Vlaams, Hollands, Fries, Limburgs, Antwerps\n\n• <strong>Sociolecten</strong>: taalvarianten verbonden aan sociale groepen\n  – Jongerentaal, straattaal, vakjargon\n\n• <strong>Register</strong>: formeel vs. informeel taalgebruik\n  – 'Ik wens u een prettige dag' vs. 'Doei!'\n\n• <strong>Standaardtaal (AN)</strong>: Algemeen Nederlands, de prestige-variant\n\nTaalvariatie is normaal en waardevol — geen variëteit is talig 'beter' dan een andere."
+      },
+      {
+        "title": "Taalverandering",
+        "theory": "Taal verandert voortdurend:\n\n• <strong>Fonologische verandering</strong>: klanken veranderen\n• <strong>Semantische verandering</strong>: betekenissen verschuiven\n  – 'Geweldig' (vroeger: angstaanjagend; nu: fantastisch)\n• <strong>Grammaticale verandering</strong>: regelveranderingen\n• <strong>Leenwoorden</strong>: invloed van andere talen\n\nOorzaken van taalverandering:\n• Contact met andere talen\n• Technologie en sociale media\n• Generatiewisselingen\n\nAlle levende talen veranderen — een taal die niet meer verandert is dood."
+      },
+      {
+        "title": "Taalkunde & Grammaticale Analyse",
+        "theory": "<strong>Taalkunde</strong> bestudeert taal wetenschappelijk.\n\nDeelgebieden:\n• <strong>Fonologie</strong>: klanken\n• <strong>Morfologie</strong>: woordstructuur\n• <strong>Syntaxis</strong>: zinsbouw\n• <strong>Semantiek</strong>: betekenis\n• <strong>Pragmatiek</strong>: gebruik in context\n\n<strong>Morfemen</strong>: kleinste betekenisdragende eenheden.\n• 'vriendelijkheid' = vriend + elijk + heid\n\n<strong>Zinsboomstructuur</strong>: zinnen kunnen als bomen worden gevisualiseerd om hiërarchische structuur te tonen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een dialect?",
+        "options": [
+          "Een formele taalvariant",
+          "Een regionale variant van een taal",
+          "Een sociolect",
+          "Een vreemde taal"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een sociolect?",
+        "options": [
+          "Een regionale taalvariant",
+          "Een taalvariant verbonden aan een sociale groep",
+          "Formeel taalgebruik",
+          "Een dialect"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is Algemeen Nederlands (AN)?",
+        "options": [
+          "Het dialect van Amsterdam",
+          "De standaardvariant van het Nederlands (prestige-variant)",
+          "Alleen het Nederlands in Nederland",
+          "Een formeel sociolect"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is semantische taalverandering?",
+        "options": [
+          "Verandering van klanken",
+          "Verschuiving van de betekenis van woorden door de tijd",
+          "Invloed van andere talen op grammatica",
+          "Verdwijning van dialecten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bestudeert morfologie?",
+        "options": [
+          "Klanken",
+          "Zinsbouw",
+          "Woordstructuur",
+          "Betekenis"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een morfeem?",
+        "options": [
+          "Een type zin",
+          "De kleinste betekenisdragende eenheid in een woord",
+          "Een klinker of medeklinker",
+          "Een woordsoort"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bestudeert pragmatiek?",
+        "options": [
+          "De klanken van taal",
+          "Het gebruik van taal in context",
+          "De betekenis van woorden",
+          "De structuur van zinnen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke factor veroorzaakt taalverandering?",
+        "options": [
+          "Strenge grammaticaregels",
+          "Contact met andere talen, technologie en generatiewisseling",
+          "Standaardisering van het AN",
+          "Dialecten die verdwijnen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is register?",
+        "options": [
+          "Een type dialect",
+          "Het niveau van formaliteit in taalgebruik (formeel/informeel)",
+          "Een sociaal taalverschil",
+          "Een grammaticaregel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel morfemen heeft het woord 'vriendelijkheid'?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "gedicht": {
+    "title": "Poëzieanalyse",
+    "leaves": [
+      {
+        "title": "Gedichtvormen",
+        "theory": "Gedichten komen in vele vormen:\n\n• <strong>Sonnet</strong>: 14 regels (octaaf + sextet), vast rijmschema\n• <strong>Haiku</strong>: Japans, 3 regels (5-7-5 lettergrepen), natuur-thema\n• <strong>Limerick</strong>: 5 regels, AABBA-rijmschema, komisch\n• <strong>Vrij vers</strong>: geen vast metrum of rijm\n• <strong>Ballade</strong>: verhalend gedicht met refrein\n• <strong>Ode</strong>: lofzang op een persoon of idee\n\nVorm en inhoud beïnvloeden elkaar: de keuze voor een vorm is zelf al betekenisvol."
+      },
+      {
+        "title": "Metrum & Rijm",
+        "theory": "<strong>Metrum</strong>: het ritmisch patroon van beklemtoonde en onbeklemtoonde lettergrepen.\n\nVeelvoorkomende metrumssoorten:\n• <em>Jambe</em>: onbeklemtoond-BEKLEMTOOND (da-DUM)\n• <em>Trochee</em>: BEKLEMTOOND-onbeklemtoond (DUM-da)\n• <em>Dactylus</em>: DUM-da-da\n\n<strong>Rijmschema's</strong>:\n• ABAB: gekruist rijm\n• AABB: gepaard rijm\n• ABBA: omarmend rijm\n\n<strong>Cesuur</strong>: een pauze in een versregel."
+      },
+      {
+        "title": "Gedicht Interpreteren",
+        "theory": "Bij het interpreteren van een gedicht let je op:\n\n1. <strong>Spreker & toon</strong>: wie spreekt, hoe?\n2. <strong>Thema</strong>: waar gaat het over?\n3. <strong>Beeldspraak</strong>: welke stijlfiguren?\n4. <strong>Klanken</strong>: rijm, alliteratie, onomatopee\n5. <strong>Structuur</strong>: verdeling in strofen, metrum\n6. <strong>Context</strong>: wanneer en waarom geschreven?\n\n<strong>Close reading</strong>: elke woordkeuze bewust onderzoeken.\n\nEen gedicht heeft nooit één 'juiste' interpretatie — meerdere lezingen zijn mogelijk."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoeveel regels heeft een sonnet?",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "14"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is een haiku?",
+        "options": [
+          "Een Japans gedicht met 3 regels (5-7-5 lettergrepen)",
+          "Een 14-regelig gedicht",
+          "Een komisch gedicht met 5 regels",
+          "Een vrij gedicht zonder metrum"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is een jambe?",
+        "options": [
+          "BEKLEMTOOND-onbeklemtoond",
+          "onbeklemtoond-BEKLEMTOOND (da-DUM)",
+          "DUM-da-da",
+          "Een type rijmschema"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een ABBA rijmschema?",
+        "options": [
+          "Gekruist rijm",
+          "Gepaard rijm",
+          "Omarmend rijm",
+          "Vrij vers"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is vrij vers?",
+        "options": [
+          "Een sonnet zonder vast thema",
+          "Poëzie zonder vast metrum of rijm",
+          "Een haiku in vrije stijl",
+          "Een ballade"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een cesuur?",
+        "options": [
+          "Een type rijm",
+          "Een pauze in een versregel",
+          "Het metrum van een gedicht",
+          "De slotstrofe"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een ode?",
+        "options": [
+          "Een komisch gedicht",
+          "Een lofzang op een persoon of idee",
+          "Een verhalend gedicht",
+          "Een Japans gedicht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is 'close reading' bij poëzieanalyse?",
+        "options": [
+          "Het gedicht snel lezen",
+          "Elk woord bewust onderzoeken op betekenis en effect",
+          "Alleen de rijmschema's analyseren",
+          "De biografie van de auteur lezen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een trochee?",
+        "options": [
+          "da-DUM",
+          "DUM-da",
+          "da-da-DUM",
+          "DUM-da-da"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Heeft een gedicht altijd één juiste interpretatie?",
+        "options": [
+          "Ja, de intentie van de auteur is de enige juiste",
+          "Nee, meerdere lezingen zijn mogelijk",
+          "Ja, bepaald door het rijmschema",
+          "Nee, maar de meerderheid heeft altijd gelijk"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "presentatie": {
+    "title": "Presenteren & Spreken",
+    "leaves": [
+      {
+        "title": "Mondelinge Presentatie",
+        "theory": "Een goede <strong>mondelinge presentatie</strong> heeft drie componenten:\n\n• <strong>Inhoud</strong>: relevante, goed gestructureerde informatie\n• <strong>Structuur</strong>: inleiding, kern (met deelpunten), slot\n• <strong>Presentatie</strong>: spreektechniek, lichaamstaal, contact met publiek\n\nBelangrijke technieken:\n• Open met een haak (verhaal, vraag, verrassingsfeit)\n• Gebruik signaalwoorden ('ten eerste...', 'samenvattend...')\n• Eindig met een krachtige conclusie\n• Bereid je voor — ken je stof, maar lees niet voor"
+      },
+      {
+        "title": "Lichaamstaal & Stemgebruik",
+        "theory": "<strong>Non-verbale communicatie</strong> maakt 50-70% uit van je boodschap.\n\n<strong>Lichaamstaal</strong>:\n• Rechtop staan – zelfverzekerd\n• Oogcontact – verbinding met publiek\n• Gebaren – onderstrepen wat je zegt\n• Glimlach – toegankelijkheid\n\n<strong>Stemgebruik</strong>:\n• Varieer in <em>tempo</em> (niet te snel of te langzaam)\n• Varieer in <em>toonhoogte</em> (monotoon is saai)\n• Gebruik <em>pauzes</em> voor nadruk\n• Spreek <em>luid genoeg</em> en duidelijk articuleer"
+      },
+      {
+        "title": "Visuele Ondersteuning",
+        "theory": "Slides (PowerPoint/Canva) ondersteunen een presentatie.\n\n<strong>Goede slides</strong>:\n• Weinig tekst per dia (max. 6 regels)\n• Grote, leesbare lettertypen\n• Beelden die de boodschap versterken\n• Consistente opmaak\n• Geen afleidende animaties\n\n<strong>Slechte slides</strong>:\n• Volledig uitgeschreven tekst (voorlezen)\n• Drukke achtergronden\n• Te veel kleuren\n\nOnthoud: de <strong>spreker</strong> staat centraal — de slides zijn slechts hulpmiddelen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat zijn de drie componenten van een goede presentatie?",
+        "options": [
+          "Slides, kleding en microphone",
+          "Inhoud, structuur en presentatietechniek",
+          "Intro, midden en outro",
+          "Argumenten, bewijs en conclusie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een goede openingstechniek voor een presentatie?",
+        "options": [
+          "Beginnen met je naam noemen",
+          "Beginnen met een haak (verhaal, vraag, verrassingsfeit)",
+          "Direct de samenvatting geven",
+          "Een lang citaat voorlezen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk percentage van een boodschap bestaat uit non-verbale communicatie?",
+        "options": [
+          "10-20%",
+          "30-40%",
+          "50-70%",
+          "90%"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het effect van oogcontact met het publiek?",
+        "options": [
+          "Het verleidt de toehoorder",
+          "Het creëert verbinding en toont zelfverzekerdheid",
+          "Het is een teken van nervositeit",
+          "Het heeft geen effect"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een goede regel voor slides?",
+        "options": [
+          "Zo veel tekst mogelijk per dia",
+          "Weinig tekst, grote lettertypen en ondersteunende beelden",
+          "Zoveel mogelijk kleuren voor aantrekkelijkheid",
+          "Altijd dezelfde template voor elke presentatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een pauze in een mondelinge presentatie?",
+        "options": [
+          "Toont dat je de tekst vergeten bent",
+          "Geeft nadruk aan een punt en geeft het publiek tijd om te verwerken",
+          "Is altijd een teken van nervositeit",
+          "Vermindert de geloofwaardigheid"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe gebruik je gebaren effectief in een presentatie?",
+        "options": [
+          "Zo weinig mogelijk bewegen",
+          "Ze gebruiken om je woorden te onderstrepen",
+          "Altijd dezelfde gebaar herhalen",
+          "Ze alleen gebruiken bij moeilijke woorden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het probleem met monotoon spreken?",
+        "options": [
+          "Het is te luid",
+          "Er is geen variatie in toon, waardoor het publiek afdwaalt",
+          "Het is te technisch",
+          "Er is geen structuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de rol van slides in een presentatie?",
+        "options": [
+          "Ze vervangen de spreker",
+          "Ze zijn hulpmiddelen die de spreker ondersteunen",
+          "Ze moeten alle informatie bevatten",
+          "Ze zijn altijd noodzakelijk"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het doel van signaalwoorden in een presentatie?",
+        "options": [
+          "De presentatie langer maken",
+          "De structuur duidelijk maken voor het publiek",
+          "De spreker helpen de tekst te lezen",
+          "Slides te vermijden"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "interpunct": {
+    "title": "Interpunctie & Zinsbouw",
+    "leaves": [
+      {
+        "title": "Leestekens",
+        "theory": "Correct gebruik van <strong>leestekens</strong> maakt teksten helder.\n\n• <strong>Punt (.)</strong>: einde van een mededelende zin\n• <strong>Komma (,)</strong>: scheidt zinsdelen, bijzinnen, opsommingen\n• <strong>Puntkomma (;)</strong>: scheidt twee nauw verwante hoofdzinnen\n• <strong>Dubbele punt (:)</strong>: kondigt een uitleg of opsomming aan\n• <strong>Gedachtestreep (—)</strong>: voor extra informatie of dramatisch effect\n• <strong>Aanhalingstekens ()</strong>: citaten en ironie\n• <strong>Apostrof (')</strong>: weggelaten letters (bijv. 't) of bezit\n• <strong>Uitroepteken (!)</strong>: nadruk of emotie (spaarzaam gebruiken)"
+      },
+      {
+        "title": "Zinsbouw",
+        "theory": "<strong>Zinsbouw (syntaxis)</strong> gaat over de structuur van zinnen.\n\n<strong>Enkelvoudige zin</strong>: één persoonsvorm.\n<strong>Samengestelde zin</strong>: twee of meer zinnen verbonden.\n\n• <em>Nevenschikking</em>: zinnen gelijkwaardig verbonden (en, maar, want, of)\n• <em>Onderschikking</em>: een bijzin afhankelijk van een hoofdzin\n\n<strong>Bijzintypen</strong>:\n• Beknopte bijzin (infinitief)\n• Betrekkelijke bijzin (die, dat, welke)\n• Tijdsbijzin (toen, terwijl, zodra)\n• Oorzakelijke bijzin (omdat, doordat)\n• Voorwaardelijke bijzin (als, indien)"
+      },
+      {
+        "title": "Paragraafstructuur & Cohesie",
+        "theory": "Een <strong>paragraaf</strong> behandelt één onderwerp en is intern samenhangend.\n\nStructuur:\n• <strong>Thematische zin</strong>: introduceert het onderwerp\n• <strong>Kerntekst</strong>: uitleg, bewijs, voorbeelden\n• <strong>Afsluitzin</strong>: vat samen of geeft overgang\n\n<strong>Cohesie</strong>: de samenhangende taalkundige verbinding binnen en tussen paragrafen.\n\nCohesiemiddelen:\n• <em>Verwijswoorden</em>: die, dit, ze, hen\n• <em>Voegwoorden</em>: bovendien, daarentegen, dus\n• <em>Lexicale cohesie</em>: herhalingen, synoniemen"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk leesteken gebruik je voor een opsomming na een aankondiging?",
+        "options": [
+          "Komma",
+          "Puntkomma",
+          "Dubbele punt",
+          "Gedachtestreep"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarvoor gebruik je een puntkomma?",
+        "options": [
+          "Einde van een zin",
+          "Scheiding van twee nauw verwante hoofdzinnen",
+          "Aanhalingstekens",
+          "Het begin van een opsomming"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een betrekkelijke bijzin?",
+        "options": [
+          "Een bijzin die een tijdsaanduiding geeft",
+          "Een bijzin ingeleid door 'die', 'dat' of 'welke'",
+          "Een bijzin die een oorzaak noemt",
+          "Een bijzin met 'omdat'"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is nevenschikking?",
+        "options": [
+          "Een bijzin afhankelijk van een hoofdzin",
+          "Twee gelijkwaardige zinnen verbonden met 'en', 'maar', 'want'",
+          "Een beknopte bijzin",
+          "Een samengestelde bijzin"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is cohesie in een tekst?",
+        "options": [
+          "De lengte van de alinea's",
+          "De samenhangende taalkundige verbindingen binnen en tussen alinea's",
+          "Het gebruik van stijlfiguren",
+          "De correcte spelling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet de thematische zin in een paragraaf?",
+        "options": [
+          "Vat de paragraaf samen",
+          "Introduceert het onderwerp van de paragraaf",
+          "Geeft de conclusie",
+          "Verbindt met de volgende alinea"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk voegwoord drukt een tegenstelling uit?",
+        "options": [
+          "Bovendien",
+          "Daarentegen",
+          "Dus",
+          "Immers"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe gebruik je aanhalingstekens correct?",
+        "options": [
+          "Voor alle zelfstandige naamwoorden",
+          "Voor citaten en ironie",
+          "Voor alle bijvoeglijke naamwoorden",
+          "Voor werkwoorden in de verleden tijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een voorwaardelijke bijzin?",
+        "options": [
+          "Een bijzin met 'omdat'",
+          "Een bijzin met 'als' of 'indien'",
+          "Een bijzin met 'terwijl'",
+          "Een bijzin met 'zodat'"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn verwijswoorden?",
+        "options": [
+          "Woorden die een nieuw onderwerp introduceren",
+          "Woorden die terugverwijzen naar eerder genoemde personen of zaken",
+          "Samenvoegingen van zinnen",
+          "Type zelfstandige naamwoorden"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

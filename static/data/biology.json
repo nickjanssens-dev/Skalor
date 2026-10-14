@@ -1,0 +1,2475 @@
+{
+  "fot": {
+    "title": "Fotosynthese",
+    "leaves": [
+      {
+        "title": "Lichtreacties",
+        "theory": "De lichtreacties vinden plaats in de <strong>thylakoid membraan</strong> van de chloroplast. Wanneer zonlicht de chlorofylmoleculen raakt, worden elektronen aangeslagen naar een hogere energietoestand.\n\nDeze elektronen bewegen door de <strong>elektronentransportketen</strong>, waarbij energie vrijkomt die wordt gebruikt om ATP en NADPH te maken.\n\nTerwijl dit gebeurt, wordt water gesplitst (fotolysis): <code>2H₂O → 4H⁺ + 4e⁻ + O₂</code>. Het zuurstof dat wij inademen is een bijproduct van dit proces!\n\nATP en NADPH worden daarna gebruikt in de donkerreacties om suiker te maken."
+      },
+      {
+        "title": "Donkerreacties (Calvin-cyclus)",
+        "theory": "De donkerreacties — ook wel de <strong>Calvin-cyclus</strong> genoemd — vinden plaats in het stroma van de chloroplast. Ze heten 'donker' omdat ze geen direct licht nodig hebben, maar ze lopen wel gewoon overdag.\n\nHet proces bestaat uit drie fasen:\n<strong>1. Koolstoffixatie</strong> – CO₂ bindt aan RuBP via het enzym RuBisCO.\n<strong>2. Reductie</strong> – ATP en NADPH (uit de lichtreacties) worden gebruikt om 3-fosfoglyceraat om te zetten naar G3P.\n<strong>3. Regeneratie</strong> – RuBP wordt hersteld zodat de cyclus opnieuw kan beginnen.\n\nUiteindelijk levert de cyclus <strong>glucose</strong> op, de energiebron voor de plant."
+      },
+      {
+        "title": "Chlorofyl & Pigmenten",
+        "theory": "<strong>Chlorofyl</strong> is het groene pigment dat planten hun kleur geeft en verantwoordelijk is voor het absorberen van lichtenergie.\n\nEr zijn twee hoofdtypen:\n• <strong>Chlorofyl a</strong> – absorbeert blauw-violet en rood licht; direct betrokken bij de lichtreacties.\n• <strong>Chlorofyl b</strong> – absorbeert blauw en oranje licht; geeft energie door aan chlorofyl a.\n\nDaarnaast bevatten planten ook <strong>carotenoïden</strong> (oranje/geel), die extra golflengtes absorberen en de plant beschermen tegen te veel licht.\n\nGroen licht wordt grotendeels <em>weerkaatst</em> — daarom zien planten er groen uit!"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Waar vinden de lichtreacties van fotosynthese plaats?",
+        "options": [
+          "In het stroma",
+          "In de thylakoid membraan",
+          "In de celkern",
+          "In de mitochondriën"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk gas komt vrij als bijproduct van de fotosynthese?",
+        "options": [
+          "CO₂",
+          "N₂",
+          "O₂",
+          "H₂"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk enzym fixeert CO₂ in de Calvin-cyclus?",
+        "options": [
+          "ATP-synthase",
+          "Helicase",
+          "RuBisCO",
+          "Amylase"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom zien planten er groen uit?",
+        "options": [
+          "Ze absorberen groen licht",
+          "Ze weerkaatsen groen licht",
+          "Ze produceren groen licht",
+          "Chlorofyl is zelf groen van kleur maar absorbeert alles"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn de eindproducten van de Calvin-cyclus?",
+        "options": [
+          "ATP en NADPH",
+          "O₂ en H₂O",
+          "Glucose en ADP",
+          "CO₂ en suiker"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "dna": {
+    "title": "DNA",
+    "leaves": [
+      {
+        "title": "Structuur van DNA",
+        "theory": "DNA staat voor <strong>deoxyribonucleïnezuur</strong> en draagt de genetische informatie van alle levende organismen.\n\nDNA heeft een <strong>dubbele helix</strong>-structuur, ontdekt door Watson en Crick in 1953. Het lijkt op een gedraaide ladder:\n• De <em>zijkanten</em> bestaan uit suiker (deoxyribose) en fosfaat.\n• De <em>sporten</em> bestaan uit basenparen.\n\nEr zijn vier basen: <strong>Adenine (A), Thymine (T), Cytosine (C) en Guanine (G)</strong>.\nDe koppelregel is vast: A-T en C-G.\n\nEén volledig menselijk DNA-molecuul bestaat uit circa <strong>3 miljard basenparen</strong> en is, uitgestrekt, zo'n 2 meter lang — maar opgerold past het in een celkern van 6 micrometer."
+      },
+      {
+        "title": "DNA-replicatie",
+        "theory": "Voor celdeling moet het DNA exact gekopieerd worden. Dit proces heet <strong>replicatie</strong> en verloopt semi-conservatief: elke nieuwe cel krijgt één oude en één nieuwe DNA-streng.\n\nDe stappen:\n<strong>1. Ontrollen</strong> – Het enzym <em>helicase</em> verbreekt de waterstofbruggen en scheidt de twee strengen.\n<strong>2. Inleiden</strong> – Een <em>primer</em> geeft het startsignaal voor kopiëren.\n<strong>3. Synthetiseren</strong> – <em>DNA-polymerase</em> leest de sjabloonstreng en voegt de juiste complementaire basen toe (A↔T, C↔G).\n<strong>4. Afsluiten</strong> – Kleine stukjes worden samengevoegd door <em>ligase</em>.\n\nHet resultaat: twee identieke DNA-moleculen, elk met een originele en een nieuwe streng."
+      },
+      {
+        "title": "Mutaties",
+        "theory": "Een <strong>mutatie</strong> is een permanente verandering in de DNA-volgorde. Mutaties kunnen spontaan optreden of worden veroorzaakt door externe factoren zoals UV-straling, chemicaliën of virussen.\n\n<strong>Soorten puntmutaties:</strong>\n• <em>Substitutie</em> – één base wordt vervangen (bijv. A → G).\n• <em>Insertie</em> – een extra base wordt ingevoegd.\n• <em>Deletie</em> – een base wordt verwijderd.\n\nInsertie en deletie veroorzaken een <strong>frameshift</strong>: alle codons daarna verschuiven, wat grote gevolgen heeft voor het eiwit.\n\nNiet alle mutaties zijn schadelijk. Sommige zijn <em>neutraal</em>, andere zorgen voor evolutionaire variatie. Maar mutaties in tumorsuppressorgenen kunnen kanker veroorzaken."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke basen paren met elkaar in DNA?",
+        "options": [
+          "A-G en C-T",
+          "A-T en C-G",
+          "A-C en G-T",
+          "Alle basen kunnen met elkaar paren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk enzym scheidt de twee DNA-strengen tijdens replicatie?",
+        "options": [
+          "Ligase",
+          "DNA-polymerase",
+          "Helicase",
+          "RNA-polymerase"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een frameshift-mutatie?",
+        "options": [
+          "Een vervanging van één base",
+          "Een insertie of deletie die de leesraam verschuift",
+          "Een mutatie in het mitochondriaal DNA",
+          "Een mutatie die geen effect heeft"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat betekent 'semi-conservatief' bij DNA-replicatie?",
+        "options": [
+          "Beide strengen zijn nieuw",
+          "Elke nieuwe cel heeft één oude en één nieuwe streng",
+          "Alleen de helft van het DNA wordt gekopieerd",
+          "Het DNA wordt afgebroken en opnieuw opgebouwd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe lang is het menselijk DNA als het volledig uitgestrekt wordt?",
+        "options": [
+          "6 micrometer",
+          "1 centimeter",
+          "Ongeveer 2 meter",
+          "10 kilometer"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "lich": {
+    "title": "Lichaamstelsel",
+    "leaves": [
+      {
+        "title": "Spijsvertering",
+        "theory": "Het <strong>spijsverteringsstelsel</strong> breekt voedsel af tot kleine moleculen die door het bloed opgenomen kunnen worden.\n\n<strong>Het traject van voedsel:</strong>\n<strong>Mond</strong> – Speeksel bevat amylase dat zetmeel afbreekt. Tanden malen het voedsel fijn.\n<strong>Slokdarm</strong> – Voedsel wordt door peristaltiek (spiergolven) naar de maag getransporteerd.\n<strong>Maag</strong> – Maagsap (HCl + pepsine) breekt eiwitten af. pH ≈ 2.\n<strong>Dunne darm</strong> – De meeste voedingsstoffen worden opgenomen via de <em>vlokken</em> en <em>microvlokken</em>.\n<strong>Dikke darm</strong> – Water wordt teruggewonnen; restafval wordt feces.\n\nDe totale lengte van het spijsverteringskanaal is zo'n <strong>9 meter</strong>."
+      },
+      {
+        "title": "Bloedsomloop",
+        "theory": "Het <strong>cardiovasculair stelsel</strong> transporteert zuurstof, voedingsstoffen en afvalstoffen door het lichaam.\n\n<strong>Het hart</strong> heeft vier kamers: twee boezems en twee kamers. Het pompt gemiddeld <strong>5 liter bloed per minuut</strong> rond.\n\n<strong>Dubbele bloedsomloop:</strong>\n• <em>Longcirculatie</em> – zuurstofarm bloed → longen → zuurstofrijk bloed terug.\n• <em>Lichaamscirculatie</em> – zuurstofrijk bloed → organen → zuurstofarm bloed terug.\n\n<strong>Bloedvaten:</strong>\n• <em>Slagaders (arteriën)</em> – voeren bloed weg van het hart, dikke wand.\n• <em>Aders (venen)</em> – voeren bloed naar het hart, met kleppen.\n• <em>Haarvaten (capillairen)</em> – wand van één cellaag dik, voor uitwisseling.\n\nRode bloedcellen bevatten <strong>hemoglobine</strong> dat zuurstof bindt."
+      },
+      {
+        "title": "Zenuwstelsel",
+        "theory": "Het <strong>zenuwstelsel</strong> verwerkt informatie en coördineert alle lichaamsfuncties. Het bestaat uit twee delen:\n\n<strong>Centraal zenuwstelsel (CZS)</strong>\n• <em>Hersenen</em> – verwerken informatie, denken, geheugen, emotie.\n• <em>Ruggenmerg</em> – verbindt hersenen met het lichaam; verwerkt reflexen.\n\n<strong>Perifeer zenuwstelsel (PZS)</strong>\n• <em>Somatisch</em> – bewuste controle over spieren.\n• <em>Autonoom</em> – onbewuste functies (ademhaling, hartslag).\n\n<strong>Neuronen</strong> zijn de basisbouwstenen. Een zenuwimpuls (actiepotentiaal) reist langs de axon en springt via <em>synapsen</em> over naar de volgende cel met behulp van neurotransmitters.\n\nReflexen verlopen via het ruggenmerg — zonder tussenkomst van de hersenen — voor snelle reacties."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In welk orgaan worden de meeste voedingsstoffen opgenomen?",
+        "options": [
+          "Maag",
+          "Dikke darm",
+          "Dunne darm",
+          "Slokdarm"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de functie van haarvaten (capillairen)?",
+        "options": [
+          "Bloed snel transporteren",
+          "Bloed filteren",
+          "Uitwisseling van stoffen tussen bloed en weefsels",
+          "Bloeddruk reguleren"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Via welk deel verloopt een reflex?",
+        "options": [
+          "De grote hersenen",
+          "Het ruggenmerg",
+          "De hersenstam",
+          "Het cerebellum"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk eiwit in rode bloedcellen bindt zuurstof?",
+        "options": [
+          "Amylase",
+          "Insuline",
+          "Hemoglobine",
+          "Collageen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het verschil tussen een slagader en een ader?",
+        "options": [
+          "Slagaders zijn groter",
+          "Slagaders voeren bloed van het hart weg; aders terug naar het hart",
+          "Aders bevatten altijd zuurstofrijk bloed",
+          "Er is geen verschil"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "theo": {
+    "title": "Biologische Theorie",
+    "leaves": [
+      {
+        "title": "Evolutie",
+        "theory": "<strong>Evolutie</strong> is de verandering van eigenschappen van populaties over generaties. Charles Darwin beschreef het mechanisme in 1859 in <em>On the Origin of Species</em>.\n\n<strong>Natuurlijke selectie</strong> werkt als volgt:\n1. Er is <em>variatie</em> binnen een populatie.\n2. Sommige varianten zijn beter aangepast aan de omgeving.\n3. Beter aangepaste individuen overleven vaker en krijgen meer nakomelingen.\n4. Hun kenmerken worden vaker doorgegeven (<em>erfelijkheid</em>).\n\n<strong>Andere evolutiemechanismen:</strong>\n• <em>Genetische drift</em> – toevallige veranderingen in kleine populaties.\n• <em>Seksuele selectie</em> – kenmerken die paarsingssucces bevorderen.\n• <em>Mutatie</em> – de bron van nieuwe variatie.\n\nEvolutie is geen 'progressie naar perfectie' — het is aanpassing aan de huidige omgeving."
+      },
+      {
+        "title": "Ecologie",
+        "theory": "<strong>Ecologie</strong> bestudeert de relaties tussen organismen en hun omgeving.\n\n<strong>Organisatieniveaus:</strong>\nIndividu → Populatie → Gemeenschap → Ecosysteem → Biosfeer\n\n<strong>Voedselwebben</strong> tonen wie wat eet:\n• <em>Producenten</em> (planten) maken energie via fotosynthese.\n• <em>Primaire consumenten</em> eten planten.\n• <em>Secundaire consumenten</em> eten primaire consumenten.\n• <em>Decomposers</em> (schimmels, bacteriën) breken dood materiaal af.\n\n<strong>Biodiversiteit</strong> verwijst naar de verscheidenheid van soorten in een ecosysteem. Een hoge biodiversiteit maakt ecosystemen veerkrachtiger.\n\nBedreigingen: habitatverlies, klimaatverandering, invasieve soorten en vervuiling."
+      },
+      {
+        "title": "Cellen",
+        "theory": "De <strong>cel</strong> is de kleinste levenseenheid. Er zijn twee hoofdtypen:\n\n<strong>Prokaryoten</strong>\n• Geen celkern; DNA ligt vrij in het cytoplasma.\n• Klein (~1-10 µm); bijv. bacteriën.\n• Bevatten geen membraangebonden organellen.\n\n<strong>Eukaryoten</strong>\n• Bezitten een <em>celkern</em> met kernmembraan.\n• Groter (~10-100 µm); bijv. planten, dieren, schimmels.\n• Hebben organellen met functies:\n  – <em>Mitochondriën</em>: cellulaire ademhaling (energie)\n  – <em>Chloroplasten</em>: fotosynthese (alleen in plantencellen)\n  – <em>Ribosomen</em>: eiwitsynthese\n  – <em>Golgi-apparaat</em>: transport en verwerking van eiwitten\n  – <em>Endoplasmatisch reticulum</em>: productie en transport\n\nAlle cellen hebben een celmembraan, ribosomen en DNA gemeen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is het centrale mechanisme van evolutie volgens Darwin?",
+        "options": [
+          "Genetische drift",
+          "Natuurlijke selectie",
+          "Mutatie",
+          "Seksuele selectie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk organisme is een producent in een voedselweb?",
+        "options": [
+          "Leeuw",
+          "Konijn",
+          "Eikenboom",
+          "Paddenstoel"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat onderscheidt een eukaryote cel van een prokaryote cel?",
+        "options": [
+          "Eukaryoten zijn kleiner",
+          "Eukaryoten hebben een celkern",
+          "Prokaryoten hebben mitochondriën",
+          "Prokaryoten zijn complexer"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk organel is verantwoordelijk voor de energieproductie (ademhaling) in eukaryote cellen?",
+        "options": [
+          "Ribosoom",
+          "Golgi-apparaat",
+          "Chloroplast",
+          "Mitochondrium"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is biodiversiteit?",
+        "options": [
+          "Het totale gewicht van alle organismen",
+          "De hoeveelheid CO₂ in een ecosysteem",
+          "De verscheidenheid van soorten in een ecosysteem",
+          "Het aantal producenten in een voedselweb"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "alg": {
+    "title": "Algemene Info",
+    "leaves": [
+      {
+        "title": "Wat is Biologie?",
+        "theory": "<strong>Biologie</strong> is de wetenschap die het leven bestudeert — van moleculen tot ecosystemen.\n\n<strong>Deelgebieden van biologie:</strong>\n• <em>Moleculaire biologie</em> – DNA, eiwitten, celsignalering.\n• <em>Celbiologie</em> – celstructuur en -functie.\n• <em>Genetica</em> – erfelijkheid en variatie.\n• <em>Fysiologie</em> – hoe organen en systemen werken.\n• <em>Ecologie</em> – relaties in de natuur.\n• <em>Evolutiebiologie</em> – oorsprong en verandering van soorten.\n\n<strong>Kenmerken van levende organismen:</strong>\n1. Celstructuur hebben\n2. Metabolisme uitvoeren (stofwisseling)\n3. Reageren op prikkels\n4. Groeien en zich ontwikkelen\n5. Zich voortplanten\n6. Zich aanpassen via evolutie\n\nBiologie is de basis voor geneeskunde, landbouw, biotechnologie en milieuwetenschappen."
+      },
+      {
+        "title": "Wetenschappelijk Werken",
+        "theory": "Wetenschap gebruikt een systematische methode om betrouwbare kennis op te bouwen.\n\n<strong>De wetenschappelijke methode:</strong>\n<strong>1. Observatie</strong> – Je ziet iets interessants of onverwachts.\n<strong>2. Vraagstelling</strong> – Formuleer een concrete onderzoeksvraag.\n<strong>3. Hypothese</strong> – Een testbare voorspelling: <em>Als ... dan ...</em>\n<strong>4. Experiment</strong> – Controleer variabelen; gebruik een controlegroep.\n<strong>5. Data-analyse</strong> – Verwerk resultaten objectief.\n<strong>6. Conclusie</strong> – Bevestigt of verwerpt de hypothese.\n<strong>7. Publicatie</strong> – Peer review zorgt voor kwaliteitscontrole.\n\n<strong>Belangrijk:</strong> Een hypothese kan nooit bewezen worden — alleen ondersteund of verworpen. Wetenschappelijke kennis is altijd voorlopig en open voor herziening bij nieuw bewijs."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke van de volgende is GEEN kenmerk van leven?",
+        "options": [
+          "Metabolisme",
+          "Reproductie",
+          "Kristallisatie",
+          "Reactie op prikkels"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een hypothese?",
+        "options": [
+          "Een bewezen feit",
+          "Een testbare voorspelling op basis van observatie",
+          "Een conclusie na het experiment",
+          "Een statistisch model"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het doel van een controlegroep in een experiment?",
+        "options": [
+          "Om het experiment te versnellen",
+          "Om een referentie te hebben zonder de testfactor",
+          "Om resultaten te publiceren",
+          "Om data te verzamelen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk biologisch deelgebied bestudeert DNA en eiwitten?",
+        "options": [
+          "Ecologie",
+          "Fysiologie",
+          "Moleculaire biologie",
+          "Evolutiebiologie"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "celad": {
+    "title": "Cel Ademhaling",
+    "leaves": [
+      {
+        "title": "Glycolyse",
+        "theory": "<strong>Glycolyse</strong> is de eerste stap van celademhaling en vindt plaats in het <strong>cytoplasma</strong>. Eén glucosemolecuul wordt omgezet naar twee moleculen <strong>pyrodruivenzuur (pyruvaat)</strong>.\n\nNetto opbrengst:\n• <strong>2 ATP</strong>\n• <strong>2 NADH</strong>\n\nGlycolyse is anaeroob — het heeft geen zuurstof nodig. Het is de oudste vorm van energiewinning en komt voor in vrijwel alle levende cellen."
+      },
+      {
+        "title": "Citroenzuurcyclus (Krebs)",
+        "theory": "De <strong>citroenzuurcyclus</strong> vindt plaats in de <strong>matrix van de mitochondriën</strong>. Pyruvaat wordt omgezet naar acetyl-CoA, dat de cyclus binnenkomt.\n\nPer cyclus levert dit:\n• <strong>3 NADH</strong>\n• <strong>1 FADH₂</strong>\n• <strong>1 ATP</strong>\n• <strong>CO₂</strong> als afvalproduct\n\nDe cyclus draait tweemaal per glucosemolecuul. Het is een centrale schakel in het metabolisme."
+      },
+      {
+        "title": "Oxidatieve Fosforylering",
+        "theory": "<strong>Oxidatieve fosforylering</strong> vindt plaats aan de <strong>binnenste mitochondriale membraan</strong>. NADH en FADH₂ geven elektronen af aan de elektronentransportketen.\n\nDit pompt H⁺-ionen over de membraan. Via <strong>ATP-synthase</strong> stromen die ionen terug en produceren zo ATP.\n\nOpbrengst: ~<strong>30-32 ATP</strong> per glucosemolecuul.\n\nZuurstof is de uiteindelijke elektronenacceptor: <code>O₂ + 4H⁺ + 4e⁻ → 2H₂O</code>\n\nTotale opbrengst aerobe ademhaling: ~36-38 ATP."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Waar vindt glycolyse plaats?",
+        "options": [
+          "Mitochondriën",
+          "Cytoplasma",
+          "Celkern",
+          "Ribosomen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het eindproduct van glycolyse (per glucosemolecuul)?",
+        "options": [
+          "2 pyruvaat",
+          "CO₂ en H₂O",
+          "Acetyl-CoA",
+          "FADH₂"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Hoeveel ATP levert glycolyse netto op?",
+        "options": [
+          "0",
+          "2",
+          "36",
+          "38"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waar vindt de citroenzuurcyclus plaats?",
+        "options": [
+          "Cytoplasma",
+          "Celkern",
+          "Mitochondriale matrix",
+          "Ribosomen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de rol van zuurstof in aerobe ademhaling?",
+        "options": [
+          "Energiebron",
+          "Uiteindelijke elektronenacceptor",
+          "Startmateriaal van glycolyse",
+          "Katalysator van de Krebs-cyclus"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk molecuul verbindt glycolyse met de citroenzuurcyclus?",
+        "options": [
+          "ATP",
+          "NADH",
+          "Acetyl-CoA",
+          "FADH₂"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoeveel ATP levert de volledige aerobe afbraak van glucose op?",
+        "options": [
+          "2",
+          "8",
+          "18",
+          "36-38"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat wordt gemaakt door ATP-synthase?",
+        "options": [
+          "NADH",
+          "CO₂",
+          "ATP",
+          "Glucose"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk gas is een afvalproduct van de citroenzuurcyclus?",
+        "options": [
+          "O₂",
+          "N₂",
+          "CO₂",
+          "H₂"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk proces kan energie leveren zonder zuurstof?",
+        "options": [
+          "Oxidatieve fosforylering",
+          "Krebs-cyclus",
+          "Glycolyse",
+          "Elektronentransport"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "eiwit": {
+    "title": "Eiwitsynthese",
+    "leaves": [
+      {
+        "title": "Transcriptie",
+        "theory": "<strong>Transcriptie</strong> is het kopiëren van DNA naar <strong>mRNA</strong>. Het vindt plaats in de <strong>celkern</strong>.\n\nStappen:\n1. <em>RNA-polymerase</em> bindt aan de promoter van het gen.\n2. De DNA-dubbelhelix wordt geopend.\n3. mRNA wordt gesynthetiseerd door complementaire basenparing (A↔U, T↔A, C↔G).\n4. Het mRNA verlaat de kern via kernporieën.\n\nHet mRNA draagt de genetische code naar de ribosomen."
+      },
+      {
+        "title": "Translatie",
+        "theory": "<strong>Translatie</strong> is het 'vertalen' van mRNA naar een <strong>eiwit (aminozuurketen)</strong>. Dit gebeurt op de <strong>ribosomen</strong>.\n\nBelangrijke moleculen:\n• <strong>mRNA</strong> – draagt de code (codons van 3 basen)\n• <strong>tRNA</strong> – brengt het juiste aminozuur\n• <strong>Ribosoom</strong> – verbindt aminozuren aaneenpeptidebinding\n\nStopcodons (UAA, UAG, UGA) beëindigen de keten.\n\nHet eiwit vouwt daarna in een 3D-structuur."
+      },
+      {
+        "title": "Genregulatie",
+        "theory": "Niet alle genen zijn altijd actief. <strong>Genregulatie</strong> bepaalt welke genen aan of uit worden gezet.\n\nBij prokaryoten: het <strong>operon-model</strong> (bijv. het lac-operon bij E. coli). Een repressor kan transcriptie blokkeren.\n\nBij eukaryoten zijn regulatiemechanismen complexer:\n• <em>Transcriptiefactoren</em> — eiwitten die aan DNA binden\n• <em>Epigenetica</em> — chemische modificaties van DNA of histonen\n• <em>RNA-splicing</em> — introns worden verwijderd, exons worden samengevoegd\n\nGenregulatie bepaalt de differentiatie van cellen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Waar vindt transcriptie plaats?",
+        "options": [
+          "Ribosomen",
+          "Mitochondriën",
+          "Celkern",
+          "Cytoplasma"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk molecuul wordt geproduceerd bij transcriptie?",
+        "options": [
+          "DNA",
+          "mRNA",
+          "tRNA",
+          "Eiwit"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een codon?",
+        "options": [
+          "Een aminozuur",
+          "Een reeks van 3 basen op mRNA",
+          "Een enzym",
+          "Een soort ribosoom"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke rol heeft tRNA bij translatie?",
+        "options": [
+          "Het kopieert DNA",
+          "Het brengt aminozuren naar het ribosoom",
+          "Het produceert ATP",
+          "Het verwijdert introns"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke basen paren in RNA met adenine (A)?",
+        "options": [
+          "Thymine (T)",
+          "Uracil (U)",
+          "Guanine (G)",
+          "Cytosine (C)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een stopcodon?",
+        "options": [
+          "Start de translatie",
+          "Beëindigt de aminozuurketen",
+          "Verdubbelt het DNA",
+          "Maakt ATP"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is epigenetica?",
+        "options": [
+          "Mutaties in DNA",
+          "Chemische modificaties die genexpressie beïnvloeden zonder DNA-volgorde te veranderen",
+          "Een soort virus",
+          "De structuur van ribosomen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat verwijdert RNA-splicing?",
+        "options": [
+          "Exons",
+          "Introns",
+          "Codons",
+          "Histonen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel basen vormen één codon?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het eindproduct van translatie?",
+        "options": [
+          "mRNA",
+          "DNA",
+          "Een aminozuurketen (eiwit)",
+          "ATP"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "celcyclus": {
+    "title": "Celdeling",
+    "leaves": [
+      {
+        "title": "Celcyclus",
+        "theory": "De <strong>celcyclus</strong> beschrijft de stadia die een cel doorloopt van de ene deling tot de volgende.\n\nFasen:\n• <strong>G1-fase</strong> – groei, normale celactiviteit\n• <strong>S-fase</strong> – DNA-replicatie\n• <strong>G2-fase</strong> – verdere groei, voorbereiding op deling\n• <strong>M-fase</strong> – mitose (celdeling)\n\nDe celdeling wordt gecontroleerd door <em>checkpoints</em>. Fouten in deze controle kunnen leiden tot kanker."
+      },
+      {
+        "title": "Mitose",
+        "theory": "<strong>Mitose</strong> is de gewone celdeling waarbij twee identieke dochtercellen ontstaan. Dit is nodig voor groei en weefselreparatie.\n\nFasen van mitose:\n1. <strong>Profase</strong> – chromosomen condenseren, spoellichaam vormt\n2. <strong>Metafase</strong> – chromosomen richten zich op de celplaat\n3. <strong>Anafase</strong> – zusterchromatiden worden gescheiden naar de polen\n4. <strong>Telofase</strong> – nieuwe kernen vormen, cel splitst\n\nResultaat: 2 diploïde dochtercellen (2n → 2n)."
+      },
+      {
+        "title": "Meiose",
+        "theory": "<strong>Meiose</strong> is de reductiedeling die haploïde geslachtscellen (gameten) produceert.\n\nTwee opeenvolgende delingen:\n• <strong>Meiose I</strong> – homologe chromosomenparen worden gescheiden\n• <strong>Meiose II</strong> – zusterchromatiden worden gescheiden\n\nResultaat: 4 haploïde cellen (2n → n).\n\nBelangrijk: <em>crossing-over</em> tijdens profase I zorgt voor genetische variatie. Meiose leidt dus tot genetisch unieke gameten."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In welke fase van de celcyclus wordt DNA gekopieerd?",
+        "options": [
+          "G1-fase",
+          "S-fase",
+          "G2-fase",
+          "M-fase"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel dochtercellen levert mitose op?",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het ploïdie-niveau van dochtercellen na mitose?",
+        "options": [
+          "Haploïd (n)",
+          "Diploïd (2n)",
+          "Triploïd (3n)",
+          "Tetraploïd (4n)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel cellen ontstaan er na meiose?",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zorgt voor genetische variatie tijdens meiose I?",
+        "options": [
+          "DNA-replicatie",
+          "Crossing-over",
+          "Checkpoints",
+          "RNA-splicing"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke fase van mitose stelt chromosomen op langs de celplaat?",
+        "options": [
+          "Profase",
+          "Metafase",
+          "Anafase",
+          "Telofase"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor dient mitose in het lichaam?",
+        "options": [
+          "Voortplanting",
+          "Groei en weefselreparatie",
+          "Aanmaak van gameten",
+          "Energieproductie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat kunnen fouten in celcyclus-checkpoints veroorzaken?",
+        "options": [
+          "Snellere groei",
+          "Kanker",
+          "Meer ATP-productie",
+          "Betere genregulatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat produceert meiose?",
+        "options": [
+          "Somatische cellen",
+          "Gameten",
+          "Stamcellen",
+          "Bloedcellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het doel van crossing-over?",
+        "options": [
+          "DNA te kopiëren",
+          "Energie te produceren",
+          "Genetische variatie te verhogen",
+          "Chromosomen te verdubbelen"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "erfelijk": {
+    "title": "Erfelijkheid",
+    "leaves": [
+      {
+        "title": "Wetten van Mendel",
+        "theory": "Gregor Mendel ontdekte de basale wetten van erfelijkheid via kruisingsproeven met erwten.\n\n<strong>Eerste wet – wet van scheiding</strong>:\nAllelenparen scheiden tijdens gametvorming. Elk gameet krijgt slechts één allel per genenpaar.\n\n<strong>Tweede wet – wet van vrije combinatie</strong>:\nGenen op verschillende chromosomenparen worden onafhankelijk van elkaar verdeeld.\n\n<strong>Begrippen</strong>:\n• <em>Dominant</em> – allel dat tot uiting komt\n• <em>Recessief</em> – allel dat gemaskeerd wordt door dominant allel\n• <em>Homozygoot</em> – twee gelijke allelen (AA of aa)\n• <em>Heterozygoot</em> – twee verschillende allelen (Aa)"
+      },
+      {
+        "title": "Fenotype & Genotype",
+        "theory": "Het <strong>genotype</strong> is de genetische samenstelling (bijv. Aa). Het <strong>fenotype</strong> is het waarneembare kenmerk (bijv. bruine ogen).\n\nEen <strong>kruisingsschema (Punnett-vierkant)</strong> helpt kansen te berekenen.\n\nBijvoorbeeld: Aa × Aa geeft:\n• 25% AA\n• 50% Aa\n• 25% aa\n\nAls A dominant is over a: fenotypisch 75% dominant, 25% recessief.\n\n<strong>Codominantie</strong>: beide allelen komen tot uiting (bijv. bloedgroep AB).\n<strong>Onvolledige dominantie</strong>: tussenvorm (bijv. rode × witte bloem → roze)."
+      },
+      {
+        "title": "Geslachtsgebonden Erfelijkheid",
+        "theory": "Sommige genen liggen op de geslachtschromosomen (X of Y). Mannen zijn XY, vrouwen XX.\n\n<strong>X-gebonden recessieve aandoeningen</strong> (bijv. kleurenblindheid, hemofilie):\n• Mannen hebben maar één X, dus ze krijgen de aandoening als het allel recessief aanwezig is.\n• Vrouwen kunnen draagster zijn (Xᴬ Xᵃ) zonder symptomen.\n\nDit verklaart waarom bepaalde aandoeningen vaker bij mannen voorkomen.\n\n<strong>Autosomaal</strong> = niet geslachtsgebonden, ligt op chromosomen 1-22."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een dominant allel?",
+        "options": [
+          "Een allel dat gemaskeerd wordt",
+          "Een allel dat tot uiting komt",
+          "Een allel op het Y-chromosoom",
+          "Een gemuteerd allel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk genotype is heterozygoot?",
+        "options": [
+          "AA",
+          "aa",
+          "Aa",
+          "XX"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de kans op een recessief fenotype bij de kruising Aa × Aa?",
+        "options": [
+          "0%",
+          "25%",
+          "50%",
+          "75%"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een Punnett-vierkant?",
+        "options": [
+          "Een type cel",
+          "Een schema om kruisingskansen te berekenen",
+          "Een chromosoom",
+          "Een enzym"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke bloedgroep is een voorbeeld van codominantie?",
+        "options": [
+          "A",
+          "B",
+          "AB",
+          "O"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom komen X-gebonden recessieve aandoeningen vaker voor bij mannen?",
+        "options": [
+          "Mannen hebben meer hormonen",
+          "Mannen hebben maar één X-chromosoom",
+          "Vrouwen hebben extra genen",
+          "Mannen leven gevaarlijker"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat beschrijft de tweede wet van Mendel?",
+        "options": [
+          "Allelen scheiden tijdens gametvorming",
+          "Genen op verschillende chromosomenparen combineren onafhankelijk",
+          "Dominantie van allelen",
+          "Geslachtsgebonden overerving"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het fenotype?",
+        "options": [
+          "De DNA-volgorde",
+          "Het waarneembare kenmerk",
+          "Het aantal chromosomen",
+          "De allelen op een chromosoom"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een draagster bij X-gebonden overerving?",
+        "options": [
+          "Een vrouw die de aandoening heeft",
+          "Een vrouw met één recessief allel op de X zonder symptomen",
+          "Een man met de aandoening",
+          "Een gemuteerd gen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel allelen voor één gen heeft een diploïde cel?",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "Hangt af van het gen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "immuun": {
+    "title": "Immuunsysteem",
+    "leaves": [
+      {
+        "title": "Aangeboren Immuniteit",
+        "theory": "Het <strong>aangeboren immuunsysteem</strong> is de eerste verdedigingslinie. Het is niet specifiek en reageert snel op elk vreemd indringer.\n\n<strong>Barrières</strong>:\n• Huid – fysieke barrière\n• Slijmvliezen – vangen pathogenen op\n• Cilia – bewegen slijm weg\n\n<strong>Cellulaire respons</strong>:\n• <em>Macrofagen</em> – eten bacteriën op (fagocytose)\n• <em>Neutrofielen</em> – snel reagerende witte bloedcellen\n• <em>NK-cellen</em> – doden geïnfecteerde cellen\n\nOntsteking is een teken van actieve aangeboren immuniteit."
+      },
+      {
+        "title": "Verworven Immuniteit",
+        "theory": "Het <strong>verworven (adaptieve) immuunsysteem</strong> is specifiek en heeft geheugen.\n\nBelangrijke cellen:\n• <strong>B-lymfocyten</strong> – produceren antilichamen\n• <strong>T-helpercellen</strong> – activeren B-cellen en cytotoxische T-cellen\n• <strong>Cytotoxische T-cellen</strong> – doden geïnfecteerde lichaamscellen\n• <strong>Geheugen-B- en T-cellen</strong> – zorgen voor snelle reactie bij herinfectie\n\n<strong>Antilichamen</strong> (immunoglobulinen) binden aan specifieke antigenen en neutraliseren ze of markeren ze voor vernietiging."
+      },
+      {
+        "title": "Vaccinatie & Allergie",
+        "theory": "<strong>Vaccinatie</strong> werkt door het immuunsysteem bloot te stellen aan een onschadelijke versie van een pathogeen. Het systeem maakt antilichamen en geheugen-cellen aan.\n\nBij een echte infectie later: het geheugen zorgt voor een snelle, krachtige reactie.\n\n<strong>Allergie</strong> is een overdreven immuunrespons op een onschadelijke stof (allergeen). IgE-antilichamen activeren mestcellen die histamine vrijgeven → symptomen.\n\n<strong>Auto-immuunziekte</strong>: het immuunsysteem valt eigen cellen aan (bijv. type 1 diabetes, MS)."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is fagocytose?",
+        "options": [
+          "Aanmaak van antilichamen",
+          "Het opeten van pathogenen door cellen zoals macrofagen",
+          "DNA-replicatie",
+          "Celademhaling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke cellen produceren antilichamen?",
+        "options": [
+          "T-cellen",
+          "NK-cellen",
+          "B-lymfocyten",
+          "Macrofagen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het voordeel van geheugen-B-cellen?",
+        "options": [
+          "Ze maken energie aan",
+          "Ze zorgen voor een snellere reactie bij herinfectie",
+          "Ze maken rode bloedcellen aan",
+          "Ze produceren histamine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe werkt een vaccin?",
+        "options": [
+          "Het doodt bacteriën direct",
+          "Het stimuleert immuungeheugen zonder ernstige ziekte",
+          "Het maakt antilichamen artificieel",
+          "Het verwijdert virussen uit het bloed"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat veroorzaakt allergiesymptomen?",
+        "options": [
+          "T-cellen",
+          "Antilichamen van type IgG",
+          "Histamine vrijgesteld door mestcellen",
+          "Macrofagen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een auto-immuunziekte?",
+        "options": [
+          "Allergie voor pollen",
+          "Infectie door een virus",
+          "Het immuunsysteem valt eigen weefsel aan",
+          "Een erfelijke aandoening"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke cellen doden geïnfecteerde lichaamscellen direct?",
+        "options": [
+          "B-lymfocyten",
+          "Cytotoxische T-cellen",
+          "Macrofagen",
+          "Mestcellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen aangeboren en verworven immuniteit?",
+        "options": [
+          "Aangeboren is specifiek, verworven is niet-specifiek",
+          "Aangeboren is niet-specifiek en snel, verworven is specifiek en trager maar met geheugen",
+          "Er is geen verschil",
+          "Verworven immuniteit heeft geen geheugen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk orgaan rijpt T-lymfocyten?",
+        "options": [
+          "Lever",
+          "Milt",
+          "Thymus",
+          "Beenmerg"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zijn antigenen?",
+        "options": [
+          "Stoffen geproduceerd door het immuunsysteem",
+          "Moleculen op pathogenen die een immuunrespons uitlokken",
+          "Witte bloedcellen",
+          "Hormonen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "hormonen": {
+    "title": "Hormonenstelsel",
+    "leaves": [
+      {
+        "title": "Hormonen & Klieren",
+        "theory": "Het <strong>endocriene (hormonale) stelsel</strong> regelt lichaamsprocessen via <strong>hormonen</strong> — chemische boodschappers die via het bloed worden vervoerd.\n\nBelangrijke klieren:\n• <strong>Hypofyse</strong> – 'meesterklier', regelt andere klieren\n• <strong>Schildklier</strong> – thyroxine, regelt metabolisme\n• <strong>Bijnieren</strong> – adrenaline (stressreactie), cortisol\n• <strong>Alvleesklier (pancreas)</strong> – insuline en glucagon (bloedsuikerregeling)\n• <strong>Geslachtsklieren</strong> – oestrogeen, testosteron"
+      },
+      {
+        "title": "Bloedsuikerregeling",
+        "theory": "De <strong>alvleesklier</strong> regelt de bloedglucosespiegel via twee hormonen:\n\n• <strong>Insuline</strong> – vrijgesteld als bloedsuiker <em>stijgt</em>. Stimuleert cellen glucose op te nemen en glycogeen te vormen.\n• <strong>Glucagon</strong> – vrijgesteld als bloedsuiker <em>daalt</em>. Stimuleert de lever om glycogeen af te breken naar glucose.\n\nDit is een voorbeeld van <strong>negatieve terugkoppeling</strong>.\n\n<strong>Diabetes mellitus type 1</strong>: insulineproductie ontbreekt (auto-immuun).\n<strong>Diabetes mellitus type 2</strong>: cellen reageren onvoldoende op insuline."
+      },
+      {
+        "title": "Feedback Mechanismen",
+        "theory": "<strong>Negatieve terugkoppeling</strong> is het meest voorkomende regulatiemechanisme in het lichaam. Het herstelt verstoringen en handhaaft homeostase.\n\nVoorbeeld: lichaamstemperatuur\n• Te warm → zweten, meer bloedstroom naar huid\n• Te koud → rillen, minder bloedstroom naar huid\n\n<strong>Positieve terugkoppeling</strong> versterkt een proces (zeldzamer). Voorbeeld: oxytocine bij de bevalling.\n\nDe hypofyse en hypothalamus vormen een centraal controlesysteem voor veel hormonale assen (bijv. de HPA-as voor stressrespons)."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk hormoon verlaagt de bloedglucosespiegel?",
+        "options": [
+          "Glucagon",
+          "Adrenaline",
+          "Insuline",
+          "Cortisol"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk hormoon verhoogt de bloedglucosespiegel?",
+        "options": [
+          "Insuline",
+          "Glucagon",
+          "Thyroxine",
+          "Oestrogeen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke klier wordt de 'meesterklier' genoemd?",
+        "options": [
+          "Schildklier",
+          "Bijnier",
+          "Hypofyse",
+          "Alvleesklier"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is negatieve terugkoppeling?",
+        "options": [
+          "Een mechanisme dat een afwijking versterkt",
+          "Een mechanisme dat een afwijking corrigeert en homeostase handhaaft",
+          "Een type hormoon",
+          "Een vorm van positieve feedback"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hormoon maakt de schildklier aan?",
+        "options": [
+          "Insuline",
+          "Adrenaline",
+          "Thyroxine",
+          "Testosteron"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat regelt adrenaline?",
+        "options": [
+          "Bloedsuikerspiegel langetermijn",
+          "De stressreactie (vecht-of-vlucht)",
+          "Calciumopname in botten",
+          "Groei van cellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen diabetes type 1 en type 2?",
+        "options": [
+          "Type 1 is erfelijk, type 2 niet",
+          "Type 1: geen insulineproductie; type 2: insulineresistentie",
+          "Type 2 is ernstiger dan type 1",
+          "Er is geen verschil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke klier produceert oestrogeen en progesteron?",
+        "options": [
+          "Schildklier",
+          "Bijnier",
+          "Hypofyse",
+          "Eierstokken"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Via welk systeem worden hormonen vervoerd?",
+        "options": [
+          "Zenuwstelsel",
+          "Lymfestelsel",
+          "Bloedsomloop",
+          "Spijsverteringskanaal"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is glycogeen?",
+        "options": [
+          "Een hormoon van de schildklier",
+          "Een opgeslagen vorm van glucose in lever en spieren",
+          "Een enzym in de alvleesklier",
+          "Een type lipide"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "ademhaling": {
+    "title": "Ademhalingsstelsel",
+    "leaves": [
+      {
+        "title": "Bouw van het Ademhalingsstelsel",
+        "theory": "Het <strong>ademhalingsstelsel</strong> zorgt voor de uitwisseling van zuurstof en kooldioxide tussen het lichaam en de buitenlucht.\n\n<strong>Traject van lucht</strong>:\nNeus/mond → Keelholte → Strottenhoofd → Luchtpijp (trachea) → Bronchiën → Bronchiolen → <strong>Longblaasjes (alveolen)</strong>\n\nDe alveolen zijn de gasuitwisselingseenheden. Ze hebben:\n• Een wand van slechts één cellaag dik\n• Een groot oppervlak (~70 m²)\n• Een rijke capillaire bloedvaten netwerk"
+      },
+      {
+        "title": "Gasuitwisseling",
+        "theory": "<strong>Gasuitwisseling</strong> vindt plaats door diffusie over de alveolaire wand.\n\n• <strong>O₂</strong> diffundeert van alveolus naar bloed (hoge pO₂ → lage pO₂)\n• <strong>CO₂</strong> diffundeert van bloed naar alveolus (hoge pCO₂ → lage pCO₂)\n\nIn het bloed bindt O₂ aan hemoglobine in rode bloedcellen.\nCO₂ wordt grotendeels vervoerd als <strong>bicarbonaationen (HCO₃⁻)</strong> in het plasma.\n\nDe gasuitwisseling in de weefsels verloopt omgekeerd aan die in de longen."
+      },
+      {
+        "title": "Ademhaling & Controle",
+        "theory": "Ademhaling wordt gecontroleerd door het <strong>ademhalingscentrum in de hersenstam</strong>.\n\nRitmische signalen sturen de tussenribsspieren en het middenrif aan:\n• <strong>Inademing</strong>: middenrif trekt samen → volume long neemt toe → lucht stroomt naar binnen\n• <strong>Uitademing</strong>: middenrif ontspant → volume daalt → lucht stroomt naar buiten\n\nCO₂-niveau in het bloed is de voornaamste prikkel voor meer of minder ademhalen.\n\nAandoeningen: astma (vernauwd bronchiën), COPD, longontsteking."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat zijn alveolen?",
+        "options": [
+          "Spiercellen in de longen",
+          "Longblaasjes waar gasuitwisseling plaatsvindt",
+          "Bloedvaten in de longen",
+          "Cellen die slijm produceren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "In welke richting diffundeert O₂ bij de gasuitwisseling in de longen?",
+        "options": [
+          "Van bloed naar alveolus",
+          "Van alveolus naar bloed",
+          "Van spierweefsel naar bloed",
+          "Van bloed naar hersenen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe wordt CO₂ hoofdzakelijk vervoerd in het bloed?",
+        "options": [
+          "Gebonden aan hemoglobine",
+          "Als bicarbonaationen (HCO₃⁻)",
+          "Als gasbellen",
+          "Opgelost als CO₂-gas"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat meet het ademhalingscentrum in de hersenstam?",
+        "options": [
+          "O₂-niveau in de longen",
+          "CO₂-niveau in het bloed",
+          "Temperatuur van de longen",
+          "Bloeddruk"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat gebeurt er bij inademing?",
+        "options": [
+          "Middenrif ontspant",
+          "Volume van de longen neemt af",
+          "Middenrif trekt samen, volume neemt toe",
+          "Lucht stroomt naar buiten"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom hebben alveolen een groot gasuitwisselingsoppervlak?",
+        "options": [
+          "Ze zijn groot en dik",
+          "Er zijn er miljoenen met dunne wanden",
+          "Ze bevatten veel hemoglobine",
+          "Ze zijn gevuld met vloeistof"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is astma?",
+        "options": [
+          "Ontsteking van de longblaasjes",
+          "Vernauwing van de bronchiën",
+          "Te veel CO₂ in het bloed",
+          "Lage bloeddruk"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waar vindt gasuitwisseling plaats?",
+        "options": [
+          "Neus",
+          "Luchtpijp",
+          "Alveolen",
+          "Bronchiën"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Aan welk molecuul bindt O₂ in het bloed?",
+        "options": [
+          "Albumine",
+          "Glucose",
+          "Hemoglobine",
+          "Insuline"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Via welk mechanisme verplaatsen gassen zich over de alveolaire wand?",
+        "options": [
+          "Actief transport",
+          "Osmose",
+          "Diffusie",
+          "Endocytose"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "nieren": {
+    "title": "Nieren & Uitscheiding",
+    "leaves": [
+      {
+        "title": "Bouw van de Nier",
+        "theory": "De <strong>nieren</strong> filteren bloed en produceren urine. Elke nier bevat ongeveer <strong>1 miljoen nefronen</strong> — de functionele eenheden.\n\nEen nefron bestaat uit:\n• <strong>Glomerulus</strong> – bloedvatenknoop waar ultrafiltratie plaatsvindt\n• <strong>Bowman-kapsel</strong> – omhult de glomerulus\n• <strong>Tubulus</strong> – waar reabsorptie en secretie plaatsvinden\n• <strong>Verzamelbuisje</strong> – leidt urine naar het nierbekken\n\nBloed stroomt via de nierslagader naar de nier; gefilterd bloed verlaat via de nierader."
+      },
+      {
+        "title": "Urinevorming",
+        "theory": "Urinevorming verloopt in drie stappen:\n\n<strong>1. Ultrafiltratie</strong> (glomerulus):\nKleine moleculen (water, glucose, ionen, ureum) worden uit het bloed geperst.\n\n<strong>2. Selectieve reabsorptie</strong> (tubulus):\nNutzame stoffen (glucose, aminozuren, water) worden teruggenomen naar het bloed.\n\n<strong>3. Secretie</strong> (tubulus):\nSchadelijke stoffen worden extra uitgescheiden.\n\nHet eindproduct is <strong>urine</strong>, bestaande uit water, ureum, zouten en andere afvalstoffen."
+      },
+      {
+        "title": "Regulatie van Water & Zouten",
+        "theory": "De nieren reguleren de <strong>osmotische balans</strong> van het bloed.\n\n<strong>ADH (antidiuretisch hormoon)</strong>:\n• Vrijgesteld als het bloed te geconcentreerd is\n• Stimuleert de nieren om meer water terug te absorberen\n• Urine wordt geconcentreerder en kleiner in volume\n\n<strong>Aldosteron</strong>:\n• Regelt Na⁺- en K⁺-balans\n• Stimuleert terugresorptie van natrium\n\nNierziekten (bijv. nierfalen) kunnen leiden tot ophoping van afvalstoffen en verstoring van de waterbalans."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de functionele eenheid van de nier?",
+        "options": [
+          "Glomerulus",
+          "Nefron",
+          "Tubulus",
+          "Ureter"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ultrafiltratie?",
+        "options": [
+          "Reabsorptie van glucose",
+          "Persing van kleine moleculen uit het bloed in de Bowman-kapsel",
+          "Secretie van ionen",
+          "Productie van ADH"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke stof wordt normaal VOLLEDIG teruggereabsorbeerd uit het filtraat?",
+        "options": [
+          "Ureum",
+          "Water",
+          "Glucose",
+          "Natrium"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat stimuleert ADH?",
+        "options": [
+          "Meer urine produceren",
+          "Meer water terugreabsorberen",
+          "Meer glucose opnemen",
+          "Bloeddruk verlagen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ureum?",
+        "options": [
+          "Een hormoon",
+          "Een afvalproduct van eiwitafbraak",
+          "Een suiker",
+          "Een enzym"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat regelt aldosteron?",
+        "options": [
+          "Bloedsuiker",
+          "Natrium- en kaliumbalans",
+          "Ademhaling",
+          "Hartslag"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk orgaan produceert urine?",
+        "options": [
+          "Lever",
+          "Hart",
+          "Nier",
+          "Alvleesklier"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waar vindt ultrafiltratie plaats?",
+        "options": [
+          "Tubulus",
+          "Glomerulus",
+          "Verzamelbuisje",
+          "Ureter"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de functie van de tubulus in het nefron?",
+        "options": [
+          "Bloed filteren",
+          "Hormonen aanmaken",
+          "Selectieve reabsorptie en secretie",
+          "Urine opslaan"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het gevolg van een laag ADH-niveau?",
+        "options": [
+          "Geconcentreerde urine",
+          "Veel verdunde urine",
+          "Hoge bloeddruk",
+          "Te veel glucose in bloed"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "spieren": {
+    "title": "Bewegingsapparaat",
+    "leaves": [
+      {
+        "title": "Skelet",
+        "theory": "Het <strong>skelet</strong> heeft vier hoofdfuncties:\n• Ondersteuning\n• Bescherming van organen\n• Beweging (samen met spieren)\n• Bloedaanmaak (in het beenmerg)\n\nHet menselijk lichaam heeft <strong>206 botten</strong>.\n\n<strong>Gewrichten</strong> verbinden botten en maken beweging mogelijk:\n• <em>Scharniersgewricht</em> – elleboog (één richting)\n• <em>Kogelgewricht</em> – heup, schouder (alle richtingen)\n\n<strong>Botten</strong> bestaan uit compact bot (buitenlaag) en sponsachtig bot (binnenin), gevuld met beenmerg."
+      },
+      {
+        "title": "Spieren & Contractie",
+        "theory": "Er zijn drie types spierweefsel:\n• <strong>Skeletspieren</strong> – vrijwillig, gestreept, voor beweging\n• <strong>Hartspier</strong> – onvrijwillig, gestreept, in het hart\n• <strong>Gladde spieren</strong> – onvrijwillig, in organen en bloedvaten\n\n<strong>Spiercontractie</strong> werkt via het <em>schuiffilamentmodel</em>:\n• Actine en myosinefilamenten glijden langs elkaar\n• ATP levert de energie\n• Calciumionen activeren de contractie\n\nSpieren werken in <strong>antagonistische paren</strong>: als de ene aanspant, ontspant de andere."
+      },
+      {
+        "title": "Botten & Gewrichten",
+        "theory": "<strong>Beenweefsel</strong> wordt voortdurend afgebroken en opgebouwd (remodeling).\n\nBelangrijke stoffen:\n• <strong>Calcium</strong> en <strong>fosfaat</strong> – mineralen die bot hard maken\n• <strong>Vitamine D</strong> – noodzakelijk voor calciumopname\n• <strong>Collageen</strong> – geeft elasticiteit aan bot\n\n<strong>Kraakbeen</strong> bedekt gewrichtsoppervlakken en absorbeert schokken.\n\nAandoeningen:\n• <em>Osteoporose</em> – verlies van botdichtheid\n• <em>Artritis</em> – ontsteking van gewrichten"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoeveel botten heeft het volwassen menselijk lichaam?",
+        "options": [
+          "106",
+          "206",
+          "306",
+          "406"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een kogelgewricht?",
+        "options": [
+          "Een gewricht dat slechts één bewegingsrichting toestaat",
+          "Een gewricht dat beweging in alle richtingen toestaat",
+          "Een vast gewricht",
+          "Een kunstmatig gewricht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk type spierweefsel is vrijwillig bestuurbaar?",
+        "options": [
+          "Gladde spier",
+          "Hartspier",
+          "Skeletspier",
+          "Alle spieren"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat levert energie voor spiercontractie?",
+        "options": [
+          "Glucose direct",
+          "ATP",
+          "CO₂",
+          "Insuline"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het schuiffilamentmodel?",
+        "options": [
+          "Een model voor botgroei",
+          "Het mechanisme waarbij actine en myosine langs elkaar glijden",
+          "Een model voor zenuwimpulsen",
+          "Een type gewricht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn antagonistische spieren?",
+        "options": [
+          "Spieren die samenwerken in dezelfde richting",
+          "Spieren die tegenovergesteld werken",
+          "Spieren aan de hartspier",
+          "Spieren zonder bloedtoevoer"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke vitamine is noodzakelijk voor calciumopname?",
+        "options": [
+          "Vitamine A",
+          "Vitamine B12",
+          "Vitamine C",
+          "Vitamine D"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is osteoporose?",
+        "options": [
+          "Ontsteking van gewrichten",
+          "Verlies van botdichtheid",
+          "Spierverlamming",
+          "Een type artritis"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke functies heeft het skelet?",
+        "options": [
+          "Alleen ondersteuning",
+          "Ondersteuning, bescherming, beweging, bloedaanmaak",
+          "Alleen beweging",
+          "Beweging en bloedaanmaak"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke ionen activeren spiercontractie?",
+        "options": [
+          "Natriumionen (Na⁺)",
+          "Calciumionen (Ca²⁺)",
+          "Kaliumionen (K⁺)",
+          "Chloride-ionen (Cl⁻)"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "zintuigen": {
+    "title": "Zintuigen",
+    "leaves": [
+      {
+        "title": "Het Oog",
+        "theory": "Het <strong>oog</strong> zet licht om in zenuwimpulsen.\n\nBelangrijke structuren:\n• <strong>Cornea</strong> – breekt licht, transparant buitenlaag\n• <strong>Pupil</strong> – opening waardoor licht binnenkomt\n• <strong>Lens</strong> – focusseert licht op het netvlies (accommodatie)\n• <strong>Iris</strong> – regelt de pupilgrootte (lichtintensiteit)\n• <strong>Netvlies (retina)</strong> – bevat fotoreceptoren:\n  – <em>Kegeltjes</em>: kleurwaarneming, fel licht\n  – <em>Staafjes</em>: zwart-wit, zwak licht\n• <strong>Oogzenuw</strong> – stuurt signalen naar de hersenen"
+      },
+      {
+        "title": "Het Oor",
+        "theory": "Het <strong>oor</strong> heeft twee functies: horen en evenwicht.\n\n<strong>Horen</strong>:\nGeluidsignalen → trommelvlies → gehoorbeentjes (hamer, aambeeld, stijgbeugel) → slakkenhuis (cochlea) → haarcellen → gehoorzenuw\n\n<strong>Evenwicht</strong>:\nDe <em>halfcirkelvormige kanalen</em> meten rotatiebewegingen.\nDe <em>utriculus en sacculus</em> meten lineaire versnelling en zwaartekracht.\n\nOorafwijkingen: oorsuizen (tinnitus), gehoorverlies door lawaai."
+      },
+      {
+        "title": "Andere Zintuigen",
+        "theory": "<strong>Reuk</strong>: chemoreceptoren in het neusslijmvlies detecteren geurmoleculen. Direct verbonden met het limbisch systeem (emotie, geheugen).\n\n<strong>Smaak</strong>: smaakpapillen op de tong herkennen vijf basissmaken: zoet, zuur, zout, bitter, umami.\n\n<strong>Tastzin</strong>: huid bevat verschillende receptoren voor druk, temperatuur, pijn.\n\n<strong>Proprioceptie</strong>: geeft het lichaam informatie over de positie van ledematen zonder visuele controle."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke cellen in het netvlies zijn verantwoordelijk voor kleurwaarneming?",
+        "options": [
+          "Staafjes",
+          "Kegeltjes",
+          "Haarcellen",
+          "Ganglioncellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de functie van de iris?",
+        "options": [
+          "Licht breken",
+          "Licht focusseren op het netvlies",
+          "De pupilgrootte regelen",
+          "Beelden interpreteren"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk onderdeel van het oor detecteert geluid?",
+        "options": [
+          "Halfcirkelvormige kanalen",
+          "Slakkenhuis (cochlea)",
+          "Utriculus",
+          "Trommelvlies"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk orgaan regelt het evenwicht?",
+        "options": [
+          "Oog",
+          "Neus",
+          "Oor",
+          "Huid"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat detecteren de halfcirkelvormige kanalen?",
+        "options": [
+          "Geluid",
+          "Lineaire versnelling",
+          "Rotatiebewegingen",
+          "Temperatuur"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoeveel basissmaken herkent de tong?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "7"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is proprioceptie?",
+        "options": [
+          "Het waarnemen van geuren",
+          "Het waarnemen van de positie van ledematen",
+          "Het waarnemen van pijn",
+          "Het waarnemen van temperatuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke structuur breekt licht als het het oog binnenkomt?",
+        "options": [
+          "Netvlies",
+          "Iris",
+          "Cornea en lens",
+          "Oogzenuw"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zijn gehoorbeentjes?",
+        "options": [
+          "Botjes in het binnenoor",
+          "Botjes die trillingen overbrengen van trommelvlies naar slakkenhuis",
+          "Receptoren in de cochlea",
+          "Cellen op het netvlies"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Met welk hersengebied is de reukzin direct verbonden?",
+        "options": [
+          "Cerebellum",
+          "Limbisch systeem",
+          "Prefrontale cortex",
+          "Ruggenmerg"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "planten": {
+    "title": "Plantenfysiologie",
+    "leaves": [
+      {
+        "title": "Transport in Planten",
+        "theory": "Planten transporteren water, mineralen en suikers via twee systemen:\n\n<strong>Xyleem</strong>: transporteert water en mineralen van wortel naar blad.\n• Aandrijving door <em>transpiratie</em> (verdamping via huidmondjes)\n• Cohesie van watermoleculen trekt de kolom omhoog\n\n<strong>Floëem</strong>: transporteert suikers (fotosyntheseproducten) van blad naar andere plantdelen.\n• Werkt via drukstroom (<em>source-to-sink</em>)\n\nWortelharen vergroten het oppervlak voor wateropname."
+      },
+      {
+        "title": "Groeihormonen",
+        "theory": "Planten regelen groei en reacties op de omgeving via <strong>fytohormonen</strong>.\n\n• <strong>Auxine (IAA)</strong> – stimuleert celstrekking, verantwoordelijk voor <em>fototropisme</em> (groei naar licht)\n• <strong>Gibberelline</strong> – bevordert stengelstrekking en kieming\n• <strong>Cytokinine</strong> – stimuleert celdeling\n• <strong>Abscisszuur (ABA)</strong> – remt groei, sluit huidmondjes bij droogte\n• <strong>Ethyleen</strong> – bevordert vruchtenrijping"
+      },
+      {
+        "title": "Huidmondjes & Gasuitwisseling",
+        "theory": "<strong>Huidmondjes (stomata)</strong> zijn kleine openingen in de bladeren voor gasuitwisseling en transpiratie.\n\nElk huidmondje wordt omgeven door twee <strong>sluitcellen</strong>.\n• Open: bij goed licht, CO₂-behoefte voor fotosynthese\n• Gesloten: bij droogte, donker, hoge temperatuur\n\nWanneer sluitcellen turgescent worden (veel water opnemen), buigen ze en opent het huidmondje.\n\nBij waterstress zorgt ABA voor sluiting van huidmondjes om waterverlies te beperken."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk systeem transporteert water van wortel naar blad?",
+        "options": [
+          "Floëem",
+          "Xyleem",
+          "Epidermis",
+          "Huidmondjes"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat drijft watertransport in het xyleem aan?",
+        "options": [
+          "Actief transport door wortels",
+          "Transpiratie en cohesie van water",
+          "Suikerproductie",
+          "Auxine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hormoon is verantwoordelijk voor fototropisme?",
+        "options": [
+          "Gibberelline",
+          "Ethyleen",
+          "Auxine (IAA)",
+          "Cytokinine"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat bevordert ethyleen?",
+        "options": [
+          "Celdeling",
+          "Vruchtenrijping",
+          "Wateropname",
+          "Fotosynthese"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn huidmondjes?",
+        "options": [
+          "Waterkanalen in het xyleem",
+          "Openingen in bladeren voor gasuitwisseling",
+          "Cellen in de wortel",
+          "Type chloroplast"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hormoon sluit huidmondjes bij droogte?",
+        "options": [
+          "Auxine",
+          "Gibberelline",
+          "Cytokinine",
+          "ABA (abscisinezuur)"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Welk systeem transporteert suikers van blad naar andere plantdelen?",
+        "options": [
+          "Xyleem",
+          "Floëem",
+          "Cambium",
+          "Epidermis"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet gibberelline?",
+        "options": [
+          "Remt groei",
+          "Bevordert stengelstrekking en kieming",
+          "Sluit huidmondjes",
+          "Veroorzaakt bladval"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor zijn wortelharen?",
+        "options": [
+          "Fotosynthese",
+          "Opslag van suikers",
+          "Vergroting van het wateropname-oppervlak",
+          "Aanmaak van hormonen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wanneer zijn huidmondjes doorgaans open?",
+        "options": [
+          "Bij droogte en donker",
+          "Bij goed licht en voldoende water",
+          "Alleen 's nachts",
+          "Altijd open"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "micro": {
+    "title": "Microbiologie",
+    "leaves": [
+      {
+        "title": "Bacteriën",
+        "theory": "<strong>Bacteriën</strong> zijn prokaryotische micro-organismen. Ze zijn overal aanwezig en hebben grote ecologische en medische betekenis.\n\nKenmerken:\n• Geen celkern; DNA in nucleoïde\n• Cel membraan met celwand (peptidoglycaan)\n• Grootte ~1-10 µm\n• Voortplanting via <em>binaire splijting</em> (aseksueel)\n\nVormen: bol (coccus), staaf (bacillus), spiraal (spirillum)\n\nVeel bacteriën zijn nuttig (darmbacteriën, fermentatie), anderen zijn pathogeen en veroorzaken infectieziekten."
+      },
+      {
+        "title": "Virussen",
+        "theory": "<strong>Virussen</strong> zijn geen levende organismen — ze hebben geen eigen metabolisme en kunnen zich alleen voortplanten <em>in</em> een gastheercel.\n\nStructuur:\n• Erfelijk materiaal (DNA of RNA)\n• Eiwitmantel (<strong>capside</strong>)\n• Soms een lipidembraan (envelop)\n\nInfectiecyclus:\n1. Adsorptie – virus bindt aan cel\n2. Injectie – genetisch materiaal komt cel in\n3. Replicatie – nieuwe virussen worden gemaakt\n4. Lysis – cel barst open, nieuwe virussen vrijkomen\n\nVoorbeelden: influenzavirus, HIV, SARS-CoV-2."
+      },
+      {
+        "title": "Antibiotica & Resistentie",
+        "theory": "<strong>Antibiotica</strong> zijn stoffen die bacteriën doden of remmen. Ze zijn niet effectief tegen virussen.\n\nWerkingsmechanismen:\n• Remmen celwandsynthese (penicilline)\n• Remmen eiwitsynthese\n• Beschadigen celmembraan\n\n<strong>Antibioticaresistentie</strong> is een groot gezondheidsprobleem. Bacteriën ontwikkelen resistentie door:\n• Mutaties\n• Horizontale genoverdracht (plasmiden)\n\nVerkeerd gebruik van antibiotica (te kort kuren, onnodig gebruik) versnelt resistentieontwikkeling."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is binaire splijting?",
+        "options": [
+          "Seksuele voortplanting bij bacteriën",
+          "Aseksuele vermeerdering waarbij één cel splitst in twee",
+          "Meiose bij bacteriën",
+          "Virusinfectie van bacteriën"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat onderscheidt virussen van bacteriën?",
+        "options": [
+          "Virussen zijn groter",
+          "Virussen hebben geen eigen metabolisme en zijn geen levende organismen",
+          "Virussen hebben een celkern",
+          "Bacteriën kunnen geen ziekten veroorzaken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het capside van een virus?",
+        "options": [
+          "Het genetisch materiaal",
+          "De eiwitmantel rondom het genetisch materiaal",
+          "De lipidenvelop",
+          "Het enzym van het virus"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waartegen zijn antibiotica effectief?",
+        "options": [
+          "Alleen virussen",
+          "Alleen bacteriën",
+          "Zowel bacteriën als virussen",
+          "Schimmels en virussen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe werkt penicilline?",
+        "options": [
+          "Het remt DNA-replicatie",
+          "Het beschadigt de celmembraan",
+          "Het remt celwandsynthese",
+          "Het blokkeert eiwitten van het virus"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat veroorzaakt antibioticaresistentie?",
+        "options": [
+          "Te veel water drinken",
+          "Mutaties en horizontale genoverdracht bij bacteriën",
+          "Vaccinaties",
+          "Gebruik van vitamines"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de celwand van bacteriën gemaakt van?",
+        "options": [
+          "Cellulose",
+          "Chitine",
+          "Peptidoglycaan",
+          "Collageen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk virus veroorzaakt aids?",
+        "options": [
+          "Influenzavirus",
+          "HIV",
+          "SARS-CoV-2",
+          "Hepatitis B"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een bacteriofaag?",
+        "options": [
+          "Een antibioticum",
+          "Een virus dat bacteriën infecteert",
+          "Een type bacterie",
+          "Een schimmel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke vorm heeft een coccusbacterie?",
+        "options": [
+          "Staaf",
+          "Spiraal",
+          "Bol",
+          "Kubus"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "biotech": {
+    "title": "Biotechnologie",
+    "leaves": [
+      {
+        "title": "Genetische Modificatie",
+        "theory": "<strong>Genetische modificatie (gm)</strong> is het doelbewust veranderen van het DNA van een organisme.\n\nTechnieken:\n• <strong>Recombinant DNA</strong> – gen uit één organisme wordt ingebracht in een ander\n• <strong>Restrictie-enzymen</strong> – knippen DNA op specifieke plaatsen\n• <strong>Ligase</strong> – plakt DNA-fragmenten samen\n• <strong>Plasmiden</strong> – cirkelvormige DNA-vectoren in bacteriën\n\nToepassingen: insulineproductie via bacteriën, gm-gewassen (Bt-mais), genfarmaceutica."
+      },
+      {
+        "title": "CRISPR-Cas9",
+        "theory": "<strong>CRISPR-Cas9</strong> is een revolutionaire techniek voor nauwkeurige genbewerking.\n\nWerking:\n• <strong>gRNA</strong> (gids-RNA) leidt Cas9-enzym naar de juiste DNA-locatie\n• Cas9 knipt het DNA door op de gewenste plek\n• De cel repareert de breuk — bij dit herstel kan een gen uitgeschakeld of vervangen worden\n\nToepassingen:\n• Behandeling van genetische ziekten (bijv. sikkelcelziekte)\n• Ontwikkeling van ziekteresistente gewassen\n• Fundamenteel onderzoek naar genfunctie\n\nEthische discussies: kiembaanbewerking bij mensen."
+      },
+      {
+        "title": "PCR & DNA-analyse",
+        "theory": "<strong>PCR (polymerasekettingreactie)</strong> maakt het mogelijk om kleine hoeveelheden DNA miljoenenvoudig te kopiëren.\n\nStappen per cyclus:\n1. <strong>Denaturatie</strong> – DNA wordt verhit (~95°C), strengen scheiden\n2. <strong>Annealing</strong> – Primers binden aan de doelsequentie (~55°C)\n3. <strong>Extensie</strong> – DNA-polymerase kopieert de streng (~72°C)\n\nToepassingen: forensisch onderzoek, diagnose van infecties, vaderschapstest, archeogenetica.\n\n<strong>Gelelektroforese</strong> scheidt DNA-fragmenten op grootte voor analyse."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat zijn restrictie-enzymen?",
+        "options": [
+          "Enzymen die DNA op specifieke plaatsen knippen",
+          "Enzymen die eiwitten afbreken",
+          "Enzymen die RNA kopiëren",
+          "Enzymen in de maag"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is de functie van plasmiden bij genetische modificatie?",
+        "options": [
+          "Ze knippen DNA",
+          "Ze dienen als vectoren om vreemd DNA in bacteriën in te brengen",
+          "Ze produceren eiwitten",
+          "Ze zijn de doelwitorganismen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor staat CRISPR?",
+        "options": [
+          "Een type DNA-polymerase",
+          "Een systeem voor precieze genbewerking",
+          "Een bacteriële eiwitmantel",
+          "Een type virus"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet het gRNA bij CRISPR-Cas9?",
+        "options": [
+          "Het knipt het DNA",
+          "Het leidt Cas9 naar de juiste DNA-locatie",
+          "Het repareert de DNA-breuk",
+          "Het maakt het doelwiteiwit"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke toepassing maakt gebruik van genetisch gemodificeerde bacteriën om insuline te produceren?",
+        "options": [
+          "PCR",
+          "Gelelektroforese",
+          "Recombinant DNA-technologie",
+          "CRISPR-Cas9"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de eerste stap van PCR?",
+        "options": [
+          "Primerbinding",
+          "DNA-denaturatie door verhitting",
+          "DNA-extensie",
+          "Gel-analyse"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor wordt PCR gebruikt in de forensica?",
+        "options": [
+          "Eiwitproductie",
+          "DNA amplificeren voor identificatie",
+          "Bacteriegroei meten",
+          "Bloedgroep bepalen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat scheidt gelelektroforese?",
+        "options": [
+          "Eiwitten op kleur",
+          "DNA-fragmenten op grootte",
+          "Cellen op type",
+          "Hormonen op massa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn de ethische bezwaren bij CRISPR in menselijke kiembaancellen?",
+        "options": [
+          "Het is te duur",
+          "Modificaties worden doorgegeven aan toekomstige generaties zonder hun toestemming",
+          "Het werkt niet in mensen",
+          "Het is verboden door de WHO"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk enzym plakt DNA-fragmenten samen bij recombinant DNA?",
+        "options": [
+          "Restrictie-enzym",
+          "DNA-ligase",
+          "RNA-polymerase",
+          "Helicase"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "ecosys": {
+    "title": "Ecosystemen",
+    "leaves": [
+      {
+        "title": "Energiestroom",
+        "theory": "Energie stroomt door een ecosysteem via <strong>voedselketens</strong> en <strong>voedselwebben</strong>.\n\nTrofische niveaus:\n• <strong>Producenten</strong> (autotrofen) – maken organische stoffen via fotosynthese\n• <strong>Primaire consumenten</strong> – herbivoren\n• <strong>Secundaire consumenten</strong> – carnivoren die herbivoren eten\n• <strong>Tertiaire consumenten</strong> – top-carnivoren\n• <strong>Decomposers</strong> – breken dood materiaal af\n\nBij elke stap gaat ~90% van de energie verloren als warmte. Daardoor zijn hoge trofische niveaus energie-inefficiënter."
+      },
+      {
+        "title": "Stofkringlopen",
+        "theory": "Stoffen circuleren continu tussen levende organismen en het abiotisch milieu.\n\n<strong>Koolstofkringloop</strong>:\n• CO₂ → plantenvia fotosynthese → dieren → decomposers → CO₂\n• Fossiele brandstoffen voegen extra CO₂ toe\n\n<strong>Stikstofkringloop</strong>:\n• N₂ → stikstofbindende bacteriën → NH₃/NH₄⁺ → nitrificerende bacteriën → NO₃⁻ → planten → dieren → decomposers\n\nVerstoring van kringlopen (bijv. eutrofiëring door stikstof) tast ecosystemen aan."
+      },
+      {
+        "title": "Populatie-ecologie",
+        "theory": "Een <strong>populatie</strong> is een groep individuen van dezelfde soort in een gebied.\n\n<strong>Groeifactoren</strong>:\n• <em>Biotisch</em>: predatie, ziekte, concurrentie, voedsel\n• <em>Abiotisch</em>: temperatuur, water, licht, mineralen\n\n<strong>Logistische groei</strong>: een populatie groeit totdat ze de draagkracht (K) bereikt. Dan stabiliseert de groei.\n\n<strong>Exponentiële groei</strong>: onbeperkte groei bij onbeperkte middelen (zeldzaam in de natuur).\n\nBedreigingen voor populaties: habitatverlies, overbejaging, invasieve soorten, klimaatverandering."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk percentage van energie gaat verloren bij elke stap in een voedselketen?",
+        "options": [
+          "10%",
+          "50%",
+          "90%",
+          "99%"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zijn decomposers?",
+        "options": [
+          "Herbivoren",
+          "Top-carnivoren",
+          "Organismen die dood materiaal afbreken",
+          "Autotrofen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is eutrofiëring?",
+        "options": [
+          "Te weinig stikstof in water",
+          "Overmatige algengroei door nutriënten, leidend tot zuurstoftekort",
+          "Een type ecosysteem",
+          "Het verdwijnen van toppredatoren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat beschrijft de draagkracht (K) van een ecosysteem?",
+        "options": [
+          "Het maximale aantal soorten",
+          "Het maximale aantal individuen dat een omgeving kan onderhouden",
+          "De minimale populatiegrootte",
+          "De hoeveelheid energie in het systeem"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen een voedselketen en een voedselweb?",
+        "options": [
+          "Een voedselweb is minder complex",
+          "Een voedselweb toont de verbindingen tussen meerdere voedselketens",
+          "Een voedselketen bevat meer niveaus",
+          "Er is geen verschil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke bacteriën binden N₂ uit de lucht?",
+        "options": [
+          "Nitrificerende bacteriën",
+          "Denitrificerende bacteriën",
+          "Stikstofbindende bacteriën",
+          "Fermenterende bacteriën"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is logistische populatiegroei?",
+        "options": [
+          "Onbeperkte exponentiële groei",
+          "Groei die stabiliseert bij de draagkracht",
+          "Groei die altijd afneemt",
+          "Groei afhankelijk van seizoen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke factor is abiotisch?",
+        "options": [
+          "Predatie",
+          "Ziekte",
+          "Concurrentie",
+          "Temperatuur"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is de rol van producenten in een ecosysteem?",
+        "options": [
+          "Afbreken van dode materie",
+          "Omzetten van CO₂ naar organische stoffen via fotosynthese",
+          "Eten van herbivoren",
+          "Reguleren van stikstofkringloop"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bedreigt populaties wereldwijd het meest?",
+        "options": [
+          "Te veel predatoren",
+          "Habitatverlies, klimaatverandering en invasieve soorten",
+          "Te weinig consumenten",
+          "Overproductie van decomposers"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "taxonomie": {
+    "title": "Taxonomie",
+    "leaves": [
+      {
+        "title": "Classificatiesysteem",
+        "theory": "Taxonomie is de wetenschap van het indelen en benoemen van organismen.\n\nHet klassieke systeem van <strong>Linnaeus</strong> gebruikt hiërarchische niveaus:\n\n<strong>Domein → Rijk → Stam → Klasse → Orde → Familie → Geslacht → Soort</strong>\n\nEzelsbruggetje (NL): <em>Dapper Ridders Streven Krachtig Op Fiere Gouden Schouders</em>\n\nDe wetenschappelijke naam bestaat uit twee delen (<em>binomiale nomenclatuur</em>):\n• geslachtsnaam + soortaanduiding\n• bijv. <em>Homo sapiens</em>"
+      },
+      {
+        "title": "Drie Domeinen",
+        "theory": "Het moderne systeem deelt het leven in <strong>drie domeinen</strong>:\n\n• <strong>Bacteria</strong> – prokaryoten zonder celkern\n• <strong>Archaea</strong> – prokaryoten die vaak in extreme milieus leven\n• <strong>Eukarya</strong> – eukaryoten met celkern: planten, dieren, schimmels, protisten\n\nVijf rijken binnen Eukarya:\n1. Animalia (dieren)\n2. Plantae (planten)\n3. Fungi (schimmels)\n4. Protista (eencellige eukaryoten)\n5. Monera (nu verdeeld over Bacteria en Archaea)"
+      },
+      {
+        "title": "Soortbegrip",
+        "theory": "Het biologisch soortbegrip stelt:\n<em>Een soort is een groep organismen die zich onderling voortplanten en vruchtbare nakomelingen produceren.</em>\n\nBelangrijke termen:\n• <strong>Hybride</strong> – kruising tussen twee soorten (vaak onvruchtbaar, bijv. muildier)\n• <strong>Speciatie</strong> – het ontstaan van nieuwe soorten\n  – <em>Allopatrisch</em>: door geografische isolatie\n  – <em>Sympatrisch</em>: binnen hetzelfde gebied\n\nMoleculair onderzoek (DNA-vergelijking) heeft de klassieke taxonomie op vele punten herzien."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wie ontwikkelde het systeem van binomiale nomenclatuur?",
+        "options": [
+          "Darwin",
+          "Mendel",
+          "Linnaeus",
+          "Watson"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het laagste niveau in de biologische classificatie?",
+        "options": [
+          "Genus",
+          "Familie",
+          "Soort",
+          "Stam"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Uit hoeveel woorden bestaat een wetenschappelijke naam?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk domein omvat planten, dieren en schimmels?",
+        "options": [
+          "Bacteria",
+          "Archaea",
+          "Eukarya",
+          "Protista"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is speciatie?",
+        "options": [
+          "Het uitsterven van soorten",
+          "Het ontstaan van nieuwe soorten",
+          "Het classificeren van soorten",
+          "De studie van genen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een hybride?",
+        "options": [
+          "Een genetisch identieke kloon",
+          "Een kruising tussen twee soorten",
+          "Een soort met een mutatie",
+          "Een endemische soort"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn Archaea?",
+        "options": [
+          "Eukaryote cellen",
+          "Prokaryoten die vaak in extreme milieus leven",
+          "Een type virus",
+          "Planten zonder chlorofyl"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke rijken behoren tot de Eukarya?",
+        "options": [
+          "Bacteria en Archaea",
+          "Animalia, Plantae, Fungi en Protista",
+          "Alleen Animalia",
+          "Archaea en Protista"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is allopatrische speciatie?",
+        "options": [
+          "Speciatie door genetische mutatie",
+          "Speciatie door geografische isolatie",
+          "Speciatie binnen hetzelfde gebied",
+          "Speciatie door hybridisatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke wetenschappelijke naam is correct geschreven?",
+        "options": [
+          "homo sapiens",
+          "Homo Sapiens",
+          "Homo sapiens",
+          "HOMO SAPIENS"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "homeostase": {
+    "title": "Homeostase",
+    "leaves": [
+      {
+        "title": "Lichaamstemperatuur",
+        "theory": "<strong>Homeostase</strong> is het vermogen van het lichaam om een stabiel intern milieu te handhaven ondanks externe veranderingen.\n\n<strong>Thermoregulatie</strong> (lichaamstemperatuur ~37°C):\n\nBij te hoge temperatuur:\n• Bloedvaten verwijden (vasodilatatie)\n• Zweten – verdampingskoeling\n\nBij te lage temperatuur:\n• Bloedvaten vernauwen (vasoconstrictie)\n• Rillen – spierarbeid produceert warmte\n• Kippenvel – rechtopstaande haren (bij dieren isolerend)\n\nHet hypothalamus fungeert als thermostaat."
+      },
+      {
+        "title": "Osmotische Regulatie",
+        "theory": "<strong>Osmoregulatie</strong> handhaaft de waterbalans en de concentratie van opgeloste stoffen.\n\nBij mensen:\n• Nieren reguleren waterterugreabsorptie via ADH\n• Bij te hoge zoutconcentratie → dorstgevoel → meer drinken\n\nVerschillen tussen dieren:\n• <em>Osmoconformers</em> – mariene ongewervelden, passen zich aan aan zeewater\n• <em>Osmoregulatoren</em> – vissen, zeezoogdieren, mensen — actieve regulatie\n\nWaterbalans is essentieel voor celfunctie en bloeddruk."
+      },
+      {
+        "title": "Zuur-Base Balans",
+        "theory": "De <strong>pH van het bloed</strong> moet nauwkeurig worden gehandhaafd rond <strong>7,35-7,45</strong>.\n\nAfwijkingen:\n• <em>Acidose</em> (pH &lt; 7,35) – te zuur (bijv. hyperventilatie, nierziekte)\n• <em>Alkalose</em> (pH &gt; 7,45) – te basisch\n\nBuffersystemen handhaven de pH:\n• Bicarbonaat-buffer (HCO₃⁻/CO₂)\n• Eiwitbuffers in bloed\n\nDe longen regelen CO₂-niveaus; de nieren regelen HCO₃⁻-niveaus."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is homeostase?",
+        "options": [
+          "De studie van hormonen",
+          "Het handhaven van een stabiel intern milieu",
+          "De afbraak van glucose",
+          "De productie van antilichamen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet vasoconstrictie bij koude?",
+        "options": [
+          "Bloedvaten verwijden om warmte af te geven",
+          "Bloedvaten vernauwen om warmteverlies te beperken",
+          "Zweet produceren",
+          "De hartslag verhogen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hersengebied functioneert als thermostaat?",
+        "options": [
+          "Hippocampus",
+          "Hypothalamus",
+          "Cerebellum",
+          "Amygdala"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de normale pH van het menselijk bloed?",
+        "options": [
+          "6,8-7,0",
+          "7,0-7,2",
+          "7,35-7,45",
+          "7,6-7,8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is acidose?",
+        "options": [
+          "Te basisch bloed",
+          "Te zuur bloed (pH < 7,35)",
+          "Normale pH",
+          "Te hoge CO₂-uitscheiding"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe helpen de longen de zuur-base balans?",
+        "options": [
+          "Door HCO₃⁻ te reguleren",
+          "Door CO₂-niveaus te reguleren via ademhaling",
+          "Door ADH te produceren",
+          "Door glucose te reguleren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen osmoconformers en osmoregulatoren?",
+        "options": [
+          "Osmoregulatoren passen zich aan; osmoconformers niet",
+          "Osmoconformers passen zich aan; osmoregulatoren handhaven actief een constante osmotische druk",
+          "Er is geen verschil",
+          "Osmoconformers leven alleen op land"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe koelt het lichaam af bij hoge omgevingstemperatuur?",
+        "options": [
+          "Rillen en vasoconstrictie",
+          "Zweten en vasodilatatie",
+          "Meer hormonen aanmaken",
+          "Minder zuurstof verbruiken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het bicarbonaatbuffersysteem?",
+        "options": [
+          "Een hormoon dat pH regelt",
+          "Een chemisch systeem dat schommelingen in bloedpH tegengaat via HCO₃⁻ en CO₂",
+          "Een type enzym in de nieren",
+          "Een antilichaam"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom is handhaving van de lichaamstemperatuur rond 37°C belangrijk?",
+        "options": [
+          "Voor de smaak van voedsel",
+          "Omdat enzymen optimaal werken bij die temperatuur",
+          "Om meer energie op te slaan",
+          "Om infecties te voorkomen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "voortpl": {
+    "title": "Voortplanting",
+    "leaves": [
+      {
+        "title": "Seksuele Voortplanting",
+        "theory": "<strong>Seksuele voortplanting</strong> vereist de versmelting van twee gameten (eicel + zaadcel) tot een zygote.\n\nVoordeel: genetische variatie door:\n• Recombinatie (crossing-over)\n• Onafhankelijke verdeling van chromosomen (meiose)\n• Fusie van gameten van twee individuen\n\nBij mensen: spermatogenese (aanmaak van zaadcellen) vindt plaats in de testikels; oögenese (aanmaak van eicellen) in de eierstokken.\n\nBevruchting kan intern of extern plaatsvinden, afhankelijk van de soort."
+      },
+      {
+        "title": "Menselijke Voortplanting",
+        "theory": "De <strong>menstruatiecyclus</strong> duurt gemiddeld ~28 dagen en wordt geregeld door hormonen:\n\n1. <strong>FSH</strong> stimuleert follikelrijping in eierstok\n2. <strong>Oestrogeen</strong> stimuleert baarmoederslijmvlies\n3. <strong>LH-piek</strong> triggert ovulatie (~dag 14)\n4. <strong>Progesteron</strong> bereidt baarmoeder voor op innesteling\n\nAls er geen bevruchting is → progesteron daalt → menstruatie.\n\n<strong>Zwangerschap</strong> duurt ~40 weken. HCG-hormoon handhaaft het corpus luteum."
+      },
+      {
+        "title": "Aseksuele Voortplanting",
+        "theory": "<strong>Aseksuele voortplanting</strong> produceert genetisch identieke nakomelingen (klonen) van één ouder.\n\nVormen:\n• <em>Binaire splijting</em> – bacteriën\n• <em>Knopvorming</em> – gisten, hydra\n• <em>Fragmentatie</em> – zeesterren, planten\n• <em>Sporulatie</em> – schimmels, varens\n• <em>Vegetatieve voortplanting</em> – aardappelen, aardbeien\n\nVoordeel: snel, geen partner nodig.\nNadeel: geen genetische variatie → kwetsbaar voor omgevingsveranderingen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is het resultaat van bevruchting?",
+        "options": [
+          "Een gamet",
+          "Een zygote",
+          "Een embryo direct",
+          "Een blastocyst"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hormoon triggert ovulatie?",
+        "options": [
+          "FSH",
+          "Oestrogeen",
+          "LH",
+          "Progesteron"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe lang duurt een gemiddelde zwangerschap bij mensen?",
+        "options": [
+          "30 weken",
+          "40 weken",
+          "52 weken",
+          "28 weken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een voordeel van seksuele boven aseksuele voortplanting?",
+        "options": [
+          "Snellere reproductie",
+          "Genetische variatie",
+          "Geen partner nodig",
+          "Minder energie nodig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is knopvorming?",
+        "options": [
+          "Seksuele voortplanting",
+          "Een vorm van aseksuele voortplanting via uitgroeisel",
+          "DNA-replicatie",
+          "Sporulatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het nadeel van aseksuele voortplanting?",
+        "options": [
+          "Te traag",
+          "Geen genetische variatie, waardoor populaties kwetsbaar zijn",
+          "Vereist een partner",
+          "Produceert te weinig nakomelingen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waar worden zaadcellen aangemaakt?",
+        "options": [
+          "Eierstokken",
+          "Bijbal",
+          "Testikels",
+          "Baarmoeder"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk hormoon handhaaft het corpus luteum tijdens zwangerschap?",
+        "options": [
+          "FSH",
+          "LH",
+          "HCG",
+          "Oestrogeen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is fragmentatie als voortplantingsmethode?",
+        "options": [
+          "Verdeling van genen",
+          "Herstel van een organisme uit een lichaamsfragment",
+          "Sporulatie in schimmels",
+          "Knopvorming in gisten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is genetische variatie het gevolg van bij seksuele voortplanting?",
+        "options": [
+          "Mitose",
+          "Binaire splijting",
+          "Meiose met crossing-over en bevruchting",
+          "Klonering"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "evolut2": {
+    "title": "Evolutie (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Bewijs voor Evolutie",
+        "theory": "Er zijn meerdere soorten bewijs voor evolutie:\n\n• <strong>Fossielenbestand</strong> – toont hoe organismen veranderden over tijd\n• <strong>Vergelijkende anatomie</strong> – homologe structuren (bijv. ledematen van zoogdieren) wijzen op gemeenschappelijke voorouder\n• <strong>Moleculair bewijs</strong> – DNA-overeenkomsten zijn groter tussen nauw verwante soorten\n• <strong>Embryologisch bewijs</strong> – embryo's van verschillende vertebraten zijn in een vroeg stadium sterk op elkaar\n• <strong>Biogeografie</strong> – verspreiding van soorten past bij evolutionaire geschiedenis\n• <strong>Directe observatie</strong> – resistentie bij bacteriën en virussen"
+      },
+      {
+        "title": "Populatiegenetica",
+        "theory": "<strong>Populatiegenetica</strong> bestudeert de verandering van allelfrequenties in populaties.\n\nDe <strong>Hardy-Weinberg-evenwichtsformule</strong>: <code>p² + 2pq + q² = 1</code>\n\nDit evenwicht geldt alleen als:\n• Geen mutaties\n• Geen migratie\n• Grote populatie (geen genetische drift)\n• Willekeurige paring\n• Geen natuurlijke selectie\n\nIn de praktijk zijn deze condities nooit allemaal aanwezig, waardoor allelfrequenties veranderen → evolutie."
+      },
+      {
+        "title": "Macro-evolutie",
+        "theory": "<strong>Macro-evolutie</strong> beschrijft grote evolutionaire veranderingen op soort- of hoger niveau.\n\n• <strong>Adaptieve radiatie</strong> – één vooroudersoort evolueert snel naar vele soorten (bijv. Darwin-vinken)\n• <strong>Convergente evolutie</strong> – niet verwante soorten ontwikkelen vergelijkbare kenmerken (bijv. vleugels van vleermuizen en vogels)\n• <strong>Coëvolutie</strong> – twee soorten beïnvloeden elkaars evolutie (bijv. bloemen en bestuivers)\n• <strong>Massa-extinctie</strong> – groot percentage soorten sterft uit (bijv. K-Pg-extinctie, ~66 Ma geleden)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat zijn homologe structuren?",
+        "options": [
+          "Structuren met dezelfde functie maar verschillende herkomst",
+          "Structuren met dezelfde herkomst maar mogelijk verschillende functie",
+          "Identiekeorganen bij alle soorten",
+          "Fossielen van uitgestorven soorten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat toont de Hardy-Weinberg-evenwichtsformule?",
+        "options": [
+          "De mutatiesnelheid in een populatie",
+          "De verwachte allelfrequenties in een populatie zonder evolutie",
+          "De kans op crossing-over",
+          "De dominantie van allelen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is adaptieve radiatie?",
+        "options": [
+          "Aanpassing aan straling",
+          "Snelle diversificatie van één vooroudersoort naar meerdere soorten",
+          "Convergente evolutie van vleugels",
+          "Massa-extinctie gevolgd door herstel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is convergente evolutie?",
+        "options": [
+          "Niet verwante soorten die vergelijkbare kenmerken ontwikkelen",
+          "Verwante soorten die van elkaar divergeren",
+          "Soorten die samensmelten",
+          "Evolutie in dezelfde richting door verwantschap"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Welk bewijs voor evolutie is het meest direct?",
+        "options": [
+          "Biogeografie",
+          "Vergelijkende anatomie",
+          "Directe observatie (bijv. bacteriële resistentie)",
+          "Embryologisch bewijs"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is genetische drift?",
+        "options": [
+          "Migratie van genen tussen populaties",
+          "Toevallige verandering in allelfrequentie, groter effect in kleine populaties",
+          "Mutatie door straling",
+          "Selectie door predatoren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer vond de K-Pg-massa-extinctie plaats?",
+        "options": [
+          "250 miljoen jaar geleden",
+          "66 miljoen jaar geleden",
+          "10.000 jaar geleden",
+          "540 miljoen jaar geleden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is coëvolutie?",
+        "options": [
+          "Twee soorten evolueren onafhankelijk",
+          "Twee soorten beïnvloeden elkaars evolutie",
+          "Convergente evolutie",
+          "Massa-extinctie van verwante soorten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is moleculair bewijs voor evolutie?",
+        "options": [
+          "Vergelijking van skeletstructuren",
+          "DNA-overeenkomsten zijn groter bij nauw verwante soorten",
+          "Fossielen die transitievormen tonen",
+          "Verspreiding van soorten op eilanden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke conditie voor Hardy-Weinberg-evenwicht is in de praktijk nooit volledig aanwezig?",
+        "options": [
+          "Aanwezigheid van genen",
+          "Voortplanting",
+          "Geen selectie, geen mutaties, grote populatie, willekeurige paring, geen migratie",
+          "Seizoenswisselingen"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}

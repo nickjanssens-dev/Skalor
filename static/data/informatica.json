@@ -1,0 +1,1311 @@
+{
+  "oop": {
+    "title": "Object-georiënteerd Programmeren",
+    "leaves": [
+      {
+        "title": "Klassen & Objecten",
+        "theory": "<strong>Object-georiënteerd programmeren (OOP)</strong> organiseert code rond objecten.\n\n• Een <strong>klasse</strong> is een sjabloon/blauwdruk\n• Een <strong>object</strong> is een instantie van een klasse\n\nVoorbeeld in Python:\n<code>class Hond:\n    def __init__(self, naam):\n        self.naam = naam\n    def blaf(self):\n        return 'Woef!'\n\nbello = Hond('Bello')  # object\n</code>\n\nAttributen zijn eigenschappen van een object; methoden zijn functies die bij een klasse horen."
+      },
+      {
+        "title": "Overerving & Polymorfisme",
+        "theory": "<strong>Overerving</strong>: een klasse erft eigenschappen van een ouderklasse.\n\n<code>class Dier:\n    def geluid(self): pass\n\nclass Kat(Dier):\n    def geluid(self): return 'Miauw'\n</code>\n\n<strong>Polymorfisme</strong>: dezelfde methode werkt anders afhankelijk van de klasse.\n\nVoordelen van OOP:\n• <em>Herbruikbaarheid</em> – klassen hergebruiken\n• <em>Modulariteit</em> – code opdelen in logische eenheden\n• <em>Onderhoudbaarheid</em> – wijzigingen lokaal houden"
+      },
+      {
+        "title": "Encapsulatie & Abstractie",
+        "theory": "<strong>Encapsulatie</strong>: interne details verbergen, alleen een interface beschikbaar stellen.\n\n• <em>Private</em> attributen (conventie: __naam) zijn alleen binnen de klasse toegankelijk\n• <em>Getters en setters</em> controleren toegang tot private attributen\n\n<strong>Abstractie</strong>: de complexiteit verbergen achter een eenvoudige interface.\n\nVoorbeeldl: je gebruikt een auto zonder te weten hoe de motor werkt.\n\nIn Python: abstracte klassen via de <code>abc</code>-module met <code>@abstractmethod</code>."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een klasse in OOP?",
+        "options": [
+          "Een instantie van een object",
+          "Een sjabloon/blauwdruk voor objecten",
+          "Een type variabele",
+          "Een lus in de code"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een object in OOP?",
+        "options": [
+          "Een sjabloon",
+          "Een instantie van een klasse",
+          "Een functie",
+          "Een module"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is overerving?",
+        "options": [
+          "Een klasse maakt gebruik van functies van een andere module",
+          "Een klasse erft eigenschappen en methoden van een ouderklasse",
+          "Een object kopieert een ander object",
+          "Twee klassen delen dezelfde naam"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is polymorfisme?",
+        "options": [
+          "Een klasse met meerdere namen",
+          "Dezelfde methode die anders werkt afhankelijk van de klasse",
+          "Overerving van meerdere klassen tegelijk",
+          "Een privé-variabele"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is encapsulatie?",
+        "options": [
+          "Alle code in één bestand zetten",
+          "Interne details verbergen en alleen een interface blootstellen",
+          "Meerdere klassen laten samenwerken",
+          "Abstracte methoden definiëren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn methoden in een klasse?",
+        "options": [
+          "Variabelen van de klasse",
+          "Functies die bij een klasse horen",
+          "Instanties van de klasse",
+          "Private attributen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet __init__ in Python?",
+        "options": [
+          "Sluit het programma af",
+          "Is de constructor die een object initialiseert",
+          "Verwijdert het object",
+          "Print de klasse"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een voordeel van OOP?",
+        "options": [
+          "Altijd snellere code",
+          "Herbruikbaarheid, modulariteit en onderhoudbaarheid",
+          "Minder variabelen nodig",
+          "Geen lussen meer nodig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is abstractie in OOP?",
+        "options": [
+          "Alle code public maken",
+          "Complexiteit verbergen achter een eenvoudige interface",
+          "Klassen verbergen",
+          "Methoden kopiëren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe duid je in Python conventioneel een private attribuut aan?",
+        "options": [
+          "_naam",
+          "__naam",
+          "NAAM",
+          "private naam"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "os": {
+    "title": "Besturingssystemen",
+    "leaves": [
+      {
+        "title": "Functies van een OS",
+        "theory": "Een <strong>besturingssysteem (OS)</strong> beheert de hardware en software van een computer.\n\nBelangrijke functies:\n• <strong>Procesbeheer</strong>: start, stopt en scheduleert processen\n• <strong>Geheugenbeheer</strong>: wijst RAM-geheugen toe aan processen\n• <strong>Bestandsbeheer</strong>: organiseert bestanden in een hiërarchisch systeem\n• <strong>Apparaatbeheer</strong>: communiceert met hardware via drivers\n• <strong>Beveiliging</strong>: gebruikersrechten en toegangscontrole\n\nVoorbeelden: Windows, macOS, Linux, Android, iOS."
+      },
+      {
+        "title": "Processen & Threads",
+        "theory": "Een <strong>proces</strong> is een programma dat wordt uitgevoerd. Het heeft eigen geheugenruimte.\n\nEen <strong>thread</strong> is een lichtgewichte uitvoerings-eenheid binnen een proces. Meerdere threads delen het geheugen van hun proces.\n\n<strong>Multitasking</strong>: het OS wisselt snel tussen processen zodat het lijkt alsof ze tegelijk draaien.\n\n<strong>Concurrency-problemen</strong>:\n• <em>Deadlock</em>: processen wachten op elkaar en blokkeren\n• <em>Race condition</em>: resultaat hangt af van volgorde van uitvoering\n\nOplossingen: semaforen, mutex, locks."
+      },
+      {
+        "title": "Bestandssystemen & Geheugen",
+        "theory": "<strong>Bestandssystemen</strong> organiseren bestanden op een opslagmedium:\n• FAT32, NTFS (Windows)\n• ext4 (Linux)\n• APFS (macOS)\n\n<strong>Geheugenhiërarchie</strong> (snel → langzaam, klein → groot):\n• Registers → Cache (L1/L2/L3) → RAM → SSD/HDD → tape\n\n<strong>Virtueel geheugen</strong>: OS geeft elk proces de illusie van een grote aaneengesloten geheugenruimte. Uitgewisseld naar schijf als RAM vol is (<em>swapping</em>).\n\n<strong>Paging</strong>: geheugen is verdeeld in vaste blokken (pages)."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de hoofdfunctie van een besturingssysteem?",
+        "options": [
+          "Documenten schrijven",
+          "Hardware en software beheren",
+          "Internetten",
+          "Code compileren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen een proces en een thread?",
+        "options": [
+          "Processen zijn sneller dan threads",
+          "Een thread is een lichtgewichtige uitvoeringsunit binnen een proces; processen hebben eigen geheugen",
+          "Threads zijn zwaardere versies van processen",
+          "Er is geen verschil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een deadlock?",
+        "options": [
+          "Een fout in de broncode",
+          "Processen die op elkaar wachten en elkaar blokkeren",
+          "Een te traag besturingssysteem",
+          "Een bestandssysteemfout"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk bestandssysteem wordt standaard gebruikt in Windows?",
+        "options": [
+          "ext4",
+          "APFS",
+          "FAT16",
+          "NTFS"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is virtueel geheugen?",
+        "options": [
+          "Extra RAM installeren",
+          "Een illusie van meer geheugen via gebruik van schijfruimte",
+          "Geheugen in de cloud",
+          "Cache-geheugen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is swapping in geheugenbeheer?",
+        "options": [
+          "Processen wisselen van CPU",
+          "Pagina's naar schijf schrijven als RAM vol is",
+          "Bestanden kopiëren",
+          "Threads van processor wisselen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke geheugenvorm is het snelst?",
+        "options": [
+          "HDD",
+          "SSD",
+          "RAM",
+          "CPU-registers"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat zijn CPU-stuurprogramma's (drivers)?",
+        "options": [
+          "Software die de CPU programmeert",
+          "Software die communicatie tussen OS en hardware mogelijk maakt",
+          "Een type besturingssysteem",
+          "Een programmeertaal voor drivers"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is multitasking?",
+        "options": [
+          "Meerdere monitoren gebruiken",
+          "Snel wisselen tussen processen zodat ze gelijktijdig lijken te draaien",
+          "Meerdere gebruikers tegelijk",
+          "Meerdere CPU's gebruiken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat lost een mutex op bij concurrency?",
+        "options": [
+          "Deadlocks voorkomen door volgorde te forceren",
+          "Wederzijdse uitsluiting: slechts één thread tegelijk in een kritieke sectie",
+          "Threads versnellen",
+          "Memory leaks oplossen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "web": {
+    "title": "Webontwikkeling",
+    "leaves": [
+      {
+        "title": "HTML & CSS",
+        "theory": "<strong>HTML</strong> (HyperText Markup Language) definieert de <em>structuur</em> van een webpagina.\n\nBelangrijke tags:\n• <code>&lt;h1&gt;-&lt;h6&gt;</code> – koppen\n• <code>&lt;p&gt;</code> – paragraaf\n• <code>&lt;a href='...'&gt;</code> – hyperlink\n• <code>&lt;img src='...'&gt;</code> – afbeelding\n• <code>&lt;div&gt;, &lt;span&gt;</code> – containers\n\n<strong>CSS</strong> (Cascading Style Sheets) regelt de <em>opmaak</em> (kleur, layout, lettertype).\n\nCSS-selectors: element (<code>p</code>), klasse (<code>.klasse</code>), id (<code>#id</code>)."
+      },
+      {
+        "title": "JavaScript & DOM",
+        "theory": "<strong>JavaScript</strong> voegt <em>interactiviteit</em> toe aan webpagina's.\n\n<strong>DOM</strong> (Document Object Model): boomstructuur die de HTML-pagina representeert. JavaScript kan de DOM manipuleren.\n\nBelangrijke concepten:\n• <code>document.getElementById('id')</code> – element selecteren\n• <code>element.textContent = '...'</code> – inhoud aanpassen\n• <code>element.addEventListener('click', functie)</code> – events\n\n<strong>Asynchrone programmering</strong>:\n• <code>fetch()</code> – HTTP-verzoeken sturen\n• <code>async/await</code> – omgaan met asynchrone code\n• <code>Promise</code> – resultaat dat later beschikbaar is"
+      },
+      {
+        "title": "Client-Server & REST API",
+        "theory": "Webapplicaties werken via een <strong>client-server model</strong>:\n\n• <strong>Client</strong>: de browser van de gebruiker\n• <strong>Server</strong>: de computer die data levert\n\nCommunicatie via <strong>HTTP</strong>:\n• <code>GET</code> – data ophalen\n• <code>POST</code> – data versturen\n• <code>PUT/PATCH</code> – data bijwerken\n• <code>DELETE</code> – data verwijderen\n\n<strong>REST API</strong>: standaard voor webservices. Data uitgewisseld in <strong>JSON</strong>-formaat.\n\n<strong>Frontend</strong>: wat de gebruiker ziet (HTML/CSS/JS)\n<strong>Backend</strong>: server-logica (Python/Node.js/Java...)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Waarvoor staat HTML?",
+        "options": [
+          "HyperText Markup Language",
+          "High-Tech Machine Language",
+          "Hyper Transfer Markup Language",
+          "HyperText Machine Link"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat regelt CSS?",
+        "options": [
+          "De structuur van de pagina",
+          "De interactiviteit",
+          "De opmaak en layout",
+          "De server-communicatie"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke taal voegt interactiviteit toe aan webpagina's?",
+        "options": [
+          "HTML",
+          "CSS",
+          "Python",
+          "JavaScript"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is de DOM?",
+        "options": [
+          "Een server-taal",
+          "Een boomstructuur die de HTML-pagina representeert",
+          "Een type database",
+          "Een CSS-preprocessor"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke HTTP-methode gebruik je om data op te halen?",
+        "options": [
+          "POST",
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "In welk formaat worden data uitgewisseld bij een REST API?",
+        "options": [
+          "XML",
+          "HTML",
+          "CSV",
+          "JSON"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is het verschil tussen frontend en backend?",
+        "options": [
+          "Frontend is de server, backend de client",
+          "Frontend is wat de gebruiker ziet; backend is de server-logica",
+          "Er is geen verschil",
+          "Frontend is in Python, backend in HTML"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke CSS-selector selecteert een element met id='header'?",
+        "options": [
+          ".header",
+          "#header",
+          "header",
+          "*header"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet fetch() in JavaScript?",
+        "options": [
+          "Elementen uit de DOM verwijderen",
+          "HTTP-verzoeken sturen en data ophalen",
+          "CSS-stijlen toepassen",
+          "Variabelen declareren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een Promise in JavaScript?",
+        "options": [
+          "Een synchrone functie",
+          "Een resultaat dat later beschikbaar komt (asynchrone operatie)",
+          "Een type loop",
+          "Een CSS-klasse"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "crypto": {
+    "title": "Cryptografie",
+    "leaves": [
+      {
+        "title": "Symmetrische Encryptie",
+        "theory": "<strong>Encryptie</strong> zet leesbare data (plaintext) om in onleesbare data (ciphertext) om privacy te garanderen.\n\n<strong>Symmetrische encryptie</strong>: dezelfde sleutel voor encryptie én decryptie.\n\nVoorbeelden:\n• <strong>AES</strong> (Advanced Encryption Standard) – meest gebruikt, 128/256-bit sleutels\n• DES (verouderd)\n\nVoordeel: snel\nNadeel: sleuteldistributieprobleem — hoe deel je de sleutel veilig?\n\nToepassingen: opslaan van bestanden, versleuteld schijfgeheugen (Bitlocker)."
+      },
+      {
+        "title": "Asymmetrische Encryptie & PKI",
+        "theory": "<strong>Asymmetrische encryptie</strong>: twee sleutels — een publieke en een private.\n\n• <strong>Publieke sleutel</strong>: iedereen mag deze kennen, voor encryptie\n• <strong>Private sleutel</strong>: geheim, voor decryptie\n\nVoorbeelden: <strong>RSA</strong>, elliptische-curvecryptografie (ECC)\n\nToepassing:\n• Veilig sleutels uitwisselen\n• <strong>Digitale handtekening</strong>: ondertekend met private sleutel, geverifieerd met publieke sleutel\n\n<strong>TLS/HTTPS</strong> combineert asymmetrisch (sleuteluitwisseling) met symmetrisch (snelle dataoverdracht)."
+      },
+      {
+        "title": "Hashfuncties & Wachtwoorden",
+        "theory": "Een <strong>hashfunctie</strong> zet invoer om in een vaste-lengte uitvoer (hash/digest).\n\nEigenschappen:\n• Deterministisch: zelfde invoer → zelfde hash\n• Eenrichtingsfunctie: hash terugrekenen naar invoer is onmogelijk\n• Kleine wijziging invoer → compleet andere hash\n\nVoorbeelden: SHA-256, SHA-3, MD5 (verouderd)\n\nGebruik:\n• Wachtwoorden opslaan als hash (nooit plaintext)\n• Bestandsintegriteit controleren\n• Blockchain: elke blok bevat hash van vorige blok\n\n<strong>Salting</strong>: willekeurige waarde toevoegen vóór hashen om rainbow table-aanvallen te voorkomen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is encryptie?",
+        "options": [
+          "Data comprimeren",
+          "Data omzetten naar onleesbare vorm voor privacy",
+          "Data back-uppen",
+          "Data sorteren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het kenmerk van symmetrische encryptie?",
+        "options": [
+          "Twee verschillende sleutels",
+          "Dezelfde sleutel voor encryptie en decryptie",
+          "Geen sleutel nodig",
+          "Alleen voor digitale handtekeningen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk encryptie-algoritme is momenteel de standaard voor symmetrische encryptie?",
+        "options": [
+          "DES",
+          "RSA",
+          "AES",
+          "MD5"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het voordeel van asymmetrische boven symmetrische encryptie?",
+        "options": [
+          "Sneller",
+          "Geen sleuteldistributieprobleem: publieke sleutel kan openlijk gedeeld worden",
+          "Kortere sleutels",
+          "Minder rekenkracht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor dient een digitale handtekening?",
+        "options": [
+          "Data versleutelen",
+          "Authenticiteit en integriteit van een bericht bewijzen",
+          "Wachtwoorden opslaan",
+          "Hashwaarden berekenen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een hashfunctie?",
+        "options": [
+          "Een sleutelgenerator",
+          "Een eenrichtingsfunctie die invoer omzet naar een vaste-lengte hash",
+          "Een type encryptie met twee sleutels",
+          "Een compressie-algoritme"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk hash-algoritme wordt momenteel veel gebruikt?",
+        "options": [
+          "MD5",
+          "SHA-1",
+          "SHA-256",
+          "DES"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom sla je wachtwoorden op als hash en niet in plaintext?",
+        "options": [
+          "Hashes zijn korter",
+          "Als de database gelekt is, kunnen de wachtwoorden niet direct hersteld worden",
+          "Hashes zijn sneller",
+          "Encryptie is te complex"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is salting bij wachtwoordopslag?",
+        "options": [
+          "Wachtwoorden versleutelen met AES",
+          "Een willekeurige waarde toevoegen aan het wachtwoord vóór hashen",
+          "Wachtwoorden in een aparte database opslaan",
+          "Een symmetrische sleutel genereren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe combineert HTTPS asymmetrische en symmetrische encryptie?",
+        "options": [
+          "Alles asymmetrisch versleutelen",
+          "Asymmetrisch voor sleuteluitwisseling; daarna snel symmetrisch voor dataoverdracht",
+          "Alleen symmetrisch",
+          "Geen encryptie, alleen authenticatie"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "ai": {
+    "title": "Kunstmatige Intelligentie",
+    "leaves": [
+      {
+        "title": "Machine Learning Basis",
+        "theory": "<strong>Kunstmatige intelligentie (AI)</strong> geeft computers de mogelijkheid om taken uit te voeren die normaal menselijke intelligentie vereisen.\n\n<strong>Machine learning (ML)</strong>: systemen leren van data zonder expliciet geprogrammeerd te worden.\n\nSoorten ML:\n• <strong>Gesuperviseerd leren</strong>: leren van gelabelde data (input → expected output)\n• <strong>Ongesuperviseerd leren</strong>: patronen vinden in ongelabelde data\n• <strong>Versterkend leren</strong>: agent leert via beloningen en straffen\n\nTypische stappen: data verzamelen → model trainen → evalueren → inzetten."
+      },
+      {
+        "title": "Neurale Netwerken",
+        "theory": "<strong>Neurale netwerken</strong> zijn geïnspireerd op het menselijk brein.\n\nStructuur:\n• <strong>Invoerlaag</strong>: ontvangt de data\n• <strong>Verborgen lagen</strong>: verwerken patronen\n• <strong>Uitvoerlaag</strong>: geeft de uitkomst\n\nElke verbinding heeft een <strong>gewicht</strong>. Training past gewichten aan via <strong>backpropagatie</strong>.\n\n<strong>Deep learning</strong>: neurale netwerken met veel verborgen lagen.\n\nToepassingen: beeldherkenning, spraakherkenning, taalmodellen (GPT), aanbevelingssystemen."
+      },
+      {
+        "title": "AI-ethiek & Toepassingen",
+        "theory": "AI heeft grote maatschappelijke impact:\n\n<strong>Toepassingen</strong>:\n• Medische diagnose (kankerdetectie)\n• Autonome voertuigen\n• Taalvertaling\n• Fraude-detectie\n• Aanbevelingssystemen (Netflix, Spotify)\n\n<strong>Ethische vraagstukken</strong>:\n• <em>Bias</em>: AI kan discrimineren als trainingsdata niet representatief is\n• <em>Privacy</em>: grote hoeveelheden persoonlijke data\n• <em>Transparantie</em>: 'black box' probleem — beslissingen niet altijd uitlegbaar\n• <em>Werkgelegenheid</em>: automatisering van banen\n• <em>Autonome wapens</em>: veiligheidsrisico's"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is machine learning?",
+        "options": [
+          "Computers handmatig programmeren",
+          "Systemen die leren van data zonder expliciet geprogrammeerd te worden",
+          "Robots bouwen",
+          "Een type database"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is gesuperviseerd leren?",
+        "options": [
+          "Leren zonder data",
+          "Leren van gelabelde data (input-output paren)",
+          "Leren via beloningen",
+          "Patronen vinden in ongelabelde data"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is versterkend leren?",
+        "options": [
+          "Leren van gelabelde data",
+          "Leren via beloningen en straffen in een omgeving",
+          "Ongesuperviseerd patronen vinden",
+          "Data labelen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is backpropagatie in neurale netwerken?",
+        "options": [
+          "Data invoeren in het netwerk",
+          "Algoritme om gewichten aan te passen op basis van fouten",
+          "De uitvoerlaag trainen",
+          "Neurale netwerken kopiëren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is deep learning?",
+        "options": [
+          "Machine learning met weinig data",
+          "Neurale netwerken met veel verborgen lagen",
+          "Gesuperviseerd leren met robots",
+          "Zoekalgoritmen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is AI-bias?",
+        "options": [
+          "Een snellere AI",
+          "Discriminerende uitkomsten doordat trainingsdata niet representatief is",
+          "Een type neuraal netwerk",
+          "Encryptie van AI-data"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het 'black box'-probleem bij AI?",
+        "options": [
+          "AI werkt alleen 's nachts",
+          "AI-beslissingen zijn niet altijd uitlegbaar of transparant",
+          "AI heeft een donkere interface",
+          "AI kan geen beelden verwerken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk type AI gebruikt Netflix voor aanbevelingen?",
+        "options": [
+          "Regelgebaseerde AI",
+          "Aanbevelingssystemen via machine learning",
+          "Zoekalgoritmen",
+          "Cryptografie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een toepassing van AI in de gezondheidszorg?",
+        "options": [
+          "Wachtwoorden beheren",
+          "Medische beelddiagnose (bijv. kankerdetectie)",
+          "Netwerken beveiligen",
+          "Databases beheren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke laag in een neuraal netwerk geeft de uitkomst?",
+        "options": [
+          "Invoerlaag",
+          "Verborgen laag",
+          "Uitvoerlaag",
+          "Activatielaag"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "arch": {
+    "title": "Computerarchitectuur",
+    "leaves": [
+      {
+        "title": "Von Neumann-architectuur",
+        "theory": "De meeste computers volgen de <strong>Von Neumann-architectuur</strong>:\n\n• <strong>CPU</strong>: verwerkt instructies\n• <strong>Geheugen (RAM)</strong>: slaat data en programma's op\n• <strong>Invoer/Uitvoer</strong>: communiceert met de buitenwereld\n• <strong>Bus</strong>: verbindt alle componenten\n\nDe <strong>fetch-decode-execute cyclus</strong>:\n1. Haal instructie op uit geheugen (fetch)\n2. Decodeer de instructie (decode)\n3. Voer de instructie uit (execute)\n\nDe CPU heeft registers (zeer snel klein geheugen) en een ALU (rekenkundige eenheid)."
+      },
+      {
+        "title": "CPU & Prestaties",
+        "theory": "De <strong>CPU (Central Processing Unit)</strong> is de processor.\n\nPrestatiefactoren:\n• <strong>Kloksnelheid</strong>: GHz — cycli per seconde\n• <strong>Aantal kernen</strong>: meerdere kernen → parallelle verwerking\n• <strong>Cache</strong>: snel ingebouwd geheugen (L1/L2/L3)\n• <strong>Instructieset (ISA)</strong>: x86, ARM, RISC-V\n\n<strong>Moore's wet</strong>: het aantal transistoren verdubbelt ongeveer elke twee jaar.\n\n<strong>Pipelining</strong>: meerdere instructies tegelijk in verschillende fasen verwerken.\n\n<strong>GPU</strong>: grafische processor, geoptimaliseerd voor parallelle berekeningen."
+      },
+      {
+        "title": "Binair & Getalstelsels",
+        "theory": "Computers werken intern met het <strong>binaire stelsel</strong> (basis 2): enkel 0 en 1.\n\nEen <strong>bit</strong> is de kleinste eenheid (0 of 1).\nEen <strong>byte</strong> = 8 bits = 256 mogelijke waarden (0-255).\n\nOmzetting:\n• Decimaal 13 = 1101 in binair\n• Hexadecimaal (basis 16): 0-9 en A-F\n  – Decimaal 255 = FF in hex\n\n<strong>Tekenrepresentatie</strong>:\n• ASCII: 7-bit standaard voor tekens\n• Unicode/UTF-8: uitgebreid systeem voor alle talen\n\n<strong>Twee-complement</strong>: negatieve gehele getallen binair voorstellen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de Von Neumann-architectuur?",
+        "options": [
+          "Een type besturingssysteem",
+          "Een computerarchitectuur met CPU, geheugen, I/O en een bus",
+          "Een type neuraal netwerk",
+          "Een programmeertaal"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet de ALU in een CPU?",
+        "options": [
+          "Data opslaan",
+          "Rekenkundige en logische bewerkingen uitvoeren",
+          "Instructies ophalen uit geheugen",
+          "Apparaten aansturen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de fetch-decode-execute cyclus?",
+        "options": [
+          "Data ophalen, comprimeren en verwijderen",
+          "Instructie ophalen, decoderen en uitvoeren",
+          "CPU koelen, starten en stoppen",
+          "Geheugen wissen, toewijzen en vrijgeven"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel bits heeft een byte?",
+        "options": [
+          "4",
+          "8",
+          "16",
+          "32"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het decimale equivalent van het binaire getal 1010?",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "12"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat stelt Moore's wet?",
+        "options": [
+          "CPU-snelheid verdubbelt elk jaar",
+          "Het aantal transistoren verdubbelt ongeveer elke twee jaar",
+          "Geheugenprijs halveert elk jaar",
+          "Netwerken worden twee keer zo snel per jaar"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is pipelining?",
+        "options": [
+          "Data in een rij zetten",
+          "Meerdere instructies tegelijk in verschillende fasen verwerken",
+          "Een type netwerktopologie",
+          "Geheugen naar schijf schrijven"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk getalsstelsel gebruikt de letters A-F?",
+        "options": [
+          "Octaal (basis 8)",
+          "Binair (basis 2)",
+          "Hexadecimaal (basis 16)",
+          "Decimaal (basis 10)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarvoor is een GPU geoptimaliseerd?",
+        "options": [
+          "Seriële berekeningen",
+          "Parallelle berekeningen (grafisch en AI)",
+          "Netwerkbeheer",
+          "Bestandsbeheer"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ASCII?",
+        "options": [
+          "Een type CPU",
+          "Een 7-bit standaard voor teksttekens",
+          "Een programmeertaal",
+          "Een hashfunctie"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "recursie": {
+    "title": "Recursie & Complexiteit",
+    "leaves": [
+      {
+        "title": "Recursie",
+        "theory": "<strong>Recursie</strong>: een functie die zichzelf aanroept.\n\nEen recursieve functie heeft altijd:\n• Een <strong>basisgeval</strong>: stopt de recursie\n• Een <strong>recursieve stap</strong>: verkleint het probleem\n\nVoorbeelden:\n<code>def faculteit(n):\n    if n == 0: return 1  # basisgeval\n    return n * faculteit(n - 1)  # recursie\n</code>\n\nAnder klassiek voorbeeld: de Fibonacci-rij.\n\nRecursie kan elegant zijn, maar riskeert een <em>stack overflow</em> bij te diepe recursie (geen basisgeval of te groot probleem)."
+      },
+      {
+        "title": "Tijdscomplexiteit",
+        "theory": "<strong>Tijdscomplexiteit</strong> beschrijft hoe de looptijd van een algoritme schaalt met de invoergrootte n.\n\nNotatie: <strong>Big-O</strong> (worst-case)\n\nVeelvoorkomende complexiteiten (van snel naar traag):\n• O(1) – constant (altijd even snel)\n• O(log n) – logaritmisch (binair zoeken)\n• O(n) – lineair (lineair zoeken)\n• O(n log n) – mergesort, quicksort\n• O(n²) – kwadratisch (bubblesort)\n• O(2ⁿ) – exponentieel (bepaalde recursieve problemen)\n\nEfficiënte algoritmen kiezen is cruciaal bij grote datasets."
+      },
+      {
+        "title": "Ruimtecomplexiteit & Memoization",
+        "theory": "<strong>Ruimtecomplexiteit</strong>: hoeveel extra geheugen een algoritme nodig heeft.\n\n• O(1): constante extra ruimte\n• O(n): lineair extra ruimte (bijv. een array met n elementen)\n\n<strong>Memoization</strong>: eerder berekende resultaten opslaan om herberekening te vermijden.\n\nVoorbeeldl: Fibonacci naïef is O(2ⁿ). Met memoization wordt het O(n).\n\n<strong>Trade-off</strong>: tijdcomplexiteit vs. ruimtecomplexiteit — soms besteed je meer geheugen om sneller te zijn.\n\n<strong>Dynamisch programmeren</strong>: problemen oplossen door deelproblemen op te slaan en te hergebruiken."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat heeft een recursieve functie altijd nodig?",
+        "options": [
+          "Een lus",
+          "Een basisgeval en een recursieve stap",
+          "Een return-statement",
+          "Een parameter"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een stack overflow bij recursie?",
+        "options": [
+          "Te veel geheugen gebruiken door te diepe recursie zonder basisgeval",
+          "Een bestand dat te groot is",
+          "Een variabele die overschreven wordt",
+          "Een compileerfout"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is de Big-O complexiteit van binair zoeken?",
+        "options": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n²)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk algoritme heeft O(n²) tijdscomplexiteit?",
+        "options": [
+          "Binair zoeken",
+          "Mergesort",
+          "Bubblesort",
+          "Lineair zoeken"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat beschrijft Big-O notatie?",
+        "options": [
+          "De beste case looptijd",
+          "De worst-case schaalbaarheid van een algoritme",
+          "De geheugenruimte",
+          "De gemiddelde looptijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is memoization?",
+        "options": [
+          "Een type recursie",
+          "Eerder berekende resultaten opslaan voor hergebruik",
+          "Een sorteeralgoritme",
+          "Geheugen vrijmaken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de tijdscomplexiteit van naïeve recursieve Fibonacci?",
+        "options": [
+          "O(n)",
+          "O(log n)",
+          "O(2ⁿ)",
+          "O(n²)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is dynamisch programmeren?",
+        "options": [
+          "Programmeren in een dynamische taal",
+          "Problemen oplossen door deelresultaten op te slaan en te hergebruiken",
+          "Een type OOP",
+          "Recursie zonder basisgeval"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke complexiteit is het snelst?",
+        "options": [
+          "O(n)",
+          "O(log n)",
+          "O(n log n)",
+          "O(1)"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is de ruimtecomplexiteit van een algoritme dat een array van n elementen aanmaakt?",
+        "options": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n²)"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "version": {
+    "title": "Versiebeheer & Samenwerking",
+    "leaves": [
+      {
+        "title": "Git Basis",
+        "theory": "<strong>Git</strong> is een gedistribueerd versiebeheersysteem. Het houdt de geschiedenis van wijzigingen in code bij.\n\nBelangrijke concepten:\n• <strong>Repository (repo)</strong>: opslagplaats van de code en geschiedenis\n• <strong>Commit</strong>: een snapshot van wijzigingen\n• <strong>Branch</strong>: een aparte ontwikkelingslijn\n• <strong>Merge</strong>: branches samenvoegen\n\nBelangrijke commando's:\n<code>git init, git clone, git add, git commit,\ngit push, git pull, git status, git log</code>\n\n<strong>GitHub/GitLab</strong>: platforms om git-repositories online te hosten en samen te werken."
+      },
+      {
+        "title": "Branches & Merge Conflicts",
+        "theory": "Met <strong>branches</strong> werk je aan nieuwe features zonder de hoofdcode te verstoren.\n\nTypisch werkproces:\n1. Maak een branch aan (<code>git checkout -b feature/naam</code>)\n2. Werk op de branch\n3. Maak een pull request (PR)\n4. Code review\n5. Merge naar main\n\n<strong>Merge conflict</strong>: twee branches hebben dezelfde regels op een andere manier gewijzigd.\n→ Moet manueel opgelost worden.\n\n<strong>Git flow</strong>: een populaire branchestructuur: main, develop, feature, release, hotfix."
+      },
+      {
+        "title": "CI/CD & Samenwerking",
+        "theory": "<strong>CI/CD</strong> (Continuous Integration / Continuous Delivery):\n\n• <strong>CI</strong>: automatisch testen bij elke push\n  – Code wordt gecontroleerd: tests, linting, building\n• <strong>CD</strong>: automatisch uitrollen naar productie bij goedgekeurde code\n\nTools: GitHub Actions, Jenkins, GitLab CI.\n\n<strong>Code review</strong>: team controleert elkaars code vóór merge.\n\n<strong>Agile/Scrum</strong>: iteratieve ontwikkelingsmethode met sprints, dagelijkse standups en retrospectives.\n\nGoede samenwerking: duidelijke commit-berichten, kleine PR's, regelmatige communicatie."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een commit in Git?",
+        "options": [
+          "Een kopie van de repository",
+          "Een snapshot van wijzigingen in de code",
+          "Een branch aanmaken",
+          "Een conflict oplossen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een branch in Git?",
+        "options": [
+          "Een back-up van de code",
+          "Een aparte ontwikkelingslijn los van de hoofdcode",
+          "Een type commit",
+          "Een merge-operatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk commando stuur je lokale commits naar een remote repository?",
+        "options": [
+          "git pull",
+          "git fetch",
+          "git push",
+          "git merge"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een merge conflict?",
+        "options": [
+          "Twee branches fuseren foutloos",
+          "Twee branches hebben dezelfde regels verschillend gewijzigd",
+          "Een repository die te groot is",
+          "Een commit zonder bericht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een pull request (PR)?",
+        "options": [
+          "Code van remote ophalen",
+          "Een verzoek om een branch te mergen, inclusief code review",
+          "Een branch verwijderen",
+          "Een conflict oplossen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor dient CI (Continuous Integration)?",
+        "options": [
+          "Code automatisch publiceren",
+          "Automatisch testen bij elke push om fouten vroeg te detecteren",
+          "Code reviewen door team",
+          "Branches aanmaken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk commando initialiseert een nieuwe Git-repository?",
+        "options": [
+          "git start",
+          "git create",
+          "git init",
+          "git new"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is GitHub?",
+        "options": [
+          "Een programmeertaal",
+          "Een platform om git-repositories online te hosten",
+          "Een type besturingssysteem",
+          "Een CI/CD-tool"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is Scrum?",
+        "options": [
+          "Een type database",
+          "Een iteratieve ontwikkelingsmethode met sprints",
+          "Een versiebeheersysteem",
+          "Een programmeertaal"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat controleert een linter?",
+        "options": [
+          "De prestaties van de code",
+          "Stijl- en syntaxisfouten in de code",
+          "De beveiliging van de code",
+          "De netwerkcommunicatie"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "ethiek": {
+    "title": "Computerethiek",
+    "leaves": [
+      {
+        "title": "Privacy & Gegevensbescherming",
+        "theory": "<strong>Privacy</strong> is het recht op controle over persoonlijke informatie.\n\n<strong>GDPR</strong> (Algemene Verordening Gegevensbescherming, EU 2018):\n• Bedrijven mogen data alleen verzamelen met toestemming\n• Recht om data te laten verwijderen ('recht op vergetelheid')\n• Data mag alleen voor het opgegeven doel gebruikt worden\n• Datalekken moeten gemeld worden\n\n<strong>Persoonsgegevens</strong>: naam, e-mail, locatie, IP-adres, biometrische data.\n\n<strong>Trackers & Cookies</strong>: websites volgen gebruikersgedrag; informed consent vereist."
+      },
+      {
+        "title": "Intellectueel Eigendom & Licenties",
+        "theory": "<strong>Intellectueel eigendom (IP)</strong> beschermt creatieve werken.\n\n• <strong>Auteursrecht</strong>: automatisch recht van maker op creatief werk\n• <strong>Patent</strong>: uitvindingen beschermen\n• <strong>Handelsmerken</strong>: logo's en namen beschermen\n\n<strong>Software-licenties</strong>:\n• <em>Proprietary</em>: gesloten broncode (Windows, Photoshop)\n• <em>Open source</em>: broncode beschikbaar (Linux, Firefox)\n  – GPL: afgeleide werken moeten ook open source zijn\n  – MIT: vrij gebruik, ook in commerciële producten\n  – Apache, BSD: andere open-sourcelicenties"
+      },
+      {
+        "title": "Digitale Kloof & Duurzaamheid",
+        "theory": "De <strong>digitale kloof</strong>: ongelijkheid in toegang tot digitale technologie.\n\n• Mensen zonder internet of digitale vaardigheden zijn benadeeld\n• Oorzaken: armoede, leeftijd, geografie, opleiding\n• Overheden investeren in digitale inclusie\n\n<strong>Duurzaamheid van ICT</strong>:\n• Datacenters verbruiken ~2% van de wereldwijde elektriciteit\n• E-waste: elektronisch afval bevat giftige stoffen en schaarse materialen\n• Groene cloud: serverparken op hernieuwbare energie\n• Langer gebruik van apparaten vermindert CO₂-voetafdruk"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat regelt de GDPR?",
+        "options": [
+          "Computernetwerken",
+          "Gegevensbescherming en privacy in de EU",
+          "Softwarelicenties",
+          "Computerarchitectuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het 'recht op vergetelheid'?",
+        "options": [
+          "Recht om fouten te maken zonder gevolgen",
+          "Recht om persoonlijke data te laten verwijderen bij een bedrijf",
+          "Recht op anoniem surfen",
+          "Recht op gratis internet"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een opensource-licentie?",
+        "options": [
+          "Software zonder rechten",
+          "Een licentie waarbij de broncode beschikbaar is voor iedereen",
+          "Gratis software zonder licentie",
+          "Software met volledige restrictie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen GPL en MIT-licentie?",
+        "options": [
+          "GPL is commercieel; MIT is gratis",
+          "GPL vereist dat afgeleide werken ook GPL zijn; MIT laat vrij gebruik toe ook commercieel",
+          "Ze zijn identiek",
+          "MIT vereist open source; GPL niet"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een datalek?",
+        "options": [
+          "Een database die leeg is",
+          "Ongeautoriseerde toegang of vrijkoming van persoonlijke data",
+          "Trage internetverbinding",
+          "Bestanden die verwijderd zijn"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de digitale kloof?",
+        "options": [
+          "Het verschil in processorkracht",
+          "Ongelijkheid in toegang tot digitale technologie en vaardigheden",
+          "Het verschil in internetsnelheid",
+          "Problemen met netwerkverdeling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is e-waste?",
+        "options": [
+          "E-mailspam",
+          "Elektronisch afval van verouderde apparaten",
+          "Digitale bestanden die weggegooid worden",
+          "Energieverspilling door servers"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel procent van de wereldelektriciteit verbruiken datacenters ongeveer?",
+        "options": [
+          "0,1%",
+          "2%",
+          "20%",
+          "50%"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat beschermt een patent?",
+        "options": [
+          "Creatieve werken zoals muziek en boeken",
+          "Uitvindingen voor een beperkte periode",
+          "Logo's en merknamen",
+          "Software-algoritmen altijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is auteursrecht?",
+        "options": [
+          "Recht op het gebruik van andermans werk",
+          "Automatisch recht van de maker op zijn creatief werk",
+          "Een type softwarelicentie",
+          "Recht op privacy"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "data2": {
+    "title": "Data-analyse & Visualisatie",
+    "leaves": [
+      {
+        "title": "Data-analyse met Python",
+        "theory": "<strong>Data-analyse</strong> is het proces van data verzamelen, opschonen, analyseren en interpreteren.\n\nBelangrijke Python-bibliotheken:\n• <strong>pandas</strong>: dataframes voor tabeldata\n• <strong>NumPy</strong>: numerieke berekeningen en arrays\n• <strong>matplotlib/seaborn</strong>: visualisatie\n• <strong>scikit-learn</strong>: machine learning\n\nTypische stappen:\n1. Data inladen (<code>pd.read_csv('...')</code>)\n2. Exploreren (<code>df.head(), df.describe()</code>)\n3. Opschonen (ontbrekende waarden, uitschieters)\n4. Analyseren\n5. Visualiseren"
+      },
+      {
+        "title": "Gegevensstructuren voor Data",
+        "theory": "<strong>DataFrame</strong> (pandas): tabel met rijen en kolommen. Vergelijkbaar met een spreadsheet.\n\nBelangrijke bewerkingen:\n• <code>df.groupby('kolom').mean()</code> – groeperen en aggregeren\n• <code>df.merge()</code> – tabellen samenvoegen\n• <code>df.dropna()</code> – rijen met ontbrekende waarden verwijderen\n• <code>df.sort_values()</code> – sorteren\n• Boolean indexing: <code>df[df['leeftijd'] > 18]</code>\n\n<strong>JSON vs CSV vs SQL</strong>:\n• CSV: eenvoudig, platte tabel\n• JSON: geneste data, flexibel\n• SQL: relationele database, queries"
+      },
+      {
+        "title": "Visualisatietypes",
+        "theory": "Goede <strong>visualisatie</strong> maakt data begrijpelijk:\n\n• <strong>Lijngrafiek</strong>: tijdreeksen en trends\n• <strong>Staafdiagram</strong>: categorische vergelijking\n• <strong>Histogram</strong>: verdeling van een variabele\n• <strong>Spreidingsdiagram (scatter plot)</strong>: verband tussen twee variabelen\n• <strong>Cirkeldiagram (pie chart)</strong>: aandelen van een geheel\n• <strong>Heatmap</strong>: correlaties en intensiteiten\n• <strong>Boxplot</strong>: mediaan, kwartielen, uitschieters\n\nBelangrijke principes:\n• Gebruik de juiste grafiektype voor het verhaal\n• Labels, titels en eenheden zijn verplicht\n• Vermijd misleidende assen of kleuren"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke Python-bibliotheek gebruik je voor tabeldata (DataFrames)?",
+        "options": [
+          "NumPy",
+          "matplotlib",
+          "pandas",
+          "scikit-learn"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een DataFrame?",
+        "options": [
+          "Een type grafiek",
+          "Een tabel met rijen en kolommen in pandas",
+          "Een klasse in OOP",
+          "Een type database"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke functie lees je een CSV in pandas?",
+        "options": [
+          "pd.open_csv()",
+          "pd.read_csv()",
+          "pd.load_csv()",
+          "pd.import_csv()"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet df.dropna()?",
+        "options": [
+          "Kolommen verwijderen",
+          "Rijen met ontbrekende waarden verwijderen",
+          "Dubbele rijen verwijderen",
+          "Data sorteren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk grafiektype gebruik je voor een tijdreeks?",
+        "options": [
+          "Cirkeldiagram",
+          "Histogram",
+          "Lijngrafiek",
+          "Heatmap"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat toont een boxplot?",
+        "options": [
+          "De tijdreeks van data",
+          "Mediaan, kwartielen en uitschieters",
+          "Correlaties tussen variabelen",
+          "Aandelen van een geheel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke bibliotheek gebruik je voor machine learning in Python?",
+        "options": [
+          "pandas",
+          "NumPy",
+          "scikit-learn",
+          "seaborn"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat doet groupby in pandas?",
+        "options": [
+          "Rijen sorteren",
+          "Data groeperen op een kolom voor aggregatie",
+          "Ontbrekende waarden invullen",
+          "Kolommen samenvoegen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk formaat gebruik je voor geneste data?",
+        "options": [
+          "CSV",
+          "JSON",
+          "TXT",
+          "PDF"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een scatter plot?",
+        "options": [
+          "Een grafiek voor tijdreeksen",
+          "Een grafiek die het verband tussen twee variabelen toont",
+          "Een grafiek voor categorische data",
+          "Een grafiek voor verdeling van één variabele"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "netwerk2": {
+    "title": "Netwerken (uitgebreid)",
+    "leaves": [
+      {
+        "title": "OSI-model",
+        "theory": "Het <strong>OSI-model</strong> (Open Systems Interconnection) beschrijft netwerkcommunicatie in 7 lagen:\n\n1. <strong>Fysiek</strong>: kabel, bits\n2. <strong>Datalink</strong>: MAC-adres, frames\n3. <strong>Netwerk</strong>: IP-adres, routing\n4. <strong>Transport</strong>: TCP/UDP, poorten\n5. <strong>Sessie</strong>: sessies beheren\n6. <strong>Presentatie</strong>: encryptie, compressie\n7. <strong>Applicatie</strong>: HTTP, FTP, SMTP\n\nElke laag communiceert met de aangrenzende lagen.\nEzelsbruggetje: <em>Please Do Not Throw Sausage Pizza Away</em> (omgekeerd)."
+      },
+      {
+        "title": "IP-adressering & Subnetting",
+        "theory": "<strong>IP-adres</strong>: uniek adres van een apparaat op een netwerk.\n\n<strong>IPv4</strong>: 32-bit, geschreven als 4 octetten (bijv. 192.168.1.1)\n• ~4,3 miljard adressen — uitgeput!\n\n<strong>IPv6</strong>: 128-bit, geschreven in hex (bijv. 2001:0db8::1)\n• Praktisch onbeperkt adressen\n\n<strong>Subnetmasker</strong>: bepaalt welk deel het netwerk- en welk deel het hostadres is.\n\n<strong>DHCP</strong>: automatisch IP-adressen toewijzen.\n<strong>NAT</strong>: meerdere apparaten delen één publiek IP-adres via een router."
+      },
+      {
+        "title": "Draadloze Netwerken & Beveiliging",
+        "theory": "<strong>WiFi</strong> (IEEE 802.11): draadloos netwerk via radiogolven.\n\nStandaarden: 802.11a/b/g/n/ac/ax (WiFi 6)\n• Hogere versie → hogere snelheid\n\n<strong>Beveiligingsprotocollen</strong>:\n• <em>WEP</em>: verouderd, onveilig\n• <em>WPA2</em>: huidige standaard\n• <em>WPA3</em>: nieuwste, veiliger\n\n<strong>Aanvallen op netwerken</strong>:\n• Man-in-the-middle (MITM)\n• Packet sniffing\n• Evil twin access point\n\nBescherming: sterke encryptie, VPN, firewall."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoeveel lagen heeft het OSI-model?",
+        "options": [
+          "4",
+          "5",
+          "7",
+          "10"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Op welke OSI-laag werkt IP-adressering?",
+        "options": [
+          "Laag 1 (Fysiek)",
+          "Laag 2 (Datalink)",
+          "Laag 3 (Netwerk)",
+          "Laag 4 (Transport)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoeveel bits heeft een IPv4-adres?",
+        "options": [
+          "16",
+          "32",
+          "64",
+          "128"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom is IPv6 nodig?",
+        "options": [
+          "IPv6 is sneller dan IPv4",
+          "IPv4-adressen zijn uitgeput; IPv6 biedt veel meer adressen",
+          "IPv6 is veiliger",
+          "IPv4 werkt niet op mobiele apparaten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet DHCP?",
+        "options": [
+          "Domeinnamen omzetten naar IP-adressen",
+          "Automatisch IP-adressen toewijzen aan apparaten",
+          "Dataverkeer versleutelen",
+          "Routes bepalen tussen netwerken"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is NAT?",
+        "options": [
+          "Een type router",
+          "Meerdere apparaten laten internetten via één publiek IP-adres",
+          "Een beveiligingsprotocol",
+          "Een DNS-server"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk WiFi-beveiligingsprotocol is huidig de standaard?",
+        "options": [
+          "WEP",
+          "WPA",
+          "WPA2",
+          "WPA3"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een man-in-the-middle aanval?",
+        "options": [
+          "Een aanval op de server",
+          "Een aanvaller onderschept communicatie tussen twee partijen",
+          "Een type DDoS-aanval",
+          "Brute force op wachtwoorden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Op welke OSI-laag werkt TCP?",
+        "options": [
+          "Laag 2",
+          "Laag 3",
+          "Laag 4 (Transport)",
+          "Laag 7"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat doet een firewall?",
+        "options": [
+          "Data comprimeren",
+          "Netwerkinbraken detecteren via gedragsanalyse",
+          "Netverkeer filteren op basis van regels",
+          "IP-adressen toewijzen"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,1549 @@
+{
+  "magn": {
+    "title": "Magnetisme",
+    "leaves": [
+      {
+        "title": "Magnetische Velden",
+        "theory": "<strong>Magnetische velden</strong> ontstaan rond magneten en stroomvoerende geleiders. Ze worden voorgesteld door veldlijnen.\n\nBelangrijke regels:\n• Veldlijnen lopen van noordpool naar zuidpool (buiten de magneet)\n• Gelijksoortige polen stoten elkaar af; tegengestelde trekken aan\n• <strong>Rechthandregel</strong>: de duim wijst in de richting van de stroom; de vingers omhullen de geleider en wijzen de richting van het veld aan\n\nDe eenheid van magnetische veldsterkte is de <strong>Tesla (T)</strong>.\n\nEen stroomvoerende spoel die een magnetisch veld vormt heet een <strong>elektromagneet</strong>."
+      },
+      {
+        "title": "Kracht op Stroomvoerende Geleider",
+        "theory": "Een stroomvoerende geleider in een magnetisch veld ondervindt een kracht.\n\n<strong>Formule</strong>: <code>F = BIL sin(θ)</code>\n\nWaarin:\n• F = kracht (N)\n• B = magnetische veldsterkte (T)\n• I = stroomsterkte (A)\n• L = lengte van de geleider in het veld (m)\n• θ = hoek tussen stroom en veld\n\n<strong>Linkerhandregel (Flemings regel)</strong>:\n• Wijsvinger → richting van B\n• Middelvinger → richting van I\n• Duim → richting van de kracht\n\nDit principe is de basis van de <strong>elektromotor</strong>."
+      },
+      {
+        "title": "Kracht op Bewegende Lading",
+        "theory": "Een bewegende elektrische lading in een magnetisch veld ondervindt een kracht — de <strong>Lorentzkracht</strong>.\n\n<code>F = qvB sin(θ)</code>\n\nWaarin:\n• q = lading (C)\n• v = snelheid (m/s)\n• B = magnetische veldsterkte (T)\n\nAls de lading loodrecht op het veld beweegt:\n• De kracht staat loodrecht op v én op B\n• Resultaat: cirkelvormige beweging\n\nDit wordt gebruikt in <strong>massaspectrometers</strong> en <strong>deeltjesversnellers</strong>."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In welke eenheid wordt magnetische veldsterkte uitgedrukt?",
+        "options": [
+          "Volt",
+          "Ampère",
+          "Tesla",
+          "Weber"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de formule voor de kracht op een stroomvoerende geleider in een magnetisch veld?",
+        "options": [
+          "F = qvB",
+          "F = BIL sin(θ)",
+          "F = ma",
+          "F = kq₁q₂/r²"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke regel gebruik je om de richting van de kracht op een stroomvoerende geleider te bepalen?",
+        "options": [
+          "Rechthandregel",
+          "Linkerhandregel (Flemings)",
+          "Ampère's wet",
+          "Faradays wet"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een elektromagneet?",
+        "options": [
+          "Een permanente magneet",
+          "Een stroomvoerende spoel die een magnetisch veld vormt",
+          "Een geladen deeltje in een veld",
+          "Een condensator"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de Lorentzkracht?",
+        "options": [
+          "Kracht tussen twee magneten",
+          "Kracht op een bewegende lading in een magnetisch veld",
+          "Kracht op een stilstaande lading",
+          "De zwaartekracht op een magneet"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het resultaat van een lading die loodrecht op een magnetisch veld beweegt?",
+        "options": [
+          "Lineaire versnelling",
+          "De lading stopt",
+          "Cirkelvormige beweging",
+          "Geen kracht"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk apparaat maakt gebruik van de Lorentzkracht om deeltjes te scheiden op massa?",
+        "options": [
+          "Oscilloscoop",
+          "Massaspectrometer",
+          "Voltmeter",
+          "Thermometer"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het principe achter een elektromotor?",
+        "options": [
+          "Elektrostatische aantrekking",
+          "Kracht op een stroomvoerende geleider in een magnetisch veld",
+          "Elektromagnetische inductie",
+          "Piezoëlektrisch effect"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "In welke richting lopen magnetische veldlijnen buiten een magneet?",
+        "options": [
+          "Van zuidpool naar noordpool",
+          "Van noordpool naar zuidpool",
+          "Ze zijn altijd cirkelvormig",
+          "Ze lopen willekeurig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat geldt voor gelijksoortige magnetische polen?",
+        "options": [
+          "Ze trekken elkaar aan",
+          "Ze stoten elkaar af",
+          "Er is geen kracht",
+          "Ze trekken aan bij grote afstand"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "emind": {
+    "title": "Elektromagnetische Inductie",
+    "leaves": [
+      {
+        "title": "Wet van Faraday",
+        "theory": "De <strong>wet van Faraday</strong> stelt: een veranderend magnetisch veld induceert een elektromotorische kracht (emk) in een gesloten circuit.\n\n<code>emk = -ΔΦ/Δt</code>\n\nWaarin:\n• Φ = magnetische flux (Wb)\n• ΔΦ/Δt = verandering van flux in de tijd\n\nFlux: <code>Φ = B · A · cos(θ)</code>\n\nHoe sneller de flux verandert, hoe groter de geïnduceerde emk.\n\nDit is de basis van de <strong>generator</strong> (dynamo): een roterend draad in een magnetisch veld."
+      },
+      {
+        "title": "Wet van Lenz",
+        "theory": "De <strong>wet van Lenz</strong> geeft de richting van de geïnduceerde stroom aan:\n\n<em>De geïnduceerde stroom heeft altijd een richting die de verandering in flux die haar veroorzaakte tegengaat.</em>\n\nDit is een gevolg van energiebehoud — de geïnduceerde stroom werkt als een rem.\n\nVoorbeelden:\n• Een magneet die een spoel ingeschoven wordt: stroom in de spoel maakt een pool die de magneet afremt\n• Dit verklaart het gedrag van inductiespolen (spoelen met zelfopgewekte tegenmk)\n\nHet minteken in Faradays wet <code>emk = -ΔΦ/Δt</code> staat voor de wet van Lenz."
+      },
+      {
+        "title": "Toepassingen van Inductie",
+        "theory": "Elektromagnetische inductie heeft talrijke toepassingen:\n\n• <strong>Generator</strong>: mechanische energie → elektrische energie\n• <strong>Transformator</strong>: spanning omhoog of omlaag zetten via inductie tussen twee spoelen\n  – <code>V₁/V₂ = N₁/N₂</code>\n• <strong>Inductiemotor</strong>: wisselstroom maakt roterend veld dat rotor meetrekt\n• <strong>Draadloos opladen</strong>: via inductieve koppeling (Qi-standaard)\n• <strong>Metaaldetector</strong>: inductieverandering door metalen objecten"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat stelt de wet van Faraday?",
+        "options": [
+          "Een magnetisch veld oefent kracht uit op ladingen",
+          "Een veranderend magnetisch veld induceert een emk",
+          "Stroom verwarmt een geleider",
+          "Spanning is evenredig met weerstand"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is magnetische flux?",
+        "options": [
+          "De sterkte van het magnetisch veld op één punt",
+          "Het product van veldsterkte, oppervlakte en cos(θ)",
+          "De stroom door een spoel",
+          "De emk van een generator"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bepaalt de wet van Lenz?",
+        "options": [
+          "De grootte van de geïnduceerde emk",
+          "De richting van de geïnduceerde stroom",
+          "De weerstand van de spoel",
+          "De magnetische veldsterkte"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een transformator?",
+        "options": [
+          "Gelijkstroom omzetten naar wisselstroom",
+          "De spanning verhogen of verlagen via inductie",
+          "Elektrische energie opslaan",
+          "Stroom gelijkrichten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke formule geldt voor een transformator?",
+        "options": [
+          "V₁·N₁ = V₂·N₂",
+          "V₁/V₂ = N₁/N₂",
+          "V₁·N₂ = V₂·N₁",
+          "V₁ = V₂ altijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zet een generator om?",
+        "options": [
+          "Elektrische energie naar warmte",
+          "Mechanische energie naar elektrische energie",
+          "Magnetische energie naar warmte",
+          "Lichtenergie naar elektriciteit"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom werkt draadloos opladen?",
+        "options": [
+          "Via elektrostatische inductie",
+          "Via inductieve koppeling (veranderend magnetisch veld)",
+          "Via radiogolven",
+          "Via infraroodstraling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe vergroot je de geïnduceerde emk in een generator?",
+        "options": [
+          "Lagere rotatiefrequentie",
+          "Kleiner magnetisch veld",
+          "Sneller roteren of sterker magneetveld of meer windingen",
+          "Minder windingen in de spoel"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat verklaart het minteken in de formule emk = -ΔΦ/Δt?",
+        "options": [
+          "De stroom is altijd negatief",
+          "De wet van Lenz: de geïnduceerde stroom werkt de verandering tegen",
+          "Het veld verzwakt altijd",
+          "De emk is altijd kleiner dan de flux"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "In welke eenheid wordt magnetische flux uitgedrukt?",
+        "options": [
+          "Tesla",
+          "Ampère",
+          "Weber (Wb)",
+          "Volt"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "kracht2": {
+    "title": "Krachten & Gravitatie",
+    "leaves": [
+      {
+        "title": "Gravitatiewet van Newton",
+        "theory": "<strong>Newtons gravitatiewet</strong>:\nElke twee massa's trekken elkaar aan met een kracht:\n\n<code>F = G · m₁ · m₂ / r²</code>\n\nWaarin:\n• G = gravitatieconstante = 6,674 × 10⁻¹¹ N·m²/kg²\n• m₁, m₂ = massa's (kg)\n• r = afstand tussen de massa's (m)\n\nDeze kracht neemt af met het kwadraat van de afstand.\n\nDe zwaartekrachtversnelling g op het aardoppervlak (~9,81 m/s²) volgt hieruit:\n<code>g = G · M_aarde / R_aarde²</code>"
+      },
+      {
+        "title": "Cirkelbeweging",
+        "theory": "Bij een <strong>eenparige cirkelbeweging</strong> is de snelheid constant in grootte, maar verandert de richting.\n\nDe <strong>centripetaalversnelling</strong> wijst naar het middelpunt:\n<code>a_c = v² / r</code>\n\nDe benodigde <strong>centripetaalkracht</strong>:\n<code>F_c = m · v² / r = m · ω² · r</code>\n\nWaarin ω de hoeksnelheid is (rad/s).\n\nPeriode en frequentie: <code>T = 2πr/v</code>\n\nVoorbeelden: planeten om de zon, auto's in een bocht, centrifuges."
+      },
+      {
+        "title": "Planetaire Beweging & Keplers Wetten",
+        "theory": "<strong>Keplers drie wetten</strong> beschrijven de planetaire beweging:\n\n<strong>1e wet</strong>: Planeten bewegen in ellipsen met de zon in een brandpunt.\n\n<strong>2e wet</strong>: De verbindingslijn tussen planeet en zon veegt gelijke oppervlakken af in gelijke tijden (een planeet beweegt sneller bij perihelium).\n\n<strong>3e wet</strong>: <code>T² ~ r³</code> — het kwadraat van de omlooptijd is evenredig met de derdemacht van de gemiddelde afstand tot de zon.\n\nDeze wetten werden later verklaard door Newtons gravitatiewet."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat beschrijft de gravitatiewet van Newton?",
+        "options": [
+          "De kracht tussen twee ladingen",
+          "De aantrekkingskracht tussen twee massa's",
+          "De kracht op een stroomvoerende geleider",
+          "De zwaartekracht op aardoppervlak altijd 9,81 N"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe verandert de gravitatiekracht als de afstand verdubbelt?",
+        "options": [
+          "Halveert",
+          "Verviervoudigt",
+          "Wordt 4× kleiner",
+          "Blijft gelijk"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de centripetaalversnelling?",
+        "options": [
+          "De versnelling weg van het middelpunt",
+          "De versnelling gericht naar het middelpunt (v²/r)",
+          "De versnelling door zwaartekracht",
+          "De tangentiële versnelling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de formule voor centripetaalkracht?",
+        "options": [
+          "F = ma",
+          "F = mv²/r",
+          "F = BIL",
+          "F = kq²/r²"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt Keplers tweede wet?",
+        "options": [
+          "Planeten bewegen in cirkels",
+          "T² ~ r³",
+          "De verbindingslijn veegt gelijke oppervlakken af in gelijke tijden",
+          "Alle planeten hebben dezelfde snelheid"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat stelt Keplers derde wet?",
+        "options": [
+          "Planeten bewegen in ellipsen",
+          "T² ~ r³",
+          "Gelijke oppervlakken in gelijke tijden",
+          "De zon staat in het centrum"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer beweegt een planeet het snelst?",
+        "options": [
+          "Bij aphelium (verst van zon)",
+          "Bij perihelium (dichtst bij zon)",
+          "De snelheid is altijd constant",
+          "Bij halve afstand"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de waarde van de gravitatieconstante G?",
+        "options": [
+          "9,81 m/s²",
+          "6,674 × 10⁻¹¹ N·m²/kg²",
+          "3 × 10⁸ m/s",
+          "1,6 × 10⁻¹⁹ C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de hoeksnelheid ω?",
+        "options": [
+          "Afstand per tijd",
+          "Hoek per tijd (rad/s)",
+          "Versnelling in een cirkel",
+          "Frequentie maal massa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Een auto rijdt door een bocht. De centripetaalkracht wordt geleverd door…",
+        "options": [
+          "De motor",
+          "De wrijvingskracht van de weg",
+          "De zwaartekracht",
+          "De luchtweerstand"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "druk": {
+    "title": "Druk & Vloeistoffen",
+    "leaves": [
+      {
+        "title": "Druk",
+        "theory": "<strong>Druk</strong> is de kracht per oppervlakte-eenheid:\n<code>p = F / A</code>\n\nEenheid: Pascal (Pa) = N/m²\n\nDruk werkt in alle richtingen in een vloeistof of gas.\n\n<strong>Hydrostatische druk</strong>: druk op diepte h in een vloeistof:\n<code>p = ρ · g · h</code>\n\nWaarin:\n• ρ = dichtheid (kg/m³)\n• g = 9,81 m/s²\n• h = diepte (m)\n\nDe atmosferische druk op zeeniveau ≈ 101 325 Pa ≈ 1 atm."
+      },
+      {
+        "title": "Wet van Archimedes",
+        "theory": "De <strong>wet van Archimedes</strong>:\n<em>Een voorwerp in een vloeistof ondervindt een opwaartse kracht gelijk aan het gewicht van de verplaatste vloeistof.</em>\n\n<code>F_opw = ρ_vloeistof · g · V_ondergedompeld</code>\n\nAls F_opw > gewicht → het voorwerp drijft\nAls F_opw < gewicht → het voorwerp zinkt\nAls F_opw = gewicht → neutraal drijvend\n\nToepassingen: schepen, duikboten, luchtballons, ijsbergen."
+      },
+      {
+        "title": "Wet van Bernoulli",
+        "theory": "De <strong>wet van Bernoulli</strong> beschrijft het verband tussen druk, snelheid en hoogte in een stromende vloeistof:\n\n<code>p + ½ρv² + ρgh = constant</code>\n\nBelangrijke gevolgen:\n• Waar de snelheid groter is, is de druk lager\n• Vliegtuigvleugel: meer stroomsnelheid boven de vleugel → lagere druk → lift\n• Venturi-effect: vernauwd gedeelte → hogere snelheid, lagere druk\n\nBernoulli geldt voor niet-viskeuze, onsamendrukbare vloeistoffen in stationaire stroming."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de formule voor druk?",
+        "options": [
+          "p = F·A",
+          "p = F/A",
+          "p = m·g",
+          "p = ρ·V"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de eenheid van druk?",
+        "options": [
+          "Newton",
+          "Joule",
+          "Pascal",
+          "Watt"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe berekend je de hydrostatische druk op diepte h?",
+        "options": [
+          "p = m·g·h",
+          "p = ρ·g·h",
+          "p = F/A",
+          "p = ½ρv²"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt de wet van Archimedes?",
+        "options": [
+          "Druk neemt toe met diepte",
+          "Opwaartse kracht = gewicht verplaatste vloeistof",
+          "Stromende vloeistof heeft lagere druk",
+          "Een voorwerp in gas is altijd lichter"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer drijft een voorwerp in een vloeistof?",
+        "options": [
+          "Altijd",
+          "Wanneer de opwaartse kracht groter is dan het gewicht",
+          "Wanneer het voorwerp hol is",
+          "Wanneer de dichtheid van het voorwerp groter is dan de vloeistof"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat beschrijft de wet van Bernoulli?",
+        "options": [
+          "De kracht op ondergedompelde objecten",
+          "Het verband tussen druk, snelheid en hoogte in een stromende vloeistof",
+          "De verandering van druk met temperatuur",
+          "De kracht tussen twee vloeistoflagen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zegt Bernoulli over snelheid en druk?",
+        "options": [
+          "Hogere snelheid → hogere druk",
+          "Hogere snelheid → lagere druk",
+          "Snelheid en druk zijn onafhankelijk",
+          "Druk is altijd gelijk ongeacht snelheid"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe werkt de lift van een vliegtuigvleugel?",
+        "options": [
+          "De motor duwt omhoog",
+          "Hogere stroomsnelheid boven de vleugel geeft lagere druk → liftresultante",
+          "De vleugel slaat als een vogelwiek",
+          "De zwaartekracht wordt omgekeerd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is atmosferische druk op zeeniveau?",
+        "options": [
+          "~10 Pa",
+          "~1000 Pa",
+          "~101 325 Pa (≈ 1 atm)",
+          "~10⁶ Pa"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een duikboot regelt zijn drijfvermogen door…",
+        "options": [
+          "De motor meer vermogen te geven",
+          "Water in of uit ballasttanks te pompen",
+          "De romp te vergroten",
+          "De snelheid te verhogen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "impuls": {
+    "title": "Impuls & Botsingen",
+    "leaves": [
+      {
+        "title": "Impuls en Stootkracht",
+        "theory": "<strong>Impuls (p)</strong> is het product van massa en snelheid:\n<code>p = m · v</code>\n\nEenheid: kg·m/s\n\nDe <strong>stootkracht</strong> is gerelateerd aan de verandering in impuls:\n<code>F · Δt = Δp = m · Δv</code>\n\nDit heet de <strong>impuls-impulsmomentstelling</strong>.\n\nToepassingen:\n• Airbag: vergroot Δt → kleiner F bij ongeluk\n• Kat valt altijd op poten: regelt angular momentum\n• Raket: werpt massa uit om zelf te versnellen"
+      },
+      {
+        "title": "Behoud van Impuls",
+        "theory": "Bij een gesloten systeem (geen externe krachten) is de <strong>totale impuls constant</strong>.\n\n<code>m₁v₁ + m₂v₂ = m₁v₁' + m₂v₂'</code>\n\nDit is de <strong>wet van behoud van impuls</strong>.\n\nBelangrijke gevolgen:\n• Terugslag: bij afschieten van een kogel schiet het wapen in tegengestelde richting terug\n• Explosies: totale impuls voor = na (= 0 als alles stil was)\n• Ruimtevaart: raketaandrijving werkt via behoud van impuls"
+      },
+      {
+        "title": "Elastische & Inelastische Botsingen",
+        "theory": "<strong>Elastische botsing</strong>:\n• Zowel impuls als kinetische energie is behouden\n• Biljartballen benaderen dit gedrag\n\n<strong>Inelastische botsing</strong>:\n• Impuls is behouden, kinetische energie NIET\n• Energie omgezet in warmte, geluid, vervorming\n\n<strong>Volledig inelastische botsing</strong>:\n• Objecten plakken samen na de botsing\n• Maximaal kinetische energieverlies\n• <code>(m₁+m₂)·v' = m₁v₁ + m₂v₂</code>\n\nMeeste echte botsingen zijn inelastisch."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de formule voor impuls?",
+        "options": [
+          "p = F·t",
+          "p = m·v",
+          "p = m·a",
+          "p = F/m"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de eenheid van impuls?",
+        "options": [
+          "N·s of kg·m/s",
+          "Joule",
+          "Watt",
+          "Newton"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat beschrijft de impuls-impulsmomentstelling?",
+        "options": [
+          "p = mv",
+          "F·Δt = Δp",
+          "F = ma",
+          "p = ½mv²"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom maakt een airbag een botsing minder gevaarlijk?",
+        "options": [
+          "De airbag absorbeert alle energie",
+          "Het vergroot de botsingtijd waardoor de gemiddelde kracht kleiner is",
+          "De airbag vermindert de impuls",
+          "De airbag isoleert de bestuurder magnetisch"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is behouden bij een elastische botsing?",
+        "options": [
+          "Alleen impuls",
+          "Alleen kinetische energie",
+          "Zowel impuls als kinetische energie",
+          "Alleen snelheid"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is behouden bij een inelastische botsing?",
+        "options": [
+          "Alleen kinetische energie",
+          "Alleen impuls (niet kinetische energie)",
+          "Noch impuls noch energie",
+          "Zowel impuls als energie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een volledig inelastische botsing?",
+        "options": [
+          "Objecten botsen en stuiteren terug",
+          "Objecten plakken samen na de botsing",
+          "Er is geen energieverlies",
+          "De massa verandert"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Een geweer schiet een kogel af. De terugslag is een gevolg van…",
+        "options": [
+          "De wet van Ohm",
+          "De wet van behoud van impuls",
+          "De wet van Bernoulli",
+          "De wet van Faraday"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de totale impuls van een stilstaand systeem vóór een explosie?",
+        "options": [
+          "Maximaal",
+          "Nul",
+          "Gelijk aan de massa",
+          "Hangt af van de energie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe werkt een raket in de ruimte (geen atmosfeer)?",
+        "options": [
+          "Door lucht terug te duwen",
+          "Via behoud van impuls: uitstoot van gassen in één richting",
+          "Via magnetische aantrekking met de aarde",
+          "Via zwaartekracht van de aarde"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "kernfys": {
+    "title": "Kernfysica",
+    "leaves": [
+      {
+        "title": "Atoomkern & Kernkrachten",
+        "theory": "De atoomkern bestaat uit <strong>protonen</strong> en <strong>neutronen</strong> (nucleonen), bijeengehouden door de <strong>sterke kernkracht</strong>.\n\nDe sterke kernkracht:\n• Werkt op zeer korte afstand (~10⁻¹⁵ m)\n• Is veel sterker dan elektrostatische afstoting\n• Houdt positief geladen protonen bij elkaar\n\n<strong>Bindingsenergie</strong>: energie die vrijkomt wanneer nucleonen zich binden. De <strong>massa-energierelatie</strong> van Einstein: <code>E = mc²</code>\n\nInstabiele kernen vervallen radioactief om een stabielere configuratie te bereiken."
+      },
+      {
+        "title": "Kernsplijting",
+        "theory": "<strong>Kernsplijting (fissie)</strong>: een zware kern (bijv. ²³⁵U) wordt beschoten met een neutron en splitst:\n\n<code>²³⁵U + n → ⁹²Kr + ¹⁴¹Ba + 3n + energie</code>\n\nDe vrijgekomen neutronen kunnen nieuwe kernsplitsingen veroorzaken: <strong>kettingreactie</strong>.\n\nIn een <strong>kerncentrale</strong>:\n• Kettingreactie onder controle (moderatoren, regelstaven)\n• Warmte stoomt turbine aan\n\nIn een <strong>kernbom</strong>:\n• Ongecontroleerde kettingreactie\n\nProbleem: radioactief afval met lange halfwaardetijd."
+      },
+      {
+        "title": "Kernfusie",
+        "theory": "<strong>Kernfusie</strong>: lichte kernen smelten samen tot een zwaardere kern:\n\n<code>²H + ³H → ⁴He + n + 17,6 MeV</code>\n\nFusie levert enorme hoeveelheden energie en komt voor in sterren.\n\nOp aarde:\n• Vereist extreme temperaturen (~10⁷ K) om de elektrostatische afstoting te overwinnen\n• In tokamak-reactoren wordt plasma door magnetische velden ingesloten\n• <strong>ITER</strong>-project in Zuid-Frankrijk is de grootste experimentele fusie reactor\n\nVoordelen boven fissie: meer energie, minder radioactief afval, rijkere brandstof."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke kracht houdt de atoomkern samen?",
+        "options": [
+          "Elektromagnetische kracht",
+          "Zwaartekracht",
+          "Sterke kernkracht",
+          "Zwakke kernkracht"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de massa-energierelatie van Einstein?",
+        "options": [
+          "E = hf",
+          "E = mc²",
+          "E = ½mv²",
+          "E = qV"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een kettingreactie bij kernsplijting?",
+        "options": [
+          "Een opeenvolging van chemische reacties",
+          "Neutronen van één splijting veroorzaken nieuwe splijtingen",
+          "Een reeks explosies",
+          "Een cyclische kernfusie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor dienen regelstaven in een kerncentrale?",
+        "options": [
+          "De reactor afkoelen",
+          "De kettingreactie vertragen of stoppen door neutronen op te nemen",
+          "De stoom te condenseren",
+          "De turbine te smeren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke reactie levert meer energie per kg brandstof?",
+        "options": [
+          "Kernsplijting (fissie)",
+          "Kernfusie",
+          "Ze zijn gelijk",
+          "Chemische verbranding"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het voordeel van kernfusie boven kernsplijting?",
+        "options": [
+          "Goedkopere installatie",
+          "Minder radioactief afval en meer energie per reactie",
+          "Minder hoge temperaturen vereist",
+          "Gemakkelijker te controleren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk project bouwt de grootste experimentele fusiereactor?",
+        "options": [
+          "CERN",
+          "NASA",
+          "ITER",
+          "ESA"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk isotoop van uranium wordt gebruikt in kernsplijting?",
+        "options": [
+          "U-234",
+          "U-235",
+          "U-238",
+          "U-239"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is bindingsenergie?",
+        "options": [
+          "De energie van een elektron in zijn baan",
+          "De energie die vrijkomt wanneer nucleonen zich binden tot een kern",
+          "De energie van een foton",
+          "De activeringsenergie van een kernreactie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom vereist kernfusie extreme temperaturen?",
+        "options": [
+          "Om de neutronen te versnellen",
+          "Om de elektrostatische afstoting tussen positieve kernen te overwinnen",
+          "Om de reactor te koelen",
+          "Om de kettingreactie te starten"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "kwantum": {
+    "title": "Kwantumfysica",
+    "leaves": [
+      {
+        "title": "Fotonenmodel van Licht",
+        "theory": "Einstein stelde voor dat licht bestaat uit deeltjes: <strong>fotonen</strong>.\n\nEnergie van een foton:\n<code>E = hf = hc/λ</code>\n\nWaarin:\n• h = constante van Planck = 6,626 × 10⁻³⁴ J·s\n• f = frequentie (Hz)\n• c = lichtsnelheid = 3 × 10⁸ m/s\n• λ = golflengte (m)\n\n<strong>Foto-elektrisch effect</strong>: licht kan elektronen uit een metaaloppervlak slaan, maar alleen als de frequentie hoog genoeg is (ongeacht de intensiteit). Dit bewijst de deeltjesaard van licht."
+      },
+      {
+        "title": "Golf-Deeltje Dualiteit",
+        "theory": "Licht en materie vertonen zowel <strong>golf-</strong> als <strong>deeltjeseigenschappen</strong>.\n\nLicht:\n• Deeltje: foto-elektrisch effect\n• Golf: interferentie en diffractie\n\nElektronen (de Broglie):\n<code>λ = h / p = h / (mv)</code>\n\nElke bewegende massa heeft een bijbehorende golflengte.\n\nHet <strong>dubbelspletexperiment</strong> toont aan dat zelfs individuele elektronen een interferentiepatroon vormen — ze gaan als golf door beide spleten tegelijk.\n\nHeisenberg's onzekerheidsrelatie: je kunt niet tegelijk positie én impuls exact meten."
+      },
+      {
+        "title": "Atoommodel & Energieniveaus",
+        "theory": "In het kwantummechanische atoommodel bevindt een elektron zich in een <strong>orbitaal</strong> met een specifiek energieniveau.\n\nBij overgang van hoger naar lager niveau wordt een foton uitgestoten met:\n<code>E_foton = E_hoog - E_laag = hf</code>\n\nDit verklaart de <strong>emissiespektra</strong> van elementen (lijnenspectra).\n\nElk element heeft een uniek spectrum → <strong>spectroscopische identificatie</strong>.\n\nPlanck: kwantumhypothese — energie wordt uitgewisseld in discrete pakketjes (<em>kwanta</em>).\n\nSchrödingers vergelijking beschrijft de kans om een elektron op een bepaalde plek te vinden."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een foton?",
+        "options": [
+          "Een deeltje van een atoomkern",
+          "Een kwantum (deeltje) van licht",
+          "Een type elektron",
+          "Een radioactief deeltje"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de energie van een foton?",
+        "options": [
+          "E = mv²",
+          "E = hf",
+          "E = qV",
+          "E = BIL"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bewijst het foto-elektrisch effect?",
+        "options": [
+          "Licht is een golf",
+          "Licht bestaat uit deeltjes (fotonen)",
+          "Elektronen hebben geen massa",
+          "Licht reist in vacuüm sneller dan geluid"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt de de Broglie-hypothese?",
+        "options": [
+          "Licht is altijd een golf",
+          "Bewegende materie heeft een bijbehorende golflengte",
+          "Elektronen zijn massaloos",
+          "Fotonen hebben massa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de constante van Planck h?",
+        "options": [
+          "6,674 × 10⁻¹¹ N·m²/kg²",
+          "6,626 × 10⁻³⁴ J·s",
+          "9,11 × 10⁻³¹ kg",
+          "1,38 × 10⁻²³ J/K"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat toont het dubbelspletexperiment aan?",
+        "options": [
+          "Elektronen zijn deeltjes",
+          "Elektronen vertonen golfgedrag en interfereren",
+          "Licht bestaat enkel uit deeltjes",
+          "Fotonen botsen met elektronen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt Heisenbergs onzekerheidsrelatie?",
+        "options": [
+          "Energie is altijd behouden",
+          "Positie en impuls zijn niet tegelijk exact meetbaar",
+          "Elektronen zijn altijd in rust",
+          "Golflengten zijn discreet"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat veroorzaakt het emissiespectrum van een element?",
+        "options": [
+          "Kernsplijting",
+          "Elektronen die van hoger naar lager energieniveau springen en fotonen uitstoten",
+          "Radioactief verval",
+          "Elektromagnetische inductie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor kan het emissiespectrum van een element gebruikt worden?",
+        "options": [
+          "Massa bepalen",
+          "Spectroscopische identificatie van het element",
+          "Temperatuur meten",
+          "Radioactiviteit meten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een orbitaal?",
+        "options": [
+          "Een vaste baan van een elektron",
+          "Een gebied waar de kans groot is een elektron te vinden",
+          "Een type foton",
+          "Een kwantum van energie"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "golven2": {
+    "title": "Golven (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Staande Golven",
+        "theory": "Een <strong>staande golf</strong> ontstaat door superositie van twee gelijke golven die in tegengestelde richting bewegen.\n\nKenmerken:\n• <strong>Knopen</strong>: punten zonder uitwijking\n• <strong>Buiken</strong>: punten met maximale uitwijking\n\nBij een snaar ingespannen aan beide uiteinden:\n• Fundamentele toon: λ = 2L\n• 2e harmonische: λ = L\n• 3e harmonische: λ = 2L/3\n\nDe frequentie van elke harmonische: <code>fₙ = n·v / 2L</code>\n\nStaande golven in een snaar zijn de basis van gitaar, piano en viool."
+      },
+      {
+        "title": "Interferentie & Diffractie",
+        "theory": "<strong>Interferentie</strong>: twee golven die samenkomen kunnen versterken of verzwakken.\n\n• <strong>Constructieve interferentie</strong>: golven zijn in fase → amplitude vergroot\n• <strong>Destructieve interferentie</strong>: golven zijn in tegenfase → amplitude verkleint of nul\n\n<strong>Diffractie</strong>: buiging van golven om hindernissen of door spleten.\n• Significant als de spleetbreedte vergelijkbaar is met de golflengte\n\nToepassingen:\n• Dubbelspletpatroon (Young)\n• Antireflectielagen op brillenglazen (destructieve interferentie)\n• Geluidsisolatie"
+      },
+      {
+        "title": "Elektromagnetisch Spectrum",
+        "theory": "Licht is een <strong>elektromagnetische golf</strong>. Het EM-spectrum (van laag naar hoog frequentie):\n\n• Radiogolven (AM, FM)\n• Microgolven\n• Infrarood (warmtestraling)\n• <strong>Zichtbaar licht</strong> (~380-700 nm)\n• Ultraviolet (UV)\n• Röntgenstraling (X-rays)\n• Gammastraling\n\nAlle EM-golven reizen met de lichtsnelheid in vacuüm: <code>c = 3 × 10⁸ m/s</code>\n<code>c = f · λ</code>\n\nHogere frequentie → hogere energie → kortere golflengte."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een staande golf?",
+        "options": [
+          "Een golf die zich voortplant",
+          "Een golf gevormd door twee tegengesteld bewegende golven die interfereren",
+          "Een longitudinale golf",
+          "Een golf met constante amplitude"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn knopen in een staande golf?",
+        "options": [
+          "Punten met maximale uitwijking",
+          "Punten zonder uitwijking",
+          "Punten waar de golven botsen",
+          "Punten met maximale energie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is constructieve interferentie?",
+        "options": [
+          "Golven heffen elkaar op",
+          "Golven versterken elkaar (in fase)",
+          "Golven lopen uit fase",
+          "Een golf buigt om een obstakel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer treedt diffractie significant op?",
+        "options": [
+          "Als de golflengte veel kleiner is dan de spleet",
+          "Als de spleetbreedte vergelijkbaar is met de golflengte",
+          "Alleen bij geluidsgolven",
+          "Bij hogere snelheden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk deel van het EM-spectrum is zichtbaar voor het menselijk oog?",
+        "options": [
+          "Radiogolven",
+          "Microgolven",
+          "~380-700 nm (zichtbaar licht)",
+          "Röntgenstraling"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Met welke snelheid reizen elektromagnetische golven in vacuüm?",
+        "options": [
+          "340 m/s",
+          "1500 m/s",
+          "3 × 10⁸ m/s",
+          "3 × 10⁶ m/s"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke EM-straling heeft de hoogste frequentie?",
+        "options": [
+          "Radiogolven",
+          "Infrarood",
+          "Ultraviolet",
+          "Gammastraling"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is de relatie tussen frequentie en golflengte bij EM-golven?",
+        "options": [
+          "f = λ/c",
+          "c = f·λ",
+          "f = c²·λ",
+          "λ = c²/f"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe werkt een antireflectielaag op een brillenglas?",
+        "options": [
+          "Constructieve interferentie van gereflecteerd licht",
+          "Destructieve interferentie zorgt dat gereflecteerde golven elkaar opheffen",
+          "De laag absorbeert licht",
+          "De laag buigt licht weg"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de golflengte van de fundamentele toon van een snaar van lengte L?",
+        "options": [
+          "λ = L",
+          "λ = L/2",
+          "λ = 2L",
+          "λ = 4L"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "optiek2": {
+    "title": "Optica (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Kleur & Dispersie",
+        "theory": "Wit licht bestaat uit alle kleuren van het zichtbaar spectrum.\n\n<strong>Dispersie</strong>: splitsing van wit licht in kleuren via een prisma, doordat de brekingsindex afhankelijk is van de golflengte.\n\n<strong>Regenboog</strong>: dispersie door waterdruppels.\n\nKleuren van het zichtbaar spectrum (van laag naar hoog frequentie):\n<strong>Rood → Oranje → Geel → Groen → Blauw → Indigo → Violet</strong>\n\n<strong>Primaire kleuren licht</strong>: Rood, Groen, Blauw (RGB) → additief mengen\n<strong>Primaire kleuren verf</strong>: Cyaan, Magenta, Geel (CMYK) → subtractief mengen"
+      },
+      {
+        "title": "Totale Interne Reflectie",
+        "theory": "<strong>Totale interne reflectie</strong> treedt op wanneer licht van een optisch dicht medium naar een minder dicht medium gaat bij een hoek groter dan de <strong>kritieke hoek</strong>.\n\n<code>sin(θ_c) = n₂/n₁</code>\n\nBij de kritieke hoek wordt het gebroken licht 90°.\nBoven de kritieke hoek: geen breking, alleen reflectie.\n\nToepassingen:\n• <strong>Optische vezels</strong>: licht voortgeleid via totale interne reflectie\n• Diamantfacetten: blinken door totale interne reflectie\n• Endoscopen"
+      },
+      {
+        "title": "Lenzen & Beeldvorming",
+        "theory": "De <strong>lenzenwet</strong> geeft de beeldpositie:\n<code>1/f = 1/d_o + 1/d_i</code>\n\nWaarin:\n• f = brandpuntsafstand (m)\n• d_o = objectafstand\n• d_i = beeldafstand\n\n<strong>Vergroting</strong>: <code>M = -d_i / d_o</code>\n\nConvergerende lens (f > 0): kan vergroot, verkleind, reëel of virtueel beeld vormen.\nDivergerende lens (f < 0): altijd virtueel, rechtopstaand, verkleind beeld.\n\nOogafwijkingen:\n• Bijziendheid → divergerende lens\n• Verziendheid → convergerende lens"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is dispersie van licht?",
+        "options": [
+          "Buiging van licht om obstakels",
+          "Splitsing van wit licht in kleuren door verschil in brekingsindex",
+          "Reflectie van licht op een spiegel",
+          "Absorptie van licht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke primaire kleuren vormen wit licht (additief)?",
+        "options": [
+          "Rood, Geel, Blauw",
+          "Rood, Groen, Blauw (RGB)",
+          "Cyaan, Magenta, Geel",
+          "Oranje, Groen, Paars"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer treedt totale interne reflectie op?",
+        "options": [
+          "Als licht van minder dicht naar dichter medium gaat",
+          "Als de invalshoek groter is dan de kritieke hoek in een dicht medium",
+          "Als licht loodrecht op het oppervlak valt",
+          "Als de golflengte te groot is"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de toepassing van totale interne reflectie in communicatie?",
+        "options": [
+          "Radiogolven",
+          "Optische vezels",
+          "Microgolven",
+          "Röntgenstraling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de lenzenwet?",
+        "options": [
+          "1/f = 1/d_o · d_i",
+          "1/f = 1/d_o + 1/d_i",
+          "f = d_o + d_i",
+          "f = d_o · d_i"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke lens corrigeert bijziendheid?",
+        "options": [
+          "Convergerende lens",
+          "Divergerende lens",
+          "Vlakke lens",
+          "Cilindrische lens"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het teken van f voor een divergerende lens?",
+        "options": [
+          "Positief",
+          "Negatief",
+          "Nul",
+          "Oneindig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat vormt een divergerende lens altijd?",
+        "options": [
+          "Reëel, omgekeerd beeld",
+          "Virtueel, rechtopstaand, verkleind beeld",
+          "Reëel, vergroot beeld",
+          "Geen beeld"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de kritieke hoek bij totale interne reflectie?",
+        "options": [
+          "De hoek waaronder licht altijd doorgelaten wordt",
+          "De minimale hoek waaronder totale reflectie optreedt",
+          "De hoek van inval bij reflectie",
+          "De Brewster-hoek"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke kleur licht heeft de hoogste frequentie in het zichtbaar spectrum?",
+        "options": [
+          "Rood",
+          "Geel",
+          "Groen",
+          "Violet"
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  "wisselstroom": {
+    "title": "Wisselstroom & Vermogen",
+    "leaves": [
+      {
+        "title": "Wisselstroom vs. Gelijkstroom",
+        "theory": "<strong>Gelijkstroom (DC)</strong>: stroom in één richting, constante spanning.\n• Batterijen, zonnecellen\n\n<strong>Wisselstroom (AC)</strong>: stroom wisselt periodiek van richting, sinusvormige spanning.\n• Netspanning in Europa: 230 V, 50 Hz\n\n<strong>Effectieve waarde (rms)</strong>:\n<code>V_rms = V_max / √2</code>\n<code>I_rms = I_max / √2</code>\n\nDe effectieve waarde geeft het equivalent gelijkstroom-effect.\n\nVoordeel van AC: makkelijk op te zetten via transformator."
+      },
+      {
+        "title": "Elektrisch Vermogen",
+        "theory": "<strong>Elektrisch vermogen</strong>:\n<code>P = U · I = I² · R = U² / R</code>\n\nEenheid: Watt (W)\n\nEnergie verbruikt: <code>E = P · t</code> (in Joule of kWh)\n\n1 kWh = 3 600 000 J\n\n<strong>Warmteverliezen</strong> bij transport:\n• <code>P_verlies = I² · R</code>\n• Hogere spanning → lagere stroom → minder verlies\n• Daarom wordt elektriciteit over lange afstand bij hoge spanning getransporteerd (via transformatoren)\n\n<strong>Rendement</strong>: η = P_nuttig / P_totaal"
+      },
+      {
+        "title": "Condensatoren & Spoelen in AC",
+        "theory": "<strong>Condensator</strong> in een AC-circuit:\n• Tegenstand heet <em>capacitieve reactantie</em>: <code>Xc = 1/(2πfC)</code>\n• Hogere frequentie → lagere reactantie\n\n<strong>Spoel (inductor)</strong> in een AC-circuit:\n• Tegenstand heet <em>inductieve reactantie</em>: <code>XL = 2πfL</code>\n• Hogere frequentie → hogere reactantie\n\n<strong>Resonantie</strong>: bij <code>XL = Xc</code> is de impedantie minimaal.\n<code>f_res = 1 / (2π√(LC))</code>\n\nGebruikt in radioontvangers om afstemming op een frequentie te realiseren."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de netfrequentie in Europa?",
+        "options": [
+          "60 Hz",
+          "50 Hz",
+          "100 Hz",
+          "25 Hz"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de netspanning (rms) in Europa?",
+        "options": [
+          "110 V",
+          "150 V",
+          "230 V",
+          "380 V"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de effectieve waarde (rms) van spanning?",
+        "options": [
+          "V_max",
+          "V_max / 2",
+          "V_max / √2",
+          "V_max · √2"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de formule voor elektrisch vermogen?",
+        "options": [
+          "P = U/I",
+          "P = U·I",
+          "P = I/U",
+          "P = U²·I"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel Joule is 1 kWh?",
+        "options": [
+          "1000 J",
+          "3 600 J",
+          "3 600 000 J",
+          "36 000 J"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom wordt elektriciteit bij hoge spanning getransporteerd?",
+        "options": [
+          "Hogere spanning is veiliger",
+          "Hogere spanning geeft hogere stroom",
+          "Hogere spanning geeft lagere stroom → minder warmteverlies",
+          "Transformatoren werken beter bij lage spanning"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de capacitieve reactantie van een condensator?",
+        "options": [
+          "Xc = 2πfC",
+          "Xc = 1/(2πfC)",
+          "Xc = L/(2πf)",
+          "Xc = 2πf/C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe verandert de inductieve reactantie bij hogere frequentie?",
+        "options": [
+          "Daalt",
+          "Stijgt",
+          "Blijft gelijk",
+          "Wordt nul"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is resonantiefrequentie in een LC-circuit?",
+        "options": [
+          "f waarbij XL = Xc en impedantie minimaal is",
+          "f waarbij de condensator volledig opgeladen is",
+          "f van de netspanning",
+          "f waarbij stroomsterkte nul is"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is het rendement van een apparaat?",
+        "options": [
+          "P_totaal / P_nuttig",
+          "P_nuttig / P_totaal",
+          "P_verlies / P_totaal",
+          "P_totaal - P_verlies"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "halfgel": {
+    "title": "Halfgeleiders & Elektronica",
+    "leaves": [
+      {
+        "title": "Halfgeleiders",
+        "theory": "<strong>Halfgeleiders</strong> hebben een geleidingsvermogen tussen metalen en isolatoren.\n\nVoorbeelden: silicium (Si), germanium (Ge).\n\nZuiver Si geleidt slecht. Door <strong>dottering</strong> voeg je atomen toe:\n• <strong>n-type</strong>: extra elektronen (bijv. fosfor met 5 valentie-elektronen)\n• <strong>p-type</strong>: positieve gaten/holes (bijv. boor met 3 valentie-elektronen)\n\nGeleiding neemt toe bij hogere temperatuur (anders dan metalen).\n\nHalfgeleiders zijn de basis van transistoren, dioden en geïntegreerde schakelingen (chips)."
+      },
+      {
+        "title": "Diode & Transistor",
+        "theory": "<strong>Diode</strong>: p-n junctie\n• Geleidt stroom in één richting (doorlaatrichting)\n• Blokkeert stroom in de andere richting (sperrichting)\n\nToepassingen diode:\n• Gelijkrichting van wisselstroom\n• LED (light-emitting diode)\n• Zonnecellen\n\n<strong>Transistor</strong>: drie lagen (NPN of PNP)\n• Fungeert als schakelaar of versterker\n• Kleine basisstroom regelt grote collectorstroom\n\nModerne chips bevatten miljarden transistoren (MOSFET-technologie)."
+      },
+      {
+        "title": "Logische Schakelingen",
+        "theory": "<strong>Logische poorten</strong> zijn de bouwstenen van digitale elektronica.\n\nBelangrijke poorten:\n• <strong>AND</strong>: uitgang = 1 alleen als beide ingangen 1 zijn\n• <strong>OR</strong>: uitgang = 1 als minstens één ingang 1 is\n• <strong>NOT</strong>: inverteert het ingangssignaal\n• <strong>NAND, NOR</strong>: negaties van AND en OR\n• <strong>XOR</strong>: uitgang = 1 als de ingangen verschillend zijn\n\nMet <strong>NAND-poorten</strong> alleen kun je alle logische functies bouwen (universele poort).\n\nWaarheidsTabellen tonen alle mogelijke combinaties van in- en uitgangen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat zijn halfgeleiders?",
+        "options": [
+          "Materialen die altijd goed geleiden",
+          "Materialen met geleidingsvermogen tussen metalen en isolatoren",
+          "Supergeleiders bij lage temperatuur",
+          "Materialen die nooit stroom geleiden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is dottering bij halfgeleiders?",
+        "options": [
+          "Het koelen van de halfgeleider",
+          "Het toevoegen van vreemd atomen om het geleidingsvermogen te veranderen",
+          "Het verbinden van twee halfgeleiders",
+          "Het behandelen met licht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een n-type halfgeleider?",
+        "options": [
+          "Een halfgeleider met positieve gaten",
+          "Een halfgeleider met extra vrije elektronen",
+          "Een neutrale halfgeleider",
+          "Een niet-gedoteerde halfgeleider"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarvoor dient een diode?",
+        "options": [
+          "Stroom versterken",
+          "Stroom in één richting geleiden",
+          "Spanning stabiliseren",
+          "Stroom opslaan"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een LED?",
+        "options": [
+          "Een transistor die licht detecteert",
+          "Een diode die licht uitzendt",
+          "Een soort condensator",
+          "Een weerstand"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een transistor als versterker?",
+        "options": [
+          "Kleine basisstroom regelt een grotere collectorstroom",
+          "Het slaat energie op",
+          "Het geleidt stroom in twee richtingen",
+          "Het omzet AC naar DC"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat geeft een AND-poort als uitgang 1?",
+        "options": [
+          "Als minstens één ingang 1 is",
+          "Alleen als beide ingangen 1 zijn",
+          "Als beide ingangen 0 zijn",
+          "Als de ingangen verschillend zijn"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat geeft een NOT-poort?",
+        "options": [
+          "De som van de ingangen",
+          "Het product van de ingangen",
+          "De inverse van de ingang",
+          "Altijd 0"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke poort is een universele poort?",
+        "options": [
+          "AND",
+          "OR",
+          "NAND",
+          "XOR"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wanneer geeft een XOR-poort uitgang 1?",
+        "options": [
+          "Altijd",
+          "Nooit",
+          "Als beide ingangen gelijk zijn",
+          "Als de ingangen verschillend zijn"
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  "astro": {
+    "title": "Astronomie",
+    "leaves": [
+      {
+        "title": "Zonnestelsel",
+        "theory": "Ons <strong>zonnestelsel</strong> bestaat uit de zon en alles wat eromheen draait.\n\n<strong>Planeten</strong> (volgorde van de zon): Mercurius, Venus, Aarde, Mars | Jupiter, Saturnus, Uranus, Neptunus\n(ezelsbruggetje: <em>Mijn Vader Eet Maandelijks Jaarlijks Soms Uit Noodhulp</em>)\n\nInnerste vier: <em>rotsplaneten</em>\nBuitenste vier: <em>gasreuzen</em>\n\nOok: dwergplaneten (Pluto), asteroïden, kometen, manen.\n\nAfstanden gemeten in <strong>AU</strong> (astronomische eenheid) = afstand Aarde-Zon ≈ 1,5 × 10¹¹ m."
+      },
+      {
+        "title": "Sterren & Sterevolutie",
+        "theory": "Een <strong>ster</strong> produceert energie via kernfusie in zijn kern.\n\nLevenscyclus (zonachtige ster):\n1. <strong>Nevelwolk</strong> → ster vormt door gravitatiecollaps\n2. <strong>Hoofdreeks</strong>: stabiele fase (H → He fusie)\n3. <strong>Rode reus</strong>: H uitgeput in kern\n4. <strong>Planetaire nevel</strong> + <strong>witte dwerg</strong>\n\nZware sterren eindigen als <strong>supernova</strong> → <strong>neutronenster</strong> of <strong>zwart gat</strong>.\n\nHet HR-diagram (Hertzsprung-Russell) toont de relatie tussen helderheid en temperatuur van sterren."
+      },
+      {
+        "title": "Heelal & Kosmologie",
+        "theory": "Het <strong>heelal</strong> is ~13,8 miljard jaar oud en begon met de <strong>oerknal (Big Bang)</strong>.\n\nBewijs voor de Big Bang:\n• <strong>Roodverschuiving</strong> (Doppler-effect voor licht): sterrenstelsels bewegen weg\n• <strong>Kosmische achtergrondstraling</strong>: 'nagloed' van de Big Bang\n• Abundantie van H en He\n\nHet heelal bestaat uit:\n• ~5% gewone materie\n• ~27% donkere materie (niet direct waarneembaar)\n• ~68% donkere energie (oorzaak van versnelde expansie)\n\nAfstanden in het heelal: lichtjaar = afstand die licht in 1 jaar aflegt ≈ 9,46 × 10¹⁵ m."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke planeet staat het dichtst bij de zon?",
+        "options": [
+          "Venus",
+          "Mars",
+          "Mercurius",
+          "Aarde"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een AU?",
+        "options": [
+          "De afstand van de aarde tot de maan",
+          "De gemiddelde afstand van de aarde tot de zon",
+          "De diameter van de zon",
+          "De afstand tot de dichtstbijzijnde ster"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke energie-bron hebben sterren op de hoofdreeks?",
+        "options": [
+          "Kernsplijting van uranium",
+          "Kernfusie van waterstof naar helium",
+          "Chemische verbranding",
+          "Zwaartekrachtenergie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een supernova?",
+        "options": [
+          "Een jonge ster in wording",
+          "Een explosieve dood van een zware ster",
+          "Een planeet die zijn ster omcirkelt",
+          "Een kleine witte dwerg"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat toont het HR-diagram?",
+        "options": [
+          "Planetenbanen",
+          "Relatie tussen helderheid en temperatuur van sterren",
+          "De afstand tussen sterren",
+          "De chemische samenstelling van sterren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de leeftijd van het heelal?",
+        "options": [
+          "4,6 miljard jaar",
+          "13,8 miljard jaar",
+          "100 miljard jaar",
+          "1 miljard jaar"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is roodverschuiving?",
+        "options": [
+          "Licht dat rood kleurt door hitte",
+          "Verschuiving van spectraallijnen naar langere golflengtes doordat een bron van ons wegbeweegt",
+          "Emissie van rood licht door sterren",
+          "Reflectie van rood licht door planeten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk bewijs ondersteunt de Big Bang-theorie?",
+        "options": [
+          "De maan",
+          "Kosmische achtergrondstraling en roodverschuiving van sterrenstelsels",
+          "Het bestaan van planeten",
+          "De axiale rotatie van de aarde"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Uit wat eindigt een zonachtige ster zijn leven?",
+        "options": [
+          "Supernova en zwart gat",
+          "Planetaire nevel en witte dwerg",
+          "Neutronenster",
+          "Rode dwerg"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe lang is een lichtjaar?",
+        "options": [
+          "1 jaar",
+          "De afstand licht in 1 jaar aflegt (~9,46 × 10¹⁵ m)",
+          "De afstand licht in 1 seconde aflegt",
+          "9,81 m"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "relativ": {
+    "title": "Relativiteitstheorie",
+    "leaves": [
+      {
+        "title": "Speciale Relativiteitstheorie",
+        "theory": "Einstein publiceerde in 1905 de <strong>speciale relativiteitstheorie</strong>, gebaseerd op twee postulaten:\n\n1. De natuurwetten zijn gelijk voor alle inertiale referentiekaders.\n2. De lichtsnelheid in vacuüm is constant voor alle waarnemers: <code>c = 3 × 10⁸ m/s</code>\n\nGevolgen:\n• <strong>Tijddilatatie</strong>: een bewegende klok loopt langzamer\n• <strong>Lengtecontractie</strong>: bewegende objecten zijn korter in de bewegingsrichting\n• <strong>Massa-energie equivalentie</strong>: <code>E = mc²</code>\n• Niets kan sneller dan het licht bewegen"
+      },
+      {
+        "title": "Tijddilatatie & GPS",
+        "theory": "<strong>Tijddilatatie</strong>:\nEen klok die beweegt loopt langzamer dan een klok in rust:\n<code>Δt' = Δt / √(1 - v²/c²)</code>\n\nBij alledaagse snelheden is het effect verwaarloosbaar.\nBij v → c is het effect extreem.\n\n<strong>GPS-satellieten</strong> moeten corrigeren voor:\n• Speciale relativiteit: satellietsklokken lopen iets langzamer (beweging)\n• Algemene relativiteit: satellietsklokken lopen iets sneller (minder zwaartekracht)\n\nZonder relativiteitscorrecties zou GPS in enkele minuten kilometers verkeerd gaan."
+      },
+      {
+        "title": "Algemene Relativiteitstheorie",
+        "theory": "Einstein publiceerde in 1915 de <strong>algemene relativiteitstheorie</strong>.\n\nCentraal idee: <strong>zwaartekracht is geen kracht maar kromming van de ruimtetijd</strong>.\n\nMassieve objecten krommen de ruimtetijd om hen heen → andere objecten volgen die kromming.\n\nGevolgen:\n• Licht buigt af bij zware objecten (<em>gravitatielenswerking</em>)\n• <strong>Zwaartekrachtsgolven</strong>: trillingen in de ruimtetijd (ontdekt 2015 door LIGO)\n• <strong>Zwarte gaten</strong>: zwaartekracht zo sterk dat zelfs licht niet kan ontsnappen\n• Kosmologische expansie van het heelal"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de lichtsnelheid in vacuüm?",
+        "options": [
+          "3 × 10⁶ m/s",
+          "3 × 10⁸ m/s",
+          "3 × 10¹⁰ m/s",
+          "300 m/s"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zegt tijddilatatie?",
+        "options": [
+          "Bewegende klokken lopen sneller",
+          "Bewegende klokken lopen langzamer",
+          "Klokken stoppen bij hoge snelheid",
+          "Tijd is absoluut"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt E = mc²?",
+        "options": [
+          "Energie en massa zijn onafhankelijk",
+          "Massa en energie zijn equivalent (kunnen in elkaar omgezet worden)",
+          "Lichtsnelheid is variabel",
+          "Energie is afhankelijk van snelheid"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de maximale snelheid van een object met massa?",
+        "options": [
+          "2 × 10⁸ m/s",
+          "Oneindig",
+          "De lichtsnelheid (c) — maar nooit bereikt",
+          "10c"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarom hebben GPS-satellieten relativiteitscorrecties nodig?",
+        "options": [
+          "Ze bewegen te langzaam",
+          "Zowel speciale als algemene relativiteit beïnvloeden de kloktijd significant",
+          "Alleen de temperatuur in de ruimte beïnvloedt de klokken",
+          "Satellieten hebben geen horloges aan boord"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het centrale idee van de algemene relativiteitstheorie?",
+        "options": [
+          "Lichtsnelheid is relatief",
+          "Zwaartekracht is kromming van de ruimtetijd",
+          "Massa en energie zijn equivalent",
+          "Tijddilatatie geldt alleen bij hoge snelheden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is gravitatielenswerking?",
+        "options": [
+          "Vergroting van sterren door telescopen",
+          "Buiging van licht door de kromming van de ruimtetijd rond massieve objecten",
+          "Reflectie van licht door planeten",
+          "Het effect van de maan op de atmosfeer"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn zwaartekrachtsgolven?",
+        "options": [
+          "Geluidsgolven in de atmosfeer",
+          "Trillingen in de ruimtetijd veroorzaakt door versnellende massa's",
+          "Magnetische golven rond planeten",
+          "Kosmische straling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer werden zwaartekrachtsgolven voor het eerst direct gedetecteerd?",
+        "options": [
+          "1905",
+          "1915",
+          "1969",
+          "2015"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is een zwart gat?",
+        "options": [
+          "Een donkere ster zonder licht",
+          "Een object met zwaartekracht zo sterk dat zelfs licht niet kan ontsnappen",
+          "Een gat in de atmosfeer",
+          "Een uitgedoofde zon"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

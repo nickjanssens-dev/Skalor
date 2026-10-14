@@ -1,0 +1,410 @@
+:root {
+    --bg:          #070d1a;
+    --bg-card:     #0b1225;
+    --bg-inner:    #0f1a35;
+    --cyan:        #00c8ff;
+    --blue:        #1a8fff;
+    --cyan-dim:    rgba(0,200,255,0.12);
+    --cyan-glow:   rgba(0,200,255,0.25);
+    --gold:        #f5a623;
+    --gold-dim:    rgba(245,166,35,0.15);
+    --gold-glow:   rgba(245,166,35,0.3);
+    --purple:      #a855f7;
+    --purple-dim:  rgba(168,85,247,0.12);
+    --green:       #4ade80;
+    --green-dim:   rgba(74,222,128,0.12);
+    --text:        #e8f0ff;
+    --muted:       #4a6080;
+    --border:      rgba(0,200,255,0.12);
+    --border-md:   rgba(0,200,255,0.28);
+}
+
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* ─── AMBIENT BG ─────────────────────────────────── */
+body::before {
+    content:'';
+    position:fixed; inset:0;
+    background:
+            radial-gradient(ellipse 50% 40% at 20% 10%, rgba(0,100,200,0.15) 0%, transparent 60%),
+            radial-gradient(ellipse 40% 30% at 80% 80%, rgba(168,85,247,0.08) 0%, transparent 50%),
+            radial-gradient(ellipse 30% 20% at 60% 30%, rgba(245,166,35,0.05) 0%, transparent 40%);
+    pointer-events:none; z-index:0;
+}
+
+/* ─── HEADER ─────────────────────────────────────── */
+header {
+    position: sticky; top:0; z-index:100;
+    display: flex; align-items:center; justify-content:space-between;
+    padding: 0 2rem; height: 68px;
+    background: rgba(7,13,26,0.9);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+}
+
+.brand {
+    font-family:'Orbitron',sans-serif; font-size:1.35rem; font-weight:800;
+    letter-spacing:0.08em; color:var(--text); text-decoration:none;
+}
+
+.header-right { display:flex; align-items:center; gap:0.75rem; }
+
+.coin-badge {
+    display:inline-flex; align-items:center; gap:0.4rem;
+    padding:0.45rem 1.1rem; border-radius:999px; font-weight:700; font-size:0.9rem;
+    background: var(--gold-dim);
+    color: var(--gold);
+    border:1px solid rgba(245,166,35,0.3);
+    font-family:'Orbitron',sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.coin-badge.bump {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--gold-glow);
+}
+
+.back-btn {
+    display:inline-flex; align-items:center; gap:0.4rem;
+    padding:0.45rem 1rem; border-radius:999px;
+    border:1px solid var(--border); background:rgba(255,255,255,0.03);
+    color:var(--muted); font-weight:600; font-size:0.85rem;
+    cursor:pointer; font-family:'Exo 2',sans-serif; transition:all 0.2s;
+    text-decoration:none;
+}
+.back-btn:hover { background:var(--cyan-dim); color:var(--text); border-color:var(--border-md); }
+
+/* ─── MAIN LAYOUT ────────────────────────────────── */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    position: relative; z-index:1;
+}
+
+/* ─── PAGE TITLE ─────────────────────────────────── */
+.page-header {
+    margin-bottom: 2.5rem;
+}
+
+.page-eyebrow {
+    font-family: 'Orbitron', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.page-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--text), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.page-sub {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* ─── TABS ───────────────────────────────────────── */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
+}
+
+.tab {
+    font-family: 'Orbitron', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid transparent;
+    border-bottom: none;
+    cursor: pointer;
+    color: var(--muted);
+    background: transparent;
+    transition: all 0.2s;
+    position: relative;
+    bottom: -1px;
+}
+.tab:hover { color: var(--text); background: var(--bg-inner); }
+.tab.active {
+    color: var(--cyan);
+    background: var(--bg-card);
+    border-color: var(--border);
+    border-bottom-color: var(--bg-card);
+}
+
+/* ─── SHOP GRID ──────────────────────────────────── */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+/* ─── ITEM CARD ──────────────────────────────────── */
+.item-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+    position: relative;
+    animation: fadeup 0.4s ease both;
+}
+.item-card:hover { border-color: var(--border-md); transform: translateY(-4px); }
+.item-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:1px;
+    background: linear-gradient(90deg, transparent, var(--cyan-glow), transparent);
+    opacity:0; transition:opacity 0.3s;
+}
+.item-card:hover::before { opacity:1; }
+
+/* Rarity borders */
+.item-card.rare   { border-color: rgba(0,200,255,0.3); }
+.item-card.epic   { border-color: rgba(168,85,247,0.35); }
+.item-card.epic::before { background: linear-gradient(90deg, transparent, rgba(168,85,247,0.4), transparent); opacity:1; }
+.item-card.legendary { border-color: rgba(245,166,35,0.45); }
+.item-card.legendary::before { background: linear-gradient(90deg, transparent, var(--gold-glow), transparent); opacity:1; }
+
+/* ─── ITEM PREVIEW ───────────────────────────────── */
+.item-preview {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-preview .preview-icon {
+    font-size: 3.5rem;
+    position: relative;
+    z-index:1;
+    filter: drop-shadow(0 0 20px currentColor);
+    transition: transform 0.3s;
+}
+.item-card:hover .preview-icon { transform: scale(1.15) rotate(-5deg); }
+
+.item-preview .preview-bg {
+    position:absolute; inset:0;
+    opacity: 0.15;
+    transition: opacity 0.3s;
+}
+.item-card:hover .preview-bg { opacity: 0.25; }
+
+/* preview bg per category */
+.preview-bg.avatar   { background: radial-gradient(circle, var(--cyan), transparent 70%); }
+.preview-bg.theme    { background: radial-gradient(circle, var(--purple), transparent 70%); }
+.preview-bg.badge    { background: radial-gradient(circle, var(--gold), transparent 70%); }
+.preview-bg.effect   { background: radial-gradient(circle, var(--green), transparent 70%); }
+.preview-bg.frame    { background: radial-gradient(circle, #ff6b9d, transparent 70%); }
+
+/* ─── RARITY BADGE ───────────────────────────────── */
+.rarity-badge {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-family: 'Orbitron', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rarity-badge.common    { background: rgba(148,163,184,0.15); color:#94a3b8; border:1px solid rgba(148,163,184,0.2); }
+.rarity-badge.rare      { background: var(--cyan-dim); color:var(--cyan); border:1px solid rgba(0,200,255,0.3); }
+.rarity-badge.epic      { background: var(--purple-dim); color:var(--purple); border:1px solid rgba(168,85,247,0.3); }
+.rarity-badge.legendary { background: var(--gold-dim); color:var(--gold); border:1px solid rgba(245,166,35,0.35); }
+
+/* ─── OWNED BADGE ────────────────────────────────── */
+.owned-badge {
+    position: absolute;
+    top: 10px; left: 10px;
+    background: rgba(74,222,128,0.15);
+    color: var(--green);
+    border: 1px solid rgba(74,222,128,0.3);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    display: none;
+}
+.item-card.owned .owned-badge { display:block; }
+.item-card.owned .item-preview { opacity: 0.6; }
+
+/* ─── ITEM INFO ──────────────────────────────────── */
+.item-info {
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 3px;
+}
+
+.item-desc {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-price {
+    font-family: 'Orbitron', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.buy-btn {
+    font-family: 'Orbitron', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: var(--bg);
+    box-shadow: 0 4px 12px rgba(0,200,255,0.2);
+}
+.buy-btn:hover { box-shadow: 0 6px 20px rgba(0,200,255,0.4); transform:translateY(-1px); }
+.buy-btn:disabled {
+    background: rgba(255,255,255,0.06);
+    color: var(--muted);
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+.buy-btn.owned-btn {
+    background: rgba(74,222,128,0.12);
+    color: var(--green);
+    border: 1px solid rgba(74,222,128,0.3);
+    box-shadow: none;
+    cursor: default;
+}
+.buy-btn.equip-btn {
+    background: linear-gradient(135deg, rgba(168,85,247,0.9), rgba(99,102,241,0.9));
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(168,85,247,0.25);
+}
+.buy-btn.equip-btn:hover {
+    box-shadow: 0 6px 20px rgba(168,85,247,0.45);
+    transform: translateY(-1px);
+}
+.buy-btn.equipped-btn {
+    background: rgba(168,85,247,0.15);
+    color: #c084fc;
+    border: 1px solid rgba(168,85,247,0.35);
+    box-shadow: none;
+}
+.buy-btn.equipped-btn:hover {
+    background: rgba(168,85,247,0.22);
+    box-shadow: 0 4px 12px rgba(168,85,247,0.25);
+    transform: translateY(-1px);
+}
+
+/* Equipped card glow */
+.item-card.is-equipped {
+    border-color: rgba(168,85,247,0.45) !important;
+    box-shadow: 0 0 0 1px rgba(168,85,247,0.25), 0 8px 32px rgba(168,85,247,0.12);
+}
+
+/* Equipped indicator badge inside preview */
+.equipped-indicator {
+    position: absolute;
+    top: 8px; left: 8px;
+    background: rgba(168,85,247,0.85);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    font-family: 'Orbitron', monospace;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+}
+
+/* ─── TOAST ──────────────────────────────────────── */
+#toast {
+    position: fixed;
+    bottom: 2rem; left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    z-index: 500;
+    background: var(--bg-card);
+    border: 1px solid var(--border-md);
+    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+#toast.show { transform: translateX(-50%) translateY(0); opacity:1; }
+#toast.success { border-color: rgba(74,222,128,0.4); color: var(--green); }
+#toast.error   { border-color: rgba(255,100,80,0.4); color: #ff6050; }
+
+/* ─── EMPTY STATE ────────────────────────────────── */
+.empty-state {
+    text-align:center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+    display: none;
+}
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: 1rem; opacity:0.4; }
+.empty-state p { font-size: 14px; }
+
+/* ─── ANIMATIONS ─────────────────────────────────── */
+@keyframes fadeup {
+    from { opacity:0; transform:translateY(16px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.item-card.legendary .item-name {
+    background: linear-gradient(90deg, var(--gold), #fff, var(--gold));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+}

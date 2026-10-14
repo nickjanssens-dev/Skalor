@@ -1,0 +1,20 @@
+:root {
+  --skalor-primary: #1FC3E0;        /* Main brand color – used for primary buttons, highlights, and key UI elements */
+  --skalor-primary-dark: #0A84FF;   /* Darker blue – used for gradients, hover states, and depth */
+  --skalor-accent: #6FE7F7;         /* Light cyan – used for glow effects, accents, and subtle highlights */
+
+  --skalor-gold: #F2C94C;           /* Gold accent – represents rewards, achievements, coins */
+  --skalor-gold-light: #FFD966;     /* Lighter gold – used for hover states or softer reward visuals */
+
+  --bg-main: #0F172A;               /* Main background – dark base for the entire app */
+  --bg-surface: #1E293B;            /* Card background – used for panels, cards, containers */
+  --bg-light: #334155;              /* Elevated surface – used for hover states or layered UI elements */
+
+  --text-primary: #F8FAFC;          /* Primary text – main readable text on dark backgrounds */
+  --text-secondary: #CBD5F5;        /* Secondary text – subtitles, descriptions */
+  --text-muted: #94A3B8;            /* Muted text – placeholders, hints, less important info */
+  --text-on-gold: #0F172A;          /* Dark text for use on gold backgrounds for contrast */
+
+  --glass-border: rgba(111, 231, 247, 0.16);
+  --glass-bg: rgba(30, 41, 59, 0.75);
+}

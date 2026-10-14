@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skalor - Mock Exam Generator</title>
+
+    <link rel="icon" href="/static/images/favicon_skalor/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/main.css?v=2" />
+    <link rel="stylesheet" href="/static/css/global_vars.css?v=2" />
+    <link rel="stylesheet" href="/static/css/index.css?v=2" />
+
+    <script src="/static/js/stats.js"></script>
+    <script src="/static/js/cosmetics.js"></script>
+    <script src="/static/js/coach.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrapper">
+    <!-- Brand / Logo -->
+    <a href="/" class="brand" aria-label="Skalor home">
+      <img src="/static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+    </a>
+
+    <!-- Center nav links -->
+    <nav aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a></li>
+        <li><a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a></li>
+        <li><a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a></li>
+        <li><a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a></li>
+      </ul>
+    </nav>
+
+    <!-- Rechts: coins + avatar + hamburger -->
+    <div class="nav-actions">
+      <span class="coin-badge">
+        <i class="fa-solid fa-coins"></i>
+        <span id="coin-count">0</span>
+        <span class="coin-label">Coins</span>
+      </span>
+      <span class="avatar-nav" id="nav-avatar">
+        <span class="avatar-circle"><i class="fa-solid fa-user"></i></span>
+        <span class="avatar-nav-name" id="nav-avatar-name"></span>
+      </span>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a>
+    <a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a>
+    <a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a>
+    <a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a>
+  </div>
+</header>
+    <section class="mock-exam-section" style="margin-top: 100px; padding-bottom: 5rem;">
+  <div class="container glass-card" style="padding:2.5rem; max-width: 850px;">
+    
+    <!-- SETUP PHASE -->
+    <div id="setup-phase">
+        <h2 style="margin-bottom: 1rem; text-align: center; font-family: 'Orbitron', sans-serif;">
+            <i class="fa-solid fa-file-pen" style="color: var(--skalor-accent); margin-right: 12px;"></i>Mock Exam Generator
+        </h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2.5rem;">Kies een vak of upload je eigen leerstof om een examen te genereren.</p>
+
+        <div id="setup-error" class="hidden" style="background: rgba(255, 80, 80, 0.1); border: 1px solid rgba(255, 80, 80, 0.3); color: #ff6b6b; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; font-weight: 600;"></div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-bottom: 3rem;">
+            <!-- Option 1: Choose Subject -->
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 18px; border: 1px solid rgba(111, 231, 247, 0.1);">
+                <h4 style="margin-bottom: 1.5rem; color: var(--skalor-accent);"><i class="fa-solid fa-list-check" style="margin-right: 8px;"></i> Kies een vak</h4>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="exam-subject" style="display: block; margin-bottom: 0.6rem; color: var(--text-muted); font-size: 0.85rem;">SELECTEER VAK</label>
+                    <select id="exam-subject" style="width: 100%; padding: 0.9rem; border-radius: 10px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.1); color: white; outline: none; cursor: pointer;">
+                        <option value="biologie">Biologie</option>
+                        <option value="chemie">Chemie</option>
+                        <option value="fysica">Fysica</option>
+                        <option value="informatica">Informatica</option>
+                        <option value="nederlands">Nederlands</option>
+                        <option value="wiskunde">Wiskunde</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exam-amount" style="display: flex; justify-content: space-between; margin-bottom: 0.6rem; color: var(--text-muted); font-size: 0.85rem;">
+                        AANTAL VRAGEN <span id="exam-amount-val" style="color: white; font-family: 'Orbitron', sans-serif;">10</span>
+                    </label>
+                    <input type="range" id="exam-amount" value="10" min="5" max="30" style="width: 100%; accent-color: var(--skalor-accent); cursor: pointer;">
+                </div>
+            </div>
+
+            <!-- Option 2: Upload Document -->
+            <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 18px; border: 1px solid rgba(111, 231, 247, 0.1);">
+                <h4 style="margin-bottom: 1.5rem; color: var(--skalor-accent);"><i class="fa-solid fa-upload" style="margin-right: 8px;"></i> Of upload leerstof</h4>
+                
+                <div id="drop-zone" class="drop-zone" style="border: 2px dashed rgba(255,255,255,0.1); border-radius: 12px; padding: 1.5rem; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fa-solid fa-file-arrow-up" style="font-size: 2rem; color: var(--text-muted); margin-bottom: 0.8rem;"></i>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary);">Klik om te uploaden (.txt, .docx)</p>
+                    <input type="file" id="file-upload-input" style="display:none;" accept=".txt,.docx">
+                </div>
+                <div id="upload-status" class="upload-status" style="margin-top: 1rem; text-align: center; font-size: 0.8rem; min-height: 1rem;"></div>
+            </div>
+        </div>
+
+        <!-- Common Settings -->
+        <div style="max-width: 400px; margin: 0 auto 2.5rem; text-align: center;">
+            <label for="exam-time" style="display: block; margin-bottom: 0.6rem; color: var(--text-muted); font-size: 0.85rem;">TIJDSLIMIET (MINUTEN, 0 = GEEN)</label>
+            <input type="number" id="exam-time" value="0" min="0" max="120" style="width: 100%; padding: 0.9rem; border-radius: 10px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.1); color: white; outline: none; text-align: center;">
+        </div>
+
+        <div style="text-align: center;">
+          <button id="start-exam-btn" class="btn btn-primary" style="padding: 1.2rem 4rem; font-size: 1.2rem; border-radius: 15px; width: 100%; max-width: 400px;">
+            <i class="fa-solid fa-play" style="margin-right: 10px;"></i> Start Examen
+          </button>
+        </div>
+    </div>
+
+    <!-- EXAM PHASE -->
+    <div id="exam-phase" class="hidden">
+        <div class="exam-header" style="margin-bottom: 2.5rem;">
+            <div class="progress-container" style="width: 100%; height: 8px; background: rgba(255,255,255,0.08); border-radius: 10px; overflow: hidden; margin-bottom: 1.2rem;">
+                <div id="exam-progress-bar" class="progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--skalor-accent), var(--skalor-primary)); transition: width 0.4s ease;"></div>
+            </div>
+            <div class="exam-stats" style="display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--text-secondary); font-size: 0.95rem;">
+                <span>Vraag <span id="exam-q-num" style="color: white;">1</span> / <span id="exam-q-total">10</span></span>
+                <span id="timer-section" class="hidden" style="color: var(--skalor-accent);">
+                    <i class="fa-solid fa-clock"></i> <span id="timer-display" style="font-family: 'Orbitron', sans-serif;">00:00</span>
+                </span>
+                <span>Score: <span id="exam-score-display" style="color: white;">0</span></span>
+            </div>
+        </div>
+
+        <div id="question-card" class="question-card" style="background: rgba(15, 23, 42, 0.4); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 2.5rem;">
+            <h3 id="question-text" style="font-size: 1.4rem; margin-bottom: 2rem; line-height: 1.6;"></h3>
+            <div id="question-options" class="options-container" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+            <div id="question-feedback" class="question-feedback" style="margin-top: 2rem; padding: 1.2rem; border-radius: 14px; font-weight: 700; text-align: center;"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <button id="quit-btn" class="btn btn-outline" style="color: #ff6b6b; border-color: rgba(255,107,107,0.2);"><i class="fa-solid fa-x"></i> Stop</button>
+          <button id="next-btn" class="btn btn-primary hidden" style="padding: 1rem 2.5rem; border-radius: 12px;">
+            Volgende <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+          </button>
+        </div>
+    </div>
+
+    <!-- RESULTS PHASE -->
+    <div id="results-phase" class="hidden" style="text-align: center;">
+        <h2 style="margin-bottom: 2.5rem; font-family: 'Orbitron', sans-serif;">Resultaten</h2>
+        
+        <div class="result-summary" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin-bottom: 3rem;">
+            <div class="score-ring-container" style="position: relative; width: 160px; height: 160px;">
+                <svg width="160" height="160" viewBox="0 0 120 120" style="transform: rotate(-90deg);">
+                    <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                    <circle id="score-ring-progress" cx="60" cy="60" r="54" fill="none" stroke="var(--skalor-accent)" stroke-width="8" stroke-dasharray="339.292" stroke-dashoffset="339.292" stroke-linecap="round"/>
+                </svg>
+                <div id="result-score-pct" class="score-percentage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2.2rem; font-weight: 800; font-family: 'Orbitron', sans-serif;">0%</div>
+            </div>
+            <h3 id="result-verdict" style="font-size: 2rem; margin: 0;"></h3>
+        </div>
+
+        <div class="result-stats" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; background: rgba(0,0,0,0.1); padding: 1.5rem; border-radius: 15px;">
+            <div style="text-align: center;"><div style="font-size: 1.8rem; color: #27ae60; font-weight: bold;" id="result-correct">0</div><div style="font-size: 0.7rem; opacity: 0.6;">JUIST</div></div>
+            <div style="text-align: center;"><div style="font-size: 1.8rem; color: #eb5757; font-weight: bold;" id="result-wrong">0</div><div style="font-size: 0.7rem; opacity: 0.6;">FOUT</div></div>
+            <div style="text-align: center;"><div style="font-size: 1.8rem; color: #f2c94c; font-weight: bold;" id="result-skipped">0</div><div style="font-size: 0.7rem; opacity: 0.6;">GEMIST</div></div>
+            <div style="text-align: center;"><div style="font-size: 1.8rem; color: white; font-weight: bold;" id="result-total">0</div><div style="font-size: 0.7rem; opacity: 0.6;">TOTAAL</div></div>
+        </div>
+
+        <div class="coin-reward-display" style="margin-bottom: 2.5rem;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.4rem; font-weight: 700; color: #f1c40f;">
+                <i class="fa-solid fa-coins"></i>
+                <span id="result-coins">+0</span> Coins verdiend!
+            </div>
+            <div id="result-bonus" style="font-size: 0.9rem; color: var(--skalor-accent); margin-top: 5px; font-weight: 600; display: none;"></div>
+        </div>
+
+        <div id="wrong-answers-review" class="wrong-answers-review" style="text-align: left; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 18px; margin-bottom: 2.5rem; max-height: 400px; overflow-y: auto; border: 1px solid rgba(255,255,255,0.05);"></div>
+
+        <div class="result-actions" style="display: flex; justify-content: center; gap: 1rem;">
+            <button id="retry-btn" class="btn btn-primary" style="padding: 1rem 2.5rem;"><i class="fa-solid fa-rotate-right" style="margin-right: 8px;"></i> Opnieuw</button>
+            <button id="new-exam-btn" class="btn btn-outline" style="padding: 1rem 2.5rem;"><i class="fa-solid fa-plus" style="margin-right: 8px;"></i> Nieuw Examen</button>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Mock Exam Specific Styles */
+  .exam-tab.active {
+    background: rgba(31, 195, 224, 0.15) !important;
+    border-color: var(--skalor-accent) !important;
+    color: var(--skalor-accent) !important;
+    box-shadow: 0 0 15px rgba(31, 195, 224, 0.1);
+  }
+  
+  .drop-zone.drag-over {
+    border-color: var(--skalor-accent) !important;
+    background: rgba(31, 195, 224, 0.08) !important;
+    transform: scale(1.01);
+  }
+  
+  .option-btn {
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    border-radius: 14px;
+    border: 1px solid rgba(111, 231, 247, 0.15);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .option-btn:hover:not(:disabled) {
+    background: rgba(111, 231, 247, 0.08);
+    border-color: rgba(111, 231, 247, 0.35);
+    transform: translateX(6px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-btn:disabled {
+    cursor: default;
+    opacity: 0.85;
+  }
+  
+  .option-btn.correct {
+    background: rgba(39, 174, 96, 0.15) !important;
+    border-color: #27ae60 !important;
+    color: #6fdb9c !important;
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.1);
+  }
+  
+  .option-btn.wrong {
+    background: rgba(235, 87, 87, 0.12) !important;
+    border-color: #eb5757 !important;
+    color: #f08080 !important;
+  }
+  
+  .option-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.2s ease;
+  }
+  
+  .option-btn:hover .option-label {
+    background: rgba(31, 195, 224, 0.2);
+    color: var(--skalor-accent);
+  }
+  
+  .option-btn.correct .option-label { background: #27ae60; color: white; }
+  .option-btn.wrong .option-label { background: #eb5757; color: white; }
+
+  .question-feedback.correct {
+    background: rgba(39, 174, 96, 0.12);
+    border: 1px solid rgba(39, 174, 96, 0.25);
+    color: #6fdb9c;
+  }
+  
+  .question-feedback.wrong {
+    background: rgba(235, 87, 87, 0.1);
+    border: 1px solid rgba(235, 87, 87, 0.25);
+    color: #f08080;
+  }
+  
+  .result-verdict.passed { color: #27ae60; text-shadow: 0 0 20px rgba(39, 174, 96, 0.3); }
+  .result-verdict.failed { color: #eb5757; text-shadow: 0 0 20px rgba(235, 87, 87, 0.3); }
+  
+  #timer-display.urgent { color: #ff6e6e; animation: timerUrgent 1s infinite alternate; }
+  @keyframes timerUrgent { 0% { opacity: 1; transform: scale(1); } 100% { opacity: 0.7; transform: scale(1.05); } }
+
+  .review-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background 0.2s ease;
+  }
+  .review-item:hover { background: rgba(255, 255, 255, 0.02); }
+  .review-item:last-child { border-bottom: none; }
+  .review-question { margin-bottom: 0.8rem; font-size: 1.1rem; color: white; font-weight: 500; }
+  .review-yours { font-size: 0.95rem; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 8px; }
+  .review-yours.wrong-ans { color: #f08080; }
+  .review-yours.skipped { color: #f2c94c; }
+  .review-correct-ans { font-size: 0.95rem; color: #6fdb9c; display: flex; align-items: center; gap: 8px; }
+  
+  /* Custom Scrollbar for review */
+  .wrong-answers-review::-webkit-scrollbar { width: 6px; }
+  .wrong-answers-review::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+  .wrong-answers-review::-webkit-scrollbar-thumb { background: rgba(111, 231, 247, 0.2); border-radius: 10px; }
+  .wrong-answers-review::-webkit-scrollbar-thumb:hover { background: rgba(111, 231, 247, 0.4); }
+</style>
+
+<script src="/static/js/mockexam.js?v=124"></script>
+<script>
+  // Active nav link
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const active = href === '/' ? location.pathname === '/' : location.pathname.startsWith(href);
+    if (active) link.classList.add('active');
+  });
+  // Hamburger
+  const _hBtn  = document.getElementById('hamburger-btn');
+  const _hMenu = document.getElementById('mobile-menu');
+  if (_hBtn && _hMenu) {
+    _hBtn.addEventListener('click', () => {
+      const open = _hMenu.classList.toggle('open');
+      _hBtn.classList.toggle('open', open);
+      _hBtn.setAttribute('aria-expanded', open);
+    });
+  }
+  // Avatar username
+  fetch('/api/auth/me').then(r => r.json()).then(d => {
+    const el = document.getElementById('nav-avatar-name');
+    if (el && d.authenticated && d.user) el.textContent = d.user.username;
+  }).catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,1668 @@
+{
+  "differentieren": {
+    "title": "Differentiëren",
+    "leaves": [
+      {
+        "title": "Afgeleiden en rekenregels",
+        "theory": "<strong>Differentiëren</strong> bepaalt de veranderingssnelheid van een functie. De <em>afgeleide</em> f'(x) geeft de helling van de raaklijn.<br><br><strong>Basisregels:</strong><br>• Machtsfunctie: (xⁿ)' = n·xⁿ⁻¹<br>• Somregel: (f+g)' = f'+g'<br>• Productregel: (f·g)' = f'·g + f·g'<br>• Quotiëntregel: (f/g)' = (f'·g − f·g') / g²<br><br><strong>Kettingregel:</strong> (f(g(x)))' = f'(g(x))·g'(x)"
+      },
+      {
+        "title": "Bijzondere afgeleiden",
+        "theory": "<strong>Transcendente functies:</strong><br>• (sin x)' = cos x<br>• (cos x)' = −sin x<br>• (eˣ)' = eˣ<br>• (ln x)' = 1/x<br>• (aˣ)' = aˣ·ln a<br><br><strong>Inverse functies:</strong><br>• (arcsin x)' = 1/√(1−x²)<br>• (arctan x)' = 1/(1+x²)<br><br>Gebruik de <em>kettingregel</em> voor samengestelde functies zoals sin(3x²)."
+      },
+      {
+        "title": "Toepassingen van differentiëren",
+        "theory": "<strong>Extremen:</strong> Op een maximum of minimum geldt f'(x) = 0 (kritiek punt). Controleer met f''(x): f''(x) &lt; 0 → maximum, f''(x) &gt; 0 → minimum.<br><br><strong>Stijgen/dalen:</strong> f'(x) &gt; 0 → stijgend; f'(x) &lt; 0 → dalend.<br><br><strong>Buigpunten:</strong> f''(x) = 0 en tekenwisseling → buigpunt.<br><br><strong>Optimalisering:</strong> Stel een doelfunctie op, differentieer, stel gelijk aan 0 en controleer het type."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de afgeleide van f(x) = x⁵?",
+        "options": [
+          "5x⁴",
+          "5x⁵",
+          "4x⁵",
+          "x⁴"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is (sin x)'?",
+        "options": [
+          "−cos x",
+          "cos x",
+          "sin x",
+          "−sin x"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is (eˣ)'?",
+        "options": [
+          "xeˣ⁻¹",
+          "eˣ",
+          "e",
+          "1"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is (ln x)'?",
+        "options": [
+          "1/x",
+          "ln x",
+          "x",
+          "1/x²"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Welke regel gebruik je voor (f·g)'?",
+        "options": [
+          "Kettingregel",
+          "Quotiëntregel",
+          "Productregel",
+          "Somregel"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Op een maximum geldt:",
+        "options": [
+          "f'(x) > 0",
+          "f'(x) = 0 en f''(x) < 0",
+          "f''(x) = 0",
+          "f'(x) < 0"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is (arctan x)'?",
+        "options": [
+          "1/(1+x²)",
+          "1/√(1−x²)",
+          "−1/(1+x²)",
+          "1/x"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is de afgeleide van sin(3x)?",
+        "options": [
+          "cos(3x)",
+          "3cos(3x)",
+          "−3cos(3x)",
+          "3sin(3x)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer is een functie dalend?",
+        "options": [
+          "f'(x) = 0",
+          "f'(x) > 0",
+          "f'(x) < 0",
+          "f''(x) > 0"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een buigpunt treedt op wanneer:",
+        "options": [
+          "f'(x) = 0",
+          "f''(x) = 0 met tekenwisseling",
+          "f(x) = 0",
+          "f'(x) = f''(x)"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "integreren": {
+    "title": "Integreren",
+    "leaves": [
+      {
+        "title": "Primitieven en basisregels",
+        "theory": "<strong>Integreren</strong> is de omgekeerde bewerking van differentiëren. Een <em>primitieve</em> F(x) voldoet aan F'(x) = f(x).<br><br><strong>Basisprimitieven:</strong><br>• ∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ −1)<br>• ∫eˣ dx = eˣ + C<br>• ∫sin x dx = −cos x + C<br>• ∫cos x dx = sin x + C<br>• ∫1/x dx = ln|x| + C<br><br>De <em>integratieconstante</em> C verschijnt altijd bij een onbepaalde integraal."
+      },
+      {
+        "title": "Technieken: substitutie en partieel",
+        "theory": "<strong>Substitutie:</strong> Vervang u = g(x), dan du = g'(x)dx. Hiermee vereenvoudig je samengestelde integranden.<br><br><strong>Partieel integreren:</strong> ∫f·g' dx = f·g − ∫f'·g dx. Gebruik de LIATE-volgorde: Logaritme, Inverse trig, Algebra, Trig, Exponentieel.<br><br><strong>Voorbeeld:</strong> ∫x·eˣ dx = x·eˣ − eˣ + C"
+      },
+      {
+        "title": "Bepaalde integralen en oppervlakten",
+        "theory": "<strong>Bepaalde integraal:</strong> ∫[a,b] f(x) dx = F(b) − F(a) (stelling van Newton-Leibniz).<br><br><strong>Oppervlakte:</strong> Tussen f(x) en de x-as: A = ∫[a,b] |f(x)| dx. Let op tekenwisselingen!<br><br><strong>Oppervlakte tussen twee curven:</strong> A = ∫[a,b] (f(x) − g(x)) dx wanneer f(x) ≥ g(x).<br><br><strong>Volume van omwenteling:</strong> V = π·∫[a,b] [f(x)]² dx"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is ∫x³ dx?",
+        "options": [
+          "3x²+C",
+          "x⁴/4+C",
+          "x⁴+C",
+          "4x⁴+C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ∫eˣ dx?",
+        "options": [
+          "xeˣ+C",
+          "eˣ+C",
+          "eˣ/x+C",
+          "e+C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ∫cos x dx?",
+        "options": [
+          "−sin x+C",
+          "sin x+C",
+          "cos x+C",
+          "−cos x+C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke techniek gebruik je voor ∫x·sin(x) dx?",
+        "options": [
+          "Substitutie",
+          "Partieel integreren",
+          "Basisregel",
+          "Kettingregel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ∫1/x dx?",
+        "options": [
+          "x²/2+C",
+          "ln|x|+C",
+          "1/x²+C",
+          "−1/x+C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe bereken je de bepaalde integraal?",
+        "options": [
+          "F(a)−F(b)",
+          "F(b)+F(a)",
+          "F(b)−F(a)",
+          "F'(b)−F'(a)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de integraal van sin x?",
+        "options": [
+          "cos x+C",
+          "−cos x+C",
+          "sin x+C",
+          "−sin x+C"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke volgorde gebruik je bij partieel integreren?",
+        "options": [
+          "ALIEN",
+          "LIATE",
+          "TALIE",
+          "ILATE"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De oppervlakte tussen f(x) en g(x) is:",
+        "options": [
+          "∫f(x)·g(x)dx",
+          "∫(f(x)+g(x))dx",
+          "∫|f(x)−g(x)|dx",
+          "∫f(x)/g(x)dx"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is ∫₀¹ x dx?",
+        "options": [
+          "1",
+          "0",
+          "1/2",
+          "2"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "limieten": {
+    "title": "Limieten en continuïteit",
+    "leaves": [
+      {
+        "title": "Limieten berekenen",
+        "theory": "<strong>Een limiet</strong> beschrijft het gedrag van een functie als x een bepaalde waarde nadert. Notatie: lim(x→a) f(x) = L.<br><br><strong>Technieken:</strong><br>• Direct invullen: als f continue is, geldt lim(x→a) f(x) = f(a)<br>• Ontbinden: elimineer nulstelplaatsen om 0/0 op te lossen<br>• Regel van L'Hôpital: bij 0/0 of ∞/∞ geldt lim f/g = lim f'/g'<br>• Standaardlimieten: lim(x→0) sin(x)/x = 1"
+      },
+      {
+        "title": "Continuïteit en discontinuïteiten",
+        "theory": "<strong>Continuïteit:</strong> f is continu in x=a als:<br>1. f(a) bestaat<br>2. lim(x→a) f(x) bestaat<br>3. lim(x→a) f(x) = f(a)<br><br><strong>Types discontinuïteiten:</strong><br>• Ophefbare discontinuïteit: limiet bestaat maar ≠ f(a)<br>• Sprongdiscontinuïteit: linker- en rechterlimiet verschillen<br>• Essentiële discontinuïteit: limiet bestaat niet (bijv. sin(1/x) bij x=0)"
+      },
+      {
+        "title": "Limieten naar oneindig",
+        "theory": "<strong>Gedrag op oneindig:</strong> lim(x→∞) xⁿ/xᵐ hangt af van n vs m.<br><br><strong>Horizontale asymptoten:</strong> Als lim(x→±∞) f(x) = L, dan is y=L een horizontale asymptoot.<br><br><strong>Verticale asymptoten:</strong> Als lim(x→a) f(x) = ±∞, dan is x=a een verticale asymptoot.<br><br><strong>Groeisnelheden:</strong> logaritmisch &lt;&lt; polynoom &lt;&lt; exponentieel"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is lim(x→2) (x²−4)/(x−2)?",
+        "options": [
+          "0",
+          "4",
+          "2",
+          "∞"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer is f continu in x=a?",
+        "options": [
+          "f(a) = 0",
+          "lim f(x) = f(a)",
+          "f'(a) bestaat",
+          "f(a) > 0"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is lim(x→0) sin(x)/x?",
+        "options": [
+          "0",
+          "∞",
+          "1",
+          "−1"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke regel gebruik je bij 0/0?",
+        "options": [
+          "Kettingregel",
+          "L'Hôpital",
+          "Productregel",
+          "Substitutie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een horizontale asymptoot?",
+        "options": [
+          "x=a als lim f(x)=∞",
+          "y=L als lim(x→∞)f(x)=L",
+          "f'(x)=0",
+          "f(x)=0"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat groeit sneller voor grote x?",
+        "options": [
+          "x³",
+          "ln x",
+          "eˣ",
+          "x¹⁰"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een sprongdiscontinuïteit treedt op wanneer:",
+        "options": [
+          "f(a) niet bestaat",
+          "linker- en rechterlimiet verschillen",
+          "limiet = 0",
+          "f''(a) = 0"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is lim(x→∞) 1/x?",
+        "options": [
+          "1",
+          "∞",
+          "0",
+          "−1"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is lim(x→0⁺) ln(x)?",
+        "options": [
+          "0",
+          "1",
+          "−∞",
+          "∞"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een verticale asymptoot bij x=a betekent:",
+        "options": [
+          "f(a)=0",
+          "lim f(x)=±∞",
+          "f'(a)=0",
+          "f continu in a"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "matrices": {
+    "title": "Matrices en stelsels",
+    "leaves": [
+      {
+        "title": "Matrixbewerkingen",
+        "theory": "<strong>Een matrix</strong> is een rechthoekige tabel van getallen. Notatie: A = [aᵢⱼ], met i rijen en j kolommen.<br><br><strong>Bewerkingen:</strong><br>• Optellen: matrices moeten dezelfde afmeting hebben<br>• Scalarmultiplicatie: elk element vermenigvuldigt met de scalar<br>• Matrixmultiplicatie: (AB)ᵢⱼ = Σ aᵢₖ·bₖⱼ — let op: AB ≠ BA in het algemeen<br><br><strong>Speciale matrices:</strong> eenheidmatrix I, nulmatrix O, vierkante matrix, symmetrische matrix"
+      },
+      {
+        "title": "Determinant en inverse",
+        "theory": "<strong>Determinant</strong> van 2×2: det(A) = ad−bc voor A = [[a,b],[c,d]].<br><br>Voor 3×3 gebruik je <em>cofactorexpansie</em> langs een rij/kolom.<br><br><strong>Inverse:</strong> A⁻¹ bestaat alleen als det(A) ≠ 0. Dan geldt A·A⁻¹ = I.<br><br>Voor 2×2: A⁻¹ = (1/det(A))·[[d,−b],[−c,a]]<br><br><strong>Eigenwaarden:</strong> det(A − λI) = 0 geeft de karakteristieke vergelijking."
+      },
+      {
+        "title": "Stelsels vergelijkingen oplossen",
+        "theory": "<strong>Gausseliminatie:</strong> Breng het uitgebreide stelsel [A|b] naar trapvorm via rijtransformaties:<br>• Rijen verwisselen<br>• Rij vermenigvuldigen met scalar<br>• Rij optellen bij andere rij<br><br><strong>Cramer's regel:</strong> xᵢ = det(Aᵢ)/det(A)<br><br><strong>Oplossingstypen:</strong> unieke oplossing, oneindig veel oplossingen (vrije variabelen), geen oplossing (tegenstrijdig stelsel)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de determinant van [[2,3],[1,4]]?",
+        "options": [
+          "5",
+          "8",
+          "11",
+          "−5"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wanneer bestaat de inverse van A?",
+        "options": [
+          "Altijd",
+          "Als det(A) ≠ 0",
+          "Als A symmetrisch is",
+          "Als A vierkant is"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Geldt AB = BA voor matrices?",
+        "options": [
+          "Altijd",
+          "Nooit",
+          "Soms",
+          "Alleen voor diagonaalmatrices"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de eenheidsmatrix?",
+        "options": [
+          "Matrix met alle nullen",
+          "Matrix met enen op diagonaal",
+          "Inverse van A",
+          "Nulmatrix"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke methode gebruik je om stelsels op te lossen?",
+        "options": [
+          "Kettingregel",
+          "Gausseliminatie",
+          "L'Hôpital",
+          "Substitutieregel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Eigenwaarden voldoen aan:",
+        "options": [
+          "det(A)=0",
+          "det(A−λI)=0",
+          "Ax=0",
+          "A=λI"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel oplossingen heeft een tegenstrijdig stelsel?",
+        "options": [
+          "0",
+          "1",
+          "Oneindig",
+          "2"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat doet scalarmultiplicatie?",
+        "options": [
+          "Rijen verwisselen",
+          "Elk element × scalar",
+          "Kolommen verwisselen",
+          "Rijen optellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke wet geldt NIET voor matrices?",
+        "options": [
+          "A+B = B+A",
+          "A(BC) = (AB)C",
+          "AB = BA",
+          "A(B+C) = AB+AC"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Cramer's regel gebruikt:",
+        "options": [
+          "Grafieken",
+          "Determinanten",
+          "Afgeleiden",
+          "Integralen"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "vectoren": {
+    "title": "Vectoren en ruimtemeetkunde",
+    "leaves": [
+      {
+        "title": "Vectorbewerkingen",
+        "theory": "<strong>Een vector</strong> heeft grootte en richting. In R³: v = (v₁, v₂, v₃).<br><br><strong>Bewerkingen:</strong><br>• Optellen: (a+b)ᵢ = aᵢ + bᵢ<br>• Scalarmultiplicatie: λv = (λv₁, λv₂, λv₃)<br>• Lengte: |v| = √(v₁²+v₂²+v₃²)<br>• Eenheidsvector: v̂ = v/|v|<br><br><strong>Lineaire combinaties:</strong> w = λ₁v₁ + λ₂v₂ + ... Linear onafhankelijk als geen vector als combinatie van de anderen geschreven kan worden."
+      },
+      {
+        "title": "Inproduct en uitproduct",
+        "theory": "<strong>Inproduct (dot product):</strong> a·b = a₁b₁+a₂b₂+a₃b₃ = |a||b|cos θ<br><br>• a·b = 0 → a ⊥ b<br>• Projectie van a op b: proj_b(a) = (a·b/|b|²)·b<br><br><strong>Uitproduct (cross product):</strong> a×b staat loodrecht op zowel a als b.<br>|a×b| = |a||b|sin θ (oppervlakte parallelogram)<br><br>a×b = (a₂b₃−a₃b₂, a₃b₁−a₁b₃, a₁b₂−a₂b₁)"
+      },
+      {
+        "title": "Lijnen en vlakken in de ruimte",
+        "theory": "<strong>Parametervoorstelling lijn:</strong> r(t) = p + t·d, waarbij p een punt op de lijn is en d de richtingsvector.<br><br><strong>Vlak:</strong> ax+by+cz = d, waarbij (a,b,c) de normaalvector is.<br><br><strong>Afstand punt tot vlak:</strong> D = |ax₀+by₀+cz₀−d| / √(a²+b²+c²)<br><br><strong>Snijpunt lijn en vlak:</strong> Substitueer parametervoorstelling in vlaksvergelijking."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de lengte van v = (3, 4)?",
+        "options": [
+          "7",
+          "5",
+          "1",
+          "25"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer zijn twee vectoren loodrecht?",
+        "options": [
+          "a×b=0",
+          "a·b=0",
+          "|a|=|b|",
+          "a=b"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat geeft het uitproduct?",
+        "options": [
+          "Een scalar",
+          "Een vector loodrecht op beide",
+          "De hoek",
+          "De afstand"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de eenheidsvector van v?",
+        "options": [
+          "v²",
+          "v/|v|",
+          "|v|·v",
+          "1/v"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke vergelijking beschrijft een vlak in R³?",
+        "options": [
+          "r(t)=p+td",
+          "ax+by+cz=d",
+          "y=mx+b",
+          "|v|=1"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Het inproduct a·b = |a||b|cosθ geeft bij θ=90°:",
+        "options": [
+          "|a||b|",
+          "1",
+          "0",
+          "−1"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe schrijf je een parametervoorstelling van een lijn?",
+        "options": [
+          "ax+by=c",
+          "r=p+td",
+          "y=ax²+bx+c",
+          "|r|=d"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de normaalvector van vlak 2x+3y−z=5?",
+        "options": [
+          "(5,0,0)",
+          "(2,3,−1)",
+          "(1,1,1)",
+          "(2,3,1)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Linear onafhankelijke vectoren kunnen:",
+        "options": [
+          "Elkaars scalaarveelvoud zijn",
+          "Elkaar niet als combinatie schrijven",
+          "Gelijke lengte hebben",
+          "Loodrecht staan"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Het uitproduct is anticommutatief, dat wil zeggen:",
+        "options": [
+          "a×b = b×a",
+          "a×b = −(b×a)",
+          "a×b = 0",
+          "a×b = a·b"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "complexe_getallen": {
+    "title": "Complexe getallen",
+    "leaves": [
+      {
+        "title": "Rekenen met complexe getallen",
+        "theory": "<strong>Complexe getallen:</strong> z = a + bi, waarbij i² = −1, a = reëel deel, b = imaginair deel.<br><br><strong>Bewerkingen:</strong><br>• Optellen: (a+bi)+(c+di) = (a+c)+(b+d)i<br>• Vermenigvuldigen: (a+bi)(c+di) = (ac−bd)+(ad+bc)i<br>• Complex toegevoegde: z̄ = a−bi<br>• Modulus: |z| = √(a²+b²)<br>• Deling: z/w = z·w̄ / |w|²"
+      },
+      {
+        "title": "Poolcoördinaten en goniometrische vorm",
+        "theory": "<strong>Poolcoördinaten:</strong> z = r(cos θ + i·sin θ) = r·e^(iθ), waarbij r = |z| en θ = arg(z).<br><br><strong>De Moivre's stelling:</strong> zⁿ = rⁿ(cos nθ + i sin nθ)<br><br><strong>n-de machtswortels:</strong> De n-de machtswortels van z hebben modulus r^(1/n) en argumenten (θ+2kπ)/n voor k=0,1,...,n−1.<br><br><strong>Euler's formule:</strong> e^(iπ) + 1 = 0"
+      },
+      {
+        "title": "Complexe wortels van vergelijkingen",
+        "theory": "<strong>Fundamentaalstelling van de algebra:</strong> Elke polynoomvergelijking van graad n heeft precies n complexe wortels (met multipliciteit).<br><br><strong>Complexe wortels van reële polynomen</strong> komen altijd in toegevoegde paren: als a+bi wortel is, dan ook a−bi.<br><br><strong>Discriminant:</strong> Bij ax²+bx+c=0 geldt: als D = b²−4ac &lt; 0, zijn de wortels complex: x = (−b ± i√|D|) / (2a)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is i²?",
+        "options": [
+          "1",
+          "−1",
+          "i",
+          "0"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de modulus van 3+4i?",
+        "options": [
+          "7",
+          "1",
+          "5",
+          "25"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het complex toegevoegde van 2−3i?",
+        "options": [
+          "−2+3i",
+          "2+3i",
+          "3−2i",
+          "−2−3i"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel wortels heeft een polynoom van graad 4?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Euler's formule luidt:",
+        "options": [
+          "eⁱᵖ=1",
+          "eⁱᵖ+1=0",
+          "eⁱᵖ=i",
+          "eⁱᵖ=−i"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat geeft De Moivre's stelling?",
+        "options": [
+          "zⁿ=rⁿ(cos nθ+i sin nθ)",
+          "z²=r²",
+          "zⁿ=nz",
+          "z=reⁱ"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Als 2+3i een wortel is van een reëel polynoom, dan ook:",
+        "options": [
+          "2−3i",
+          "−2+3i",
+          "3+2i",
+          "−2−3i"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Hoe deel je complexe getallen?",
+        "options": [
+          "Reëel en imaginair apart delen",
+          "Vermenigvuldigen met complex toegevoegde van noemer",
+          "Direct delen",
+          "Moduli optellen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het reëel deel van 5+3i?",
+        "options": [
+          "3",
+          "5i",
+          "3i",
+          "5"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "In poolcoördinaten is z = r·e^(iθ). Wat is r?",
+        "options": [
+          "arg(z)",
+          "Imaginair deel",
+          "Modulus |z|",
+          "Reëel deel"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "goniometrie_uitgebreid": {
+    "title": "Goniometrie (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Goniometrische identiteiten",
+        "theory": "<strong>Pythagoras-identiteit:</strong> sin²x + cos²x = 1<br>Hieruit volgt: tan²x + 1 = sec²x en 1 + cot²x = csc²x<br><br><strong>Somformules:</strong><br>• sin(α±β) = sinα cosβ ± cosα sinβ<br>• cos(α±β) = cosα cosβ ∓ sinα sinβ<br>• tan(α±β) = (tanα ± tanβ)/(1 ∓ tanα tanβ)<br><br><strong>Dubbelhoekformules:</strong><br>• sin 2α = 2 sinα cosα<br>• cos 2α = cos²α − sin²α = 1−2sin²α = 2cos²α−1"
+      },
+      {
+        "title": "Goniometrische vergelijkingen oplossen",
+        "theory": "<strong>Basisvergelijkingen:</strong><br>• sin x = a → x = arcsin(a) + 2kπ of x = π−arcsin(a) + 2kπ<br>• cos x = a → x = ±arccos(a) + 2kπ<br>• tan x = a → x = arctan(a) + kπ<br><br><strong>Strategie:</strong><br>1. Herleid naar één goniometrische functie<br>2. Gebruik identiteiten<br>3. Stel u = sin x of cos x bij kwadraten<br>4. Geef alle oplossingen in het opgegeven interval"
+      },
+      {
+        "title": "Inverse goniometrische functies",
+        "theory": "<strong>Definities:</strong><br>• arcsin: [−1,1] → [−π/2, π/2]<br>• arccos: [−1,1] → [0, π]<br>• arctan: ℝ → (−π/2, π/2)<br><br><strong>Afgeleiden:</strong><br>• (arcsin x)' = 1/√(1−x²)<br>• (arccos x)' = −1/√(1−x²)<br>• (arctan x)' = 1/(1+x²)<br><br><strong>Toepassingen:</strong> hoeken berekenen in driehoeken, integralen met √(1−x²)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is sin²x + cos²x?",
+        "options": [
+          "0",
+          "2",
+          "1",
+          "sin 2x"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is sin 2α?",
+        "options": [
+          "2sin²α",
+          "2sinα cosα",
+          "sin²α−cos²α",
+          "cos 2α"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het domein van arcsin?",
+        "options": [
+          "[0,π]",
+          "[−π/2,π/2]",
+          "ℝ",
+          "[0,1]"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is cos(α+β)?",
+        "options": [
+          "cosα cosβ+sinα sinβ",
+          "cosα cosβ−sinα sinβ",
+          "sinα cosβ+cosα sinβ",
+          "sinα sinβ−cosα cosβ"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel oplossingen heeft sin x = 1/2 in [0, 2π]?",
+        "options": [
+          "1",
+          "3",
+          "2",
+          "4"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is (arctan x)'?",
+        "options": [
+          "1/√(1−x²)",
+          "−1/√(1−x²)",
+          "1/(1+x²)",
+          "x/(1+x²)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "De dubbelhoekformule cos 2α = ?",
+        "options": [
+          "2sinα cosα",
+          "cos²α−sin²α",
+          "sinα cosα",
+          "1+sin²α"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke identiteit verbindt tan en sec?",
+        "options": [
+          "tan²x+1=sec²x",
+          "sin²x+cos²x=1",
+          "cot²x=csc²x−1",
+          "sinx=1/cosx"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is het bereik van arccos?",
+        "options": [
+          "[−π/2,π/2]",
+          "[−1,1]",
+          "[0,π]",
+          "ℝ"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke formule gebruik je voor sin(α−β)?",
+        "options": [
+          "sinα cosβ+cosα sinβ",
+          "sinα cosβ−cosα sinβ",
+          "cosα cosβ+sinα sinβ",
+          "cosα sinβ−sinα cosβ"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "rijen_reeksen": {
+    "title": "Rijen en reeksen",
+    "leaves": [
+      {
+        "title": "Rekenkundige en meetkundige rijen",
+        "theory": "<strong>Rekenkundige rij:</strong> aₙ = a₁ + (n−1)d, waarbij d het verschil is.<br>Som: Sₙ = n(a₁+aₙ)/2<br><br><strong>Meetkundige rij:</strong> aₙ = a₁·rⁿ⁻¹, waarbij r de reden is.<br>Som: Sₙ = a₁(1−rⁿ)/(1−r) voor r ≠ 1<br><br><strong>Oneindige meetkundige reeks:</strong> S∞ = a₁/(1−r) als |r| &lt; 1<br><br><strong>Fibonacci-rij:</strong> aₙ = aₙ₋₁ + aₙ₋₂, met a₁=a₂=1"
+      },
+      {
+        "title": "Convergentie van reeksen",
+        "theory": "<strong>Convergentie:</strong> Een reeks Σaₙ convergeert als de partiaalsumsrij een eindige limiet heeft.<br><br><strong>Divergentietests:</strong><br>• Als lim aₙ ≠ 0, dan divergeert Σaₙ<br>• Vergelijkingscriterium: vergelijk met bekende reeks<br>• Ratiocriterium: als |aₙ₊₁/aₙ| → L &lt; 1, convergeert; als L &gt; 1, divergeert<br><br><strong>Bekende reeksen:</strong> harmonische reeks Σ1/n divergeert; Σ1/n² convergeert naar π²/6"
+      },
+      {
+        "title": "Machtreeksen en Taylor",
+        "theory": "<strong>Machtreeks:</strong> Σcₙ(x−a)ⁿ convergeert in een interval rondom a.<br><br><strong>Taylor-reeks:</strong> f(x) = Σ f⁽ⁿ⁾(a)/n! · (x−a)ⁿ<br><br><strong>MacLaurin-reeksen (a=0):</strong><br>• eˣ = 1+x+x²/2!+x³/3!+...<br>• sin x = x−x³/3!+x⁵/5!−...<br>• cos x = 1−x²/2!+x⁴/4!−...<br>• ln(1+x) = x−x²/2+x³/3−... voor |x|≤1"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "De n-de term van een rekenkundige rij is:",
+        "options": [
+          "a₁·rⁿ⁻¹",
+          "a₁+(n−1)d",
+          "a₁/r",
+          "n·a₁"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De som van een oneindige meetkundige reeks bestaat als:",
+        "options": [
+          "|r| > 1",
+          "r = 1",
+          "|r| < 1",
+          "r > 0"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is S∞ = a₁/(1−r) voor a₁=1, r=1/2?",
+        "options": [
+          "1",
+          "2",
+          "1/2",
+          "3"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zegt het ratiocriterium als L > 1?",
+        "options": [
+          "Convergeert",
+          "Divergeert",
+          "Onbekend",
+          "L'Hôpital nodig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De harmonische reeks Σ1/n:",
+        "options": [
+          "Convergeert naar 1",
+          "Divergeert",
+          "Convergeert naar π/6",
+          "Convergeert naar ln 2"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De MacLaurin-reeks van eˣ begint met:",
+        "options": [
+          "x+x²+x³",
+          "1+x+x²/2!",
+          "eˣ",
+          "1−x+x²"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Fibonacci: na 1,1,2,3,5 komt:",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "6"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De n-de term van een meetkundige rij met a₁=2, r=3 is:",
+        "options": [
+          "2+3(n−1)",
+          "2·3ⁿ⁻¹",
+          "3·2ⁿ",
+          "n·6"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Taylor-reeks van sin x bevat:",
+        "options": [
+          "Alleen even machten",
+          "Alleen oneven machten",
+          "Alle machten",
+          "Geen x-termen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De som van de eerste n termen van een rekenkundige rij is:",
+        "options": [
+          "n·a₁",
+          "a₁·rⁿ",
+          "n(a₁+aₙ)/2",
+          "a₁+(n−1)d"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "kansen_uitgebreid": {
+    "title": "Kansrekening (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Kansruimte en axioma's",
+        "theory": "<strong>Kansruimte:</strong> (Ω, F, P) met uitkomstenruimte Ω, gebeurtenissenverzameling F, en kansmaat P.<br><br><strong>Axioma's van Kolmogorov:</strong><br>1. P(A) ≥ 0<br>2. P(Ω) = 1<br>3. P(A ∪ B) = P(A) + P(B) als A ∩ B = ∅<br><br><strong>Afgeleid:</strong> P(Aᶜ) = 1−P(A); P(A∪B) = P(A)+P(B)−P(A∩B)<br><br><strong>Voorwaardelijke kans:</strong> P(A|B) = P(A∩B)/P(B)"
+      },
+      {
+        "title": "Stochastische variabelen en verdelingen",
+        "theory": "<strong>Discrete verdelingen:</strong><br>• Binomiaal: X~B(n,p): P(X=k) = C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ<br>• Poisson: P(X=k) = λᵏe⁻λ/k!<br><br><strong>Continue verdelingen:</strong><br>• Uniforme verdeling U(a,b): f(x) = 1/(b−a)<br>• Normaalverdeling N(μ,σ²): klokvorm<br><br><strong>Verwachtingswaarde:</strong> E(X) = Σ x·P(X=x) (discreet) of ∫x·f(x)dx (continu)<br><strong>Variantie:</strong> Var(X) = E(X²)−[E(X)]²"
+      },
+      {
+        "title": "Stelling van Bayes en onafhankelijkheid",
+        "theory": "<strong>Stelling van Bayes:</strong> P(A|B) = P(B|A)·P(A) / P(B)<br><br><strong>Totale kans:</strong> P(B) = Σ P(B|Aᵢ)·P(Aᵢ) bij partitie {Aᵢ}.<br><br><strong>Onafhankelijkheid:</strong> A en B zijn onafhankelijk als P(A∩B) = P(A)·P(B).<br><br><strong>Toepassing Bayes:</strong> medische tests, spamfilters, diagnoses — actualiseer kansen op basis van nieuwe informatie."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is P(Ω)?",
+        "options": [
+          "0",
+          "0.5",
+          "1",
+          "∞"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is P(Aᶜ) als P(A) = 0.3?",
+        "options": [
+          "0.3",
+          "0.7",
+          "1.3",
+          "−0.3"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke verdeling gebruik je voor het aantal successen in n Bernoulli-proeven?",
+        "options": [
+          "Normaal",
+          "Poisson",
+          "Binomiaal",
+          "Uniform"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "A en B zijn onafhankelijk als:",
+        "options": [
+          "P(A∩B)=0",
+          "P(A∩B)=P(A)·P(B)",
+          "P(A|B)=P(B)",
+          "P(A∪B)=1"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De stelling van Bayes berekent:",
+        "options": [
+          "P(A∪B)",
+          "P(A|B) via P(B|A)",
+          "E(X)",
+          "Var(X)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "E(X) voor een discrete verdeling is:",
+        "options": [
+          "Σ P(X=x)",
+          "max(x)",
+          "Σ x·P(X=x)",
+          "∫f(x)dx"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "De normaalverdeling heeft de vorm van:",
+        "options": [
+          "Een staafdiagram",
+          "Een klok",
+          "Een lijn",
+          "Een parabool"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "P(A∪B) = P(A)+P(B) geldt wanneer:",
+        "options": [
+          "A en B onafhankelijk zijn",
+          "A⊂B",
+          "A∩B=∅",
+          "P(A)=P(B)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "De Poisssonverdeling modelleert:",
+        "options": [
+          "Kansen in 2 klassen",
+          "Aantal gebeurtenissen per tijdseenheid",
+          "Continue kansen",
+          "Binaire uitkomsten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Variantie = ?",
+        "options": [
+          "E(X)",
+          "E(X²)−[E(X)]²",
+          "[E(X)]²",
+          "√E(X)"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "combinatoriek": {
+    "title": "Combinatoriek",
+    "leaves": [
+      {
+        "title": "Permutaties en combinaties",
+        "theory": "<strong>Permutaties:</strong> Aantal manieren om n elementen te rangschikken: P(n) = n!<br><br>Permutaties van k uit n: P(n,k) = n!/(n−k)!<br><br><strong>Combinaties (binomiaalcoëfficiënten):</strong> C(n,k) = n!/(k!(n−k)!) — volgorde telt niet mee.<br><br><strong>Herhalingspermutaties:</strong> n elementen met herhalingen: n!/(n₁!·n₂!·...)<br><br><strong>Herhalingscombinaties:</strong> C(n+k−1, k)"
+      },
+      {
+        "title": "De binomiale stelling",
+        "theory": "<strong>Binomiale stelling:</strong> (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏ·bᵏ voor k van 0 tot n.<br><br><strong>Pascal's driehoek:</strong> C(n,k) = C(n−1,k−1) + C(n−1,k)<br><br><strong>Eigenschappen:</strong><br>• C(n,0) = C(n,n) = 1<br>• C(n,k) = C(n,n−k) (symmetrie)<br>• Σ C(n,k) = 2ⁿ (voor k=0..n)<br><br><strong>Toepassing:</strong> kansen berekenen, coefficiënten in machtsontwikkelingen"
+      },
+      {
+        "title": "Telprincipes en inclusie-exclusie",
+        "theory": "<strong>Opteltegel:</strong> Als A en B disjunct zijn: |A∪B| = |A| + |B|<br><br><strong>Vermenigvuldigingsregel:</strong> Meerstapsproces: totaal = n₁ × n₂ × ...<br><br><strong>Inclusie-exclusie:</strong> |A∪B| = |A| + |B| − |A∩B|<br>Voor drie verzamelingen: |A∪B∪C| = |A|+|B|+|C|−|A∩B|−|A∩C|−|B∩C|+|A∩B∩C|<br><br><strong>Duiventilprincipe:</strong> Als n+1 voorwerpen in n vakjes, is er een vakje met ≥ 2 voorwerpen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoeveel permutaties zijn er van 4 elementen?",
+        "options": [
+          "16",
+          "12",
+          "24",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "C(5,2) = ?",
+        "options": [
+          "10",
+          "20",
+          "5",
+          "2"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is het verschil tussen permutatie en combinatie?",
+        "options": [
+          "Permutatie telt met volgorde, combinatie niet",
+          "Combinatie telt met volgorde, permutatie niet",
+          "Beide hetzelfde",
+          "Permutatie gebruikt alleen n!"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is (a+b)² volgens de binomiale stelling?",
+        "options": [
+          "a²+b²",
+          "a²+ab+b²",
+          "a²+2ab+b²",
+          "2a+2b"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Σ C(n,k) voor k=0..n = ?",
+        "options": [
+          "n!",
+          "n²",
+          "2ⁿ",
+          "n"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Inclusie-exclusie voor |A∪B| = ?",
+        "options": [
+          "|A|+|B|+|A∩B|",
+          "|A|+|B|−|A∩B|",
+          "|A|·|B|",
+          "|A|−|B|"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "P(6,2) = ?",
+        "options": [
+          "15",
+          "12",
+          "30",
+          "6"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Het duiventilprincipe zegt dat bij n+1 voorwerpen in n vakjes:",
+        "options": [
+          "Alle vakjes vol zijn",
+          "Een vakje minstens 2 voorwerpen heeft",
+          "Geen vakje leeg is",
+          "Elk vakje 1 object heeft"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "C(n,k) = C(n, ?)",
+        "options": [
+          "k−1",
+          "n−k",
+          "k+1",
+          "n+k"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel herhalingscombinaties zijn er van 2 uit 4?",
+        "options": [
+          "6",
+          "10",
+          "8",
+          "4"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "logaritmen": {
+    "title": "Logaritmen en exponenten",
+    "leaves": [
+      {
+        "title": "Definitie en rekenregels",
+        "theory": "<strong>Definitie:</strong> log_a(x) = y ↔ aʸ = x. Het getal a heet het grondtal (a>0, a≠1).<br><br><strong>Rekenregels:</strong><br>• log(x·y) = log x + log y<br>• log(x/y) = log x − log y<br>• log(xⁿ) = n·log x<br>• Basiswisseling: log_a(x) = log_b(x) / log_b(a)<br><br><strong>Speciale waarden:</strong> log_a(1) = 0; log_a(a) = 1; ln(e) = 1"
+      },
+      {
+        "title": "Exponentiële en logaritmische vergelijkingen",
+        "theory": "<strong>Exponentiële vergelijkingen:</strong> aˣ = b → x = log_a(b) = ln(b)/ln(a)<br><br><strong>Strategie:</strong><br>1. Schrijf beide kanten als macht van zelfde grondtal, OF<br>2. Neem logaritme van beide kanten<br><br><strong>Logaritmische vergelijkingen:</strong><br>• Isoleer de log<br>• Zet om naar exponentvorm<br>• Controleer: x moet in het domein liggen (x > 0 voor ln x)<br><br><strong>Voorbeeld:</strong> ln(x+2) = 3 → x+2 = e³ → x = e³−2"
+      },
+      {
+        "title": "Exponentiële groei en verval",
+        "theory": "<strong>Exponentiële groei:</strong> N(t) = N₀·eᵏᵗ (k > 0)<br><strong>Exponentieel verval:</strong> N(t) = N₀·e⁻ᵏᵗ (k > 0)<br><br><strong>Halveringstijd:</strong> t½ = ln(2)/k<br><strong>Verdubbelingstijd:</strong> t₂ = ln(2)/k<br><br><strong>Toepassingen:</strong><br>• Bacteriegroei<br>• Radioactief verval<br>• Renteberekening: K(t) = K₀·(1+r)ᵗ<br>• Afkoeling: Newton's afkoelingswet"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is log_2(8)?",
+        "options": [
+          "2",
+          "4",
+          "3",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "log(x·y) = ?",
+        "options": [
+          "log x · log y",
+          "log x + log y",
+          "log x − log y",
+          "log(x+y)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is ln(e)?",
+        "options": [
+          "0",
+          "e",
+          "1",
+          "1/e"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "log(xⁿ) = ?",
+        "options": [
+          "log x + n",
+          "n · log x",
+          "(log x)ⁿ",
+          "log(nx)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe los je 2ˣ = 16 op?",
+        "options": [
+          "x = 2",
+          "x = 4",
+          "x = 8",
+          "x = 16"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De halveringstijd is:",
+        "options": [
+          "k/ln 2",
+          "ln 2 / k",
+          "k·ln 2",
+          "1/k"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "log_a(1) = ?",
+        "options": [
+          "1",
+          "a",
+          "0",
+          "1/a"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Basiswisseling: log_a(x) = ?",
+        "options": [
+          "log x / log a",
+          "log a / log x",
+          "log(a·x)",
+          "log a + log x"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "ln(x+2) = 3 → x = ?",
+        "options": [
+          "e³+2",
+          "e³−2",
+          "3−e²",
+          "3e"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Exponentieel verval: N(t) = N₀·e⁻ᵏᵗ, na één halveringstijd is N gelijk aan:",
+        "options": [
+          "N₀",
+          "N₀/4",
+          "N₀/2",
+          "0"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "ongelijkheden": {
+    "title": "Ongelijkheden en absolute waarde",
+    "leaves": [
+      {
+        "title": "Lineaire en kwadratische ongelijkheden",
+        "theory": "<strong>Lineaire ongelijkheid:</strong> ax + b > 0. Pas op: vermenigvuldig met negatief getal → ongelijkheidsteken keert om!<br><br><strong>Kwadratische ongelijkheid:</strong><br>1. Los ax²+bx+c = 0 op<br>2. Bepaal paraboolvorm (a > 0 → ∪-vorm)<br>3. Lees interval af: x waarvoor parabool boven/onder x-as ligt<br><br><strong>Tekendiagram:</strong> Nuttig bij producten van factoren — bepaal tekens per interval."
+      },
+      {
+        "title": "Absolute waarde",
+        "theory": "<strong>Definitie:</strong> |x| = x als x ≥ 0; |x| = −x als x &lt; 0.<br><br><strong>Ongelijkheden met |·|:</strong><br>• |x| &lt; a ↔ −a &lt; x &lt; a<br>• |x| &gt; a ↔ x &lt; −a of x &gt; a<br>• |x−c| &lt; r → punt x ligt binnen afstand r van c<br><br><strong>Driehoeksongelijkheid:</strong> |a+b| ≤ |a|+|b|<br><br><strong>Oplossingstrategie:</strong> Splits in gevallen op basis van het teken van de uitdrukking binnen |·|."
+      },
+      {
+        "title": "Rationale ongelijkheden",
+        "theory": "<strong>Rationale ongelijkheid:</strong> f(x)/g(x) > 0.<br><br><strong>Stappenplan:</strong><br>1. Breng alles naar één kant<br>2. Ontbind teller en noemer in factoren<br>3. Bepaal nulpunten en discontinuïteiten<br>4. Maak tekendiagram<br>5. Let op: nulpunten van noemer NIET in oplossing!<br><br><strong>Voorbeeld:</strong> (x−1)/(x+2) > 0 → oplossing: x &lt; −2 of x > 1"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat verandert het teken van een ongelijkheid?",
+        "options": [
+          "Optellen",
+          "Aftrekken",
+          "Vermenigvuldigen met negatief getal",
+          "Delen door positief getal"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "|x| < 3 is equivalent met:",
+        "options": [
+          "x < 3",
+          "x > −3",
+          "−3 < x < 3",
+          "x < −3 of x > 3"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Bij kwadratische ongelijkheid x²−4 > 0 zijn de oplossingen:",
+        "options": [
+          "−2 < x < 2",
+          "x < −2 of x > 2",
+          "x = ±2",
+          "Alle x"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "|x| > a (a > 0) is equivalent met:",
+        "options": [
+          "−a < x < a",
+          "x > −a",
+          "x < −a of x > a",
+          "−a ≤ x ≤ a"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "De driehoeksongelijkheid zegt:",
+        "options": [
+          "|a−b| = |a|−|b|",
+          "|a+b| ≤ |a|+|b|",
+          "|ab| = |a|+|b|",
+          "|a/b| ≤ |a|"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Bij (x−1)/(x+2) > 0: welke x-waarde is NIET toegestaan?",
+        "options": [
+          "x = 1",
+          "x = 0",
+          "x = −2",
+          "x = −1"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Voor lineaire ongelijkheid 2x − 6 > 0 geldt:",
+        "options": [
+          "x > 6",
+          "x < 3",
+          "x > 3",
+          "x > −3"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een tekendiagram gebruik je om:",
+        "options": [
+          "Grafiek te tekenen",
+          "Tekens van factoren per interval te bepalen",
+          "Integralen uit te rekenen",
+          "Limieten te vinden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "|x−5| < 2 beschrijft:",
+        "options": [
+          "x > 7 of x < 3",
+          "3 < x < 7",
+          "x > 3",
+          "x < 7"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Bij rationale ongelijkheid zijn nulpunten van de noemer:",
+        "options": [
+          "Altijd oplossingen",
+          "Nooit oplossingen",
+          "Soms oplossingen",
+          "Grenspunten van oplossing"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "statistiek": {
+    "title": "Statistiek en data-analyse",
+    "leaves": [
+      {
+        "title": "Beschrijvende statistiek",
+        "theory": "<strong>Centrummaten:</strong><br>• Gemiddelde (mean): x̄ = Σxᵢ/n<br>• Mediaan: middelste waarde (gesorteerd)<br>• Modus: meest voorkomende waarde<br><br><strong>Spreidingsmaten:</strong><br>• Bereik: max − min<br>• Variantie: s² = Σ(xᵢ−x̄)²/(n−1)<br>• Standaarddeviatie: s = √s²<br>• Interkwartielafstand (IQR): Q3 − Q1<br><br><strong>Uitschieters:</strong> x &lt; Q1−1.5·IQR of x &gt; Q3+1.5·IQR"
+      },
+      {
+        "title": "Kansverdelingen en normaalverdeling",
+        "theory": "<strong>Normaalverdeling N(μ,σ²):</strong> symmetrisch, klokvormig. 68%-95%-99,7%-regel: 68% valt binnen μ±σ, 95% binnen μ±2σ.<br><br><strong>Standaardiseren:</strong> Z = (X−μ)/σ. Dan geldt Z~N(0,1).<br><br><strong>Centraal limietstelling:</strong> De verdeling van het steekproefgemiddelde nadert normaalverdeling naarmate n groot wordt, ongeacht de populatieverdeling.<br><br><strong>Betrouwbaarheidsinterval:</strong> x̄ ± z*(σ/√n)"
+      },
+      {
+        "title": "Hypothesetoetsing",
+        "theory": "<strong>Stappen hypothesetoets:</strong><br>1. Stel H₀ (nulhypothese) en H₁ (alternatieve hypothese) op<br>2. Kies significantieniveau α (bijv. 0.05)<br>3. Bereken toetsingsgrootheid (t, z, χ²)<br>4. Bepaal p-waarde<br>5. Conclusie: verwerp H₀ als p &lt; α<br><br><strong>Fouten:</strong> Type I (onterecht verwerpen H₀), Type II (onterecht aannemen H₀)<br><br><strong>t-toets:</strong> Gebruik bij kleine steekproef of onbekende σ"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Het gemiddelde van {2,4,4,4,5,5,7,9} is:",
+        "options": [
+          "4",
+          "5",
+          "4.5",
+          "5.5"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke maat is robuust voor uitschieters?",
+        "options": [
+          "Gemiddelde",
+          "Standaarddeviatie",
+          "Mediaan",
+          "Bereik"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Standaarddeviatie is:",
+        "options": [
+          "Variantie²",
+          "√Variantie",
+          "Variantie/n",
+          "Gemiddelde−Mediaan"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "68% valt bij normaalverdeling binnen:",
+        "options": [
+          "μ±2σ",
+          "μ±3σ",
+          "μ±σ",
+          "μ±0.5σ"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe standaardiseer je X naar Z?",
+        "options": [
+          "Z=(X+μ)/σ",
+          "Z=(X−μ)/σ",
+          "Z=X·σ",
+          "Z=X/μ"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "P-waarde < α betekent:",
+        "options": [
+          "H₀ aannemen",
+          "H₁ verwerpen",
+          "H₀ verwerpen",
+          "Meer data nodig"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "IQR = ?",
+        "options": [
+          "Q3−Q1",
+          "Q2−Q1",
+          "Max−Min",
+          "Q3−Q2"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Type I fout is:",
+        "options": [
+          "H₀ aannemen terwijl H₁ waar is",
+          "H₀ verwerpen terwijl H₀ waar is",
+          "Berekenfout",
+          "Meten van uitschieters"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De centraal limietstelling zegt:",
+        "options": [
+          "Elke verdeling is normaal",
+          "Steekproefgemiddelde nadert normaalverdeling voor grote n",
+          "σ = 1 altijd",
+          "Gemiddelde = mediaan"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Een betrouwbaarheidsinterval van 95% bevat:",
+        "options": [
+          "Exact de parameter",
+          "95% van de data",
+          "De parameter in 95% van herhaald onderzoek",
+          "5% van de data"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "bewijsmethoden": {
+    "title": "Bewijsmethoden",
+    "leaves": [
+      {
+        "title": "Directe bewijzen en bewijs uit het ongerijmde",
+        "theory": "<strong>Direkt bewijs:</strong> Ga uit van de hypothese en leid stap voor stap de conclusie af via logisch geldige stappen.<br><br><strong>Bewijs uit het ongerijmde (contradictiebewijs):</strong> Neem aan dat de conclusie vals is en leid hieruit een tegenspraak af. Conclusie: de aanname was onjuist.<br><br><strong>Bewijs van de contrapositivum:</strong> Bewijs ¬B → ¬A in plaats van A → B (logisch equivalent).<br><br><strong>Voorbeeld:</strong> Bewijs dat √2 irrationaal is via bewijs uit het ongerijmde."
+      },
+      {
+        "title": "Bewijs door inductie",
+        "theory": "<strong>Volledige inductie:</strong> Bewijs een uitspraak P(n) voor alle n ∈ ℕ.<br><br><strong>Stappen:</strong><br>1. <em>Basisgeval:</em> Bewijs P(1) (of P(0))<br>2. <em>Inductiestap:</em> Neem P(k) aan (inductiehypothese) en bewijs P(k+1)<br><br><strong>Conclusie:</strong> P(n) geldt voor alle n ≥ 1.<br><br><strong>Voorbeeld:</strong> Bewijs dat 1+2+...+n = n(n+1)/2<br>Basis: n=1: 1 = 1·2/2 ✓<br>Inductiestap: (1+...+k) + (k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2 ✓"
+      },
+      {
+        "title": "Verzamelingenleer en logica",
+        "theory": "<strong>Propositionele logica:</strong> Verbindingswoorden EN (∧), OF (∨), NIET (¬), ALS...DAN (→), DAN EN SLECHTS DAN (↔).<br><br><strong>Waarheidstabellen:</strong> Systematisch alle combinaties van waarden checken.<br><br><strong>De Morgan:</strong> ¬(A∧B) = ¬A∨¬B en ¬(A∨B) = ¬A∧¬B<br><br><strong>Kwantoren:</strong> ∀ (voor alle), ∃ (er bestaat). Negatie: ¬(∀x P(x)) = ∃x ¬P(x)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Bewijs uit het ongerijmde begint met:",
+        "options": [
+          "Aannemen dat de hypothese waar is",
+          "Aannemen dat de conclusie vals is",
+          "De conclusie bewijzen",
+          "Een voorbeeld geven"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de eerste stap bij inductiebewijs?",
+        "options": [
+          "Inductiestap",
+          "Basisgeval",
+          "Conclusie",
+          "Contrapositivum"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "De contrapositivum van A→B is:",
+        "options": [
+          "B→A",
+          "¬A→¬B",
+          "¬B→¬A",
+          "A∧¬B"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "De Morgans wet: ¬(A∧B) = ?",
+        "options": [
+          "¬A∧¬B",
+          "A∨B",
+          "¬A∨¬B",
+          "¬A∧B"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Bij inductie wordt in de inductiestap aangenomen:",
+        "options": [
+          "P(1)",
+          "P(n) voor alle n",
+          "P(k) om P(k+1) te bewijzen",
+          "P(k+1)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "∀x P(x) is onwaar wanneer:",
+        "options": [
+          "P(x) geldt voor alle x",
+          "Er een x bestaat waarvoor P(x) onwaar is",
+          "P(x) nooit geldt",
+          "x niet gedefinieerd is"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "√2 is irrationaal, bewezen via:",
+        "options": [
+          "Inductie",
+          "Directe bewijs",
+          "Bewijs uit het ongerijmde",
+          "Tegenvoorbeeld"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Een bewijs via contrapositivum bewijst A→B door:",
+        "options": [
+          "A direct te bewijzen",
+          "¬B→¬A te bewijzen",
+          "B→A te bewijzen",
+          "Een voorbeeld te geven"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Negatie van ∃x P(x) is:",
+        "options": [
+          "∃x ¬P(x)",
+          "∀x P(x)",
+          "∀x ¬P(x)",
+          "¬∃x P(x)=∀x P(x)"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welk symbool staat voor 'voor alle'?",
+        "options": [
+          "∃",
+          "∈",
+          "∀",
+          "¬"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+}

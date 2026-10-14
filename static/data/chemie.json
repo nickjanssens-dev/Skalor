@@ -1,0 +1,1668 @@
+{
+  "thermo": {
+    "title": "Thermochemie",
+    "leaves": [
+      {
+        "title": "Enthalpie",
+        "theory": "<strong>Enthalpie (H)</strong> is de warmte-inhoud van een systeem. Bij chemische reacties wordt energie vrijgesteld of opgenomen.\n\n• <strong>Exotherme reactie</strong>: ΔH &lt; 0 — warmte vrijgesteld (bijv. verbranding)\n• <strong>Endotherme reactie</strong>: ΔH &gt; 0 — warmte opgenomen (bijv. smeltprocess)\n\nDe <strong>reactie-enthalpie (ΔH)</strong> hangt af van de bindingsenergieën: energie nodig om bindingen te breken minus energie vrijgekomen bij vorming van nieuwe bindingen.\n\nDe <strong>wet van Hess</strong>: de totale enthalpieverandering is onafhankelijk van de reactieroute."
+      },
+      {
+        "title": "Calorimetrie",
+        "theory": "<strong>Calorimetrie</strong> meet de warmte die vrijkomt of opgenomen wordt bij een reactie.\n\nFormule: <code>Q = m · c · ΔT</code>\n\nWaarin:\n• Q = warmte (J)\n• m = massa (g)\n• c = specifieke warmtecapaciteit (J/g·°C)\n• ΔT = temperatuurverandering (°C)\n\nVoor water is c = 4,18 J/g·°C.\n\nEen calorimeter isoleert het systeem thermisch om warmteverlies te minimaliseren."
+      },
+      {
+        "title": "Verbrandingsenthalpiëen",
+        "theory": "De <strong>verbrandingsenthalpie (ΔHᶜ)</strong> is de warmte vrijgesteld bij de volledige verbranding van 1 mol stof.\n\nVoorbeelden:\n• Methaan: CH₄ + 2O₂ → CO₂ + 2H₂O, ΔH = -890 kJ/mol\n• Glucose: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O, ΔH = -2803 kJ/mol\n\nVerbrandingsenthalpieën worden gebruikt bij brandstoffenvergelijking en energieberekeningen.\n\nKalorische waarden van voedsel zijn ook gebaseerd op verbrandingsenergie."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een exotherme reactie?",
+        "options": [
+          "Een reactie die warmte opneemt",
+          "Een reactie die warmte vrijstelt (ΔH < 0)",
+          "Een reactie zonder energieverandering",
+          "Een reactie met licht"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke formule gebruik je voor calorimetrie?",
+        "options": [
+          "Q = m·v²",
+          "Q = m·c·ΔT",
+          "Q = F·s",
+          "Q = P·t"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de specifieke warmtecapaciteit van water?",
+        "options": [
+          "1,00 J/g·°C",
+          "2,09 J/g·°C",
+          "4,18 J/g·°C",
+          "8,31 J/g·°C"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zegt de wet van Hess?",
+        "options": [
+          "Energie kan niet vernietigd worden",
+          "De totale enthalpieverandering is onafhankelijk van de reactieroute",
+          "Reacties verlopen altijd exotherm",
+          "Massa behoud geldt altijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk teken heeft ΔH bij een endotherme reactie?",
+        "options": [
+          "Negatief (ΔH < 0)",
+          "Positief (ΔH > 0)",
+          "Nul (ΔH = 0)",
+          "Hangt af van de temperatuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is verbrandingsenthalpie?",
+        "options": [
+          "Warmte nodig voor smeltprocess",
+          "Warmte vrijgesteld bij volledige verbranding van 1 mol stof",
+          "Warmte bij oplossing in water",
+          "Energie opgeslagen in bindingen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat meet calorimetrie?",
+        "options": [
+          "Reactiesnelheid",
+          "Warmte die vrijkomt of opgenomen wordt",
+          "Concentratie van oplossingen",
+          "Massa van reactanten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke reactie is exotherm?",
+        "options": [
+          "Smeltprocess van ijs",
+          "Fotosynthese",
+          "Verbranding van hout",
+          "Oplossen van NH₄NO₃ in water"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke eenheid heeft enthalpie?",
+        "options": [
+          "Pascal (Pa)",
+          "Joule (J) of kJ/mol",
+          "Kelvin (K)",
+          "Mol/L"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de kalorische waarde van voedsel gerelateerd aan?",
+        "options": [
+          "Molecuulmassa",
+          "Verbrandingsenergie",
+          "Oplosbaarheid",
+          "Dichtheid"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "evenwicht": {
+    "title": "Chemisch Evenwicht",
+    "leaves": [
+      {
+        "title": "Evenwichtstoestand",
+        "theory": "Een <strong>chemisch evenwicht</strong> ontstaat wanneer de snelheid van de heenreactie gelijk is aan de snelheid van de terugkeer reactie. Er is geen netto verandering in concentraties meer.\n\n<code>aA + bB ⇌ cC + dD</code>\n\nDe <strong>evenwichtsconstante (Kc)</strong>:\n<code>Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ</code>\n\n• Kc groot → evenwicht ligt rechts (veel product)\n• Kc klein → evenwicht ligt links (weinig product)\n\nVaste stoffen en zuivere vloeistoffen worden niet opgenomen in Kc."
+      },
+      {
+        "title": "Principe van Le Chatelier",
+        "theory": "Het <strong>principe van Le Chatelier</strong> stelt: als een evenwichtssysteem verstoord wordt, verschuift het evenwicht om die verstoring te compenseren.\n\nVerstoringen en gevolgen:\n• <strong>Concentratie</strong>: toevoeging van reactant → evenwicht verschuift naar rechts\n• <strong>Druk</strong> (gassen): hogere druk → verschuiving naar de kant met minder molen gas\n• <strong>Temperatuur</strong>: hogere T → verschuiving naar de endotherme richting\n• <strong>Katalysator</strong>: bereikt evenwicht sneller, maar verandert de ligging NIET"
+      },
+      {
+        "title": "Evenwicht & Industrie",
+        "theory": "Het <strong>Haber-Bosch-proces</strong> is een industrieel voorbeeld van evenwichtschemie:\n\n<code>N₂ + 3H₂ ⇌ 2NH₃</code> (ΔH = -92 kJ/mol)\n\nOmstandigheden:\n• Temperatuur ~450°C (compromis snelheid vs. opbrengst)\n• Druk ~200 atm (verschuift evenwicht naar NH₃)\n• IJzerkatalysator (verhoogt reactiesnelheid)\n\nAmmonia wordt gebruikt voor kunstmest, explosiefstoffen en tal van chemicaliën."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wanneer is er sprake van chemisch evenwicht?",
+        "options": [
+          "Alle reactanten zijn verbruikt",
+          "De heen- en terugkeerreactie verlopen even snel",
+          "Er is geen reactie meer",
+          "De temperatuur is constant"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat betekent een grote evenwichtsconstante Kc?",
+        "options": [
+          "Het evenwicht ligt links (weinig product)",
+          "Het evenwicht ligt rechts (veel product)",
+          "De reactie is endotherm",
+          "De reactie heeft een katalysator nodig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt het principe van Le Chatelier?",
+        "options": [
+          "Reacties verlopen altijd exotherm bij evenwicht",
+          "Bij een verstoring verschuift het evenwicht om de verstoring te compenseren",
+          "Evenwichtsconstanten zijn temperatuuronafhankelijk",
+          "Katalysatoren veranderen de evenwichtsligging"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het effect van hogere druk op een evenwicht met gas?",
+        "options": [
+          "Het evenwicht verschuift naar de kant met meer molen gas",
+          "Het evenwicht verschuift naar de kant met minder molen gas",
+          "Er is geen effect op gasevenwichten",
+          "Hogere druk verhoogt Kc"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een katalysator met een chemisch evenwicht?",
+        "options": [
+          "Verhoogt de opbrengst aan product",
+          "Verandert de evenwichtsligging",
+          "Bereikt het evenwicht sneller, maar verandert ligging niet",
+          "Verlaagt de evenwichtsconstante"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "In het Haber-Bosch-proces: bij welke druk wordt NH₃ geproduceerd?",
+        "options": [
+          "1 atm",
+          "~200 atm",
+          "~10 atm",
+          "Atmosferische druk"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk product maakt het Haber-Bosch-proces?",
+        "options": [
+          "Methanol",
+          "Zwavelzuur",
+          "Ammoniak (NH₃)",
+          "Ethyleen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat staat er NIET in de Kc-uitdrukking?",
+        "options": [
+          "Concentraties van gassen",
+          "Concentraties van opgeloste stoffen",
+          "Concentraties van vaste stoffen",
+          "Exponent gelijk aan de stoichiometrische coëfficiënten"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe verschuift het evenwicht als je een reactant toevoegt?",
+        "options": [
+          "Naar links",
+          "Naar rechts",
+          "Geen verschuiving",
+          "Hangt af van de katalysator"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Bij hogere temperatuur in een exotherme reactie, hoe verschuift het evenwicht?",
+        "options": [
+          "Naar rechts (meer product)",
+          "Naar links (minder product)",
+          "Geen effect op ligging",
+          "Meer katalysator nodig"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "snelheid": {
+    "title": "Reactiesnelheid",
+    "leaves": [
+      {
+        "title": "Factoren Reactiesnelheid",
+        "theory": "De <strong>reactiesnelheid</strong> geeft aan hoe snel reactanten worden omgezet naar producten.\n\nFactoren die de snelheid beïnvloeden:\n• <strong>Concentratie</strong> – hogere concentratie → meer botsingen → sneller\n• <strong>Temperatuur</strong> – hogere T → meer energie → meer effectieve botsingen\n• <strong>Oppervlakte</strong> – fijner poeder → groter oppervlak → sneller\n• <strong>Katalysator</strong> – verlaagt activeringsenergie\n• <strong>Licht</strong> – bij fotochemische reacties"
+      },
+      {
+        "title": "Botsingstheorie & Activeringsenergie",
+        "theory": "Volgens de <strong>botsingstheorie</strong> reageren moleculen alleen als ze:\n1. Met voldoende energie botsen\n2. De juiste oriëntatie hebben\n\nDe minimale energie voor een reactie is de <strong>activeringsenergie (Ea)</strong>.\n\nEen <strong>energie-reactiediagram</strong> toont:\n• Begintoestand\n• Overgangscomplex (top = Ea)\n• Eindtoestand\n• ΔH = energieverschil begin en eind\n\nEen katalysator verlaagt Ea en verhoogt zo de reactiesnelheid."
+      },
+      {
+        "title": "Reactieorde & Snelheidswet",
+        "theory": "De <strong>snelheidswet</strong> beschrijft hoe de snelheid afhangt van de concentratie:\n<code>v = k · [A]ᵐ · [B]ⁿ</code>\n\nWaarin:\n• k = snelheidsconstante\n• m, n = reactieordes (bepaald experimenteel)\n• m+n = totale reactieorde\n\nBij een <strong>eerste-orde reactie</strong> (m=1): snelheid evenredig met concentratie.\nBij een <strong>tweede-orde reactie</strong>: snelheid evenredig met het kwadraat van de concentratie."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoe beïnvloedt hogere concentratie de reactiesnelheid?",
+        "options": [
+          "Verlaagt de snelheid",
+          "Verhoogt de snelheid",
+          "Heeft geen effect",
+          "Verlaagt de activeringsenergie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat doet een katalysator?",
+        "options": [
+          "Verhoogt de activeringsenergie",
+          "Verlaagt de activeringsenergie",
+          "Verandert de beginstof",
+          "Verhoogt de temperatuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom reageren fijngemalen stoffen sneller dan brokken?",
+        "options": [
+          "Ze hebben hogere temperatuur",
+          "Ze hebben een groter reactieoppervlak",
+          "Ze zijn chemisch reactiever",
+          "Ze hebben meer massa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de activeringsenergie?",
+        "options": [
+          "De energie vrijgesteld bij reactie",
+          "De minimale energie die moleculen nodig hebben om te reageren",
+          "De totale energie in het systeem",
+          "De energie van de katalysator"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat wordt experimenteel bepaald in de snelheidswet?",
+        "options": [
+          "De activeringsenergie",
+          "De reactieordes (m en n)",
+          "De evenwichtsconstante",
+          "De enthalpie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Bij welke conditie reageren moleculen volgens de botsingstheorie?",
+        "options": [
+          "Bij elke botsing",
+          "Alleen bij botsingen met voldoende energie en de juiste oriëntatie",
+          "Alleen bij hoge druk",
+          "Alleen in oplossing"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de snelheidsconstante k afhankelijk van?",
+        "options": [
+          "Concentratie",
+          "Druk",
+          "Temperatuur (en aanwezigheid van katalysator)",
+          "Volume"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat toont het energie-reactiediagram?",
+        "options": [
+          "Reactieorde",
+          "Activeringsenergie, ΔH en de overgangscomplex",
+          "Concentratieverloop in de tijd",
+          "Kc-waarde"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe verandert reactiesnelheid bij een verdubbeling van concentratie in een eerste-orde reactie?",
+        "options": [
+          "Verdubbelt",
+          "Verviervoudigt",
+          "Blijft gelijk",
+          "Halveert"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Welke factor beïnvloedt de reactiesnelheid via meer effectieve botsingen door meer kinetische energie?",
+        "options": [
+          "Oppervlakte",
+          "Druk bij vaste stoffen",
+          "Temperatuur",
+          "Kleur van de stof"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "electroch": {
+    "title": "Electrochemie",
+    "leaves": [
+      {
+        "title": "Galvanische Cel",
+        "theory": "Een <strong>galvanische cel</strong> (voltaïsche cel) zet chemische energie om in elektrische energie via een spontane redoxreactie.\n\nBelangrijke onderdelen:\n• <strong>Anode</strong> – oxidatie vindt plaats (negatieve pool)\n• <strong>Kathode</strong> – reductie vindt plaats (positieve pool)\n• <strong>Zoutbrug</strong> – handhaaft elektrische neutraliteit\n• <strong>Voltmeter</strong> – meet de spanning\n\nVoorbeeldcel: Zn/Zn²⁺ || Cu²⁺/Cu\n• Zn wordt geoxideerd aan de anode\n• Cu²⁺ wordt gereduceerd aan de kathode\n• Celspanning: ~1,10 V"
+      },
+      {
+        "title": "Elektrolyse",
+        "theory": "<strong>Elektrolyse</strong> gebruikt elektrische energie om een niet-spontane chemische reactie te drijven.\n\nEen externe stroomgenerator pompt elektronen:\n• Kathode (negatief) – reductie\n• Anode (positief) – oxidatie\n\nVoorbeelden:\n• Elektrolyse van water: 2H₂O → 2H₂ + O₂\n• Verchroming en vergulding\n• Productie van chloor en natriumhydroxide uit zout\n• Aluminiumproductie (Hall-Héroult-proces)\n\nWet van Faraday: de hoeveelheid stof geproduceerd is evenredig met de hoeveelheid lading."
+      },
+      {
+        "title": "Batterijen & Brandstofcellen",
+        "theory": "<strong>Batterijen</strong> zijn draagbare galvanische cellen:\n• <em>Primaire batterij</em> – niet oplaadbaar (alkaline, wegwerpbatterij)\n• <em>Secundaire batterij</em> – oplaadbaar (Li-ion, loodaccu)\n\nDe <strong>lithium-ionbatterij</strong> (Li-ion):\n• Hoge energiedichtheid\n• Wordt gebruikt in smartphones, laptops, elektrische auto's\n\n<strong>Brandstofcellen</strong> produceren elektriciteit via de reactie van H₂ met O₂:\n<code>H₂ + ½O₂ → H₂O</code>\n• Efficiënt en schoon — enkel water als bijproduct"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Waar vindt oxidatie plaats in een galvanische cel?",
+        "options": [
+          "Kathode",
+          "Zoutbrug",
+          "Anode",
+          "Voltmeter"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de functie van de zoutbrug?",
+        "options": [
+          "Elektronen overbrengen",
+          "Elektrische neutraliteit handhaven",
+          "Energie opslaan",
+          "Oxidatie remmen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is elektrolyse?",
+        "options": [
+          "Spontane redoxreactie die stroom levert",
+          "Gebruik van stroom om een niet-spontane reactie te drijven",
+          "Meting van celspanning",
+          "Productie van zuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk gas wordt geproduceerd aan de kathode bij elektrolyse van water?",
+        "options": [
+          "O₂",
+          "Cl₂",
+          "H₂",
+          "N₂"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een oplaadbare batterij een voorbeeld van?",
+        "options": [
+          "Primaire cel",
+          "Secundaire cel",
+          "Brandstofcel",
+          "Galvanische cel (niet oplaadbaar)"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke reactie vindt plaats in een waterstof-brandstofcel?",
+        "options": [
+          "CH₄ + 2O₂ → CO₂ + 2H₂O",
+          "H₂ + ½O₂ → H₂O",
+          "2H₂O → 2H₂ + O₂",
+          "N₂ + 3H₂ → 2NH₃"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zegt de wet van Faraday over elektrolyse?",
+        "options": [
+          "Energie is evenredig met temperatuur",
+          "De hoeveelheid stof geproduceerd is evenredig met de hoeveelheid lading",
+          "Snelheid hangt af van concentratie",
+          "Reductie vindt plaats aan de anode"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke pool is de kathode in een galvanische cel?",
+        "options": [
+          "Negatieve pool",
+          "Positieve pool",
+          "Neutrale pool",
+          "Hangt af van de stof"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke batterijtype wordt gebruikt in elektrische auto's?",
+        "options": [
+          "Koolzinkbatterij",
+          "Alkaline batterij",
+          "Loodaccu",
+          "Lithium-ionbatterij"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Wat is een voordeel van de brandstofcel boven een gewone motor?",
+        "options": [
+          "Goedkoper in aanschaf",
+          "Enkel water als bijproduct, hoge efficiëntie",
+          "Werkt zonder brandstof",
+          "Geen energie nodig"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "zuurbase2": {
+    "title": "Zuur-Base (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Sterk vs. Zwak Zuur",
+        "theory": "<strong>Sterke zuren</strong> dissociëren volledig in water:\n<code>HCl → H⁺ + Cl⁻</code>\n\nVoorbeelden: HCl, HNO₃, H₂SO₄, HClO₄\n\n<strong>Zwakke zuren</strong> dissociëren slechts gedeeltelijk:\n<code>CH₃COOH ⇌ H⁺ + CH₃COO⁻</code>\n\nKa is de zuurconstante (hoe kleiner Ka, hoe zwakker het zuur).\n\nAnaloog: <strong>sterke basen</strong> (NaOH, KOH) dissociëren volledig; <strong>zwakke basen</strong> (NH₃) slechts gedeeltelijk."
+      },
+      {
+        "title": "Bufferoplossingen",
+        "theory": "Een <strong>bufferoplossing</strong> weerstaat grote pH-schommelingen bij toevoeging van kleine hoeveelheden zuur of base.\n\nEen buffer bestaat uit:\n• Een zwak zuur + zijn geconjugeerde base\n• Bijv. CH₃COOH/CH₃COO⁻ (acetaatbuffer)\n\n<strong>Henderson-Hasselbalch</strong>: <code>pH = pKa + log([A⁻]/[HA])</code>\n\nBiologisch belang: bloed wordt gebufferd door het bicarbonaat-systeem (pH ~7,4).\n\nBuffers zijn ook essentieel in laboratoria, farmaceutica en industriële processen."
+      },
+      {
+        "title": "Titratie",
+        "theory": "<strong>Titratie</strong> is een analytische techniek waarbij een bekende concentratie (titrant) wordt gebruikt om de onbekende concentratie van een analyt te bepalen.\n\nBij een <strong>zuur-base titratie</strong>:\n• Het equivalentiepunt is bereikt wanneer moles zuur = moles base\n• Een indicator (bijv. fenolftaleïne) verkleurt bij het equivalentiepunt\n\nBerekening:\n<code>c₁ · V₁ = c₂ · V₂</code>\n\nEen titratiercurve toont de pH als functie van het toegevoegde volume."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is een sterk zuur?",
+        "options": [
+          "Een zuur dat gedeeltelijk dissocieert",
+          "Een zuur dat volledig dissocieert in water",
+          "Een zuur met hoge pH",
+          "Een zuur dat waterstofbruggen vormt"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk van de volgende is een zwak zuur?",
+        "options": [
+          "HCl",
+          "HNO₃",
+          "CH₃COOH (azijnzuur)",
+          "H₂SO₄"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat doet een bufferoplossing?",
+        "options": [
+          "Verlaagt altijd de pH",
+          "Weerstaat grote pH-schommelingen",
+          "Verhoogt de concentratie van zuren",
+          "Neutraliseert alle zuren en basen volledig"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke formule hoort bij Henderson-Hasselbalch?",
+        "options": [
+          "pH = pKa + log([HA]/[A⁻])",
+          "pH = pKa + log([A⁻]/[HA])",
+          "pH = -log[H⁺]",
+          "pH = Ka · [HA]"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het equivalentiepunt bij titratie?",
+        "options": [
+          "Het punt waarop de indicator verkleurt",
+          "Het punt waarop moles zuur gelijk zijn aan moles base",
+          "De beginconcentratie van de analyt",
+          "Wanneer pH = 7"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke indicator wordt vaak gebruikt bij zuur-base titratie?",
+        "options": [
+          "Methylblauw",
+          "Fenolftaleïne",
+          "Jodiumoplossing",
+          "Universeel indicator papier"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat buffert het bloed op pH ~7,4?",
+        "options": [
+          "Acetaatbuffer",
+          "Fosfaatbuffer",
+          "Bicarbonaat-systeem (HCO₃⁻/CO₂)",
+          "Eiwitbuffers in erytrocyten"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Welke stof is een sterke base?",
+        "options": [
+          "NH₃",
+          "NaOH",
+          "CH₃NH₂",
+          "Pyridine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat bereken je met c₁·V₁ = c₂·V₂?",
+        "options": [
+          "Energieverandering bij reactie",
+          "Onbekende concentratie bij titratie",
+          "Evenwichtsconstante",
+          "Reactiesnelheid"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de Ka-waarde?",
+        "options": [
+          "Een maat voor de sterkte van een zuur (dissociatiemaat)",
+          "De pH van een bufferoplossing",
+          "De evenwichtsconstante van een base",
+          "De temperatuurconstante van zuren"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "aromatisch": {
+    "title": "Aromatische Chemie",
+    "leaves": [
+      {
+        "title": "Benzeen",
+        "theory": "<strong>Benzeen (C₆H₆)</strong> is de prototypische aromatische verbinding.\n\nStructuur:\n• Ringvormig molecuul van 6 koolstofatomen\n• Afwisselende enkelvoudige en dubbele bindingen (resonantie)\n• Werkelijk zijn alle bindingen gelijkwaardig door <strong>elektronendelocalisatie</strong>\n• Bijzonder stabiele structuur\n\nBenzeenderivaten zijn stoffen waarbij H-atomen zijn vervangen door andere groepen: tolueen, fenol, aniline.\n\nBenzeen zelf is kankerverwekkend (carcinogeen)."
+      },
+      {
+        "title": "Aromaticiteit",
+        "theory": "Een verbinding is <strong>aromatisch</strong> als het voldoet aan de <strong>regel van Hückel</strong>:\n• Cyclisch\n• Vlak\n• Geconjugeerd π-systeem\n• 4n + 2 π-elektronen (n = 0, 1, 2, ...)\n\nBenzeen: 6 π-elektronen (n=1) → aromatisch.\n\nNon-aromatische verbindingen: hebben niet alle delocalisatie-voordelen.\n\nHeteroaromatische verbindingen bevatten ook andere atomen in de ring, zoals pyridine (N) of furan (O)."
+      },
+      {
+        "title": "Substitutiereacties bij Benzeen",
+        "theory": "Benzeen ondergaat typisch <strong>elektrofiele aromatische substitutie (EAS)</strong> in plaats van additie.\n\nReden: bij additie zou het aromatisch systeem verbroken worden.\n\nVoorbeelden van EAS:\n• <strong>Nitrering</strong>: benzeen + HNO₃ → nitrobenzeen (met H₂SO₄ als katalysator)\n• <strong>Halogenering</strong>: benzeen + Br₂ → broomhenzeen (met FeBr₃)\n• <strong>Sulfonering</strong>: benzeen + H₂SO₄ → benzeen sulfonzuur\n\nNitrobenzeen is een precursor voor aniline, gebruikt in kleurstoffen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Hoeveel koolstofatomen heeft benzeen?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is kenmerkend voor aromatische verbindingen?",
+        "options": [
+          "Enkel enkelvoudige bindingen",
+          "Gedelocaliseerde elektronen in een cyclisch systeem",
+          "Een lange koolstofketen",
+          "Aanwezigheid van stikstof"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de regel van Hückel?",
+        "options": [
+          "Benzeen heeft 4 bindingen",
+          "Aromatische verbindingen hebben 4n + 2 π-elektronen",
+          "Alle koolstofringen zijn aromatisch",
+          "Cycloalkanen zijn aromatisch"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk type reactie ondergaat benzeen bij vervanging van een H-atoom?",
+        "options": [
+          "Additiereactie",
+          "Eliminatiereactie",
+          "Elektrofiele aromatische substitutie",
+          "Radicaalreactie"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een gevaar van benzeen?",
+        "options": [
+          "Explosief bij kamertemperatuur",
+          "Kankerverwekkend (carcinogeen)",
+          "Reageert heftig met water",
+          "Giftig alleen bij inademing"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk reagens gebruik je bij de nitrering van benzeen?",
+        "options": [
+          "HCl",
+          "HNO₃ + H₂SO₄",
+          "Br₂ + licht",
+          "NaOH"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is tolueen?",
+        "options": [
+          "Benzeen met een NO₂-groep",
+          "Benzeen met een CH₃-groep",
+          "Benzeen met een OH-groep",
+          "Benzeen met een NH₂-groep"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel π-elektronen heeft benzeen?",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is pyridine?",
+        "options": [
+          "Een alkaan",
+          "Een heteroaromatisch molecuul met N in de ring",
+          "Een alkeen",
+          "Een carbonzuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom ondergaat benzeen liever substitutie dan additie?",
+        "options": [
+          "Additie is te duur",
+          "Bij additie wordt het stabiele aromatisch systeem verbroken",
+          "Substitutie is sneller",
+          "Er zijn geen additiereagentia beschikbaar"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "biochem": {
+    "title": "Biochemische Moleculen",
+    "leaves": [
+      {
+        "title": "Koolhydraten",
+        "theory": "<strong>Koolhydraten</strong> (suikers) hebben de algemene formule (CH₂O)n.\n\nIndeling:\n• <strong>Monosacchariden</strong>: glucose, fructose, galactose\n• <strong>Disacchariden</strong>: sucrose (= glucose + fructose), lactose, maltose\n• <strong>Polysacchariden</strong>: zetmeel, glycogeen, cellulose\n\nFuncties:\n• Energiebron (glucose → glycolyse)\n• Energieopslag (glycogeen in lever en spieren)\n• Structuur (cellulose in plantencelwand)\n\nKoolhydraten worden verbonden via <strong>glycosidische bindingen</strong>."
+      },
+      {
+        "title": "Lipiden",
+        "theory": "<strong>Lipiden</strong> zijn hydrofobe biomoleculen.\n\nTypes:\n• <strong>Vetten en oliën (triglyceriden)</strong>: 3 vetzuren + glycerol, energieopslag\n• <strong>Fosfolipiden</strong>: celmembraanbouwsteen (bipolaire structuur)\n• <strong>Steroïden</strong>: cholesterol, hormonen (testosteron, oestrogeen)\n\n<strong>Verzadigde vetzuren</strong>: geen dubbele bindingen, vast bij kamertemperatuur (dierlijk vet).\n<strong>Onverzadigde vetzuren</strong>: één of meer dubbele bindingen, vloeibaar (plantaardige oliën)."
+      },
+      {
+        "title": "Eiwitten & Aminozuren",
+        "theory": "<strong>Eiwitten</strong> zijn polymeren van <strong>aminozuren</strong>, verbonden via <strong>peptidebindingen</strong>.\n\n20 verschillende aminozuren bestaan in de natuur. Elke aminozuur heeft:\n• Een aminogroep (-NH₂)\n• Een carboxylgroep (-COOH)\n• Een variabele R-groep\n\nEiwitstructuur:\n• <em>Primair</em>: aminozuurvolgorde\n• <em>Secundair</em>: α-helix of β-sheet (H-bruggen)\n• <em>Tertiair</em>: 3D-vouwing\n• <em>Quaternair</em>: meerdere ketens samen\n\nFuncties: enzymen, structuur (collageen), transport (hemoglobine), hormonen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is de algemene formule van koolhydraten?",
+        "options": [
+          "CₙH₂ₙOₙ",
+          "(CH₂O)n",
+          "CₙHₙOₙ",
+          "CH₄"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk polysaccharide is de celwand van planten opgebouwd uit?",
+        "options": [
+          "Zetmeel",
+          "Glycogeen",
+          "Cellulose",
+          "Sucrose"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat zijn fosfolipiden?",
+        "options": [
+          "Energieopslagmoleculen",
+          "Bouwstenen van celmembranen",
+          "Enzymen",
+          "Een type polysaccharide"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen verzadigd en onverzadigd vet?",
+        "options": [
+          "Verzadigd is vloeibaar, onverzadigd is vast",
+          "Verzadigd heeft geen dubbele bindingen, onverzadigd wel",
+          "Verzadigd heeft meer calorieën",
+          "Er is geen chemisch verschil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel essentiële aminozuren zijn er?",
+        "options": [
+          "10",
+          "15",
+          "20 (maar 9 essentieel)",
+          "30"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarmee worden aminozuren aaneengekoppeld in eiwitten?",
+        "options": [
+          "Glycosidische binding",
+          "Esterbinding",
+          "Peptidebinding",
+          "Ionbinding"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat beschrijft de primaire structuur van een eiwit?",
+        "options": [
+          "De 3D-vouwing",
+          "De aminozuurvolgorde",
+          "De α-helix structuur",
+          "De kwartaire assembly"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk molecuul is de basis voor steroïdhormonen?",
+        "options": [
+          "Glucose",
+          "Triglyceriden",
+          "Cholesterol",
+          "Cellulose"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de functie van glycogeen?",
+        "options": [
+          "Celmembraanstructuur",
+          "Energieopslag in lever en spieren",
+          "Enzymatische katalyse",
+          "DNA-verpakking"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk eiwit transporteert zuurstof in het bloed?",
+        "options": [
+          "Insuline",
+          "Collageen",
+          "Hemoglobine",
+          "Amylase"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "analyse": {
+    "title": "Analytische Chemie",
+    "leaves": [
+      {
+        "title": "Kwalitatieve Analyse",
+        "theory": "<strong>Kwalitatieve analyse</strong> identificeert welke stoffen aanwezig zijn in een monster.\n\nTechnieken:\n• <strong>Vlamtest</strong>: ionen kleuren de vlam (Na⁺ = geel, K⁺ = violet, Ca²⁺ = oranje)\n• <strong>Neerslagreacties</strong>: toevoeging van reagens geeft karakteristiek neerslag\n  – Ag⁺ + Cl⁻ → AgCl (wit neerslag)\n  – Ba²⁺ + SO₄²⁻ → BaSO₄ (wit neerslag)\n• <strong>pH-indicatoren</strong>: kleurverandering bij pH-verandering\n• <strong>Spectroscopie</strong>: absorptiepatroon identificeert stoffen"
+      },
+      {
+        "title": "Kwantitatieve Analyse",
+        "theory": "<strong>Kwantitatieve analyse</strong> bepaalt hoeveel van een stof aanwezig is.\n\nMethoden:\n• <strong>Titratie</strong>: nauwkeurige volumemeting tot equivalentiepunt\n• <strong>Gravimetrie</strong>: meting van massa na neerslaan van een component\n• <strong>Spectrofotometrie</strong>: hoeveelheid stof via lichtabsorptie (wet van Beer-Lambert)\n\n<strong>Wet van Beer-Lambert</strong>:\n<code>A = ε · c · l</code>\n• A = absorptie\n• ε = molare extinctiecoëfficiënt\n• c = concentratie\n• l = padlengte"
+      },
+      {
+        "title": "Chromatografie",
+        "theory": "<strong>Chromatografie</strong> scheidt mengsels op basis van verschil in interactie met de stationaire en mobiele fase.\n\nTypes:\n• <strong>Dunnelaagchromatografie (TLC)</strong>: stationaire fase = silicagel, mobiele fase = solvent\n• <strong>Kolomchromatografie</strong>: grotere hoeveelheden scheiden\n• <strong>HPLC</strong>: hoge-druk vloeistofchromatografie, nauwkeurig\n• <strong>Gaschromatografie (GC)</strong>: voor vluchtige stoffen\n\nDe <strong>Rf-waarde</strong> bij TLC = afstand stof / afstand solvent."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welke kleur geeft natrium in de vlamtest?",
+        "options": [
+          "Violet",
+          "Groen",
+          "Geel",
+          "Rood"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het neerslag bij reactie van Ag⁺ met Cl⁻?",
+        "options": [
+          "AgCl (wit)",
+          "AgBr (geel)",
+          "Ag₂SO₄ (wit)",
+          "AgNO₃ (kleurloos)"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat beschrijft de wet van Beer-Lambert?",
+        "options": [
+          "Reactiesnelheid bij licht",
+          "Absorptie is evenredig met concentratie en padlengte",
+          "Refractie van licht",
+          "Emissie van fotonen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat scheidt chromatografie?",
+        "options": [
+          "Isotopen",
+          "Componenten van een mengsel op basis van interactie met fasen",
+          "Ionen op lading",
+          "Gassen op massa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is de Rf-waarde bij TLC?",
+        "options": [
+          "Concentratie van de stof",
+          "Afstand stof / afstand solventfront",
+          "Retentietijd in HPLC",
+          "Absorptiegolflengte"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat meet spectrofotometrie?",
+        "options": [
+          "Massa van stoffen",
+          "Lichtabsorptie als maat voor concentratie",
+          "Elektrische geleiding",
+          "Temperatuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke analysemethode meet massa na neerslaan?",
+        "options": [
+          "Titratie",
+          "Spectrofotometrie",
+          "Gravimetrie",
+          "Chromatografie"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarvoor wordt gaschromatografie gebruikt?",
+        "options": [
+          "Vaste stoffen analyseren",
+          "Vluchtige stoffen scheiden en identificeren",
+          "Biologische macromoleculen analyseren",
+          "pH meten"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is HPLC?",
+        "options": [
+          "Hoge-temperatuur plasma chromatografie",
+          "Hoge-druk vloeistofchromatografie",
+          "Hoge-prestatie lichtchromatografie",
+          "Handmatige pH-lading controle"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is kwalitatieve analyse?",
+        "options": [
+          "Bepalen van de hoeveelheid van een stof",
+          "Identificeren welke stoffen aanwezig zijn",
+          "Meten van de reactiesnelheid",
+          "Berekenen van de enthalpie"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "katalyse": {
+    "title": "Katalyse",
+    "leaves": [
+      {
+        "title": "Homogene & Heterogene Katalyse",
+        "theory": "<strong>Katalyse</strong> versnelt een reactie door een alternatief reactiepad met lagere activeringsenergie aan te bieden.\n\n<strong>Homogene katalyse</strong>: katalysator en reactanten zijn in dezelfde fase (bijv. zwavelzuur in estervorming).\n\n<strong>Heterogene katalyse</strong>: katalysator is in een andere fase dan de reactanten (bijv. vaste platina bij katalytische converter).\n\nVoordelen heterogeen: makkelijk te scheiden van product; kan bij hogere T werken.\n\nKatalysator wordt aan het einde van de reactie teruggewonnen — het wordt niet verbruikt."
+      },
+      {
+        "title": "Enzymen als Biologische Katalysatoren",
+        "theory": "<strong>Enzymen</strong> zijn eiwitten die als biologische katalysatoren fungeren. Ze zijn uiterst specifiek.\n\nWerking:\n1. Substraat bindt aan het <strong>actief centrum</strong> van het enzym\n2. Enzym-substraatcomplex vormt\n3. Reactie vindt plaats\n4. Product wordt vrijgesteld; enzym is onveranderd\n\n<strong>Slot-sleutelmodel</strong>: substraat past precies in actief centrum (exacte complementariteit).\n<strong>Induced fit-model</strong>: actief centrum past zijn vorm aan bij substraatbinding.\n\nFactoren: pH, temperatuur, inhibitoren."
+      },
+      {
+        "title": "Enzymremming",
+        "theory": "<strong>Enzymremming</strong> vertraagt of stopt enzymatische activiteit.\n\n• <strong>Competitieve inhibitor</strong>: lijkt op substraat, bezet het actief centrum\n  – Effect verminderd door hogere substraatconcentratie\n  – Voorbeeld: sommige medicijnen (ACE-remmers)\n\n• <strong>Niet-competitieve inhibitor</strong>: bindt op een andere plek (allostere plek), vervormt actief centrum\n  – Effect niet te overwinnen met meer substraat\n\n<strong>Allostere regulatie</strong>: binding op allostere plek kan enzym activeren of remmen — belangrijk voor metabole regulatie."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat doet een katalysator bij een reactie?",
+        "options": [
+          "Verhoogt de activeringsenergie",
+          "Verlaagt de activeringsenergie",
+          "Verandert de enthalpie van de reactie",
+          "Wordt verbruikt bij de reactie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is het verschil tussen homogene en heterogene katalyse?",
+        "options": [
+          "Homogeen: katalysator en reactanten in verschillende fasen; heterogeen in dezelfde fase",
+          "Homogeen: zelfde fase; heterogeen: verschillende fasen",
+          "Er is geen verschil",
+          "Homogeen werkt alleen bij hoge temperatuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn enzymen?",
+        "options": [
+          "Anorganische katalysatoren",
+          "Biologische katalysatoren (eiwitten)",
+          "Een type lipide",
+          "Suikermoleculen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat beschrijft het slot-sleutelmodel bij enzymen?",
+        "options": [
+          "Het substraat past precies in het actief centrum",
+          "Het actief centrum past zijn vorm aan",
+          "Enzymen zijn niet-specifiek",
+          "Substraat kan overal aan het enzym binden"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is het gevolg van een competitieve inhibitor?",
+        "options": [
+          "Altijd permanente enzymremming",
+          "Remming die verminderd kan worden door meer substraat",
+          "Verandering van de enzymstructuur",
+          "Verlaging van de enzymconcentratie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is allostere regulatie?",
+        "options": [
+          "Binding van substraat aan actief centrum",
+          "Binding op een andere plek dan het actief centrum die de enzymactiviteit regelt",
+          "Competitieve inhibitie",
+          "pH-afhankelijke regulatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Bij welke temperatuur werken menselijke enzymen optimaal?",
+        "options": [
+          "4°C",
+          "20°C",
+          "~37°C",
+          "100°C"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het induced fit-model?",
+        "options": [
+          "Het substraat past precies in het onveranderde actief centrum",
+          "Het actief centrum past zijn vorm aan bij de binding van het substraat",
+          "Enzym en substraat zijn complementair zonder aanpassing",
+          "Een model voor competitieve inhibitie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk deel van een enzym bindt het substraat?",
+        "options": [
+          "Allostere plek",
+          "Actief centrum",
+          "R-groep",
+          "Peptideketting"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een voorbeeld van heterogene katalyse?",
+        "options": [
+          "Zwavelzuur in estervorming",
+          "Platina in een katalytische converter",
+          "Enzymen in metabolisme",
+          "Base in zeepvorming"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "milieuchem": {
+    "title": "Milieucheomie",
+    "leaves": [
+      {
+        "title": "Luchtvervuiling",
+        "theory": "Luchtvervuiling heeft meerdere chemische oorzaken.\n\n<strong>CO₂</strong> en andere <em>broeikasgassen</em> (CH₄, N₂O) veroorzaken de opwarming van de aarde.\n\n<strong>Zure regen</strong>: SO₂ en NOₓ (uit verbranding) reageren met water:\n<code>SO₂ + H₂O → H₂SO₃</code>\n→ beschadigt gebouwen, bossen, aquatische ecosystemen\n\n<strong>Ozonafbraak</strong>:\nCFK's (chloorfluorkoolwaterstoffen) breken ozon af:\n<code>Cl + O₃ → ClO + O₂</code>\n→ meer UV-straling bereikt aardoppervlak"
+      },
+      {
+        "title": "Watervervuiling",
+        "theory": "Watervervuiling heeft chemische en biologische oorzaken.\n\n<strong>Eutrofiëring</strong>: overmatige N en P (uit kunstmest) → algengroei → zuurstoftekort.\n\n<strong>Zware metalen</strong> (Pb, Hg, Cd) zijn giftig en accumuleren in voedselketens (<em>biomagnificatie</em>).\n\n<strong>Pesticiden en medicijnen</strong>: slecht afbreekbare organische stoffen die in het milieu blijven.\n\n<strong>Plasticvervuiling</strong>: microplastics worden gevonden in oceanen en organismen."
+      },
+      {
+        "title": "Groene Chemie",
+        "theory": "<strong>Groene chemie</strong> streeft naar duurzame chemische processen die minder afval, lagere energie en niet-toxische stoffen gebruiken.\n\n12 principes van groene chemie (selectie):\n• Vermijd afval\n• Atom economy: gebruik alle reactanten in het product\n• Gebruik hernieuwbare grondstoffen\n• Minimaliseer energieverbruik\n• Ontwerp afbreekbare producten\n\nVoorbeelden: biosolventen, enzymatische processen, CO₂ als bouwsteen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk gas draagt hoofdzakelijk bij aan de opwarming van de aarde?",
+        "options": [
+          "O₂",
+          "N₂",
+          "CO₂",
+          "Ar"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waardoor ontstaat zure regen?",
+        "options": [
+          "CO₂ en O₂",
+          "SO₂ en NOₓ die met water reageren",
+          "Ozonafbraak",
+          "Biomagnificatie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is biomagnificatie?",
+        "options": [
+          "Vergroting van bacteriën",
+          "Ophoping van toxische stoffen bij hogere trofische niveaus",
+          "Groei van algen in water",
+          "Afbraak van pesticiden"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke stoffen breken ozon af?",
+        "options": [
+          "CO₂ en CH₄",
+          "SO₂ en NO₂",
+          "CFK's (chloorfluorkoolwaterstoffen)",
+          "Zwavelzuur en salpeterzuur"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is eutrofiëring?",
+        "options": [
+          "Ophoping van zware metalen",
+          "Overmatige algengroei door te veel nutriënten, leidend tot zuurstoftekort",
+          "Ozonafbraak in water",
+          "Verzuring door zure regen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke zware metalen zijn giftig en accumuleren in de voedselketen?",
+        "options": [
+          "Na en K",
+          "Ca en Mg",
+          "Pb, Hg en Cd",
+          "Fe en Zn"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is het doel van groene chemie?",
+        "options": [
+          "Maximale opbrengst van chemische producten",
+          "Duurzame processen met minimale afval en toxiciteit",
+          "Ontwikkeling van nieuwe kunstmest",
+          "Productie van plastics"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn microplastics?",
+        "options": [
+          "Kleine plastic producten",
+          "Kleine plasticdeeltjes (<5mm) in het milieu en in organismen",
+          "Afbreekbare plastics",
+          "Bioplastics"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke chemische reactie leidt tot ozonafbraak?",
+        "options": [
+          "O₃ + SO₂ → SO₃ + O₂",
+          "Cl + O₃ → ClO + O₂",
+          "NO₂ + O₃ → NO₃ + O₂",
+          "CO₂ + O₃ → CO₃ + O₂"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is een principe van groene chemie?",
+        "options": [
+          "Gebruik zo veel mogelijk solvent",
+          "Maximaliseer reactietemperatuur",
+          "Minimaliseer afval en gebruik hernieuwbare grondstoffen",
+          "Gebruik altijd katalysatoren van zeldzame metalen"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "polymeren2": {
+    "title": "Polymeren (uitgebreid)",
+    "leaves": [
+      {
+        "title": "Additiepolymerisatie",
+        "theory": "<strong>Additiepolymerisatie</strong>: monomeren met dubbele bindingen polymeriseren zonder bijproducten.\n\nVoorbeelden:\n• Polyethyleen (PE): <code>n CH₂=CH₂ → -(CH₂-CH₂)ₙ-</code>\n• Polypropyleen (PP): gebruikt in verpakkingen\n• PVC (polyvinylchloride): elektra-isolatie\n• Polystyreen (PS): piepschuim\n• PTFE (teflon): anti-aanbaklaag\n\nHet initiatiemechanisme vereist radicalen, ionen of katalysatoren."
+      },
+      {
+        "title": "Condensatiepolymerisatie",
+        "theory": "<strong>Condensatiepolymerisatie</strong>: monomeren reageren met vrijstelling van kleine moleculen (water, HCl, methanol).\n\nVoorbeelden:\n• <strong>Nylon</strong>: een polyamide, gevormd uit een diamine en een dicarboxylzuur\n• <strong>Polyester (PET)</strong>: gevormd uit een diol en een dicarbonzuur\n• <strong>Bakeliet</strong>: eerste synthetische kunststof\n\nNatuurlijke condensatiepolymeren: eiwitten (peptidebindingen), DNA (fosfaatesterbindingen), cellulose (glycosidische bindingen)."
+      },
+      {
+        "title": "Biopolymeren & Afbraak",
+        "theory": "<strong>Biopolymeren</strong> zijn polymeren van biologische herkomst of die biologisch afbreekbaar zijn.\n\nVoorbeelden:\n• PLA (polymelkzuur) — afbreekbaar, gebruikt in 3D-print\n• PHB — door bacteriën geproduceerd polyester\n\nNiet-afbreekbare polymeren (PE, PP, PS) blijven eeuwenlang in het milieu.\n\n<strong>Recycling van polymeren</strong>:\n• Mechanisch recycling\n• Chemisch recycling (depolymerisatie)\n• Verbranding voor energie\n\nKringloopeconomie streeft naar hergebruik van polymeren."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat is additiepolymerisatie?",
+        "options": [
+          "Polymerisatie met vrijstelling van water",
+          "Polymerisatie van monomeren met dubbele bindingen zonder bijproducten",
+          "Afbraak van polymeren",
+          "Polymerisatie van aminozuren"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk polymeer is PET?",
+        "options": [
+          "Een polyamide",
+          "Een polyester",
+          "Een polysaccharide",
+          "Een polyolefine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk kleine molecuul komt vrij bij condensatiepolymerisatie?",
+        "options": [
+          "CO₂",
+          "O₂",
+          "Water of HCl",
+          "H₂"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is nylon een voorbeeld van?",
+        "options": [
+          "Polyolefine",
+          "Polyamide",
+          "Polyester",
+          "Polysaccharide"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk polymeer heeft een anti-aanbaklaag (teflon)?",
+        "options": [
+          "PVC",
+          "PE",
+          "PTFE",
+          "PS"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is PLA?",
+        "options": [
+          "Een niet-afbreekbaar kunststof",
+          "Een afbreekbaar biopolymeer van melkzuur",
+          "Een type nylon",
+          "Een industrieel smeermiddel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is chemisch recycling van polymeren?",
+        "options": [
+          "Verbranden van plastic voor energie",
+          "Depolymerisatie terug naar monomeren",
+          "Sorteren van plastictypes",
+          "Mechanisch smelten en hervormen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk polymeer wordt gebruikt in elektra-isolatie?",
+        "options": [
+          "PE",
+          "PVC",
+          "PET",
+          "PTFE"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat zijn eiwitten als polymeer beschouwd?",
+        "options": [
+          "Additiepolymeren van aminozuren",
+          "Condensatiepolymeren van aminozuren",
+          "Polysacchariden",
+          "Polyolefinen"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Waarom zijn niet-afbreekbare polymeren een milieuprobleem?",
+        "options": [
+          "Ze zijn te zwaar",
+          "Ze blijven eeuwenlang in het milieu zonder af te breken",
+          "Ze zijn giftig bij productie",
+          "Ze reageren met water"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "spectro": {
+    "title": "Spectroscopie",
+    "leaves": [
+      {
+        "title": "IR-spectroscopie",
+        "theory": "<strong>Infraroodspectroscopie (IR)</strong> identificeert functionele groepen in organische moleculen.\n\nMoleculen absorberen IR-straling bij specifieke frequenties die overeenkomen met <strong>bindings-vibraties</strong>.\n\nBelangrjike banden (golfgetallen in cm⁻¹):\n• ~3200-3550: O-H rek (alcoholen, carboxylzuren)\n• ~2700-2900: C-H rek\n• ~1700-1750: C=O rek (carbonyl)\n• ~1600-1700: C=C rek\n\nEen IR-spectrum heeft de vingerafdrukzone (600-1400 cm⁻¹) voor exacte identificatie."
+      },
+      {
+        "title": "Massaspectrometrie",
+        "theory": "<strong>Massaspectrometrie (MS)</strong> bepaalt de molecuulmassa en structuurinformatie van verbindingen.\n\nWerking:\n1. Moleculen worden geïoniseerd\n2. Ionen worden versneld in elektrisch veld\n3. Ionen worden gescheiden op massa/lading-ratio (m/z)\n4. Detector registreert elk ion\n\nHet <strong>molecuulion M⁺</strong> geeft de molecuulmassa.\nFragmentatie-ionen geven structuurinformatie.\n\nToepassingen: structuurbepaling, medische diagnostiek, forensisch onderzoek, milieu-analyse."
+      },
+      {
+        "title": "NMR-spectroscopie",
+        "theory": "<strong>Nucleaire magnetische resonantiespectroscopie (NMR)</strong> geeft gedetailleerde structuurinformatie via de omgeving van waterstof- (¹H NMR) of koolstofatomen (¹³C NMR).\n\n<strong>Chemische verschuiving (δ, ppm)</strong> geeft de elektronische omgeving van H-atomen weer.\n\nVoorbeelden:\n• CH₃ in alkaan: ~0-1 ppm\n• Aromatische H: ~7-8 ppm\n• Aldehyde H: ~9-10 ppm\n\nIntegratie van pieken geeft het aantal H-atomen per type.\nSplitsing (multiplicity) onthult buren-H-atomen."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat identificeert IR-spectroscopie?",
+        "options": [
+          "Molecuulmassa",
+          "Functionele groepen via bindingsvibraties",
+          "Kernspinresonantie",
+          "Kristalstructuur"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk golfgetal hoort bij een C=O-binding (carbonyl) in IR?",
+        "options": [
+          "~3300 cm⁻¹",
+          "~1700 cm⁻¹",
+          "~2900 cm⁻¹",
+          "~500 cm⁻¹"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat geeft het molecuulion M⁺ in massaspectrometrie?",
+        "options": [
+          "De structuurformule",
+          "De molecuulmassa van het ongedeeld molecuul",
+          "De chemische verschuiving",
+          "De retentietijd"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke eigenschap meet NMR-spectroscopie?",
+        "options": [
+          "Vibratiefrequenties van bindingen",
+          "Massa/lading-verhouding van ionen",
+          "Omgeving van atoomkernen in een molecuul",
+          "Kleur van stoffen"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de chemische verschuiving (δ) in NMR?",
+        "options": [
+          "De molecuulmassa in Da",
+          "De positie van een piek in ppm, gerelateerd aan de elektronische omgeving",
+          "De IR-absorptiegolflengte",
+          "De retentietijd in chromatografie"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoe worden ionen in massaspectrometrie gescheiden?",
+        "options": [
+          "Op kleur",
+          "Op massa/lading-verhouding (m/z)",
+          "Op oplosbaarheid",
+          "Op polariteit"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk golfgetal herkent een O-H-binding in IR?",
+        "options": [
+          "~1700 cm⁻¹",
+          "~2900 cm⁻¹",
+          "~3200-3550 cm⁻¹",
+          "~600 cm⁻¹"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Waarvoor wordt massaspectrometrie in forensica gebruikt?",
+        "options": [
+          "Vingerafdrukken analyseren",
+          "Onbekende chemische verbindingen identificeren en kwantificeren",
+          "DNA-sequentie bepalen",
+          "pH meten van bloed"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke verschuiving in ¹H NMR is typisch voor aromatische protonen?",
+        "options": [
+          "0-1 ppm",
+          "2-3 ppm",
+          "4-5 ppm",
+          "7-8 ppm"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Welke spectroscopische methode geeft info over C-atomen?",
+        "options": [
+          "IR-spectroscopie",
+          "Massaspectrometrie",
+          "¹³C NMR",
+          "UV-vis spectroscopie"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "nucleair": {
+    "title": "Nucleaire Chemie",
+    "leaves": [
+      {
+        "title": "Radioactiviteit",
+        "theory": "<strong>Radioactiviteit</strong> is het spontaan uiteenvallen van instabiele atoomkernen met vrijstelling van straling.\n\nDrie soorten straling:\n• <strong>Alfastraling (α)</strong>: heliumkern (²He), lage doordringendheid\n• <strong>Bètastraling (β)</strong>: elektron of positron, gemiddelde doordringendheid\n• <strong>Gammastraling (γ)</strong>: elektromagnetische golf, hoge doordringendheid\n\nRadioactiviteit wordt gemeten in <strong>Becquerel (Bq)</strong> = aantal kernsplitsingen per seconde.\n\nBescherming: afstand, afschildering (lood voor gamma), tijd beperken."
+      },
+      {
+        "title": "Kernsplijting & Kernfusie",
+        "theory": "<strong>Kernsplijting (fissie)</strong>: zware kern (bijv. U-235) split in twee kleinere kernen + neutronen + energie.\n<code>²³⁵U + n → fragm + n's + energie</code>\n\nGebruikt in kerncentrales en kernbommen.\n\n<strong>Kernfusie</strong>: lichte kernen (D + T) smelten samen tot een zwaardere kern:\n<code>²H + ³H → ⁴He + n + 17,6 MeV</code>\n\nFusie levert veel meer energie dan splijting en produceert minder radioactief afval. Werkt de zon ook via fusie.\n\nFusie-energie op aarde is nog in ontwikkeling (ITER-project)."
+      },
+      {
+        "title": "Radioactief Verval & Halfwaardetijd",
+        "theory": "De <strong>halfwaardetijd (t½)</strong> is de tijd waarin de helft van de radioactieve atomen vervalt.\n\nVervalwet: <code>N(t) = N₀ · (1/2)^(t/t½)</code>\n\nVoorbeelden:\n• C-14: t½ = 5730 jaar → gebruikt in <strong>koolstofdatering</strong>\n• U-238: t½ = 4,5 miljard jaar\n• I-131: t½ = 8 dagen → medisch gebruik\n\nMedische toepassingen van radioactieve isotopen:\n• PET-scan (positron emissie tomografie)\n• Radiotherapie bij kanker\n• Diagnostische tracers"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Welk soort straling is het meest doordringend?",
+        "options": [
+          "Alfastraling",
+          "Bètastraling",
+          "Gammastraling",
+          "Ze zijn even doordringend"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de halfwaardetijd?",
+        "options": [
+          "De tijd tot alle radioactiviteit verdwenen is",
+          "De tijd waarin de helft van de radioactieve atomen vervalt",
+          "De energie vrijgesteld bij verval",
+          "De straling per seconde"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat is kernsplijting?",
+        "options": [
+          "Samenvoegen van lichte kernen",
+          "Splitsing van zware kern in twee kleinere kernen",
+          "Omzetting van massa in energie zonder splitsing",
+          "Emissie van gammasteraling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk isotoop wordt gebruikt voor koolstofdatering?",
+        "options": [
+          "C-12",
+          "C-13",
+          "C-14",
+          "C-16"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is kernfusie?",
+        "options": [
+          "Splitsing van uranium",
+          "Samenvoegen van lichte kernen onder vrijstelling van energie",
+          "Radioactief verval",
+          "Betastraling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "In welke eenheid meet je radioactiviteit?",
+        "options": [
+          "Joule",
+          "Becquerel (Bq)",
+          "Gray",
+          "Sievert"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welk materiaal beschermt best tegen gammastraling?",
+        "options": [
+          "Papier",
+          "Aluminium",
+          "Lood of beton",
+          "Hout"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Hoe lang is de halfwaardetijd van C-14?",
+        "options": [
+          "5730 jaar",
+          "1000 jaar",
+          "4,5 miljard jaar",
+          "8 dagen"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is een PET-scan?",
+        "options": [
+          "Een röntgenopname",
+          "Een diagnostische techniek met positron-emitterende isotopen",
+          "Een ultrasoundonderzoek",
+          "Een MRI-variant"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke energiebron gebruikt kernfusie?",
+        "options": [
+          "Koolstof en waterstof",
+          "Uranium en plutonium",
+          "Deuterium en tritium (waterstofisotopen)",
+          "Helium en stikstof"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "gaswetten": {
+    "title": "Gaswetten",
+    "leaves": [
+      {
+        "title": "Wet van Boyle & Charles",
+        "theory": "<strong>Wet van Boyle</strong> (constante T):\nDruk en volume zijn omgekeerd evenredig:\n<code>p₁V₁ = p₂V₂</code>\n\n<strong>Wet van Charles</strong> (constante p):\nVolume en absolute temperatuur zijn evenredig:\n<code>V₁/T₁ = V₂/T₂</code>\n\n<strong>Wet van Gay-Lussac</strong> (constant V):\nDruk en absolute temperatuur zijn evenredig:\n<code>p₁/T₁ = p₂/T₂</code>\n\nDe temperatuur moet in <strong>Kelvin</strong> worden uitgedrukt: K = °C + 273"
+      },
+      {
+        "title": "Ideale Gaswet",
+        "theory": "De <strong>ideale gaswet</strong> combineert alle gaswetten:\n<code>pV = nRT</code>\n\nWaarin:\n• p = druk (Pa of atm)\n• V = volume (m³ of L)\n• n = aantal mol\n• R = gasconstante (8,314 J/mol·K)\n• T = temperatuur (K)\n\nEen <strong>ideaal gas</strong> heeft:\n• Geen onderlinge aantrekking tussen moleculen\n• Verwaarloosbaar eigen volume\n\nRealistische gassen wijken af bij hoge druk en lage temperatuur."
+      },
+      {
+        "title": "Gasmengsels & Partiaaldruk",
+        "theory": "In een gasmengsel heeft elk gas een <strong>partiaaldruk</strong>.\n\n<strong>Wet van Dalton</strong>:\n<code>p_totaal = p₁ + p₂ + p₃ + ...</code>\n\nDe partiaaldruk van een gas is evenredig met zijn molfractie:\n<code>pᵢ = Xᵢ · p_totaal</code>\n\nToepassingen:\n• Aardatmosfeer: p(N₂) ≈ 79 kPa, p(O₂) ≈ 21 kPa\n• Duikflessen: gevaar van stikstofnarcose bij hoge partiaaldruk\n• Bloedgassen: O₂ en CO₂ verplaatsen zich via partiaaldrukgradiënten"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Wat beschrijft de wet van Boyle?",
+        "options": [
+          "V evenredig met T bij constante p",
+          "p omgekeerd evenredig met V bij constante T",
+          "p evenredig met T bij constant V",
+          "n evenredig met p"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Welke eenheid gebruik je voor temperatuur in gaswetten?",
+        "options": [
+          "Celsius",
+          "Fahrenheit",
+          "Kelvin",
+          "Kelvin of Celsius beide werken"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is de ideale gaswet?",
+        "options": [
+          "pV = nRT",
+          "pV = mRT",
+          "pV = nR/T",
+          "p = nRT/V²"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is de gasconstante R?",
+        "options": [
+          "6,022 × 10²³",
+          "8,314 J/mol·K",
+          "9,81 m/s²",
+          "1,38 × 10⁻²³ J/K"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wat stelt de wet van Dalton?",
+        "options": [
+          "Elk gas heeft hetzelfde volume",
+          "De totale druk is de som van de partiaaldrukken",
+          "Gassen zijn ideaal bij hoge druk",
+          "Volume en druk zijn altijd gelijk"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Wanneer wijkt een reëel gas af van ideaal gedrag?",
+        "options": [
+          "Bij lage druk en hoge temperatuur",
+          "Bij hoge druk en lage temperatuur",
+          "Altijd",
+          "Nooit"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Hoeveel graden Celsius is 300 K?",
+        "options": [
+          "27°C",
+          "300°C",
+          "−27°C",
+          "573°C"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Wat is de partiaaldruk van N₂ in de atmosfeer (totaaldruk ~100 kPa)?",
+        "options": [
+          "~21 kPa",
+          "~79 kPa",
+          "~50 kPa",
+          "~100 kPa"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Als je het volume van een gas halveert bij constante T (wet van Boyle), wat gebeurt er met de druk?",
+        "options": [
+          "Halveert",
+          "Blijft gelijk",
+          "Verdubbelt",
+          "Verviervoudigt"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Wat is een molfractie?",
+        "options": [
+          "Het aantal molen per liter",
+          "Het aandeel van één gas in een mengsel uitgedrukt als breuk",
+          "De partiaaldruk in atm",
+          "De dichtheid van het gas"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}

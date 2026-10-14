@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/static/images/favicon_skalor/favicon.ico">
+  <title>Skalor – Skill Tree Informatica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="/static/js/progress-sync.js"></script>
+
+  <script>
+    // Load stats.js (try relative first, then absolute)
+    (function(){
+      function tryLoad(paths, i) {
+        if (i >= paths.length) return;
+        var s = document.createElement('script');
+        s.src = paths[i];
+        s.onerror = function(){ tryLoad(paths, i+1); };
+        document.head.appendChild(s);
+      }
+      tryLoad(['../static/js/stats.js', '/static/js/stats.js'], 0);
+    })();
+  </script>
+  <script src="/static/js/cosmetics.js"></script>
+  <style>
+    :root {
+      --skalor-primary: #22d3ee;
+      --skalor-primary-dark: #22d3ee;
+      --skalor-accent: #22d3ee;
+      --skalor-gold: #F2C94C;
+      --bg-main: #0F172A;
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-muted: #94A3B8;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(34,211,238,0.10), transparent 35%),
+        radial-gradient(circle at 85% 75%, rgba(34,211,238,0.10), transparent 35%),
+        linear-gradient(180deg, #0F172A 0%, #08111f 100%);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      position: fixed; top:0; left:0; right:0; z-index:100;
+      display: flex; align-items:center; justify-content:space-between;
+      padding: 0 2rem; height: 68px;
+      background: rgba(8,17,31,0.85);
+      border-bottom: 1px solid rgba(34,211,238,0.08);
+      backdrop-filter: blur(16px);
+    }
+    .brand {
+      font-family:'Orbitron',sans-serif; font-size:1.35rem; font-weight:800;
+      letter-spacing:0.08em; color:var(--text-primary); text-decoration:none;
+    }
+    .header-right { display:flex; align-items:center; gap:0.75rem; }
+    .badge {
+      display:inline-flex; align-items:center; gap:0.4rem;
+      padding:0.45rem 1rem; border-radius:999px; font-weight:700; font-size:0.85rem;
+      background:rgba(34,211,238,0.12); color:var(--skalor-accent);
+      border:1px solid rgba(34,211,238,0.22);
+    }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:0.4rem;
+      padding:0.45rem 1rem; border-radius:999px;
+      border:1px solid rgba(34,211,238,0.22); background:rgba(255,255,255,0.03);
+      color:var(--text-secondary); font-weight:600; font-size:0.85rem;
+      cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s;
+    }
+    .back-btn:hover { background:rgba(34,211,238,0.08); color:var(--text-primary); }
+
+    #tree-container {
+      position:fixed; inset:68px 0 0 0;
+      overflow:hidden; cursor:grab; user-select:none;
+    }
+    #tree-container:active { cursor:grabbing; }
+
+    #canvas-wrap {
+      position:absolute; width:100%; height:100%;
+      transform-origin: center center;
+      transition: transform 0.65s cubic-bezier(0.4,0,0.2,1);
+      will-change: transform;
+    }
+
+    svg { position:absolute; overflow:visible; }
+
+    .tree-label {
+      paint-order: stroke fill;
+      stroke: rgba(4, 8, 18, 0.93);
+      stroke-width: 8px;
+      stroke-linejoin: round;
+    }
+    .tree-label-sm {
+      paint-order: stroke fill;
+      stroke: rgba(4, 8, 18, 0.93);
+      stroke-width: 6px;
+      stroke-linejoin: round;
+    }
+
+    #info-panel {
+      position:fixed; bottom:2rem; left:50%;
+      transform: translateX(-50%) translateY(220px);
+      z-index:200;
+      background: linear-gradient(160deg, rgba(30,41,59,0.97), rgba(15,23,42,0.99));
+      border:1px solid rgba(34,211,238,0.22); border-radius:22px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.55), 0 0 40px rgba(34,211,238,0.08);
+      backdrop-filter:blur(16px);
+      padding:1.4rem 2rem; min-width:340px; max-width:460px;
+      text-align:center;
+      transition: transform 0.45s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s ease;
+      opacity:0; pointer-events:none;
+    }
+    #info-panel.visible { transform:translateX(-50%) translateY(0); opacity:1; pointer-events:all; }
+    .panel-eyebrow { font-size:0.72rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--skalor-accent); margin-bottom:0.35rem; }
+    .panel-title { font-family:'Orbitron',sans-serif; font-size:1.2rem; font-weight:800; margin-bottom:0.5rem; }
+    .panel-desc { color:var(--text-secondary); font-size:0.88rem; margin-bottom:1.1rem; }
+    .panel-actions { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; }
+    .btn-panel {
+      display:inline-flex; align-items:center; gap:0.35rem;
+      padding:0.55rem 1.1rem; border-radius:999px;
+      font-weight:700; font-size:0.82rem; cursor:pointer;
+      border:1px solid transparent; font-family:'Inter',sans-serif; transition:all 0.2s;
+    }
+    .btn-pp { background:linear-gradient(135deg,var(--skalor-primary),var(--skalor-primary-dark)); color:white; box-shadow:0 8px 20px rgba(34,211,238,0.28); }
+    .btn-pp:hover { box-shadow:0 12px 28px rgba(34,211,238,0.44); transform:translateY(-1px); }
+    .btn-op { background:rgba(255,255,255,0.04); color:var(--text-secondary); border-color:rgba(34,211,238,0.2); }
+    .btn-op:hover { background:rgba(34,211,238,0.08); color:var(--text-primary); }
+    .btn-gold { background:linear-gradient(135deg,#F2C94C,#e0a800); color:#1a1000; box-shadow:0 8px 20px rgba(242,201,76,0.3); }
+    .btn-gold:hover { box-shadow:0 12px 28px rgba(242,201,76,0.5); transform:translateY(-1px); }
+    .btn-gold:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+
+    .leaf-btn {
+      display:flex; align-items:center; gap:0.7rem;
+      width:100%; padding:0.7rem 1rem; border-radius:12px;
+      border:1px solid rgba(34,211,238,0.15); background:rgba(255,255,255,0.03);
+      color:var(--text-primary); font-size:0.88rem; font-weight:600;
+      cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s;
+      text-align:left; margin-bottom:0.4rem;
+    }
+    .leaf-btn:hover { background:rgba(34,211,238,0.08); border-color:rgba(34,211,238,0.35); }
+    .leaf-btn.completed { border-color:rgba(34,211,238,0.4); background:rgba(34,211,238,0.06); }
+    .leaf-btn .check { color:#22d3ee; font-size:0.9rem; margin-left:auto; opacity:0; transition:opacity 0.2s; }
+    .leaf-btn.completed .check { opacity:1; }
+    .leaf-btn .leaf-num { width:26px; height:26px; border-radius:50%; border:1px solid rgba(34,211,238,0.3); display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:var(--skalor-accent); flex-shrink:0; }
+
+    .progress-bar-wrap { width:100%; height:4px; background:rgba(255,255,255,0.07); border-radius:99px; margin-bottom:1rem; overflow:hidden; }
+    .progress-bar-fill { height:100%; background:linear-gradient(90deg,var(--skalor-primary),var(--skalor-primary-dark)); border-radius:99px; transition:width 0.4s ease; }
+
+    #controls {
+      position:fixed; bottom:2rem; right:2rem;
+      z-index:150; display:flex; flex-direction:column; gap:0.5rem;
+    }
+    .ctrl-btn {
+      width:40px; height:40px; border-radius:50%;
+      border:1px solid rgba(34,211,238,0.2); background:rgba(15,23,42,0.85);
+      color:var(--skalor-accent); font-size:0.9rem;
+      cursor:pointer; display:flex; align-items:center; justify-content:center;
+      transition:all 0.2s; backdrop-filter:blur(8px);
+    }
+    .ctrl-btn:hover { background:rgba(34,211,238,0.1); transform:scale(1.1); }
+
+    #hint {
+      position:fixed; top:82px; left:50%; transform:translateX(-50%);
+      background:rgba(15,23,42,0.75); border:1px solid rgba(34,211,238,0.14);
+      border-radius:999px; padding:0.4rem 1rem;
+      font-size:0.78rem; color:var(--text-muted);
+      pointer-events:none; transition:opacity 0.8s ease; z-index:50; white-space:nowrap;
+    }
+
+    #theory-overlay {
+      position:fixed; inset:0; z-index:400;
+      background:rgba(8,13,26,0.82); backdrop-filter:blur(12px);
+      display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity 0.3s ease;
+    }
+    #theory-overlay.visible { opacity:1; pointer-events:all; }
+    #theory-modal {
+      background: linear-gradient(155deg, rgba(22,32,52,0.98), rgba(10,18,36,0.99));
+      border:1px solid rgba(34,211,238,0.2); border-radius:24px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 60px rgba(34,211,238,0.06);
+      width:min(660px, 92vw); max-height:82vh; display:flex; flex-direction:column;
+      transform: scale(0.93) translateY(20px);
+      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    #theory-overlay.visible #theory-modal { transform: scale(1) translateY(0); }
+    .modal-header {
+      padding:1.6rem 2rem 1rem; border-bottom:1px solid rgba(34,211,238,0.1);
+      display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;
+    }
+    .modal-header-text .eyebrow { font-size:0.7rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--skalor-accent); margin-bottom:0.3rem; }
+    .modal-header-text h2 { font-family:'Orbitron',sans-serif; font-size:1.15rem; font-weight:800; }
+    .modal-close {
+      width:34px; height:34px; border-radius:50%; border:1px solid rgba(34,211,238,0.2);
+      background:rgba(255,255,255,0.04); color:var(--text-muted); cursor:pointer;
+      display:flex; align-items:center; justify-content:center; font-size:0.85rem;
+      flex-shrink:0; transition:all 0.2s;
+    }
+    .modal-close:hover { background:rgba(255,80,80,0.12); border-color:rgba(255,80,80,0.3); color:#ff6b6b; }
+    .modal-body {
+      padding:1.4rem 2rem; overflow-y:auto; flex:1;
+      line-height:1.75; color:var(--text-secondary); font-size:0.93rem;
+    }
+    .modal-body strong { color:var(--text-primary); }
+    .modal-body em { color:var(--skalor-accent); font-style:normal; }
+    .modal-body code { background:rgba(34,211,238,0.1); color:var(--skalor-accent); padding:0.1em 0.4em; border-radius:4px; font-size:0.88em; }
+    .modal-footer {
+      padding:1rem 2rem 1.5rem; border-top:1px solid rgba(34,211,238,0.1);
+      display:flex; justify-content:flex-end; gap:0.75rem;
+    }
+
+    #quiz-overlay {
+      position:fixed; inset:0; z-index:400;
+      background:rgba(8,13,26,0.85); backdrop-filter:blur(12px);
+      display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity 0.3s ease;
+    }
+    #quiz-overlay.visible { opacity:1; pointer-events:all; }
+    #quiz-modal {
+      background: linear-gradient(155deg, rgba(22,32,52,0.98), rgba(10,18,36,0.99));
+      border:1px solid rgba(242,201,76,0.25); border-radius:24px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 60px rgba(242,201,76,0.05);
+      width:min(640px, 92vw); max-height:82vh; display:flex; flex-direction:column;
+      transform: scale(0.93) translateY(20px);
+      transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    #quiz-overlay.visible #quiz-modal { transform: scale(1) translateY(0); }
+    .quiz-header {
+      padding:1.6rem 2rem 1rem; border-bottom:1px solid rgba(242,201,76,0.12);
+      display:flex; align-items:flex-start; justify-content:space-between;
+    }
+    .quiz-header .eyebrow { font-size:0.7rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--skalor-gold); margin-bottom:0.3rem; }
+    .quiz-header h2 { font-family:'Orbitron',sans-serif; font-size:1.1rem; font-weight:800; }
+    .quiz-progress-text { font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem; }
+    .quiz-body { padding:1.6rem 2rem; overflow-y:auto; flex:1; }
+    .quiz-question { font-size:1rem; font-weight:600; color:var(--text-primary); margin-bottom:1.2rem; line-height:1.5; }
+    .quiz-options { display:flex; flex-direction:column; gap:0.55rem; }
+    .quiz-option {
+      padding:0.8rem 1.1rem; border-radius:12px;
+      border:1px solid rgba(34,211,238,0.15); background:rgba(255,255,255,0.03);
+      color:var(--text-secondary); font-size:0.9rem; font-weight:500;
+      cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; text-align:left;
+    }
+    .quiz-option:hover:not(:disabled) { background:rgba(34,211,238,0.08); border-color:rgba(34,211,238,0.35); color:var(--text-primary); }
+    .quiz-option.correct { background:rgba(39,174,96,0.15); border-color:#27ae60; color:#6fdb9c; cursor:default; }
+    .quiz-option.wrong   { background:rgba(235,87,87,0.12); border-color:#eb5757; color:#f08080; cursor:default; }
+    .quiz-option:disabled { cursor:default; }
+    .quiz-feedback { margin-top:1rem; padding:0.75rem 1rem; border-radius:10px; font-size:0.88rem; font-weight:600; display:none; }
+    .quiz-feedback.show { display:block; }
+    .quiz-feedback.ok  { background:rgba(39,174,96,0.12); border:1px solid rgba(39,174,96,0.3); color:#6fdb9c; }
+    .quiz-feedback.bad { background:rgba(235,87,87,0.1);  border:1px solid rgba(235,87,87,0.3);  color:#f08080; }
+    .quiz-footer { padding:1rem 2rem 1.5rem; border-top:1px solid rgba(242,201,76,0.1); display:flex; justify-content:space-between; align-items:center; }
+    .quiz-score-small { font-size:0.82rem; color:var(--text-muted); }
+    .quiz-result { text-align:center; padding:1rem 0; }
+    .quiz-result .result-emoji { font-size:3rem; margin-bottom:0.75rem; }
+    .quiz-result h3 { font-family:'Orbitron',sans-serif; font-size:1.4rem; margin-bottom:0.5rem; }
+    .quiz-result p { color:var(--text-secondary); font-size:0.9rem; margin-bottom:1.5rem; }
+    .score-big { font-size:2.5rem; font-weight:800; color:var(--skalor-gold); }
+
+    .coin-badge {
+      display:inline-flex; align-items:center; gap:0.35rem;
+      padding:0.4rem 0.85rem; border-radius:999px; font-weight:700; font-size:0.82rem;
+      background:rgba(242,201,76,0.12); color:#F2C94C;
+      border:1px solid rgba(242,201,76,0.28); white-space:nowrap;
+      transition:transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .coin-badge.bump {
+      transform:scale(1.18);
+      box-shadow:0 0 18px rgba(242,201,76,0.45);
+    }
+
+    .coin-toast {
+      position:fixed; right:2rem; bottom:5.5rem; z-index:900;
+      background:rgba(242,201,76,0.15); border:1px solid rgba(242,201,76,0.4);
+      color:#F2C94C; font-weight:800; font-size:1rem;
+      padding:0.45rem 1rem; border-radius:999px; pointer-events:none;
+      opacity:0; transform:translateY(0px);
+      transition:opacity 0.35s ease, transform 0.35s ease;
+    }
+    .coin-toast.show { opacity:1; transform:translateY(-6px); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/">SKALOR</a>
+  <div class="header-right">
+    <span class="badge"><i class="fa-solid fa-code"></i> Informatica</span>
+    <span class="coin-badge"><i class="fa-solid fa-coins"></i><span id="coin-count">0</span></span>
+    <button class="back-btn" onclick="window.location.href='/boom'"><i class="fa-solid fa-arrow-left"></i> Terug</button>
+  </div>
+</header>
+
+<div id="coin-toast" class="coin-toast"></div>
+<div id="hint">Klik op een knoop om in te zoomen &nbsp;&middot;&nbsp; Sleep om te navigeren &nbsp;&middot;&nbsp; Scroll om te zoomen</div>
+
+<div id="tree-container">
+  <div id="canvas-wrap">
+    <svg id="tree-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+</div>
+
+<div id="info-panel">
+  <div class="panel-eyebrow" id="panel-eyebrow">Skill</div>
+  <div class="panel-title" id="panel-title">&#8211;</div>
+  <div class="panel-desc" id="panel-desc">&#8211;</div>
+  <div class="progress-bar-wrap" id="panel-progress-wrap" style="display:none">
+    <div class="progress-bar-fill" id="panel-progress-fill" style="width:0%"></div>
+  </div>
+  <div id="panel-leaf-btns"></div>
+  <div class="panel-actions" id="panel-actions">
+    <button class="btn-panel btn-op" onclick="resetView()"><i class="fa-solid fa-xmark"></i> Sluiten</button>
+  </div>
+</div>
+
+<div id="theory-overlay">
+  <div id="theory-modal">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <div class="eyebrow" id="theory-eyebrow">Theorie</div>
+        <h2 id="theory-title">&#8211;</h2>
+      </div>
+      <button class="modal-close" onclick="closeTheory()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body" id="theory-body">&#8211;</div>
+    <div class="modal-footer">
+      <button class="btn-panel btn-op" onclick="closeTheory()">Sluiten</button>
+      <button class="btn-panel btn-pp" id="complete-btn" onclick="markComplete()">
+        <i class="fa-solid fa-check"></i> Voltooien
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="quiz-overlay">
+  <div id="quiz-modal">
+    <div class="quiz-header">
+      <div>
+        <div class="eyebrow">&#11088; Quiz</div>
+        <h2 id="quiz-branch-title">&#8211;</h2>
+        <div class="quiz-progress-text" id="quiz-progress-text">Vraag 1 / 5</div>
+      </div>
+      <button class="modal-close" onclick="closeQuiz()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="quiz-body">
+      <div id="quiz-content">
+        <div class="quiz-question" id="quiz-question">&#8211;</div>
+        <div class="quiz-options" id="quiz-options"></div>
+        <div class="quiz-feedback" id="quiz-feedback"></div>
+      </div>
+      <div id="quiz-result-screen" style="display:none">
+        <div class="quiz-result">
+          <div class="result-emoji" id="result-emoji">&#127881;</div>
+          <h3 id="result-title">Goed gedaan!</h3>
+          <p id="result-text">Je hebt de quiz afgerond.</p>
+          <div class="score-big" id="result-score">5/5</div>
+        </div>
+      </div>
+    </div>
+    <div class="quiz-footer">
+      <span class="quiz-score-small" id="quiz-score-live">Score: 0</span>
+      <button class="btn-panel btn-pp" id="quiz-next-btn" onclick="quizNext()" style="display:none">
+        Volgende <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="controls">
+  <button class="ctrl-btn" onclick="zoomIn()"><i class="fa-solid fa-plus"></i></button>
+  <button class="ctrl-btn" onclick="zoomOut()"><i class="fa-solid fa-minus"></i></button>
+  <button class="ctrl-btn" onclick="resetView()"><i class="fa-solid fa-compress"></i></button>
+</div>
+
+<script>
+
+// DATA
+let SUBJECT_DATA = {};
+let TREE = { id:'root', label:'Informatica', type:'root', desc:'Kies een onderwerp om te starten.', children:[] };
+
+function loadJSON(paths) {
+  const [head, ...rest] = paths;
+  return fetch(head).then(r => {
+    if (!r.ok) throw new Error(r.status + ' ' + head);
+    return r.json();
+  }).catch(err => rest.length ? loadJSON(rest) : Promise.reject(err));
+}
+
+Promise.all([
+  loadJSON(['../static/data/informatica.json', '/static/data/informatica.json', 'static/data/informatica.json']),
+  (window.ProgressSync ? ProgressSync.init() : Promise.resolve())
+]).then(([json]) => {
+    Object.entries(json).slice(0, 7).forEach(([topicKey, topicData]) => {
+      const leavesObj = {};
+      topicData.leaves.forEach((leaf, idx) => {
+        leavesObj[topicKey + '_' + idx] = { title: leaf.title, theory: leaf.theory };
+      });
+      SUBJECT_DATA[topicKey] = { title: topicData.title, leaves: leavesObj, quiz: topicData.quiz || [] };
+      const branchChildren = topicData.leaves.map((leaf, idx) => ({
+        id: topicKey + '_' + idx, label: leaf.title, type: 'leaf', desc: leaf.title
+      }));
+      branchChildren.push({ id: topicKey + '_quiz', label: 'Quiz', type: 'quiz',
+        desc: 'Test je kennis over ' + topicData.title + '.' });
+      TREE.children.push({ id: topicKey, label: topicData.title, type: 'branch',
+        desc: 'Bekijk de theorie over ' + topicData.title + '.', children: branchChildren });
+    });
+    layout = buildLayout();
+    render();
+  })
+  .catch(err => {
+    console.error('Kon informatica.json niet laden:', err);
+    const svg = document.getElementById('tree-svg');
+    if (svg) svg.innerHTML = '<text x="50%" y="45%" text-anchor="middle" fill="#f87171" font-size="28" font-family="sans-serif">Kan data niet laden</text><text x="50%" y="52%" text-anchor="middle" fill="#94a3b8" font-size="20" font-family="sans-serif">Start de FastAPI server: uvicorn main:app --reload</text>';
+  });
+
+// PROGRESS
+const STORAGE_KEY = 'skalor_info_progress';
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+}
+function saveProgress(p) { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); }
+function isLeafDone(id) { return !!loadProgress()[id]; }
+function markLeafDone(id) {
+  const already = isLeafDone(id);
+  const p = loadProgress(); p[id] = true; saveProgress(p);
+  updateSubjectProgress();
+  if (window.ProgressSync) ProgressSync.save(); 
+  if (!already) {
+    awardCoins(15, '+15 🪙 Theorie gelezen!');
+  }
+}
+
+function updateSubjectProgress() {
+  // Leaves read
+  const p          = loadProgress();
+  const leavesRead = Object.keys(p).length;
+  let totalLeaves  = 0;
+  TREE.children.forEach(b => b.children.forEach(l => { if (l.type === 'leaf') totalLeaves++; }));
+
+  // Perfect quiz completions
+  const qk = STORAGE_KEY.replace('_progress', '_quizzes');
+  let quizDone = {};
+  try { quizDone = JSON.parse(localStorage.getItem(qk)) || {}; } catch(_) {}
+  const branches      = TREE.children.filter(b => b.type === 'branch');
+  const totalBranches = branches.length;
+  const perfectQuizzes= branches.filter(b => quizDone[b.id]).length;
+
+  // Combined: every theory read + every perfect quiz = 1 step
+  const done  = leavesRead + perfectQuizzes;
+  const total = totalLeaves + totalBranches;
+
+  try {
+    const raw = localStorage.getItem('skalor_user_stats');
+    const st  = raw ? JSON.parse(raw) : { coins:0, level:1, completedLeaves:{}, subjectProgress:{} };
+    if (!st.subjectProgress) st.subjectProgress = {};
+    st.subjectProgress['informatica'] = { done, total, leavesRead, totalLeaves, perfectQuizzes, totalBranches };
+    localStorage.setItem('skalor_user_stats', JSON.stringify(st));
+  } catch(_) {}
+}
+
+function getLeavesOfBranch(branchId) {
+  const b = TREE.children.find(c => c.id === branchId);
+  return b ? b.children.filter(c => c.type === 'leaf') : [];
+}
+function branchProgress(branchId) {
+  const leaves = getLeavesOfBranch(branchId);
+  if (!leaves.length) return { done:0, total:0 };
+  return { done: leaves.filter(l => isLeafDone(l.id)).length, total: leaves.length };
+}
+function isBranchComplete(branchId) {
+  const { done, total } = branchProgress(branchId);
+  return total > 0 && done >= total;
+}
+
+// LAYOUT
+const VW = 3800, VH = 3000;
+const CX = VW / 2;
+const CY = VH / 2;
+
+const ROOT_R    = 72;
+const BRANCH_R  = 56;
+const LEAF_R    = 38;
+const LEAF_ORBIT  = 305;
+const QUIZ_EXTRA  = 118;
+
+const BRANCH_ANGLES = [
+  -2.757,
+  -1.833,
+  -0.873,
+   0.087,
+   1.047,
+   2.007,
+   2.705,
+];
+
+const BRANCH_DISTS = [610, 635, 598, 622, 600, 640, 618];
+
+function buildLayout() {
+  const nodes = [], edges = [];
+  nodes.push({ ...TREE, x:CX, y:CY, r:ROOT_R });
+
+  const N = TREE.children.length;
+  TREE.children.forEach((branch, bi) => {
+    const bAngle = BRANCH_ANGLES[bi] ?? (-Math.PI/2 + (bi/N)*Math.PI*2);
+    const bDist  = BRANCH_DISTS[bi]  ?? 590;
+    const bx = CX + Math.cos(bAngle) * bDist;
+    const by = CY + Math.sin(bAngle) * bDist;
+
+    nodes.push({ ...branch, x:bx, y:by, r:BRANCH_R, parentId:'root', angle:bAngle });
+    edges.push({ from:'root', to:branch.id, x1:CX, y1:CY, x2:bx, y2:by, thick:true });
+
+    const theoryLeaves = branch.children.filter(c => c.type === 'leaf');
+    const quizNodes    = branch.children.filter(c => c.type === 'quiz');
+    const M = theoryLeaves.length;
+
+    theoryLeaves.forEach((leaf, li) => {
+      const spread   = Math.PI * (0.36 + M * 0.030);
+      const fanAngle = bAngle + ((li / (M - 1 || 1)) - 0.5) * spread;
+      const lx = bx + Math.cos(fanAngle) * LEAF_ORBIT;
+      const ly = by + Math.sin(fanAngle) * LEAF_ORBIT;
+      nodes.push({ ...leaf, x:lx, y:ly, r:LEAF_R, parentId:branch.id, angle:fanAngle });
+      edges.push({ from:branch.id, to:leaf.id, x1:bx, y1:by, x2:lx, y2:ly, thick:false });
+    });
+
+    quizNodes.forEach(quiz => {
+      const qx = bx + Math.cos(bAngle) * (LEAF_ORBIT + QUIZ_EXTRA);
+      const qy = by + Math.sin(bAngle) * (LEAF_ORBIT + QUIZ_EXTRA);
+      nodes.push({ ...quiz, x:qx, y:qy, r:LEAF_R + 9, parentId:branch.id, angle:bAngle });
+      edges.push({ from:branch.id, to:quiz.id, x1:bx, y1:by, x2:qx, y2:qy, thick:false });
+    });
+  });
+
+  return { nodes, edges };
+}
+
+// COLORS
+function col(type) {
+  if (type==='root')   return { fill:'rgba(34,211,238,0.22)', stroke:'#22d3ee', text:'#22d3ee', glow:'url(#gc)' };
+  if (type==='branch') return { fill:'rgba(34,211,238,0.14)', stroke:'#22d3ee', text:'#ddfce8', glow:'url(#gb)' };
+  if (type==='quiz')   return { fill:'rgba(242,201,76,0.18)', stroke:'#F2C94C', text:'#FFD966', glow:'url(#gg)' };
+  return { fill:'rgba(255,255,255,0.05)', stroke:'rgba(34,211,238,0.40)', text:'#CBD5E1', glow:'none' };
+}
+
+// STATE
+let layout = { nodes:[], edges:[] };
+let activeId = null, scale = 1, tx = 0, ty = 0;
+const svg  = document.getElementById('tree-svg');
+const wrap = document.getElementById('canvas-wrap');
+let currentLeafId = null, currentBranchId = null;
+let quizQuestions = [], quizIdx = 0, quizScore = 0, quizAnswered = false, quizBranchId = null;
+
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs={}) {
+  const e = document.createElementNS(NS, tag);
+  for (const [k,v] of Object.entries(attrs)) e.setAttribute(k,v);
+  return e;
+}
+
+// RENDER
+function render() {
+  svg.innerHTML = '';
+  const { nodes, edges } = layout;
+  const sw = window.innerWidth, sh = window.innerHeight - 68;
+
+  svg.setAttribute('viewBox', '0 0 ' + VW + ' ' + VH);
+  svg.style.width  = VW + 'px';
+  svg.style.height = VH + 'px';
+  svg.style.left   = ((sw - VW) / 2) + 'px';
+  svg.style.top    = ((sh - VH) / 2) + 'px';
+
+  const defs = el('defs');
+  defs.innerHTML =
+    '<filter id="gc" x="-60%" y="-60%" width="220%" height="220%">' +
+    '<feGaussianBlur stdDeviation="12" result="b"/>' +
+    '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>' +
+    '<filter id="gb" x="-50%" y="-50%" width="200%" height="200%">' +
+    '<feGaussianBlur stdDeviation="7" result="b"/>' +
+    '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>' +
+    '<filter id="gg" x="-50%" y="-50%" width="200%" height="200%">' +
+    '<feGaussianBlur stdDeviation="6" result="b"/>' +
+    '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>' +
+    '<radialGradient id="rg-root" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="rgba(34,211,238,0.50)"/>' +
+    '<stop offset="100%" stop-color="rgba(34,211,238,0.12)"/>' +
+    '</radialGradient>';
+  svg.appendChild(defs);
+
+  const eg = el('g');
+  edges.forEach(e => {
+    const fromNode = nodes.find(n => n.id === e.from);
+    const isRoot   = fromNode && fromNode.type === 'root';
+    const stroke   = isRoot ? 'rgba(34,211,238,0.55)' : 'rgba(34,211,238,0.28)';
+    const sw2      = e.thick ? 3.5 : 1.8;
+    let edgeEl;
+
+    if (e.thick && isRoot) {
+      const mx   = (e.x1 + e.x2) / 2;
+      const my   = (e.y1 + e.y2) / 2;
+      const pull = Math.hypot(e.x2 - e.x1, e.y2 - e.y1) * 0.12;
+      const edx  = e.x2 - e.x1, edy = e.y2 - e.y1;
+      const len  = Math.hypot(edx, edy) || 1;
+      edgeEl = el('path', {
+        d: 'M ' + e.x1 + ',' + e.y1 + ' Q ' + (mx - edy/len*pull) + ',' + (my + edx/len*pull) + ' ' + e.x2 + ',' + e.y2,
+        stroke, fill:'none', 'stroke-width':sw2, 'stroke-linecap':'round',
+        'data-from':e.from, 'data-to':e.to,
+      });
+    } else {
+      edgeEl = el('line', {
+        x1:e.x1, y1:e.y1, x2:e.x2, y2:e.y2,
+        stroke, 'stroke-width':sw2, 'stroke-linecap':'round',
+        'data-from':e.from, 'data-to':e.to,
+      });
+    }
+    edgeEl.classList.add('edge-line');
+    edgeEl.style.transition = 'opacity 0.45s ease';
+    eg.appendChild(edgeEl);
+  });
+  svg.appendChild(eg);
+
+  const ng = el('g');
+  nodes.forEach(node => {
+    const c = col(node.type);
+    const g = el('g', { 'data-id':node.id, 'data-type':node.type });
+    g.classList.add('node-group');
+    g.style.cursor = 'pointer';
+    g.style.transition = 'opacity 0.45s ease';
+
+    if (node.type === 'leaf' && isLeafDone(node.id)) {
+      g.appendChild(el('circle', { cx:node.x, cy:node.y, r:node.r+6,
+        fill:'none', stroke:'#22d3ee', 'stroke-width':2.5,
+        opacity:0.75, 'stroke-dasharray':'5 3' }));
+    }
+
+    const hoverRing = el('circle', { cx:node.x, cy:node.y, r:node.r+15,
+      fill:'none', stroke:c.stroke, 'stroke-width':1.5, opacity:0 });
+    hoverRing.classList.add('glow-ring');
+    hoverRing.style.transition = 'opacity 0.3s ease';
+    g.appendChild(hoverRing);
+
+    const circle = el('circle', {
+      cx:node.x, cy:node.y, r:node.r,
+      fill: node.type === 'root' ? 'url(#rg-root)' : c.fill,
+      stroke: c.stroke,
+      'stroke-width': node.type==='root' ? 3.5 : node.type==='branch' ? 2.5 : 1.8,
+      filter: c.glow,
+    });
+    g.appendChild(circle);
+
+    if (node.type === 'root') {
+      const ic = el('text', { x:node.x, y:node.y, 'text-anchor':'middle',
+        'dominant-baseline':'middle', 'font-size':30, 'pointer-events':'none' });
+      ic.textContent = '💻';
+      g.appendChild(ic);
+    }
+
+    if (node.type === 'quiz') {
+      const unlocked = isBranchComplete(node.parentId);
+      if (!unlocked) {
+        circle.setAttribute('fill',    'rgba(60,60,80,0.15)');
+        circle.setAttribute('stroke',  'rgba(120,120,150,0.32)');
+        circle.setAttribute('opacity', '0.48');
+      }
+      const ic = el('text', { x:node.x, y:node.y, 'text-anchor':'middle',
+        'dominant-baseline':'middle', 'font-size':24, 'pointer-events':'none' });
+      ic.textContent = unlocked ? '⭐' : '🔒';
+      g.appendChild(ic);
+      if (!unlocked) {
+        const hint = el('text', {
+          x:node.x, y:node.y + node.r + 24,
+          'text-anchor':'middle', 'dominant-baseline':'middle',
+          'font-size':15, 'font-weight':600, 'font-family':'Inter,sans-serif',
+          fill:'rgba(160,160,190,0.70)', 'pointer-events':'none',
+        });
+        hint.setAttribute('class', 'tree-label-sm');
+        hint.textContent = 'Voltooi theorie eerst';
+        g.appendChild(hint);
+      }
+    }
+
+    if (node.type !== 'quiz') {
+      const parentNode = nodes.find(n => n.id === node.parentId);
+      const pX = parentNode ? parentNode.x : CX;
+      const pY = parentNode ? parentNode.y : CY + 300;
+
+      const dx  = node.x - pX;
+      const dy  = node.y - pY;
+      const ang = Math.atan2(dy, dx);
+
+      const labelPush = node.r + (node.type==='root' ? 44 : node.type==='branch' ? 42 : 36);
+      let lx = node.x + Math.cos(ang) * labelPush;
+      let ly = node.y + Math.sin(ang) * labelPush;
+
+      const adx = Math.abs(dx), ady = Math.abs(dy);
+      let anchor = 'middle';
+      if (adx > ady * 0.7) {
+        anchor = dx > 0 ? 'start' : 'end';
+        if (ady < adx * 0.35) ly = node.y;
+      }
+
+      if (node.type === 'root') {
+        lx = node.x;
+        ly = node.y + node.r + 46;
+        anchor = 'middle';
+      }
+
+      const fontSize = node.type==='root' ? 26 : node.type==='branch' ? 22 : 18;
+      const fontWeight = node.type==='leaf' ? 600 : 700;
+      const textFill  = node.type==='branch' ? '#ddfce8'
+                      : node.type==='leaf'   ? '#CBD5E1' : c.text;
+
+      const label = el('text', {
+        x:lx, y:ly,
+        'text-anchor': anchor,
+        fill: textFill,
+        'font-size': fontSize,
+        'font-weight': fontWeight,
+        'font-family': 'Inter,sans-serif',
+        'pointer-events': 'none',
+        'dominant-baseline': 'middle',
+        opacity: node.type === 'leaf' ? 0 : 1,
+      });
+
+      if (node.type === 'leaf') {
+        label.setAttribute('class', 'leaf-label tree-label-sm');
+        label.setAttribute('data-parent', node.parentId);
+        label.style.transition = 'opacity 0.35s ease';
+      } else {
+        label.setAttribute('class', 'tree-label');
+      }
+
+      label.textContent = node.label;
+      g.appendChild(label);
+    }
+
+    g.addEventListener('click', e => { e.stopPropagation(); onNodeClick(node); });
+    g.addEventListener('mouseenter', () => hoverRing.setAttribute('opacity', 0.45));
+    g.addEventListener('mouseleave', () => hoverRing.setAttribute('opacity', 0));
+    ng.appendChild(g);
+  });
+  svg.appendChild(ng);
+
+  fitToScreen();
+  animateIn();
+}
+
+function fitToScreen() {
+  const sw = window.innerWidth, sh = window.innerHeight - 68;
+  scale = Math.min((sw * 0.92) / VW, (sh * 0.92) / VH);
+  tx = 0; ty = 0;
+  applyTransform(false);
+}
+
+function animateIn() {
+  svg.querySelectorAll('.node-group').forEach((g, i) => {
+    g.style.opacity = '0';
+    setTimeout(() => { g.style.transition = 'opacity 0.5s ease'; g.style.opacity = '1'; }, i * 40);
+  });
+}
+
+// TRANSFORM
+function applyTransform(anim=true) {
+  wrap.style.transition = anim ? 'transform 0.65s cubic-bezier(0.4,0,0.2,1)' : 'none';
+  wrap.style.transform  = 'translate(' + tx + 'px,' + ty + 'px) scale(' + scale + ')';
+}
+
+// ZOOM TO NODE
+function zoomToNode(node) {
+  const sw = window.innerWidth, sh = window.innerHeight - 68;
+  const offX = (sw - VW) / 2, offY = (sh - VH) / 2;
+
+  if (node.type === 'branch') {
+    const grp = layout.nodes.filter(n => n.id === node.id || n.parentId === node.id);
+    const pad = 130;
+    const minX = Math.min(...grp.map(n => n.x - n.r)) - pad;
+    const maxX = Math.max(...grp.map(n => n.x + n.r)) + pad;
+    const minY = Math.min(...grp.map(n => n.y - n.r)) - pad;
+    const maxY = Math.max(...grp.map(n => n.y + n.r)) + pad;
+
+    const PANEL_RESERVED = 430;
+    const visH = sh - PANEL_RESERVED;
+    const s = Math.min((sw * 0.82) / (maxX - minX), (visH * 0.88) / (maxY - minY), 3.0);
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    tx = sw / 2 - s * (offX + cx);
+    ty = visH / 2 - s * (offY + cy);
+    scale = s;
+  } else {
+    const PANEL_RESERVED = 430;
+    const visH = sh - PANEL_RESERVED;
+    const s = 2.6;
+    tx = sw / 2 - s * (offX + node.x);
+    ty = visH / 2 - s * (offY + node.y);
+    scale = s;
+  }
+  applyTransform(true);
+}
+
+// DIM
+function dimOthers(clicked) {
+  const show = new Set(['root', clicked.id]);
+  if (clicked.type === 'branch') {
+    layout.nodes.filter(n => n.parentId === clicked.id).forEach(n => show.add(n.id));
+  } else {
+    show.add(clicked.parentId);
+    layout.nodes.filter(n => n.parentId === clicked.parentId).forEach(n => show.add(n.id));
+  }
+  svg.querySelectorAll('.node-group').forEach(g => {
+    g.style.opacity = show.has(g.getAttribute('data-id')) ? '1' : '0.06';
+  });
+  svg.querySelectorAll('.edge-line').forEach(l => {
+    l.style.opacity = (show.has(l.getAttribute('data-from')) && show.has(l.getAttribute('data-to'))) ? '1' : '0.04';
+  });
+  const activeBranch = clicked.type === 'branch' ? clicked.id : clicked.parentId;
+  svg.querySelectorAll('.leaf-label').forEach(l => {
+    l.setAttribute('opacity', l.getAttribute('data-parent') === activeBranch ? '1' : '0');
+  });
+}
+
+// INTERACTIONS
+function onNodeClick(node) {
+  if (node.type === 'root') { resetView(); return; }
+  if (node.type === 'leaf') { return; }
+
+  activeId = node.id;
+  zoomToNode(node);
+  dimOthers(node);
+
+  if (node.type === 'branch') {
+    showBranchPanel(node);
+  } else if (node.type === 'quiz') {
+    const branch = layout.nodes.find(n => n.id === node.parentId);
+    if (branch) {
+      if (isBranchComplete(branch.id) || Object.keys((SUBJECT_DATA[branch.id] || {}).leaves || {}).length === 0) {
+        openQuiz(branch.id);
+      } else {
+        showBranchPanel(branch);
+      }
+    }
+  }
+}
+
+// BRANCH PANEL
+function showBranchPanel(branchNode) {
+  const branchId = branchNode.id;
+  const data = SUBJECT_DATA[branchId];
+  currentBranchId = branchId;
+
+  document.getElementById('panel-eyebrow').textContent = '📚 Onderwerp';
+  document.getElementById('panel-title').textContent   = branchNode.label;
+  document.getElementById('panel-desc').textContent    = branchNode.desc;
+
+  const leafBtnsEl   = document.getElementById('panel-leaf-btns');
+  const progressWrap = document.getElementById('panel-progress-wrap');
+  const progressFill = document.getElementById('panel-progress-fill');
+  const actionsEl    = document.getElementById('panel-actions');
+  leafBtnsEl.innerHTML = '';
+
+  if (data) {
+    const leaves = Object.keys(data.leaves);
+    const { done, total } = branchProgress(branchId);
+    progressWrap.style.display = 'block';
+    progressFill.style.width   = total > 0 ? ((done/total)*100 + '%') : '0%';
+
+    leaves.forEach((leafId, i) => {
+      const leafData = data.leaves[leafId];
+      const isDone   = isLeafDone(leafId);
+      const btn      = document.createElement('button');
+      btn.className  = 'leaf-btn' + (isDone ? ' completed' : '');
+      btn.innerHTML  = '<span class="leaf-num">' + (i+1) + '</span><span>' + leafData.title + '</span><i class="fa-solid fa-check check"></i>';
+      btn.onclick    = () => { closePanel(); openTheoryById(leafId, branchId); };
+      leafBtnsEl.appendChild(btn);
+    });
+
+    const complete = isBranchComplete(branchId);
+    actionsEl.innerHTML =
+      '<button class="btn-panel btn-gold" ' + (complete ? '' : 'disabled') + ' onclick="openQuiz(\'' + branchId + '\')">' +
+      '<i class="fa-solid fa-star"></i> ' + (complete ? 'Start Quiz' : 'Quiz (voltooi theorie eerst)') + '</button>' +
+      '<button class="btn-panel btn-op" onclick="resetView()"><i class="fa-solid fa-xmark"></i> Sluiten</button>';
+  } else {
+    progressWrap.style.display = 'none';
+    actionsEl.innerHTML = '<button class="btn-panel btn-op" onclick="resetView()"><i class="fa-solid fa-xmark"></i> Sluiten</button>';
+  }
+  document.getElementById('info-panel').classList.add('visible');
+}
+
+function closePanel() { document.getElementById('info-panel').classList.remove('visible'); }
+
+function resetView() {
+  activeId = null;
+  fitToScreen();
+  svg.querySelectorAll('.node-group').forEach(g => g.style.opacity = '1');
+  svg.querySelectorAll('.edge-line').forEach(l => l.style.opacity  = '1');
+  svg.querySelectorAll('.leaf-label').forEach(l => l.setAttribute('opacity', '0'));
+  document.getElementById('info-panel').classList.remove('visible');
+}
+
+function zoomIn()  { scale = Math.min(scale * 1.25, 6);   applyTransform(true); }
+function zoomOut() { scale = Math.max(scale * 0.8,  0.1); applyTransform(true); }
+
+// THEORY MODAL
+function openTheory(leafNode) {
+  const branch = layout.nodes.find(n => n.id === leafNode.parentId);
+  if (!branch) return;
+  openTheoryById(leafNode.id, branch.id);
+}
+
+function openTheoryById(leafId, branchId) {
+  const data = SUBJECT_DATA[branchId];
+  if (!data || !data.leaves[leafId]) return;
+  const leaf = data.leaves[leafId];
+  currentLeafId = leafId; currentBranchId = branchId;
+
+  document.getElementById('theory-eyebrow').textContent = data.title;
+  document.getElementById('theory-title').textContent   = leaf.title;
+  document.getElementById('theory-body').innerHTML      = leaf.theory.replace(/\n/g, '<br>');
+
+  const btn = document.getElementById('complete-btn');
+  if (isLeafDone(leafId)) {
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> Voltooid';
+    btn.style.opacity = '0.6'; btn.style.cursor = 'default';
+  } else {
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> Voltooien';
+    btn.style.opacity = '1';   btn.style.cursor = 'pointer';
+  }
+  document.getElementById('theory-overlay').classList.add('visible');
+}
+
+function closeTheory() {
+  document.getElementById('theory-overlay').classList.remove('visible');
+  if (currentBranchId) {
+    const b = layout.nodes.find(n => n.id === currentBranchId);
+    if (b) showBranchPanel(b);
+  }
+}
+
+function markComplete() {
+  if (!currentLeafId || isLeafDone(currentLeafId)) return;
+  markLeafDone(currentLeafId);
+  const btn = document.getElementById('complete-btn');
+  btn.innerHTML = '<i class="fa-solid fa-check"></i> Voltooid';
+  btn.style.opacity = '0.6'; btn.style.cursor = 'default';
+
+  layout = buildLayout(); render();
+  setTimeout(() => {
+    document.getElementById('theory-overlay').classList.remove('visible');
+    if (currentBranchId) {
+      const b = layout.nodes.find(n => n.id === currentBranchId);
+      if (b) { zoomToNode(b); dimOthers(b); showBranchPanel(b); }
+    }
+  }, 400);
+}
+
+// QUIZ
+function openQuiz(branchId) {
+  const data = SUBJECT_DATA[branchId];
+  if (!data || !data.quiz || !data.quiz.length) return;
+  closePanel();
+  quizBranchId = branchId;
+  const allQ = [...data.quiz];
+  for (let i = allQ.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allQ[i], allQ[j]] = [allQ[j], allQ[i]];
+  }
+  quizQuestions = allQ.slice(0, 5);
+  quizIdx = 0; quizScore = 0; quizAnswered = false;
+  document.getElementById('quiz-branch-title').textContent = data.title;
+  document.getElementById('quiz-result-screen').style.display = 'none';
+  document.getElementById('quiz-content').style.display = 'block';
+  document.getElementById('quiz-score-live').textContent  = 'Score: 0';
+  document.getElementById('quiz-next-btn').style.display  = 'none';
+  renderQuizQuestion();
+  document.getElementById('quiz-overlay').classList.add('visible');
+}
+
+function renderQuizQuestion() {
+  const q = quizQuestions[quizIdx]; quizAnswered = false;
+  document.getElementById('quiz-progress-text').textContent = 'Vraag ' + (quizIdx+1) + ' / ' + quizQuestions.length;
+  document.getElementById('quiz-question').textContent      = q.question;
+  document.getElementById('quiz-feedback').className        = 'quiz-feedback';
+  document.getElementById('quiz-next-btn').style.display    = 'none';
+  const optEl = document.getElementById('quiz-options'); optEl.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-option'; btn.textContent = opt;
+    btn.onclick = () => selectAnswer(i); optEl.appendChild(btn);
+  });
+}
+
+function selectAnswer(idx) {
+  if (quizAnswered) return; quizAnswered = true;
+  const q = quizQuestions[quizIdx], correct = idx === q.answer;
+  if (correct) { quizScore++; awardCoins(10, '+10 🪙 Correct!'); }
+  document.querySelectorAll('.quiz-option').forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.answer) b.classList.add('correct');
+    else if (i === idx && !correct) b.classList.add('wrong');
+  });
+  const fb = document.getElementById('quiz-feedback');
+  fb.className   = 'quiz-feedback show ' + (correct ? 'ok' : 'bad');
+  fb.textContent = correct ? '✓ Correct!' : '✗ Fout — het juiste antwoord is: "' + q.options[q.answer] + '"';
+  document.getElementById('quiz-score-live').textContent = 'Score: ' + quizScore;
+  document.getElementById('quiz-next-btn').style.display = 'inline-flex';
+  document.getElementById('quiz-next-btn').textContent   =
+    quizIdx < quizQuestions.length - 1 ? 'Volgende →' : 'Resultaat →';
+}
+
+function quizNext() {
+  if (++quizIdx < quizQuestions.length) renderQuizQuestion(); else showQuizResult();
+}
+
+function showQuizResult() {
+  document.getElementById('quiz-content').style.display       = 'none';
+  document.getElementById('quiz-result-screen').style.display = 'block';
+  document.getElementById('quiz-next-btn').style.display      = 'none';
+  const pct = quizScore / quizQuestions.length;
+  let emoji = '🎉', title = 'Uitstekend!', text = 'Je beheerst dit onderwerp goed.';
+  if (pct < 0.5)      { emoji = '📖'; title = 'Blijf oefenen!'; text = 'Lees de theorie nog eens door en probeer opnieuw.'; }
+  else if (pct < 0.8) { emoji = '👍'; title = 'Goed gedaan!';   text = 'Je bent op de goede weg. Nog een paar herhalen?'; }
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-title').textContent = title;
+  document.getElementById('result-text').textContent  = text;
+  document.getElementById('result-score').textContent = quizScore + ' / ' + quizQuestions.length;
+  document.getElementById('quiz-score-live').textContent = '';
+  const nb = document.getElementById('quiz-next-btn');
+  nb.style.display = 'inline-flex';
+  nb.innerHTML = '<i class="fa-solid fa-xmark"></i> Sluiten';
+  nb.onclick   = closeQuiz;
+
+  const earned = quizScore === quizQuestions.length ? 25 : 0;
+  if (earned > 0) awardCoins(earned, '+25 🪙 Perfect score bonus!');
+  // Track perfect quiz completion & sync to server
+  if (quizScore === quizQuestions.length && quizBranchId) {
+    try {
+      const qk = STORAGE_KEY.replace('_progress', '_quizzes');
+      const qd = JSON.parse(localStorage.getItem(qk) || '{}');
+      qd[quizBranchId] = true;
+      localStorage.setItem(qk, JSON.stringify(qd));
+      updateSubjectProgress();
+      if (window.ProgressSync) ProgressSync.save();
+    } catch(_) {}
+  }
+}
+
+function closeQuiz() {
+  document.getElementById('quiz-overlay').classList.remove('visible');
+  document.getElementById('quiz-next-btn').onclick = quizNext;
+  if (quizBranchId) {
+    const b = layout.nodes.find(n => n.id === quizBranchId);
+    if (b) showBranchPanel(b);
+  }
+}
+
+// COINS
+function awardCoins(amount, message) {
+  if (window.SkalorStats) {
+    window.SkalorStats.addCoins(amount);
+  } else {
+    try {
+      const raw  = localStorage.getItem('skalor_user_stats');
+      const st   = raw ? JSON.parse(raw) : { coins:0, level:1, completedLeaves:{}, subjectProgress:{} };
+      st.coins  += amount;
+      st.level   = Math.max(1, Math.floor(st.coins / 500) + 1);
+      localStorage.setItem('skalor_user_stats', JSON.stringify(st));
+    } catch(_) {}
+  }
+  // Always refresh badge from storage (works regardless of whether SkalorStats handled it)
+  try {
+    const _raw = localStorage.getItem('skalor_user_stats');
+    const cc = document.getElementById('coin-count');
+    if (cc && _raw) cc.textContent = JSON.parse(_raw).coins || 0;
+  } catch(_) {}
+  const toast = document.getElementById('coin-toast');
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(awardCoins._t);
+  awardCoins._t = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+// DRAG AND WHEEL
+let dragging = false, ds = {x:0,y:0}, db = {x:0,y:0};
+document.getElementById('tree-container').addEventListener('mousedown', e => {
+  dragging = true; ds = {x:e.clientX, y:e.clientY}; db = {x:tx, y:ty};
+});
+window.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  tx = db.x + (e.clientX - ds.x); ty = db.y + (e.clientY - ds.y); applyTransform(false);
+});
+window.addEventListener('mouseup', () => dragging = false);
+
+document.getElementById('tree-container').addEventListener('wheel', e => {
+  e.preventDefault();
+  scale = Math.max(0.1, Math.min(6, scale * (e.deltaY < 0 ? 1.10 : 0.91)));
+  applyTransform(false);
+}, { passive: false });
+
+document.getElementById('tree-container').addEventListener('click', () => { if (activeId) resetView(); });
+
+setTimeout(() => document.getElementById('hint').style.opacity = '0', 5000);
+window.addEventListener('resize', render);
+
+// INIT COIN DISPLAY
+(function() {
+  try {
+    const raw = localStorage.getItem('skalor_user_stats');
+    const cc  = ocument.getElementById('coin-count');
+    if (cc && raw) cc.textContent = JSON.parse(raw).coins || 0;
+  } catch(_) {}
+})();
+</script>
+</body>
+</html>

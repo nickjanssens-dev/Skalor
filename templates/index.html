@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skalor demo - gamified leerplatform voor middelbare scholieren." />
+    <title>Skalor</title>
+
+    <link rel="icon" href="/static/images/favicon_skalor/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/static/css/main.css?v=2" />
+    <link rel="stylesheet" href="/static/css/global_vars.css?v=2" />
+    <link rel="stylesheet" href="/static/css/index.css?v=2" />
+
+    <script src="/static/js/stats.js"></script>
+    <script src="/static/js/cosmetics.js"></script>
+  <script src="/static/js/cosmetics.js"></script>
+    <script src="/static/js/coach.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrapper">
+
+    <!-- LEFT: Logo + inline login -->
+    <div class="nav-left">
+      <a href="/" class="brand-logo-link" aria-label="Skalor home">
+        <img src="/static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+      </a>
+
+      <div class="auth-bar" id="auth-guest">
+        <input id="login-username" type="text" placeholder="Gebruikersnaam">
+        <input id="login-password" type="password" placeholder="Wachtwoord">
+        <button type="button" class="btn btn-primary" onclick="loginInline(this)" style="width: 70px; margin-left: 5px;">Login</button>
+        <button type="button" class="btn btn-outline" onclick="openRegisterModal()">Register</button>
+      </div>
+    </div>
+
+    <!-- Center nav links -->
+    <nav aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a></li>
+        <li><a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a></li>
+        <li><a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a></li>
+        <li><a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right: auth + coins + hamburger -->
+    <div class="nav-actions">
+
+      <div id="auth-user" style="display:none;">
+        <span class="coin-badge">
+          <i class="fa-solid fa-coins"></i>
+          <span id="coin-count">0</span>
+          <span class="coin-label">Coins</span>
+        </span>
+
+        <span class="avatar-nav">
+          <span class="avatar-circle"><i class="fa-solid fa-user"></i></span>
+          <span id="auth-username" class="avatar-nav-name"></span>
+        </span>
+
+        <button class="btn btn-outline" onclick="logout()" style="margin-left: 10px;">Logout</button>
+      </div>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a>
+    <a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a>
+    <a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a>
+    <a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a>
+  </div>
+</header>
+
+<div class="bg-ambient"></div>
+<div class="root-background">
+  <svg class="root-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <!-- Root 1: Top Left -->
+    <path class="root-path" d="M-50,0 Q150,100 100,300 T300,500 T500,800" />
+    <path class="root-path" d="M100,300 Q50,400 0,550" style="animation-delay: 1s;" />
+    
+    <!-- Root 2: Bottom Right -->
+    <path class="root-path" d="M1050,1000 Q800,800 900,600 T700,400 T400,200" />
+    <path class="root-path" d="M700,400 Q600,450 500,350" style="animation-delay: 1.5s;" />
+
+    <!-- Root 3: Mid Left -->
+    <path class="root-path" d="M-50,600 Q200,550 400,700 T700,850" />
+    <path class="root-path" d="M400,700 Q450,800 550,750" style="animation-delay: 2s;" />
+  </svg>
+</div>
+
+<main id="top">
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">Gamified leerplatform</p>
+                <h1>Level je leerproces op met <span>Skalor</span></h1>
+                <p class="hero-text">
+                    Verdien coins, speel skills vrij, upgrade je avatar en krijg hulp van je AI coach.
+                </p>
+
+                <div class="hero-actions">
+                    <a id="random-subject-btn" class="btn btn-gold" style="background: linear-gradient(135deg, #F2C94C, #FFD966) !important; color: #0F172A !important; text-decoration: none; box-shadow: 0 12px 28px rgba(242, 201, 76, 0.4) !important;">
+                        <i class="fa-solid fa-dice" style="color: #0F172A !important;"></i> Choose a subject for me
+                    </a>
+                    <a href="/boom" class="btn btn-primary"><i class="fa-solid fa-sitemap"></i> Skill Tree</a>
+                </div>
+            </div>
+
+            <div class="hero-card glass-card">
+                <div class="hero-card-top">
+                    <span class="status-badge">Live Demo</span>
+                    <span class="status-badge">
+               <span class="level-label">Level</span>
+                <span class="player-level-display">0</span>
+                </span>
+
+                </div>
+
+                <div class="coach-message">
+                    <p class="coach-label"><i class="fa-solid fa-robot" style="margin-right: 0.5rem; color: var(--skalor-accent);"></i> AI Coach</p>
+                    <p id="coach-text">...</p>
+                    <a href="/progression" class="btn btn-primary"><i class="fa-solid fa-chart-line"></i> Progression</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="upload-section" style="margin-bottom: 4rem;">
+  <div class="container">
+    <div class="glass-card" style="padding: 2rem; text-align: center;">
+      
+      <h2 style="margin-bottom: 1rem;">
+        <i class="fa-solid fa-file-upload"></i> Genereer je eigen quiz
+      </h2>
+
+      <p style="opacity: 0.8; margin-bottom: 1.5rem;">
+        Upload een document (.txt of .docx) en laat Skalor automatisch vragen maken.
+      </p>
+
+      <input 
+        type="file" 
+        id="document-upload" 
+        accept=".txt,.docx"
+        style="margin-bottom: 1rem;"
+      >
+
+      <br>
+
+      <button class="btn btn-primary" onclick="uploadDocument()">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Genereer quiz
+      </button>
+
+      <div id="generated-quiz" style="margin-top: 2rem; text-align: left;"></div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-wrapper">
+        <div>
+            <h3>Skalor</h3>
+            <p>Skills Integration Lab</p>
+            <p style="font-size: 0.85rem; opacity: 0.6; max-width: 300px; margin-top: 0.5rem; line-height: 1.4;">
+                Empowering leerlingen via gegamificeerd leren en AI-gestuurde beheersing.
+            </p>
+        </div>
+
+        <div style="flex: 1; display: flex; justify-content: center; align-self: center; transform: translateY(10px);">
+            <img src="/static/images/Skalor_image_x01.png" alt="Skalor Concept Art" style="max-height: 100px; width: auto; filter: drop-shadow(0 0 15px rgba(10, 132, 255, 0.2));"/>
+        </div>
+
+        <div style="text-align: right;">
+            <p>&copy; 2026 Skalor</p>
+            <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.4rem;">Team: Nick (Scrum Master), Tibo, Lander & Sten</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Registration Modal -->
+<div id="register-modal" class="modal-overlay" style="display: none;">
+  <div class="modal-content glass-card">
+    <button class="modal-close" onclick="closeRegisterModal()">&times;</button>
+    <div class="modal-header">
+      <h2><i class="fa-solid fa-user-plus"></i> Join Skalor</h2>
+      <p>Creëer een account om je voortgang op te slaan.</p>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="reg-username">Gebruikersnaam</label>
+        <input type="text" id="reg-username" placeholder="Kies een naam...">
+      </div>
+      <div class="form-group">
+        <label for="reg-password">Wachtwoord</label>
+        <input type="password" id="reg-password" placeholder="Kies een sterk wachtwoord...">
+      </div>
+      <div class="form-group">
+        <label for="reg-confirm-password">Bevestig Wachtwoord</label>
+        <input type="password" id="reg-confirm-password" placeholder="Herhaal je wachtwoord...">
+      </div>
+      <button class="btn btn-primary btn-full" onclick="registerModalSubmit()">
+        <i class="fa-solid fa-rocket"></i> Register & Start Learning
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/index.js"></script>
+
+</body>
+</html>

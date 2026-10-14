@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Skalor — Progressiebord</title>
+    <link rel="icon" href="/static/images/favicon_skalor/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/prog.css">
+    <script src="/static/js/stats.js"></script>
+  <script src="/static/js/cosmetics.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrapper">
+    <a href="/" class="brand" aria-label="Skalor home">
+      <img src="/static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+    </a>
+
+    <nav aria-label="Hoofdnavigatie">
+      <ul class="nav-links">
+        <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a></li>
+        <li><a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a></li>
+        <li><a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a></li>
+        <li><a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <span class="coin-badge">
+        <i class="fa-solid fa-coins"></i>
+        <span id="coin-count">0</span>
+        <span class="coin-label">Coins</span>
+      </span>
+      <span class="avatar-nav" id="nav-avatar">
+        <span class="avatar-circle"><i class="fa-solid fa-user"></i></span>
+        <span class="avatar-nav-name" id="nav-avatar-name"></span>
+      </span>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="/boom"><i class="fa-solid fa-sitemap"></i> Skill Tree</a>
+    <a href="/mock-exam"><i class="fa-solid fa-file-pen"></i> Mock Exam</a>
+    <a href="/progression"><i class="fa-solid fa-chart-line"></i> Progression</a>
+    <a href="Shop.html"><i class="fa-solid fa-store"></i> Shop</a>
+  </div>
+</header>
+<div class="bg-ambient"></div>
+<div class="root-background">
+  <svg class="root-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <!-- Root 1: Top Left -->
+    <path class="root-path" d="M-50,0 Q150,100 100,300 T300,500 T500,800" />
+    <path class="root-path" d="M100,300 Q50,400 0,550" style="animation-delay: 1s;" />
+    
+    <!-- Root 2: Bottom Right -->
+    <path class="root-path" d="M1050,1000 Q800,800 900,600 T700,400 T400,200" />
+    <path class="root-path" d="M700,400 Q600,450 500,350" style="animation-delay: 1.5s;" />
+
+    <!-- Root 3: Mid Left -->
+    <path class="root-path" d="M-50,600 Q200,550 400,700 T700,850" />
+    <path class="root-path" d="M400,700 Q450,800 550,750" style="animation-delay: 2s;" />
+  </svg>
+</div>
+<div class="board">
+    <div class="hero">
+        <div class="hero-top">
+            <div class="coach-block">
+                <p class="coach-label">AI Coach</p>
+                <p class="coach-text" id="coach-text">Welkom terug. Rond een skill af om progressie te maken.</p>
+            </div>
+            <div class="badges">
+                <span class="badge">Live Demo</span>
+                <span class="badge">Level <span id="player-level">1</span></span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="stats">
+            <div class="stat-card">
+                <p class="stat-label">Skills afgerond</p>
+                <p class="stat-value" id="stat-done">0</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Gemiddelde score</p>
+                <p class="stat-value" id="stat-avg">0%</p>
+            </div>
+            <div class="stat-card gold">
+                <p class="stat-label">Coins</p>
+                <p class="stat-value" id="stat-coins">🪙 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vakken-grid" id="vakken-grid"></div>
+
+</div>
+<script>
+const VAKKEN_CONFIG = [
+  { key:'biologie',    naam:'Biologie',    icon:'🧬', kleur:{bg:'rgba(74,222,128,0.12)',   text:'#4ade80'} },
+  { key:'wiskunde',    naam:'Wiskunde',    icon:'∑',  kleur:{bg:'rgba(96,165,250,0.12)',   text:'#60a5fa'} },
+  { key:'chemie',      naam:'Chemie',      icon:'⚗️', kleur:{bg:'rgba(250,204,21,0.12)',   text:'#facc15'} },
+  { key:'fysica',      naam:'Fysica',      icon:'⚡', kleur:{bg:'rgba(251,146,60,0.12)',   text:'#fb923c'} },
+  { key:'informatica', naam:'Informatica', icon:'</>', kleur:{bg:'rgba(34,211,238,0.12)',  text:'#22d3ee'} },
+  { key:'nederlands',  naam:'Nederlands',  icon:'A',  kleur:{bg:'rgba(244,114,182,0.12)',  text:'#f472b6'} },
+];
+
+function render() {
+  const raw = localStorage.getItem('skalor_user_stats');
+  const st  = raw ? JSON.parse(raw) : { coins:0, level:1, subjectProgress:{} };
+  const sp  = st.subjectProgress || {};
+
+  let totalDone = 0, totalLeaves = 0;
+  const grid = document.getElementById('vakken-grid');
+  grid.innerHTML = '';
+
+  VAKKEN_CONFIG.forEach((vak, i) => {
+    const prog = sp[vak.key] || { done:0, total:0 };
+    const pct  = prog.total > 0 ? Math.round(prog.done / prog.total * 100) : 0;
+    totalDone   += prog.done;
+    totalLeaves += prog.total;
+
+    const card = document.createElement('div');
+    card.className = 'vak-card';
+    card.style.animationDelay = (i * 0.07) + 's';
+    card.innerHTML = `
+      <div class="vak-header">
+        <div class="vak-title">
+          <span class="vak-icon" style="background:${vak.kleur.bg};color:${vak.kleur.text};">${vak.icon}</span>
+          <span class="vak-naam">${vak.naam}</span>
+        </div>
+        <span class="vak-coins">🪙 ${prog.done * 15}</span>
+      </div>
+      <div class="progress-header">
+        <span class="progress-label">Voortgang</span>
+        <span class="progress-pct">${pct}%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar" style="width:${pct}%;background:linear-gradient(90deg,${vak.kleur.text},${vak.kleur.text}88);"></div>
+      </div>
+      <div class="skills">
+        <span class="skill-badge${prog.done > 0 ? ' done' : ''}">${prog.done} / ${prog.total} skills afgerond</span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  const overallPct = totalLeaves > 0 ? Math.round(totalDone / totalLeaves * 100) : 0;
+  document.getElementById('stat-done').textContent  = totalDone;
+  document.getElementById('stat-avg').textContent   = overallPct + '%';
+  document.getElementById('stat-coins').textContent = '🪙 ' + (st.coins || 0);
+  document.querySelectorAll('#player-level').forEach(el => el.textContent = st.level || 1);
+
+  const msgs = [
+    'Welkom terug. Rond een skill af om progressie te maken.',
+    'Goed bezig! Blijf zo doorgaan.',
+    'Je bent op dreef! Probeer een nieuw vak te starten.',
+    'Indrukwekkend! Jij bent een echte leerling.',
+    'Waanzinnig! Je coins groeien razendsnel.'
+  ];
+  document.getElementById('coach-text').textContent = msgs[Math.min(Math.floor((st.coins || 0) / 150), msgs.length - 1)];
+}
+
+render();
+
+// Hamburger
+const _hBtn  = document.getElementById('hamburger-btn');
+const _hMenu = document.getElementById('mobile-menu');
+if (_hBtn && _hMenu) {
+  _hBtn.addEventListener('click', () => {
+    const open = _hMenu.classList.toggle('open');
+    _hBtn.classList.toggle('open', open);
+    _hBtn.setAttribute('aria-expanded', open);
+  });
+}
+
+// Avatar username
+fetch('/api/auth/me').then(r => r.json()).then(d => {
+  const el = document.getElementById('nav-avatar-name');
+  if (el && d.authenticated && d.user) el.textContent = d.user.username;
+}).catch(() => {});
+</script>
